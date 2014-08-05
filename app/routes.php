@@ -10,8 +10,23 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-Route::get('/', function()
+Route::get('/',array('as'=>'root', function()
 {
-	return View::make('hello');
-});
+    return View::make('index');
+}));
+
+Route::get("kids",array('as'=>'kids',function(){
+    return View::make('kids.index');
+}));
+Route::get("kids/cuentos",array('as'=>'kids_cuentos',function(){
+    return View::make('kids.cuentos');
+}));
+
+Route::get("kids/videos",array('as'=>'kids_videos',function(){
+    return View::make('kids.videos');
+}));
+
+Route::get("kids/bases",array('as'=>'kids_bases',function(){
+    return View::make('kids.bases');
+}));
+

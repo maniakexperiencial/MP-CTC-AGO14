@@ -1,0 +1,311 @@
+/*CSS*/
+html,body{
+    margin:0px;
+    padding:0px;
+    min-height: 100%;
+    height:auto;
+}
+body{
+    margin-top: 110px;
+    background-image:url("../img/background-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.column img{
+    max-width: 100%;
+}
+.center_text{
+    width: 100%;
+    text-align: center !important;
+}
+.footer{
+    /*background-image: url("../img/footer.png");*/
+    background-repeat:repeat-x;
+    background-size:contain;
+    background-position:center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    min-height: 50px;
+}
+.Action_bar{
+    width: 100%;
+    height:40px;
+    /* background-color:#000c7d;*/
+    background-color:white;
+    position: fixed;
+    top:70px;
+    color: black;
+}
+.Topbar{
+    width: 100%;
+    height:70px;
+   /* background-color:#000c7d;*/
+    background-color:#0057a8;
+    position: fixed;
+    top:0px;
+    color: white;
+}
+.Topbar a{
+    color: inherit;
+    text-decoration: none;
+}
+#center_topbar{
+    position: relative;
+    margin-top: 0;
+}
+#center_actionbar{
+    margin-top: 0;
+}
+#center_actionbar input[type="text"]{
+    float:right;
+    min-height:100%;
+    width: 136px;
+    height: 25px;
+    margin-top: 5px;
+    border: 1px solid #f8f6f6;
+    padding-right: 47px;
+    background-image:url("../img/triangle_search.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+}
+#center_actionbar select {
+    border-radius: 0;
+    min-height:100%;
+    height: 29px;
+    width: 185px;
+    margin-top: 5px;
+    background:white;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 100%;
+    border: 1px solid #f8f6f6;
+    padding-right: 47px;
+    background-image:url("../img/triangle_filter.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-appearance: none;
+}
+
+.logo{
+    width:auto;
+    float: left;
+}
+.logo img{
+    max-height: 70px;
+}
+#nav
+{
+    /* container */
+}
+#nav > a
+{
+    display: none;
+}
+#nav li
+{
+    position: relative;
+    line-height: 70px;
+}
+
+/* first level */
+
+#nav > ul
+{
+    float: right;
+    width:642px;
+    height: 100%;
+    /*height: 3.75em;*/
+}
+#nav > ul > li
+{
+    height: 100%;
+    float: left;
+    list-style: none;
+    list-style: none;
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+
+    padding: 0 5%;
+    line-height: 30px;
+    margin-bottom: 2px;
+    -webkit-transition: all .2s ease-in-out;
+    text-align: left;
+    text-transform: uppercase;
+    /*width: 53px;*/
+    border-right: 1px solid #fff;
+}
+#nav > ul > li:last-child{
+    border: none;
+    padding-right: 0;
+}
+.Title_section{
+    color: deeppink;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    min-height: 50px;
+    line-height: 50px;
+}
+#content_wrap{
+    margin-top: 4%;
+}
+
+/*----------------KIDS CUENTO------------*/
+.cuento_box{
+    width: 28%;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    min-height: 200px;
+    background-color: #0084ff;
+    color: white;
+}
+.cuento_box i.icon{
+    opacity: 1 !important;
+
+}
+.cuento_title{
+    width: 100%;
+    height: auto;
+    font-size: 21px;
+}
+.cuento_by{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+.cuento_age{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.cuento_image{
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+/*----------------KIDS VIDEO------------*/
+.video_box{
+    width: 28%;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    min-height: 200px;
+    background-image:url("../img/video_box.jpg") ;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+.cuento_box i.icon{
+    opacity: 1 !important;
+
+}
+.cuento_title{
+    width: 100%;
+    height: auto;
+    font-size: 21px;
+}
+.cuento_by{
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+.cuento_age{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.cuento_image{
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+/*------------------KIDS BASES--------------*/
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (min-width : 318px) and (max-width : 480px) {
+
+    #nav > a
+    {
+        margin-top: 0px;
+    }
+    #nav:not( :target ) > a:first-of-type,
+    #nav:target > a:last-of-type
+    {
+        display: block;
+    }
+
+    /* first level */
+
+    #nav > ul
+    {
+        background-color: #0057a8;
+        margin:0px;
+        padding: 0px;
+        height: auto;
+        display: none;
+        position: absolute;
+        left: -20px;
+        top:110px;
+        z-index:99999 !important;
+    }
+    #nav:target > ul
+    {
+        display: inline-block;
+    }
+    #nav > ul > li
+    {
+        width: 100%;
+        float: left;
+        display:block;
+    }
+
+}
+    /* Styles */
+    .footer{
+
+        background-size:cover;
+        background-position:center;
+
+    }
+    #center_actionbar input[type="text"]{
+
+        width: 30%;
+
+    }
+    #center_actionbar select {
+
+        width: 45%;
+
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+    /* Styles */
+    #nav > ul
+    {
+        float: right;
+        width:70%;
+        height: 100%;
+        /*height: 3.75em;*/
+    }
+}
