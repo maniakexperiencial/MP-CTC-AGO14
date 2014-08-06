@@ -6,13 +6,13 @@
     <title>Laravel PHP Framework</title>
 
     {{ HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array('media' => 'screen')) }}
-    {{ HTML::style('css/style.css') }}
+
 
 
     {{ HTML::style('css/semantic.min.css') }}
     {{ HTML::style('css/semantic.css') }}
 
-
+    {{ HTML::style('css/style.css') }}
 
     {{ HTML::script('js/semantic.js', array('media' => 'screen')) }}
     {{ HTML::script('js/semantic.min.js', array('media' => 'screen')) }}
@@ -66,7 +66,7 @@
                             <a href="{{ URL::route('kids') }}">Niños</a>
                         </li>
                         <li>
-                            <a href="{{ URL::route('kids') }}">Papás</a>
+                            <a href="{{ URL::route('papas') }}">Papás</a>
                         </li>
                         <li>
                             <a href="{{ URL::route('doctores') }}">Médicos</a>
@@ -77,6 +77,7 @@
                     </ul>
                 </nav>
              </div>
+
 
         </div>
 
@@ -102,10 +103,13 @@
         <div class="row">
             <div class="four wide column">
                 <div class="Title_section"></div>
-                @yield('left_menu')
+                <a href="{{ URL::route('premiacion_ganadores') }}"><img src="{{ URL::to('/img/ganadores.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_galeria') }}"><img src="{{ URL::to('/img/galeria.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_videos') }}"><img src="{{ URL::to('/img/video.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_resumen') }}"><img src="{{ URL::to('/img/resumen.jpg') }}"></a>
 
             </div>
-            <div class="twelve wide column">
+            <div class="twelve wide column ">
                    <div class="Title_section">@yield('title_section')</div>
                     @yield('content_center')
             </div>

@@ -69,10 +69,10 @@
                             <a href="{{ URL::route('papas') }}">Papás</a>
                         </li>
                         <li>
-                            <a href="#">Médicos</a>
+                            <a href="{{ URL::route('doctores') }}">Médicos</a>
                         </li>
                         <li>
-                            <a href="#">Premiación</a>
+                            <a href="{{ URL::route('premiacion') }}">Premiación</a>
                         </li>
                     </ul>
                 </nav>

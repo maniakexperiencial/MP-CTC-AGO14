@@ -15,20 +15,6 @@ Route::get('/',array('as'=>'root', function()
     return View::make('index');
 }));
 
-/*PAPAS*/
-Route::get("papas",array('as'=>'papas',function(){
-    return View::make('papas.index');
-}));
-Route::get("papas/historias",array('as'=>'papas_historias',function(){
-    return View::make('papas.historias');
-}));
-Route::get("papas/bases",array('as'=>'papas_bases',function(){
-    return View::make('papas.bases');
-}));
-Route::get("papas/videos",array('as'=>'papas_videos',function(){
-    return View::make('papas.videos');
-}));
-
 /*KIDS*/
 Route::get("kids",array('as'=>'kids',function(){
     return View::make('kids.index');
@@ -45,3 +31,49 @@ Route::get("kids/bases",array('as'=>'kids_bases',function(){
     return View::make('kids.bases');
 }));
 
+/*PAPAS*/
+Route::get("papas",array('as'=>'papas',function(){
+    return View::make('papas.index');
+}));
+Route::get("papas/historias",array('as'=>'papas_historias',function(){
+    return View::make('papas.historias');
+}));
+Route::get("papas/bases",array('as'=>'papas_bases',function(){
+    return View::make('papas.bases');
+}));
+Route::get("papas/videos",array('as'=>'papas_videos',function(){
+    return View::make('papas.videos');
+}));
+
+
+/*DOCTORS*/
+Route::get("doctores",array('as'=>'doctores',function(){
+    return View::make('doctores.index');
+}));
+Route::get("doctores/historias",array('as'=>'doctores_historias',function(){
+    return View::make('doctores.historias');
+}));
+Route::get("doctores/bases",array('as'=>'doctores_bases',function(){
+    return View::make('doctores.bases');
+}));
+Route::get("doctores/videos",array('as'=>'doctores_videos',function(){
+    return View::make('doctores.videos');
+}));
+
+
+/*PREMIACION*/
+Route::get("premiacion",array('as'=>'premiacion',function(){
+    return View::make('premiacion.index');
+}));
+Route::get("premiacion/ganadores",array('as'=>'premiacion_ganadores',function(){
+    return View::make('premiacion.ganadores');
+}));
+Route::get("premiacion/galeria",array('as'=>'premiacion_galeria',function(){
+    return View::make('premiacion.galeria');
+}));
+Route::get("premiacion/videos",array('as'=>'premiacion_videos',function(){
+    return View::make('premiacion.videos');
+}));
+Route::get("premiacion/resumen",array('as'=>'premiacion_resumen',function(){
+    return View::make('premiacion.resumen');
+}));

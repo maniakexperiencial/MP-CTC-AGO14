@@ -1,17 +1,14 @@
-@extends('papas.layout')
+@extends('premiacion.layout')
 
 
 
 
 
 @section('title_section')
-Bases
+Galeria
 @stop
 
 @section('content_center')
-<div class="center_text">
-<img src="{{ URL::to('/img/base1.png') }}">
-</div>
 
 
 @stop
@@ -23,7 +20,7 @@ Bases
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        var bg="{{ URL::to('/img/background-papas_inside.jpg') }}";
+     var bg="{{ URL::to('/img/background-premiacion_inside.jpg') }}";
      $(window).height();
 
         $('body').css({'background-image': 'url('+bg+')'});

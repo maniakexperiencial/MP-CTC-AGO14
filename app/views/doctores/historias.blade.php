@@ -1,5 +1,4 @@
-@extends('papas.layout')
-
+@extends('doctores.layout')
 
 
 
@@ -53,7 +52,7 @@ Historias
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        var bg="{{ URL::to('/img/background-papas_inside.jpg') }}";
+        var bg="{{ URL::to('/img/background-doctores_inside.jpg') }}";
         var bgcontent="{{ URL::to('/img/pizarron2.png') }}";
      $(window).height();
 

@@ -210,9 +210,18 @@ body{
     padding: 10px;
     min-height: 200px;
     background-image:url("../img/video_box.jpg") ;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     color: white;
+}
+.video_title{
+    font-size: 21px;
+}
+.video_by{
+    color: #90a3b5;
+}
+.video_age{
+    color: #90a3b5;
 }
 .cuento_box i.icon{
     opacity: 1 !important;
@@ -244,7 +253,90 @@ body{
 /*------------------KIDS BASES--------------*/
 
 
+/*-------------------PAPAS HISTORIAS---------*/
+.historia_box{
+    width: 28%;
+    float: left;
+    margin-left: 14%;
+    margin-top: 1%;
+    padding: 10px;
+    min-height: 200px;
+    background-image:url("../img/historia.png") ;
+    background-size: cover;
+    background-position: center center;
+    color: black;
+}
+#pizarron_historias{
+    background-size: 100% 100%;
+    padding: 6% 0%;
+    padding-bottom: 8%;
+    background-repeat: no-repeat;
+    background-position: top left;
 
+}
+.historia_title{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 36px;
+
+}
+.historia_info{
+    width: 100%;
+    text-align:left;
+    font-size: 21px;
+
+}
+/*PREMIACION*/
+
+.ganador_box{
+    width: 25%;
+    float: left;
+    margin-left:2%;
+    padding: 10px;
+    min-height: 200px;
+    background-size:100% 100%;
+    background-position: center center;
+    color:#2b9fa4;
+}
+.ganador_title{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 21px;
+}
+.ganador_info{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+.ganador_age{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+.ganador_1{
+    background-image:url("../img/ganador1.png") ;
+}
+.ganador_2{
+    background-image:url("../img/ganador2.png") ;
+}
+.ganador_3{
+    background-image:url("../img/ganador3.png") ;
+}
+.ganador_4{
+    background-image:url("../img/ganador4.png") ;
+}
+.ganador_5{
+    background-image:url("../img/ganador5.png") ;
+}
+.ganador_6{
+    background-image:url("../img/ganador6.png") ;
+}
 
 
 
@@ -305,6 +397,18 @@ body{
 
     }
 
+    .cuento_box{
+      width:80%;
+    }
+    .historia_box{
+        width:60%;
+    }
+    .video_box{
+        width:80%;
+    }
+    .ganador_box{
+        width:80%;
+    }
 }
 /* iPads (portrait and landscape) ----------- */
 @media all and (min-width : 481px) and (max-width :770px) {

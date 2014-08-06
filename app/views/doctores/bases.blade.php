@@ -1,4 +1,4 @@
-@extends('papas.layout')
+@extends('doctores.layout')
 
 
 
@@ -23,7 +23,7 @@ Bases
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        var bg="{{ URL::to('/img/background-papas_inside.jpg') }}";
+        var bg="{{ URL::to('/img/background-doctores_inside.jpg') }}";
      $(window).height();
 
         $('body').css({'background-image': 'url('+bg+')'});
