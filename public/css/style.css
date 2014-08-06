@@ -214,6 +214,7 @@ body{
     margin: 5px;
     padding: 10px;
     min-height: 200px;
+    min-width: 214px;
     background-color: #0084ff;
     color: white;
     word-wrap:break-word;
