@@ -56,8 +56,8 @@
             <div class="column" id="center_topbar">
                 <div class="logo"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
                 <nav id="nav" role="navigation">
-                    <a href="#nav" title="Show navigation">Show navigation</a>
-                    <a href="#" title="Hide navigation">Hide navigation</a>
+                    <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                    <a href="#" title="Hide navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
                     <ul id="">
                         <li>
                             <a href="{{ URL::route('root') }}">Home</a>
@@ -66,7 +66,7 @@
                             <a href="{{ URL::route('kids') }}">Niños</a>
                         </li>
                         <li>
-                            <a href="#">Papás</a>
+                            <a href="{{ URL::route('papas') }}">Papás</a>
                         </li>
                         <li>
                             <a href="#">Médicos</a>

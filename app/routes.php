@@ -15,6 +15,21 @@ Route::get('/',array('as'=>'root', function()
     return View::make('index');
 }));
 
+/*PAPAS*/
+Route::get("papas",array('as'=>'papas',function(){
+    return View::make('papas.index');
+}));
+Route::get("papas/historias",array('as'=>'papas_historias',function(){
+    return View::make('papas.historias');
+}));
+Route::get("papas/bases",array('as'=>'papas_bases',function(){
+    return View::make('papas.bases');
+}));
+Route::get("papas/videos",array('as'=>'papas_videos',function(){
+    return View::make('papas.videos');
+}));
+
+/*KIDS*/
 Route::get("kids",array('as'=>'kids',function(){
     return View::make('kids.index');
 }));
