@@ -252,7 +252,8 @@ body{
     float: left;
     margin: 5px;
     padding: 10px;
-    min-height: 200px;
+    width: 205px;
+    height: 150px;
     background-image:url("../img/video_box.jpg") ;
     background-size: 100% 100%;
     background-position: center center;
@@ -341,7 +342,7 @@ body{
     margin-left:2%;
     padding: 10px;
     min-width: 234px;
-    min-height: 250px;
+    min-height: 297px;
     background-size:100% 100%;
     background-position: center center;
     color:#2b9fa4;
@@ -351,7 +352,7 @@ body{
     width: 60%;
     margin: auto;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 21px;
 }
 .ganador_info{
