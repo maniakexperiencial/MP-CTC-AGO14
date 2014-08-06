@@ -339,7 +339,8 @@ body{
     float: left;
     margin-left:2%;
     padding: 10px;
-    min-height: 200px;
+    min-width: 234px;
+    min-height: 250px;
     background-size:100% 100%;
     background-position: center center;
     color:#2b9fa4;
