@@ -214,7 +214,8 @@ body{
     margin: 5px;
     padding: 10px;
     min-height: 200px;
-    min-width: 214px;
+    /*min-width: 214px;*/
+    min-width: 191px;
     background-color: #0084ff;
     color: white;
     word-wrap:break-word;
@@ -341,8 +342,10 @@ body{
     float: left;
     margin-left:2%;
     padding: 10px;
-    min-width: 234px;
-    min-height: 297px;
+    /*min-width: 234px;
+    min-height: 297px;*/
+    width: 234px;
+    height:297px;
     background-size:100% 100%;
     background-position: center center;
     color:#2b9fa4;
@@ -391,7 +394,13 @@ body{
 
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (min-width : 318px) and (max-width : 480px) {
-
+    .ganador_box{
+        width: 189px;
+        height: 240px;
+    }
+    .ganador_title{
+        margin-top: 20%;
+    }
     #nav > a
     {
         margin-top: 0px;
@@ -454,9 +463,7 @@ body{
     .video_box{
         width:80%;
     }
-    .ganador_box{
-        width:80%;
-    }
+
 }
 /* iPads (portrait and landscape) ----------- */
 @media all and (min-width : 481px) and (max-width :770px) {

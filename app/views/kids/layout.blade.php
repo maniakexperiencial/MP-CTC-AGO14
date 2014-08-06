@@ -136,6 +136,7 @@
     $(document).ready(function(){
         if ($("body").height() > $(window).height()) {
             $('.footer').css('position','relative');
+
         }
         $(window).resize(function () { /* do something */
             if ($("body").height() > $(window).height()) {
