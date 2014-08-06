@@ -21,6 +21,10 @@ a, img {
     border:none;
     outline:none
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 select::-ms-expand {
     display: none;
 }
@@ -58,7 +62,10 @@ body{
     bottom: 0px;
     margin-top: 10px;
     min-height: 50px;
-    height:50px;
+    color: white;
+}
+.text_right{
+    text-align: right !important;
 }
 .Action_bar{
     width: 100%;

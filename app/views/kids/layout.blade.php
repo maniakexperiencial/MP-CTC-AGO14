@@ -27,6 +27,7 @@
 
 </head>
 <body id="main">
+
 <!--<nav class="ui menu">
     <h3 class="header item">Title</h3>
     <a class="active item">Home</a>
@@ -122,11 +123,31 @@
 </div>
 <div class="footer">
     <div class="ui one column page grid">
-        <div class="column" >
-            contactanos
+        <div class="column text_right" >
+            <a href="#">Contáctanos</a>
          </div>
      </div>
 </div>
 @yield('javacode')
+
+<script type="text/javascript">
+
+    // Running the code when the document is ready
+    $(document).ready(function(){
+        if ($("body").height() > $(window).height()) {
+            $('.footer').css('position','relative');
+        }
+        $(window).resize(function () { /* do something */
+            if ($("body").height() > $(window).height()) {
+                $('.footer').css('position','relative');
+            }else{
+                $('.footer').css('position','absolute');
+            }
+        });
+
+    });
+
+</script>
+
 </body>
 </html>

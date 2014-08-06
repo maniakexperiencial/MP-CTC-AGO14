@@ -90,6 +90,8 @@ Cuentos
 
     // Running the code when the document is ready
     $(document).ready(function(){
+
+
      var bg="{{ URL::to('/img/background-kids_cuento1.jpg') }}";
      $(window).height();
 
