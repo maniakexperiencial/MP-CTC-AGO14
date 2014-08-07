@@ -102,14 +102,19 @@
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
-            <div class="four wide column">
-                <div class="Title_section"></div>
+            <div class="three wide column">
+                <div class="extra_sidebar">
+                    @yield('top_sidebar')
+
+                </div>
                 <a href="{{ URL::route('papas_historias') }}"><img src="{{ URL::to('/img/historias.jpg') }}"></a>
                 <a href="{{ URL::route('papas_videos') }}"><img src="{{ URL::to('/img/video.jpg') }}"></a>
                 <a href="{{ URL::route('papas_bases') }}"><img src="{{ URL::to('/img/bases.jpg') }}"></a>
 
+                @yield('bottom_sidebar')
+
             </div>
-            <div class="twelve wide column ">
+            <div class="thirteen wide column ">
                    <div class="Title_section">@yield('title_section')</div>
                     @yield('content_center')
             </div>

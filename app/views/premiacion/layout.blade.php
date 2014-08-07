@@ -99,18 +99,26 @@
 </header>
 
 <div class="ui one column page grid">
+
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
-            <div class="four wide column">
-                <div class="Title_section"></div>
+
+            <div class="three wide column">
+
+                    <div class="extra_sidebar">
+                        @yield('top_sidebar')
+
+                    </div>
                 <a href="{{ URL::route('premiacion_ganadores') }}"><img src="{{ URL::to('/img/ganadores.jpg') }}"></a>
                 <a href="{{ URL::route('premiacion_galeria') }}"><img src="{{ URL::to('/img/galeria.jpg') }}"></a>
                 <a href="{{ URL::route('premiacion_videos') }}"><img src="{{ URL::to('/img/video.jpg') }}"></a>
                 <a href="{{ URL::route('premiacion_resumen') }}"><img src="{{ URL::to('/img/resumen.jpg') }}"></a>
+                <!--<img class="imagen_absoluta" src="{{ URL::to('/img/copa.png') }}">-->
+                @yield('bottom_sidebar')
 
             </div>
-            <div class="twelve wide column ">
+            <div class="thirteen wide column ">
                    <div class="Title_section">@yield('title_section')</div>
                     @yield('content_center')
             </div>

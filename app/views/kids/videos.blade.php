@@ -1,11 +1,17 @@
 @extends('kids.layout')
 
-
+@section('top_sidebar')
+<img  src="{{ URL::to('/img/sol.png') }}">
+@stop
+@section('bottom_sidebar')
+<img  src="{{ URL::to('/img/kid.png') }}">
+@stop
 
 
 
 @section('title_section')
 Videos
+<img class="papalote" src="{{ URL::to('/img/papalote.png') }}">
 @stop
 
 @section('content_center')

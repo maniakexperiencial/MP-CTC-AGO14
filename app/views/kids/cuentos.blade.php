@@ -1,5 +1,13 @@
 @extends('kids.layout')
 
+@section('top_sidebar')
+<img  src="{{ URL::to('/img/sol.png') }}">
+@stop
+@section('bottom_sidebar')
+<img  src="{{ URL::to('/img/kid.png') }}">
+@stop
+
+
 
 @section('left_menu')
 <a href="{{ URL::route('kids_cuentos') }}"><img src="{{ URL::to('/img/cuentos.jpg') }}"></a>
@@ -10,6 +18,7 @@
 
 @section('title_section')
 Cuentos
+<img class="papalote" src="{{ URL::to('/img/papalote.png') }}">
 @stop
 
 @section('content_center')

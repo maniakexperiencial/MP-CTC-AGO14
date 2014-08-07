@@ -132,7 +132,8 @@ body{
     float: left;
 }
 .logo img{
-    max-height: 70px;
+    max-height: 65px;
+    margin-top: 4px;
 }
 #nav
 {
@@ -146,6 +147,7 @@ body{
 {
     position: relative;
     line-height: 70px;
+    font-size: 12px;
 }
 
 /* first level */
@@ -153,7 +155,8 @@ body{
 #nav > ul
 {
     float: right;
-    width:642px;
+    /*width:642px;*/
+    width:449px;
     height: 100%;
     /*height: 3.75em;*/
 }
@@ -181,6 +184,8 @@ body{
     padding-right: 0;
 }
 .Title_section{
+    position: relative;
+    z-index: -1;
     color: deeppink;
     font-family: Mandingo;
     text-shadow:
@@ -192,11 +197,24 @@ body{
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    min-height: 50px;
-    line-height: 50px;
+    /*min-height: 50px;
+        line-height: 150px;                */
+    min-height: 100px;
+    line-height: 100px;
+}
+.papalote{
+    position: absolute;
+    z-index: -1;
+    top: 3%;
+    right:-100px;
+}
+.extra_sidebar{
+    min-height:100px;
+    max-height: 100px;
 }
 #content_wrap{
-    margin-top: 4%;
+    /*margin-top: 4%;*/
+    margin-top: 0%;
 }
 /*-------MENU MOBIL-----*/
 .toggle_menu{
@@ -252,6 +270,8 @@ body{
     width: 28%;
     float: left;
     margin: 5px;
+    margin-left: 17%;
+    margin-bottom: 10%;
     padding: 10px;
     width: 205px;
     height: 150px;
@@ -302,6 +322,7 @@ body{
 /*-------------------PAPAS HISTORIAS---------*/
 .historia_box{
     width: 28%;
+    min-width: 148px;
     float: left;
     margin-left: 14%;
     margin-top: 1%;
@@ -336,16 +357,20 @@ body{
 
 }
 /*PREMIACION*/
-
+.imagen_absoluta{
+    position: fixed;
+    margin-top:500px;
+}
 .ganador_box{
     width: 25%;
     float: left;
-    margin-left:2%;
+    margin-left:6.25%;
+    margin-bottom: 6.25%;
     padding: 10px;
     /*min-width: 234px;
     min-height: 297px;*/
-    width: 234px;
-    height:297px;
+    width: 206px;
+    height:261px;
     background-size:100% 100%;
     background-position: center center;
     color:#2b9fa4;
@@ -393,7 +418,8 @@ body{
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media all and (min-width : 318px) and (max-width : 480px) {
+/*--480 en lugar de 614--*/
+@media all and (min-width : 318px) and (max-width : 614px) {
     .ganador_box{
         width: 189px;
         height: 240px;
@@ -461,12 +487,15 @@ body{
         width:60%;
     }
     .video_box{
-        width:80%;
+        /*width:80%;*/
+        margin-left: 5%;
     }
+
 
 }
 /* iPads (portrait and landscape) ----------- */
-@media all and (min-width : 481px) and (max-width :770px) {
+/*--481 en lugar de 615--*/
+@media all and (min-width : 615px) and (max-width :836px) {
     /* Styles */
     #nav > ul
     {
@@ -477,16 +506,14 @@ body{
     }
     #nav > ul > li
     {
-        padding: 0 1%;
+        /*padding: 0 1%;*/
         /*height: 3.75em;*/
     }
 
 
+
 }
-
-
-@media all and (min-width : 771px) and (max-width : 1080px) {
-    /* Styles */
+@media all and (min-width : 837px) and (max-width : 857px) {
     #nav > ul
     {
         float: right;
@@ -494,11 +521,24 @@ body{
         height: 100%;
         /*height: 3.75em;*/
     }
+}
+
+@media all and (min-width : 857px) and (max-width : 1080px) {
+    /* Styles */
+    #nav > ul
+    {
+        float: right;
+        width:50% !important;
+        height: 100%;
+        /*height: 3.75em;*/
+    }
     #nav > ul > li
     {
-        padding: 0 2%;
+        padding: 0 4%;
         /*height: 3.75em;*/
     }
 
-
+    .video_box{
+        margin-left: 10%;
+    }
 }

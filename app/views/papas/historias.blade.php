@@ -1,11 +1,17 @@
 @extends('papas.layout')
 
 
-
+@section('top_sidebar')
+<img  src="{{ URL::to('/img/sol.png') }}">
+@stop
+@section('bottom_sidebar')
+<img  src="{{ URL::to('/img/papas.png') }}">
+@stop
 
 
 @section('title_section')
 Historias
+<img class="papalote" src="{{ URL::to('/img/papalote.png') }}">
 @stop
 
 @section('content_center')
