@@ -44,7 +44,7 @@ Route::get("papas/bases",array('as'=>'papas_bases',function(){
 Route::get("papas/videos",array('as'=>'papas_videos',function(){
     return View::make('papas.videos');
 }));
-
+Route::get('nueva', function(){ Cache::flush(); });
 
 /*DOCTORS*/
 Route::get("doctores",array('as'=>'doctores',function(){

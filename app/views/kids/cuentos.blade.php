@@ -23,7 +23,7 @@ Cuentos
 
 @section('content_center')
     <div class="cuento_box">
-        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_title">La Casa Azul123</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
         <div class="cuento_image"></div>

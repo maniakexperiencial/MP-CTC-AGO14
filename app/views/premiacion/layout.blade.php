@@ -98,7 +98,7 @@
     </div>
 </header>
 
-<div class="ui one column page grid">
+<div class="ui one column page grid" >
 
     <div class="column" id="content_wrap">
         <div class="ui grid">
