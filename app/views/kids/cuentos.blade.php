@@ -4,7 +4,7 @@
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
 @section('bottom_sidebar')
-<img  src="{{ URL::to('/img/kid.png') }}">
+<img class="invisible"  src="{{ URL::to('/img/kid.png') }}">
 @stop
 
 
@@ -103,7 +103,8 @@ Cuentos
 
      var bg="{{ URL::to('/img/background-kids_cuento1.jpg') }}";
      $(window).height();
-
+        var extra="{{ URL::to('/img/kid.png') }}";
+        $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
 
     });

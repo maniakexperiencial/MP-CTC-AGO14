@@ -102,7 +102,7 @@
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
-            <div class="three wide column">
+            <div class="three wide column" id="Left_bar">
                 <div class="extra_sidebar">
                     @yield('top_sidebar')
 

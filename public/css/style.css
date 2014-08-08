@@ -35,8 +35,11 @@ html,body{
     font-family: 'Opensansreg';
     height:auto;
 }
+.invisible{
+    visibility: hidden;
+}
 body{
-    margin-top: 110px;
+    padding-top: 110px;
     background-image:url("../img/background-home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,9 +51,16 @@ body{
 .column img{
     max-width: 100%;
 }
+
 .center_text{
     width: 100%;
     text-align: center !important;
+}
+#Left_bar{
+    z-index: 90!important;
+}
+#Left_bar img{
+    float:left;
 }
 .footer{
     /*background-image: url("../img/footer.png");*/
@@ -83,6 +93,7 @@ body{
     background-color:#0057a8;
     position: fixed;
     top:0px;
+    z-index: 9999;
     color: white;
 }
 .Topbar a{
@@ -270,11 +281,11 @@ body{
     width: 28%;
     float: left;
     margin: 5px;
-    margin-left: 17%;
+    margin-left: 10%;
     margin-bottom: 10%;
     padding: 10px;
-    width: 205px;
-    height: 150px;
+    width: 300px;
+    height: 221px;
     background-image:url("../img/video_box.jpg") ;
     background-size: 100% 100%;
     background-position: center center;
@@ -414,6 +425,51 @@ body{
     background-image:url("../img/ganador6.png") ;
 }
 
+/*GALERIA*/
+.content_gallery{
+    position: relative;
+
+    width:100%;
+    height:auto;
+    padding: 15% 0px ;
+    background-color: rgba(152,195,233,.7);
+
+}
+.code_wrap{
+    position: absolute;
+    right: 5%;
+    top:5%;
+    min-width: 100px;
+    color: white;
+    text-align: center;
+    width:20%;
+    height:5%;
+
+}
+.code_wrap input[type="text"]{
+    border:none;
+    width: 100%;
+    height: 90%;
+    margin-top: 3%;
+    background-color: #98c3e9;
+    color: white;
+    text-align: center;
+
+}
+#preview {
+
+}
+#preview-coverflow .cover {
+    cursor:		pointer;
+    width:		320px;
+    height:		240px;
+}
+#preview-coverflow .cover {
+    z-index: 1;
+}
+
+
+
 
 
 
@@ -489,6 +545,17 @@ body{
     .video_box{
         /*width:80%;*/
         margin-left: 5%;
+        width: 205px;
+        height: 150px;
+    }
+    #preview-coverflow .cover img{
+        max-width: 100%;
+    }
+    .content_gallery{
+
+        padding: 0% 0px ;
+
+
     }
 
 
@@ -509,6 +576,7 @@ body{
         /*padding: 0 1%;*/
         /*height: 3.75em;*/
     }
+
 
 
 
@@ -538,7 +606,14 @@ body{
         /*height: 3.75em;*/
     }
 
+    /*.video_box{
+        margin-left: 10%;
+    }*/
     .video_box{
+        /*width:80%;*/
+        width: 205px;
+        height: 150px;
         margin-left: 10%;
     }
 }
+

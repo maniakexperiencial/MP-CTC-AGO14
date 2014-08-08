@@ -98,22 +98,22 @@
     </div>
 </header>
 
-<div class="ui one column page grid" >
+<div class="ui one column page grid">
 
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
 
-            <div class="three wide column">
+            <div class="three wide column" id="Left_bar">
 
                     <div class="extra_sidebar">
                         @yield('top_sidebar')
 
                     </div>
-                <a href="{{ URL::route('premiacion_ganadores') }}"><img src="{{ URL::to('/img/ganadores.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_galeria') }}"><img src="{{ URL::to('/img/galeria.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_videos') }}"><img src="{{ URL::to('/img/video.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_resumen') }}"><img src="{{ URL::to('/img/resumen.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_ganadores') }}"><img border="0" src="{{ URL::to('/img/ganadores.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_galeria') }}"><img border="0" src="{{ URL::to('/img/galeria.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_videos') }}"><img  border="0" src="{{ URL::to('/img/video.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_resumen') }}"><img border="0" src="{{ URL::to('/img/resumen.jpg') }}"></a>
                 <!--<img class="imagen_absoluta" src="{{ URL::to('/img/copa.png') }}">-->
                 @yield('bottom_sidebar')
 
@@ -142,6 +142,7 @@
 
     // Running the code when the document is ready
     $(document).ready(function(){
+
         if ($("body").height() > $(window).height()) {
             $('.footer').css('position','relative');
         }

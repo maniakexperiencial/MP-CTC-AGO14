@@ -5,7 +5,7 @@
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
 @section('bottom_sidebar')
-<img  src="{{ URL::to('/img/papas.png') }}">
+<img class="invisible"  src="{{ URL::to('/img/papas.png') }}">
 @stop
 
 
@@ -62,7 +62,8 @@ Historias
         var bg="{{ URL::to('/img/background-papas_inside.jpg') }}";
         var bgcontent="{{ URL::to('/img/pizarron2.png') }}";
      $(window).height();
-
+        var extra="{{ URL::to('/img/papas.png') }}";
+        $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'15%'});
         $('body').css({'background-image': 'url('+bg+')'});
         $('#pizarron_historias').css({'background-image': 'url('+bgcontent+')'});
 
