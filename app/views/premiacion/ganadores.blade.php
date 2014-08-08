@@ -4,7 +4,7 @@
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
 @section('bottom_sidebar')
-<img  src="{{ URL::to('/img/copa.png') }}">
+<img   src="{{ URL::to('/img/copa.png') }}">
 @stop
 
 
@@ -51,9 +51,11 @@ Ganadores
     // Running the code when the document is ready
     $(document).ready(function(){
         var bg="{{ URL::to('/img/background-premiacion_inside.jpg') }}";
+        var extra="{{ URL::to('/img/copa.png') }}";
      $(window).height();
 
         $('body').css({'background-image': 'url('+bg+')'});
+        //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'bottom left','background-repeat':'no-repeat'});
 
     });
 
