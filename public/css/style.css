@@ -34,6 +34,7 @@ html,body{
     min-height: 100%;
     font-family: 'Opensansreg';
     height:auto;
+
 }
 .invisible{
     visibility: hidden;
@@ -45,8 +46,46 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-
+    overflow-x: hidden;
 }
+@keyframes MOVE-BG{
+    from {
+        background-position: 1000% 5%;
+    }
+
+    to {
+        background-position: 5% 5%;
+    }
+}
+@-webkit-keyframes MOVE-BG {
+    from {
+        background-position: 1000% 5%;
+    }
+
+    to {
+        background-position: 5% 5%;
+    }
+}
+.bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90%;
+    background: url(../img/nubes_bg.png) 0% 0% repeat;
+    background-size: contain;
+    z-index: -3;
+
+    -webkit-animation-name: MOVE-BG;
+    animation-name: MOVE-BG;
+    animation-duration: 100s;
+    timing-function: linear;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
 
 .column img{
     max-width: 100%;
@@ -85,6 +124,7 @@ body{
     position: fixed;
     top:70px;
     color: black;
+    z-index: 99;
 }
 .Topbar{
     width: 100%;
@@ -136,6 +176,9 @@ body{
     background-repeat: no-repeat;
     background-position: right center;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 
 .logo{

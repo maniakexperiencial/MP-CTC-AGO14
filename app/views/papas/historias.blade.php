@@ -1,6 +1,11 @@
 @extends('papas.layout')
 
 
+@section('bg_move')
+<div class="bg"></div>
+@stop
+
+
 @section('top_sidebar')
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
@@ -59,7 +64,7 @@ Historias
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        var bg="{{ URL::to('/img/background-papas_inside.jpg') }}";
+        var bg="{{ URL::to('/img/bg_land.jpg') }}";
         var bgcontent="{{ URL::to('/img/pizarron2.png') }}";
      $(window).height();
         var extra="{{ URL::to('/img/papas.png') }}";

@@ -1,5 +1,12 @@
 @extends('premiacion.layout')
 
+
+@section('bg_move')
+<div class="bg"></div>
+@stop
+
+
+
 @section('top_sidebar')
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
@@ -30,7 +37,7 @@ Resumen
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        var bg="{{ URL::to('/img/background-premiacion_inside.jpg') }}";
+        var bg="{{ URL::to('/img/bg_land.jpg') }}";
         var extra="{{ URL::to('/img/copa.png') }}";
      $(window).height();
         $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'10%'});

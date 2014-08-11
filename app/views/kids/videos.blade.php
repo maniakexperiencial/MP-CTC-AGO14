@@ -9,6 +9,10 @@
 <!-- Optionally add helpers - button, thumbnail and/or media -->
 @stop
 
+@section('bg_move')
+<div class="bg"></div>
+@stop
+
 
 @section('top_sidebar')
 <img  src="{{ URL::to('/img/sol.png') }}">
@@ -69,7 +73,7 @@ Videos
                 media : {}
             }
         });
-     var bg="{{ URL::to('/img/background-kids_cuento1.jpg') }}";
+     var bg="{{ URL::to('/img/bg_land.jpg') }}";
      $(window).height();
         var extra="{{ URL::to('/img/kid.png') }}";
         $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});

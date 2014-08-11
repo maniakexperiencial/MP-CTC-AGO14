@@ -17,7 +17,7 @@
 
     {{ HTML::script('js/semantic.js', array('media' => 'screen')) }}
     {{ HTML::script('js/semantic.min.js', array('media' => 'screen')) }}
-
+    {{ HTML::script('js/jQueryRotate3.js', array('media' => 'screen')) }}
 
 
 
@@ -27,7 +27,7 @@
 
 </head>
 <body id="main">
-
+@yield('bg_move')
 <!--<nav class="ui menu">
     <h3 class="header item">Title</h3>
     <a class="active item">Home</a>
@@ -108,9 +108,9 @@
                     @yield('top_sidebar')
 
                 </div>
-                <a href="{{ URL::route('kids_cuentos') }}"><img src="{{ URL::to('/img/cuentos.jpg') }}"></a>
-                <a href="{{ URL::route('kids_videos') }}"><img src="{{ URL::to('/img/video.jpg') }}"></a>
-                <a href="{{ URL::route('kids_bases') }}"><img src="{{ URL::to('/img/bases.jpg') }}"></a>
+                <a href="{{ URL::route('kids_cuentos') }}"><img data-alt-src="{{ URL::to('/img/hovers/cuentos.png') }}" src="{{ URL::to('/img/cuentos.jpg') }}"></a>
+                <a href="{{ URL::route('kids_videos') }}"><img data-alt-src="{{ URL::to('/img/hovers/video.png') }}" src="{{ URL::to('/img/video.jpg') }}"></a>
+                <a href="{{ URL::route('kids_bases') }}"><img data-alt-src="{{ URL::to('/img/hovers/bases.png') }}" src="{{ URL::to('/img/bases.jpg') }}"></a>
 
                 @yield('bottom_sidebar')
 
@@ -150,6 +150,52 @@
                 $('.footer').css('position','absolute');
             }
         });
+
+        ////PAPALOTE LOOP//
+        function loop_papalote() {
+
+            $('.papalote').animate ({
+                right: '+=20'
+            }, 300, 'linear', function() {
+                $('.papalote').animate ({
+                    top: '+=20'
+                }, 300, 'linear', function() {
+                    $('.papalote').animate ({
+                        right: '-=20'
+                    }, 300, 'linear', function() {
+
+                        $('.papalote').animate ({
+                            top: '-=20'
+                        }, 300, 'linear', function() {
+                            loop_papalote();
+                        });
+                    });
+                });
+            });
+        }
+        loop_papalote();
+
+        ///SOL LOOP///
+        function loop_sol() {
+            var angle = 0;
+            setInterval(function(){
+                angle+=3;
+                $(".extra_sidebar img").rotate(angle);
+            },50);
+        }
+        loop_sol();
+
+
+        //HOVER EVENTS//
+        var sourceSwap = function () {
+            var $this = $(this);
+            var newSource = $this.data('alt-src');
+            $this.data('alt-src', $this.attr('src'));
+            $this.attr('src', newSource);
+        }
+
+
+        $('#Left_bar img').hover(sourceSwap, sourceSwap);
 
     });
 

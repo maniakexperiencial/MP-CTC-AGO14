@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
 
     {{ HTML::script('js/semantic.js', array('media' => 'screen')) }}
     {{ HTML::script('js/semantic.min.js', array('media' => 'screen')) }}
+    {{ HTML::script('js/jQueryRotate3.js', array('media' => 'screen')) }}
 
 
 
@@ -27,6 +28,8 @@
 
 </head>
 <body id="main">
+@yield('bg_move')
+
 <!--<nav class="ui menu">
     <h3 class="header item">Title</h3>
     <a class="active item">Home</a>
@@ -110,10 +113,10 @@
                         @yield('top_sidebar')
 
                     </div>
-                <a href="{{ URL::route('premiacion_ganadores') }}"><img border="0" src="{{ URL::to('/img/ganadores.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_galeria') }}"><img border="0" src="{{ URL::to('/img/galeria.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_videos') }}"><img  border="0" src="{{ URL::to('/img/video.jpg') }}"></a>
-                <a href="{{ URL::route('premiacion_resumen') }}"><img border="0" src="{{ URL::to('/img/resumen.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_ganadores') }}"><img data-alt-src="{{ URL::to('/img/hovers/ganadores.png') }}" border="0" src="{{ URL::to('/img/ganadores.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_galeria') }}"><img data-alt-src="{{ URL::to('/img/hovers/galeria.png') }}" border="0" src="{{ URL::to('/img/galeria.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_videos') }}"><img data-alt-src="{{ URL::to('/img/hovers/video.png') }}"  border="0" src="{{ URL::to('/img/video.jpg') }}"></a>
+                <a href="{{ URL::route('premiacion_resumen') }}"><img data-alt-src="{{ URL::to('/img/hovers/resumen.png') }}" border="0" src="{{ URL::to('/img/resumen.jpg') }}"></a>
                 <!--<img class="imagen_absoluta" src="{{ URL::to('/img/copa.png') }}">-->
                 @yield('bottom_sidebar')
 
@@ -142,9 +145,18 @@
 
     // Running the code when the document is ready
     $(document).ready(function(){
-
+        (function($) {
+            $.fn.hasScrollBar = function() {
+                return this.get(0).scrollHeight > this.height();
+            }
+        })(jQuery);
+        console.log($("#main").hasScrollBar());
         if ($("body").height() > $(window).height()) {
+
             $('.footer').css('position','relative');
+        }else{
+                //console.log($("body").height()+' '+ $(window).height());
+            $('.footer').css('position','absolute');
         }
         $(window).resize(function () { /* do something */
             if ($("body").height() > $(window).height()) {
@@ -153,6 +165,54 @@
                 $('.footer').css('position','absolute');
             }
         });
+
+        ////PAPALOTE LOOP//
+        function loop_papalote() {
+
+            $('.papalote').animate ({
+                right: '+=20'
+            }, 300, 'linear', function() {
+                $('.papalote').animate ({
+                    top: '+=20'
+                }, 300, 'linear', function() {
+                    $('.papalote').animate ({
+                        right: '-=20'
+                    }, 300, 'linear', function() {
+
+                        $('.papalote').animate ({
+                            top: '-=20'
+                        }, 300, 'linear', function() {
+                            loop_papalote();
+                        });
+                    });
+                });
+            });
+        }
+        loop_papalote();
+
+        ///SOL LOOP///
+        function loop_sol() {
+            var angle = 0;
+            setInterval(function(){
+                angle+=3;
+                $(".extra_sidebar img").rotate(angle);
+            },50);
+        }
+        loop_sol();
+
+
+        //HOVER EVENTS//
+        var sourceSwap = function () {
+            var $this = $(this);
+            var newSource = $this.data('alt-src');
+            $this.data('alt-src', $this.attr('src'));
+            $this.attr('src', newSource);
+        }
+
+
+            $('#Left_bar img').hover(sourceSwap, sourceSwap);
+
+
 
     });
 
