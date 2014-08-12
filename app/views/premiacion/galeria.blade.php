@@ -38,16 +38,20 @@ Galeria
     </div>
     <div id="preview">
     <div class="cover_flow_content" id="preview-coverflow" style="width:100%;min-height:100%;position:relative">
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
-        <img class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
+        <img data-code="ASD123" data-number="0" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
+        <img data-code="ASD1" data-number="1" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
+        <img data-code="123" data-number="2" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
+        <img data-code="ZXC" data-number="3" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
+        <img  data-code="QWE" data-number="4" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
+        <img data-code="ASDF" data-number="5" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
 
 
     </div>
-        </div>
+
+
+    </div>
+
+    <div id="photos-name" style="width: 100%;text-align: center;margin-top: 30px;color:white;font-weight: bold;"></div>
 
 </div>
 
@@ -69,6 +73,11 @@ Galeria
             density:		2,
             innerOffset:	50,
             innerScale:		.7,
+            select:		function(event, cover) {
+                var img = $(cover).children().andSelf().filter('img').last();
+
+                $('#photos-name').text(img.data('code') || 'unknown');
+            },
             animateStep:	function(event, cover, offset, isVisible, isMiddle, sin, cos) {
                 if (isVisible) {
                     if (isMiddle) {
@@ -87,7 +96,14 @@ Galeria
                     }
                 }
             }
+
         });
+        $('#code_gallery').keyup(function(){
+               var current=$('#code_gallery').val();
+
+           var index_code=$('#preview-coverflow').find("[data-code='" + current + "']").data('number');
+            $('#preview-coverflow').coverflow('index', index_code);
+        })
 
         var bg = "{{ URL::to('/img/bg_land.jpg') }}";
         var extra = "{{ URL::to('/img/copa.png') }}";

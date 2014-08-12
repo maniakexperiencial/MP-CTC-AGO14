@@ -1,11 +1,12 @@
 @extends('kids.layout')
 
 @section('scripts')
-{{ HTML::script('js/fancybox/jquery.fancybox.js') }}
-{{ HTML::style('js/fancybox/jquery.fancybox.css') }}
-{{ HTML::style('js/fancybox/helpers/jquery.fancybox-buttons.css') }}
-{{ HTML::script('js/fancybox/helpers/jquery.fancybox-buttons.js') }}
-{{ HTML::script('js/fancybox/helpers/jquery.fancybox-media.js') }}
+
+
+
+{{ HTML::style('js/nivo/nivo-lightbox.css') }}
+{{ HTML::style('js/nivo/themes/default/default.css') }}
+{{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
 <!-- Optionally add helpers - button, thumbnail and/or media -->
 @stop
 
@@ -29,33 +30,42 @@ Videos
 @stop
 
 @section('content_center')
-    <a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo"><div class="video_box">
+<div class="hidden_video" id="video2" >
+    <div class="hidden_video_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h5>-Jose García 13 años</h5></div>
+    <iframe style="min-height:70%; width:70%;height:300px;margin: auto;"  src="//www.youtube.com/embed/JXoAmDDPZz4" frameborder="0" allowfullscreen></iframe>
+
+
+</div>
+
+<a href="#video2" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="video_box">
         <div class="video_title">La Casa Azul</div>
         <div class="video_by">José Garcia</div>
         <div class="video_age">13 años</div>
 
     </div></a>
 
-<a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo"><div class="video_box">
+<a href="#video2"  data-lightbox-type="inline" data-lightbox-gallery="gallery1"><div class="video_box">
         <div class="video_title">La Casa Azul</div>
         <div class="video_by">José Garcia</div>
         <div class="video_age">13 años</div>
 
     </div></a>
 
-<a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo"><div class="video_box">
+<a href="#video2"  data-lightbox-type="inline" data-lightbox-gallery="gallery1"><div class="video_box">
         <div class="video_title">La Casa Azul</div>
         <div class="video_by">José Garcia</div>
         <div class="video_age">13 años</div>
 
     </div></a>
 
-<a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo"><div class="video_box">
+<a href="#video2"  data-lightbox-type="inline" data-lightbox-gallery="gallery1"><div class="video_box">
         <div class="video_title">La Casa Azul</div>
         <div class="video_by">José Garcia</div>
         <div class="video_age">13 años</div>
 
     </div></a>
+
+
 
 @stop
 
@@ -66,13 +76,9 @@ Videos
 
     // Running the code when the document is ready
     $(document).ready(function(){
-        $('.fancybox-media').fancybox({
-            openEffect  : 'none',
-            closeEffect : 'none',
-            helpers : {
-                media : {}
-            }
-        });
+
+        $('a').nivoLightbox();
+
      var bg="{{ URL::to('/img/bg_land.jpg') }}";
      $(window).height();
         var extra="{{ URL::to('/img/kid.png') }}";

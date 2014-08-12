@@ -1,5 +1,16 @@
 @extends('kids.layout')
 
+@section('scripts')
+
+
+
+{{ HTML::style('js/nivo/nivo-lightbox.css') }}
+{{ HTML::style('js/nivo/themes/default/default.css') }}
+{{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+@stop
+
+
 @section('bg_move')
 <div class="bg"></div>
 @stop
@@ -27,7 +38,37 @@ Cuentos
 @stop
 
 @section('content_center')
-    <div class="cuento_box">
+<div class="hidden_cuento" id="cuento1" >
+    <div class="cuento_first_wrap">
+        <div class="hidden_cuento_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h5>-Jose García 13 años</h5></div>
+        <img height="100%" src="{{ URL::to('/img/cuentos_examples/cuento_lightbox.jpg') }}">
+    </div>
+    <div class="cuento_second_wrap">
+       <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, </p>
+       </div>
+
+    </div>
+
+
+</div>
+<div class="hidden_cuento" id="cuento2" >
+    <div class="cuento_first_wrap">
+        <div class="hidden_cuento_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h5>-Jose García 13 años</h5></div>
+        <img height="100%" src="{{ URL::to('/img/cuentos_examples/cuento_lightbox.jpg') }}">
+    </div>
+    <div class="cuento_second_wrap">
+        <div class="cuento_second_wrap_title"><p>123123123</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, </p>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
@@ -39,58 +80,62 @@ Cuentos
             </div>
          </div>
     </div>
+</a>
 
-<div class="cuento_box">
-    <div class="cuento_title">La Casa Azul</div>
-    <div class="cuento_by">José Garcia</div>
-    <div class="cuento_age">13 años</div>
-    <div class="cuento_image"></div>
-    <div class="ui grid">
-        <div class="row">
-            <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-            <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+<a href="#cuento2" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <div class="cuento_image"></div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
+                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="cuento_box">
-    <div class="cuento_title">La Casa Azul</div>
-    <div class="cuento_by">José Garcia</div>
-    <div class="cuento_age">13 años</div>
-    <div class="cuento_image"></div>
-    <div class="ui grid">
-        <div class="row">
-            <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-            <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+</a>
+<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <div class="cuento_image"></div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
+                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            </div>
         </div>
     </div>
-</div>
+</a>
 
-<div class="cuento_box">
-    <div class="cuento_title">La Casa Azul</div>
-    <div class="cuento_by">José Garcia</div>
-    <div class="cuento_age">13 años</div>
-    <div class="cuento_image"></div>
-    <div class="ui grid">
-        <div class="row">
-            <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-            <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <div class="cuento_image"></div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
+                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            </div>
         </div>
     </div>
-</div>
+</a>
 
-<div class="cuento_box">
-    <div class="cuento_title">La Casa Azul</div>
-    <div class="cuento_by">José Garcia</div>
-    <div class="cuento_age">13 años</div>
-    <div class="cuento_image"></div>
-    <div class="ui grid">
-        <div class="row">
-            <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-            <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <div class="cuento_image"></div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
+                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            </div>
         </div>
     </div>
-</div>
+</a>
 
 
 
@@ -105,6 +150,7 @@ Cuentos
     // Running the code when the document is ready
     $(document).ready(function(){
 
+        $('a').nivoLightbox();
 
      var bg="{{ URL::to('/img/bg_land.jpg') }}";
      $(window).height();

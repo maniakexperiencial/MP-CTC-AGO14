@@ -34,6 +34,7 @@ html,body{
     min-height: 100%;
     font-family: 'Opensansreg';
     height:auto;
+    overflow-x: hidden;
 
 }
 .invisible{
@@ -107,7 +108,7 @@ body{
     background-size:contain;
     background-position:center;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     margin-top: 10px;
     min-height: 50px;
@@ -279,6 +280,114 @@ body{
 .toggle_menu i.icon{
     opacity: 1 !important;
 }
+
+/*FOR cuentos Lightbox*/
+
+.hidden_cuento{
+    position: relative;
+    display: none;
+    color:#0057a8;
+    min-width: 200px;
+    width: 60%;
+    min-height: 90%;
+    max-height: 90%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(40,116,167,.7);
+    margin:auto;
+    overflow: auto;
+}
+.hidden_cuento_title{
+    width:100%;
+    min-height:50px;
+    height:auto;
+    text-align: center;
+}
+.cuento_first_wrap{
+    width: 95%;
+    display: inline-block;
+    margin-top: 3%;
+    min-height: 30%;
+    max-height: 30%;
+    height: auto;
+    background-color: #e5f5ff;
+}
+.cuento_first_wrap img{
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+}
+.cuento_second_wrap{
+    width: 95%;
+    display: inline-block;
+    margin-top: 3%;
+    min-height: 20%;
+    max-height: 20%;
+    overflow: auto;
+    height: auto;
+    background-color: #0057a8;
+    color: white;
+    text-align: left;
+}
+.cuento_second_wrap_title{
+    width:95%;
+    margin: auto;
+    margin-top: 5px;
+    min-height:20px;
+    height:auto;
+    text-align:left;
+}
+/*FOR VIDEOS Lightbox*/
+.hidden_video{
+    display: none;color:
+    white;min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+.hidden_video_title{
+    width:100%;
+    min-height:50px;
+    height:auto;
+    text-align: center;
+}
+/*FOR HIstories Lightbox*/
+.hidden_history{
+    display: none;color:
+    white;
+
+    min-width: 200px;
+    width: 60%;
+    min-height: 100%;
+    text-align: center;
+    height: auto;
+    margin:auto;
+    background-image:url("../img/history_blank.png") ;
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    background-position: bottom center;
+
+}
+.hidden_history_title{
+    width:40%;
+    background-image:url("../img/history_headpink.png") ;
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height:50px;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    word-wrap: break-word;
+
+}
+.hidden_history_content{
+   color:#686868;
+    width: 70%;
+    margin-left:3%;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
 /*----------------KIDS CUENTO------------*/
 .cuento_box{
     width: 28%;

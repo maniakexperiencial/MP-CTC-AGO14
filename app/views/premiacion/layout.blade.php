@@ -30,6 +30,7 @@
 <body id="main">
 @yield('bg_move')
 
+
 <!--<nav class="ui menu">
     <h3 class="header item">Title</h3>
     <a class="active item">Home</a>
@@ -156,13 +157,13 @@
             $('.footer').css('position','relative');
         }else{
                 //console.log($("body").height()+' '+ $(window).height());
-            $('.footer').css('position','absolute');
+            $('.footer').css('position','fixed');
         }
         $(window).resize(function () { /* do something */
             if ($("body").height() > $(window).height()) {
                 $('.footer').css('position','relative');
             }else{
-                $('.footer').css('position','absolute');
+                $('.footer').css('position','fixed');
             }
         });
 
