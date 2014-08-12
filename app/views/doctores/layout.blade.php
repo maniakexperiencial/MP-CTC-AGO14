@@ -153,7 +153,7 @@
 
 
         ////PAPALOTE LOOP//
-        function loop_papalote() {
+        /*function loop_papalote() {
 
             $('.papalote').animate ({
                 right: '+=20'
@@ -174,7 +174,7 @@
                 });
             });
         }
-        loop_papalote();
+        loop_papalote();*/
 
         ///SOL LOOP///
         function loop_sol() {
