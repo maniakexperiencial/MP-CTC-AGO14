@@ -37,7 +37,7 @@ Galeria
 
     </div>
     <div id="preview">
-    <div class="cover_flow_content" id="preview-coverflow" style="width:100%;min-height:100%;position:relative">
+    <div class="cover_flow_content" id="preview-coverflow" style="position:relative">
         <img data-code="ASD123" data-number="0" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
         <img data-code="ASD1" data-number="1" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
         <img data-code="123" data-number="2" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>

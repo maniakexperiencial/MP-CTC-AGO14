@@ -98,6 +98,8 @@ body{
 }
 #Left_bar{
     z-index: 90!important;
+    float:left !important;
+    display:block !important;
 }
 #Left_bar img{
     float:left;
@@ -107,11 +109,13 @@ body{
     background-repeat:repeat-x;
     background-size:contain;
     background-position:center;
+    display: inline-block;
     width: 100%;
     position: fixed;
     bottom: 0px;
-    margin-top: 10px;
-    min-height: 50px;
+    /*margin-top: 10px;^*/
+    margin-top: 0px;
+    min-height: 30px;
     color: white;
 }
 .text_right{
@@ -280,7 +284,44 @@ body{
 .toggle_menu i.icon{
     opacity: 1 !important;
 }
+/*NUMBER_PAGES*/
 
+.number_page{
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #0057a8;
+
+}
+.number_page li{
+ padding: 0px 5px;
+}
+.number_page li img{
+    vertical-align: middle;
+}
+.pagination_wrap{
+    width:100%;
+    float:left;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 10px;
+
+}
+.pagination_wrap ul{
+    display:inline-block!important;
+    zoom:1;
+    vertical-align:top;
+}
+.pagination_wrap li{
+    display:inline-block!important;
+    zoom:1;
+    vertical-align:top;
+}
 /*FOR cuentos Lightbox*/
 
 .hidden_cuento{
@@ -492,7 +533,7 @@ body{
     padding: 10px;
     min-height: 200px;
     background-image:url("../img/historia.png") ;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     color: black;
     word-wrap:break-word;
@@ -587,6 +628,7 @@ body{
     background-color: rgba(152,195,233,.7);
 
 }
+
 .code_wrap{
     position: absolute;
     right: 5%;
@@ -619,8 +661,18 @@ body{
 #preview-coverflow .cover {
     z-index: 1;
 }
-
-
+.cover_flow_content{
+    width:100%;
+    min-height:100%;
+    position:relative;
+}
+.photos-name{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+    font-weight: bold;
+}
 
 
 
@@ -709,8 +761,45 @@ body{
 
 
     }
+    /*FOR cuentos Lightbox*/
 
+    .hidden_cuento{
+        position: relative;
+        display: none;
+        color:#0057a8;
+        min-width: 200px;
+        width: 100%;
+        min-height: 90%;
+        max-height: 90%;
+        height: auto;
+        text-align: center;
+        background-color: rgba(40,116,167,.7);
+        margin:auto;
+        overflow: auto;
+    }
+    .hidden_video{
+        width:100%;
+    }
+    /*HISTORY*/
+    .hidden_history{
+       width:90%;
 
+    }
+
+    /*GALLERY MOBILE */
+    .cover_flow_content img{
+        max-width: 50%;
+        height: auto;
+    }
+    #preview {
+        padding-top:30% ;
+    }
+    .code_wrap{
+        font-size: 10px;
+    }
+    .content_gallery{
+        height: auto;
+    }
 }
 /* iPads (portrait and landscape) ----------- */
 /*--481 en lugar de 615--*/
@@ -767,5 +856,67 @@ body{
         height: 150px;
         margin-left: 10%;
     }
+
+
+
 }
 
+@media all and (min-width:0px) and (max-width: 1069px){
+    /*FOR HIstories Lightbox*/
+    .hidden_history{
+        display: none;color:
+        white;
+
+        min-width: 200px;
+        width: 80%;
+        min-height: 100%;
+        text-align: center;
+        height: auto;
+        margin:auto;
+        background-image:url("../img/history_blank.png") ;
+        background-repeat: no-repeat;
+        background-size: 100% 95%;
+        background-position: bottom center;
+
+    }
+    .hidden_history_title{
+        width:50%;
+        background-image:url("../img/history_headpink.png") ;
+        background-size: 100% 100%;
+        background-position: center center;
+        min-height:50px;
+
+        height:auto;
+        margin: auto;
+        text-align: center;
+        word-wrap: break-word;
+
+    }
+    .hidden_history_title h2{
+       font-size: 14px;
+    }
+    .hidden_history_title h4{
+        font-size: 12px;
+    }
+    .hidden_history_content{
+        color:#686868;
+        width: 70%;
+        margin-left:3%;
+        text-align: left;
+        padding-bottom: 40px;
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media all and (min-width:465px) and (max-width: 614px){
+    #nav > ul
+    {
+
+        width:100%;
+
+        /*height: 3.75em;*/
+    }
+}

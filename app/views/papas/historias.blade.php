@@ -84,7 +84,9 @@ Historias
     </div>
 </div>
 </div>
-
+<div class="pagination_wrap" style="">
+    <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
+</div>
 @stop
 
 

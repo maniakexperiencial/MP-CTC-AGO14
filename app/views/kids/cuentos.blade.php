@@ -139,6 +139,9 @@ Cuentos
 
 
 
+<div class="pagination_wrap">
+    <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
+</div>
 
 @stop
 
@@ -150,7 +153,13 @@ Cuentos
     // Running the code when the document is ready
     $(document).ready(function(){
 
-        $('a').nivoLightbox();
+        $('a').nivoLightbox({
+            afterShowLightbox: function(lightbox){
+
+
+
+            }
+        });
 
      var bg="{{ URL::to('/img/bg_land.jpg') }}";
      $(window).height();
