@@ -14,6 +14,9 @@
 
 @section('bg_move')
 <div class="bg"></div>
+<div class="bg_adition">
+
+</div>
 @stop
 
 @section('top_sidebar')
@@ -101,10 +104,20 @@ Historias
         var bgcontent="{{ URL::to('/img/pizarron2.png') }}";
      $(window).height();
         var extra="{{ URL::to('/img/doctor.png') }}";
-        $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
+        //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
         $('#pizarron_historias').css({'background-image': 'url('+bgcontent+')'});
+        $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
+        $(window).resize(function() {
+            $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+            //$('.historia_box').css('height',$(window).height()*.1532175) ;
+            $('#Left_bar img').css('max-height',$(window).height()*.14629049);
+        });
 
+
+        $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+        //
+        $('#Left_bar img').css('max-height',$(window).height()*.14629049);
     });
 
 </script>

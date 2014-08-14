@@ -196,6 +196,17 @@
 
         $('#Left_bar img').hover(sourceSwap, sourceSwap);
 
+           ////////////////////////////////CALCULATE HEIGH//////////////////////
+        $(window).resize(function() {
+            $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+            //$('.historia_box').css('height',$(window).height()*.1532175) ;
+            $('#Left_bar img').css('max-height',$(window).height()*.14629049);
+        });
+
+
+        $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+        //
+        $('#Left_bar img').css('max-height',$(window).height()*.14629049);
     });
 
 </script>

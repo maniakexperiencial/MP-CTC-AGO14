@@ -12,6 +12,9 @@
 
 @section('bg_move')
 <div class="bg"></div>
+<div class="bg_adition">
+
+</div>
 @stop
 
 
@@ -84,8 +87,10 @@ Videos
 
 
         var extra="{{ URL::to('/img/papas.png') }}";
-        $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'15%'});
+        //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'15%'});
         $('body').css({'background-image': 'url('+bg+')'});
+        $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'9%'});
+
 
     });
 

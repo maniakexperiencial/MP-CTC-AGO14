@@ -12,6 +12,9 @@
 
 @section('bg_move')
 <div class="bg"></div>
+<div class="bg_adition">
+
+</div>
 @stop
 
 @section('top_sidebar')
@@ -108,11 +111,10 @@ Galeria
         var bg = "{{ URL::to('/img/bg_land.jpg') }}";
         var extra = "{{ URL::to('/img/copa.png') }}";
         $(window).height();
-        $('#content_wrap').css({'background-image': 'url(' + extra + ')', 'background-position': '3% 100%', 'background-repeat': 'no-repeat', 'background-size': '10%'});
+        //$('#content_wrap').css({'background-image': 'url(' + extra + ')', 'background-position': '3% 100%', 'background-repeat': 'no-repeat', 'background-size': '10%'});
         $('body').css({'background-image': 'url(' + bg + ')'});
-        $('#code_gallery').keyup(function () {
 
-        });
+        $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 100%','background-repeat':'no-repeat','background-size':'7%'});
     });
 
 </script>

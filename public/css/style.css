@@ -38,7 +38,11 @@ html,body{
 
 }
 .invisible{
-    visibility: hidden;
+   visibility: hidden;
+   /* position:absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: -3;*/
 }
 body{
     padding-top: 110px;
@@ -86,6 +90,15 @@ body{
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 }
+.bg_adition{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -2;
+}
 
 
 .column img{
@@ -98,11 +111,14 @@ body{
 }
 #Left_bar{
     z-index: 90!important;
+    position: relative;
     float:left !important;
     display:block !important;
 }
 #Left_bar img{
-    float:left;
+    margin:0;
+    display:block;
+    margin auto;
 }
 .footer{
     /*background-image: url("../img/footer.png");*/
@@ -269,7 +285,12 @@ body{
 }
 .extra_sidebar{
     min-height:100px;
-    max-height: 100px;
+    max-height: 100px !important;
+    vertical-align: middle;
+}
+.extra_sidebar img{
+    display: inline-block;
+
 }
 #content_wrap{
     /*margin-top: 4%;*/
@@ -471,14 +492,15 @@ body{
 
 /*----------------KIDS VIDEO------------*/
 .video_box{
-    width: 28%;
+    /*width: 31%;*/
+
     float: left;
     margin: 5px;
-    margin-left: 10%;
-    margin-bottom: 10%;
+    margin-left: 11%;
+    margin-bottom: 7%;
     padding: 10px;
-    width: 300px;
-    height: 221px;
+    width: 292px;
+    height: 215px;
     background-image:url("../img/video_box.jpg") ;
     background-size: 100% 100%;
     background-position: center center;
@@ -529,13 +551,13 @@ body{
 
 /*-------------------PAPAS HISTORIAS---------*/
 .historia_box{
-    width: 28%;
+    width: 25%;
     min-width: 148px;
     float: left;
     margin-left: 14%;
     margin-top: 1%;
     padding: 10px;
-    min-height: 200px;
+    min-height:150px;
     background-image:url("../img/historia.png") ;
     background-size: 100% 100%;
     background-position: center center;
@@ -551,17 +573,17 @@ body{
 
 }
 .historia_title{
-    width: 90%;
-    margin: auto;
+    width: 70%;
+     margin: auto;
     text-align: center;
-    margin-top: 15%;
-    font-size: 36px;
+    margin-top: 10%;
+    font-size: 1.5em;
 
 }
 .historia_info{
     width: 100%;
     text-align:left;
-    font-size: 21px;
+    font-size: 1em;
 
 }
 /*PREMIACION*/
@@ -863,6 +885,16 @@ body{
 
 
 
+}
+@media all and (min-width : 1081px) and (max-width : 1280px){
+
+    .video_box{
+        /*width:80%;*/
+        width: 205px;
+        height: 150px;
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
 }
 
 @media all and (min-width:0px) and (max-width: 1069px){

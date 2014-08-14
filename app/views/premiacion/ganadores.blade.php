@@ -1,6 +1,9 @@
 @extends('premiacion.layout')
 @section('bg_move')
 <div class="bg"></div>
+<div class="bg_adition">
+
+</div>
 @stop
 
 @section('top_sidebar')
@@ -70,8 +73,8 @@ Ganadores
      $(window).height();
 
         $('body').css({'background-image': 'url('+bg+')'});
-        $('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'10%'});
-
+        //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'10%'});
+        $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 100%','background-repeat':'no-repeat','background-size':'7%'});
 
 
     });
