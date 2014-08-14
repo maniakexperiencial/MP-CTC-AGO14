@@ -484,6 +484,10 @@ body{
     background-position: center center;
     color: white;
 }
+
+.video_mbottom{
+    margin-bottom: 0%;
+}
 .video_title{
     font-size: 21px;
 }
