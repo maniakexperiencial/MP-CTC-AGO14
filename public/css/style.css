@@ -39,6 +39,7 @@ html,body{
 }
 .invisible{
    visibility: hidden;
+    display:none!important;
    /* position:absolute;
     bottom: 0px;
     left: 0;
@@ -103,6 +104,10 @@ body{
 
 .column img{
     max-width: 100%;
+
+}
+.center_text img{
+    max-height: 65%;
 }
 
 .center_text{
@@ -647,10 +652,10 @@ body{
 /*GALERIA*/
 .content_gallery{
     position: relative;
-
+   display: inline-block;
     width:100%;
     height:auto;
-    padding: 15% 0px ;
+    padding: 16% 0px ;
     background-color: rgba(152,195,233,.7);
 
 }
@@ -677,7 +682,7 @@ body{
 
 }
 #preview {
-
+    display: inline;
 }
 #preview-coverflow .cover {
     cursor:		pointer;
@@ -693,9 +698,10 @@ body{
     position:relative;
 }
 .photos-name{
+
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15%;
     color:white;
     font-weight: bold;
 }
@@ -817,7 +823,12 @@ body{
         max-width: 50%;
         height: auto;
     }
+    .content_gallery{
+        padding-bottom: 25%;
+    }
+
     #preview {
+        display: flex;
         padding-top:30% ;
     }
     .code_wrap{
@@ -883,8 +894,6 @@ body{
         margin-left: 10%;
     }
 
-
-
 }
 @media all and (min-width : 1081px) and (max-width : 1280px){
 
@@ -894,6 +903,38 @@ body{
         height: 150px;
         margin-left: 15%;
         margin-bottom: 3%;
+    }
+
+}
+@media all and (min-width: 0px) and (max-width:1366px){
+    .ganador_box{
+        /*width:80%;*/
+        width: 125px;
+        height: 158px;
+        margin-left: 10%;
+        margin-bottom: 3%;
+        padding: 10px;
+    }
+
+    .ganador_title{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 30%;
+        font-size: .75em;
+    }
+    .ganador_info{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: .65em;
+    }
+    .ganador_age{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
     }
 }
 
@@ -943,6 +984,7 @@ body{
         font-size: 12px;
 
     }
+
 
 
 }

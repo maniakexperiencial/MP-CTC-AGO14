@@ -39,7 +39,7 @@ Galeria
 
 
     </div>
-    <div id="preview">
+    <div id="preview" >
     <div class="cover_flow_content" id="preview-coverflow" style="position:relative">
         <img data-code="ASD123" data-number="0" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
         <img data-code="ASD1" data-number="1" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
@@ -54,7 +54,7 @@ Galeria
 
     </div>
 
-    <div id="photos-name" style="width: 100%;text-align: center;margin-top: 30px;color:white;font-weight: bold;"></div>
+    <div id="photos-name" style="width: 100%;text-align: center;margin-top: 30px;color:white;font-weight: bold;position:absolute;top:0px;"></div>
 
 </div>
 
@@ -113,6 +113,16 @@ Galeria
         $(window).height();
         //$('#content_wrap').css({'background-image': 'url(' + extra + ')', 'background-position': '3% 100%', 'background-repeat': 'no-repeat', 'background-size': '10%'});
         $('body').css({'background-image': 'url(' + bg + ')'});
+        $(window).resize(function() {
+           $('.content_gallery').css('max-height',$(window).height() *.25);
+            $('.content_gallery').css('min-height',$('#content_wrap').height() *.25);
+
+            //$('#preview').css('max-height',($(window).height()*.20)+'px');
+        });
+        //$('#preview').css('max-height',($(window).height()*.20)+'px');
+        $('.content_gallery').css('max-height',$(window).height() *.25);
+        $('.content_gallery').css('min-height',$('#content_wrap').height() *.25);
+
 
         $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 100%','background-repeat':'no-repeat','background-size':'7%'});
     });
