@@ -87,7 +87,7 @@ body{
     animation-name: MOVE-BG;
     animation-duration: 100s;
     timing-function: linear;
-    -webkit-animation-duration: 100s;
+    -webkit-animation-duration: 200s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 }
@@ -99,6 +99,7 @@ body{
     bottom: 0;
     height: 100%;
     z-index: -2;
+    padding: 0% 18%;
 }
 .align_center{
     text-align: center !important;

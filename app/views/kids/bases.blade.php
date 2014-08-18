@@ -2,8 +2,29 @@
 
 @section('bg_move')
 <div class="bg"></div>
-<div class="bg_adition">
+<div class="ui one column page grid bg_adition">
 
+    <div class="column" style="height:100%">
+        <div class="ui grid" style="height:100%">
+            <div class="row" style="height:100%">
+
+                <div class="three wide column"  style="height:100%">
+
+
+                    <img  border="0" src="{{ URL::to('/img/kid.png') }}" style="position: absolute;bottom: 5%">
+
+
+
+                </div>
+                <div class="thirteen wide column ">
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
 </div>
 @stop
 
@@ -43,7 +64,7 @@ Bases
         var extra="{{ URL::to('/img/kid.png') }}";
         //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
-        $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
+        //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
 
     });
 

@@ -11,7 +11,7 @@
 @stop
 
 @section('content_center')
-<img  src="{{ URL::to('/img/5concurso.png') }}">
+<a href="{{ URL::route('kids') }}"><img  src="{{ URL::to('/img/5concurso.png') }}"></a>
 @stop
 
 @section('contest1')
