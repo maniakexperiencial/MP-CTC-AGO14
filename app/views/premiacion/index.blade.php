@@ -22,6 +22,7 @@
         $(window).height();
 
         $('body').css({'background-image': 'url('+bg+')'});
+        $('#center_actionbar').hide();
 
     });
 

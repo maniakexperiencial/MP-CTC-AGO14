@@ -11,7 +11,7 @@
                 <div class="three wide column"  style="height:100%">
 
 
-                    <img  border="0" src="{{ URL::to('/img/doctor.png') }}" style="position: absolute;bottom: 5%">
+                    <img  border="0" src="{{ URL::to('/img/doctor.png') }}" >
 
 
 
@@ -62,6 +62,8 @@ Bases
         //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
+
+        $('#center_actionbar').hide();
     });
 
 </script>

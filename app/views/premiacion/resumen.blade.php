@@ -67,6 +67,8 @@ Resumen
         //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'3% 100%','background-repeat':'no-repeat','background-size':'10%'});
         $('body').css({'background-image': 'url('+bg+')'});
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 100%','background-repeat':'no-repeat','background-size':'7%'});
+
+        $('#center_actionbar').hide();
     });
 
 </script>

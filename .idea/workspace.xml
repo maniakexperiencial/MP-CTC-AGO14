@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="-aliniar un poquito elementos como niño,copa,doctor,padres.. y empezar admin">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Black-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Black-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Black-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BlackItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BlackItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BlackItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Bold-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Bold-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensed-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensed-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensed-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensedItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensedItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensedItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Condensed-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Condensed-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Condensed-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-CondensedItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-CondensedItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-CondensedItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Italic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Italic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Italic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Light-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Light-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-LightItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-LightItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-LightItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Medium-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Medium-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Medium-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-MediumItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-MediumItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-MediumItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Regular-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Regular-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Thin-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Thin-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Thin-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-ThinItalic-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-ThinItalic-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-ThinItalic-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/accordinarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/addfolder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/admin_logo_index.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Advertisment/advertisment-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Advertisment/advertisment-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Advertisment/advertisment-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/alert.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/alert.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/64/analytics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Archive/archive-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Archive/archive-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Archive/archive-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/blueline/arrow-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/arrow-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/greenline/arrow-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrowdown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrowleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrowright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrowup.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Article/article 48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Article/article-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Article/article-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/attachment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/audio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Author/author-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Author/author-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Author/author-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatar9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/avatarbig.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/bar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniform/bg-input-focus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniform/bg-input.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/bghover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/blacktrans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/blacktrans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/blacktrans2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/blog1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/blog2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/blogging-icons-set.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Blog Roll/blogroll-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Blog Roll/blogroll-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Blog Roll/blogroll-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/blogview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bluetrans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/bluetrans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/bluetrans2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/btl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/btngrad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/button.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/img/button_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/skins/o2k7/img/button_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/img/button_bg_black.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/img/button_bg_silver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/buttons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/calarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/call.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/chart.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/charts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/chat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/chat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/colorpicker.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_select.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/colorpicker_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/comment.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Comments/comments-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Comments/comments-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Comments/comments-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/confirm.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorbox/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/corners.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_hex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_hsb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_hsb_h.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_hsb_s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_indic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_rgb_b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_rgb_g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_rgb_r.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/custom_submit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/dashboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Date/date-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Date/date-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Date/date-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/doc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/editor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/elements.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Email/email-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Email/email-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Email/email-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/64/events.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/img/example.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/filemgr_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/flash.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/flatscreen.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/folder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/form.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/glass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/headerbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/horizontal.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/blueline/icons_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/contrast/icons_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/icons_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/greenline/icons_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/icons_sprite2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/iframe.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/image6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/image6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/64/images.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/inbox.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/items.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/items.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/line.ccc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/line.dashed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/line.eee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/loaders/loader9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorbox/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/mail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/media.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/menu_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/menu_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/menu_check.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/menu_check.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/blueline/menuarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/menuarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/greenline/menuarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/menucollapsed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/message.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/headerbg/moh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/moxieplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/noise.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/notibg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/notifications.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/pagebreak.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/password.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/patternbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/pencil.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Plugins/plugins-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Plugins/plugins-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Plugins/plugins-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/portfolio1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/portfolio2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/preview1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/preview1a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/preview2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/preview2a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/profilepic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/progress.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/quicktime.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/quote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/quote2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/realmedia.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/RSS/rss-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/RSS/rss-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/RSS/rss-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/img/sample.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/samplelogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/contrast/searchbutton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/searchbutton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/contrast/searchcancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/searchcancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/selectall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/separator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/64/settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/shockwave.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/colorpicker/slider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sliderhor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sliderver.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-cool.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-cry.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-embarassed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-foot-in-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-frown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-innocent.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-laughing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-money-mouth.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-sealed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-surprised.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-tongue-out.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-undecided.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-wink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/img/smiley-yell.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sort_asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sort_asc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sort_both.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sort_desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/sort_desc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/speech.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/spinner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/uniform/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/sprites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/sprites.white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/star.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/stepline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/steps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/blueline/steps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/greenline/steps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/tables.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/img/tabs.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/img/tabs.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/preview/themepixels1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Themes/themes-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Themes/themes-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Themes/themes-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/large/thumb9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/medium/thumb9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/assets/thumb/small/thumb9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/titlebg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/topheaderbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/trans.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/transblack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/trash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/trash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/unstar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/contrast/userinfoarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/default/userinfoarrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/username.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/users.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/64/users.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/img/vertical.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/video.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/thumbs/video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Views/views-24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Views/views-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Views/views-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/widgets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/img/windowsmedia.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/spellchecker/img/wline.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/original/x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/kozers/thumb/x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Google Android License.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Black-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BlackItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Bold-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensed-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldCondensedItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-BoldItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Condensed-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-CondensedItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Italic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Light-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-LightItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Medium-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-MediumItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Regular-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-Thin-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/Roboto-ThinItalic-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/icons/blogperfume/Terms Of Use.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/abbr.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/abbr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/about.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/acronym.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/acronym.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/css/advhr.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/css/advimage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/css/advlink.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/js/advlink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/anchor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/css/attributes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/attributes.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/blank.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/blog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/css/cell.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/cell.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/js/cell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/charCount.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/charmap.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/charmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/charts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/chosen.jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/cite.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/cite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/color_picker.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/color_picker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/colorbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/colorpicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/colorpicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/spellchecker/css/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/highcontrast/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/skins/default/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/skins/o2k7/content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/del.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/del.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/highcontrast/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/dialog.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/js/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/utils/editable_selects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlist/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autolink/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autoresize/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autosave/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/bbcode/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/contextmenu/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/directionality/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example_dependency/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullscreen/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/iespell/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/insertdatetime/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/layer/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/legacyoutput/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/lists/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/nonbreaking/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/noneditable/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/pagebreak/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/preview/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/print/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/save/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/spellchecker/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/tabfocus/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/visualblocks/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/visualchars/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/wordcount/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/editor_plugin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlist/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autolink/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autoresize/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autosave/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/bbcode/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/contextmenu/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/directionality/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example_dependency/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullscreen/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/iespell/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/insertdatetime/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/layer/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/legacyoutput/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/lists/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/nonbreaking/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/noneditable/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/pagebreak/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/preview/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/print/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/save/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/spellchecker/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/tabfocus/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/visualblocks/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/visualchars/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/wordcount/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/editor_plugin_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/editor_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/editor_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/editor_template_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/editor_template_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/element_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/elements.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/js/embed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/preview/jscripts/embed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/emotions.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/js/emotions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/autosave/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/emotions/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/example/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/langs/en_dlg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/preview/example.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/filemanager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/utils/form_utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/forms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/css/fullpage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/fullpage.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullpage/js/fullpage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/fullscreen/fullscreen.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/gallery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/general.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/image.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/image.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advimage/js/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/ins.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/js/ins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery-1.5.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery-1.7.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery-ui-1.8.16.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.alerts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.alerts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.autogrow-textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.bxSlider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.chosen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.colorbox-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.flot.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.flot.pie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.flot.pie.resize_update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.flot.resize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.jgrowl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.jgrowl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.slimscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.smartWizard-2.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.tagsinput.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.tagsinput.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/jquery.tinymce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.ui.autocomplete.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.uniform.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advlink/link.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/link.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/utils/mctabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/css/media.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/media.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/media/js/media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/merge_cells.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/js/merge_cells.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/messages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/newsfeed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/pastetext.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/js/pastetext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/pasteword.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/paste/js/pasteword.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/xhtmlxtras/css/popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/preview/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/productlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/css/props.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/props.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/js/props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/style/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/roboto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/css/row.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/row.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/js/row.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/rule.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/advhr/js/rule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/css/searchreplace.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/searchreplace.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/searchreplace/js/searchreplace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/shortcuts.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/source_editor.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/js/source_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.blueline.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.contrast.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.custombg.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.greenline.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.ie9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/css/table.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/table.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/table/js/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/tables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/css/template.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/template.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/template.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/template/js/template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/tiny_mce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/tiny_mce_popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/tiny_mce_src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/tinymce.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/default/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/highcontrast/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/themepixels/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/skins/default/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/simple/skins/o2k7/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/ui.spinner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/ui.spinner.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/ui_black.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/themes/advanced/skins/o2k7/ui_silver.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/plugins/uniform.tp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/utils/validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/widgets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/clearlooks2/window.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugins/tinymce/plugins/inlinepopups/skins/themepixels/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/doctores/bases.blade.php" afterPath="$PROJECT_DIR$/app/views/doctores/bases.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/bases.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/bases.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/bases.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/bases.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/doctores/index.blade.php" afterPath="$PROJECT_DIR$/app/views/doctores/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/index.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/index.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/index.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/layout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+    </list>
+    <ignored path="MP-CTC-AGO14.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="MP-CTC-AGO14" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="historias.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/doctores/historias.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="85" selection-start="3728" selection-end="3758" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2618">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bases.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/papas/bases.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="38" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1394">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bases.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/kids/bases.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="38" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1309">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bases.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/doctores/bases.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="76" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="231" column="68" selection-start="7547" selection-end="7554" vertical-scroll-proportion="0.0" vertical-offset="3408" max-vertical-offset="4131">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/papas/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="38" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="29" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.59562844" vertical-offset="1370" max-vertical-offset="17476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/kids/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="38" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/premiacion/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="38" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/views/index.php" />
+        <option value="$PROJECT_DIR$/public/fonts/MANDINGO.svg" />
+        <option value="$PROJECT_DIR$/public/js/contentflow/contentflow.js" />
+        <option value="$PROJECT_DIR$/public/js/contentflow/contentflow.css" />
+        <option value="$PROJECT_DIR$/public/js/fancybox/jquery.fancybox.css" />
+        <option value="$PROJECT_DIR$/public/js/fancybox/jquery.fancybox.js" />
+        <option value="$PROJECT_DIR$/public/js/nivo/nivo-lightbox.js" />
+        <option value="$PROJECT_DIR$/public/js/nivo/nivo-lightbox.css" />
+        <option value="$PROJECT_DIR$/public/js/coverflowmaster/jquery.coverflow.js" />
+        <option value="$PROJECT_DIR$/public/css/semantic.css" />
+        <option value="$PROJECT_DIR$/public/js/nivo/themes/default/default.css" />
+        <option value="$PROJECT_DIR$/app/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/papas/historias.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/papas/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/galeria.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/doctores/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/doctores/historias.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/doctores/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/papas/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/papas/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/doctores/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/papas/bases.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/bases.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/doctores/bases.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="premiacion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="papas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctores" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../baluarte" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\MP-CTC-AGO14\public\img" />
+      <recent name="C:\projects\MP-CTC-AGO14\app\views\admin" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\js" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\images" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\MP-CTC-AGO14\public\js\contentflow" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\img" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\images" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\js" />
+      <recent name="C:\projects\MP-CTC-AGO14\public\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="" />
+      <created>1407153493483</created>
+      <updated>1407153493483</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-Maquetado Principio">
+      <created>1407248482542</created>
+      <updated>1407248482542</updated>
+    </task>
+    <task id="LOCAL-00003" summary="-Maquetado Principio">
+      <created>1407302033424</created>
+      <updated>1407302033424</updated>
+    </task>
+    <task id="LOCAL-00004" summary="-Maquetado Principio">
+      <created>1407315062258</created>
+      <updated>1407315062258</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-Maquetado Principio">
+      <created>1407323888372</created>
+      <updated>1407323888372</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-Maquetado Principio">
+      <created>1407327551741</created>
+      <updated>1407327551741</updated>
+    </task>
+    <task id="LOCAL-00007" summary="-Maquetado Principio">
+      <created>1407328479760</created>
+      <updated>1407328479760</updated>
+    </task>
+    <task id="LOCAL-00008" summary="-Maquetado Principio">
+      <created>1407328926899</created>
+      <updated>1407328926899</updated>
+    </task>
+    <task id="LOCAL-00009" summary="-Maquetado Principio">
+      <created>1407329443013</created>
+      <updated>1407329443013</updated>
+    </task>
+    <task id="LOCAL-00010" summary="-Maquetado Principio">
+      <created>1407331159980</created>
+      <updated>1407331159980</updated>
+    </task>
+    <task id="LOCAL-00011" summary="-Maquetado Principio">
+      <created>1407396128843</created>
+      <updated>1407396128843</updated>
+    </task>
+    <task id="LOCAL-00012" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407413661942</created>
+      <updated>1407413661942</updated>
+    </task>
+    <task id="LOCAL-00013" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407472145328</created>
+      <updated>1407472145328</updated>
+    </task>
+    <task id="LOCAL-00014" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407511654186</created>
+      <updated>1407511654186</updated>
+    </task>
+    <task id="LOCAL-00015" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407762143780</created>
+      <updated>1407762143780</updated>
+    </task>
+    <task id="LOCAL-00016" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407848113254</created>
+      <updated>1407848113254</updated>
+    </task>
+    <task id="LOCAL-00017" summary="-CUANDO PASO LO DE LOS BUGS">
+      <created>1407849191696</created>
+      <updated>1407849191696</updated>
+    </task>
+    <task id="LOCAL-00018" summary="-13/08/2014">
+      <created>1407937830947</created>
+      <updated>1407937830947</updated>
+    </task>
+    <task id="LOCAL-00019" summary="-13/08/2014">
+      <created>1407993247197</created>
+      <updated>1407993247197</updated>
+    </task>
+    <task id="LOCAL-00020" summary="-CAMBIOS EN TAMAÑOS, posicion personas fixed, calculos de height en historias_box,videox_box etc.. 14/08/2014">
+      <created>1408025769165</created>
+      <updated>1408025769165</updated>
+    </task>
+    <task id="LOCAL-00021" summary="-Cambios tamaño de galeria y seccion bases de paginas, 16/08/2014">
+      <created>1408178377169</created>
+      <updated>1408178377170</updated>
+    </task>
+    <task id="LOCAL-00022" summary="-Home, cambios tamaño historia,premios. 18/08/2014">
+      <created>1408350473253</created>
+      <updated>1408350473253</updated>
+    </task>
+    <task id="LOCAL-00023" summary="-Cambios,aliniamiento de elementos como trofeo,el doc,los padres.. 18/08/2014">
+      <created>1408360359850</created>
+      <updated>1408360359850</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7521552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31629393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23650108" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30387932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28115016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="-Maquetado Principio" />
+    <MESSAGE value="-CUANDO PASO LO DE LOS BUGS" />
+    <MESSAGE value="-13/08/2014" />
+    <MESSAGE value="-CAMBIOS EN TAMAÑOS, posicion personas fixed, calculos de height en historias_box,videox_box etc.. 14/08/2014" />
+    <MESSAGE value="-Cambios tamaño de galeria y seccion bases de paginas, 16/08/2014" />
+    <MESSAGE value="-Home, cambios tamaño historia,premios. 18/08/2014" />
+    <MESSAGE value="-Cambios,aliniamiento de elementos como trofeo,el doc,los padres.. 18/08/2014" />
+    <MESSAGE value="-aliniar un poquito elementos como niño,copa,doctor,padres.. y empezar admin 18/08/2014" />
+    <MESSAGE value="-aliniar un poquito elementos como niño,copa,doctor,padres.. y empezar admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="-aliniar un poquito elementos como niño,copa,doctor,padres.. y empezar admin" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0" vertical-offset="605" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/basic.icons.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7752" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="4" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.33275563" vertical-offset="692" max-vertical-offset="6902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/MANDINGO.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23613" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="22" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.4435666" vertical-offset="2973" max-vertical-offset="3859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/semantic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="207060" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/contentflow/contentflow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="216" selection-start="216" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/contentflow/contentflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2153" column="25" selection-start="74596" selection-end="74596" vertical-scroll-proportion="13.470589" vertical-offset="25151" max-vertical-offset="36703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/coverflowmaster/jquery.mousewheel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="731" selection-end="731" vertical-scroll-proportion="0.2363847" vertical-offset="0" max-vertical-offset="1921" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/fancybox/jquery.fancybox.pack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jQueryRotate3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3927" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/fancybox/jquery.fancybox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1909" column="26" selection-start="45804" selection-end="45812" vertical-scroll-proportion="0.42424244" vertical-offset="32215" max-vertical-offset="34425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/fancybox/jquery.fancybox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="71" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.4216028" vertical-offset="3226" max-vertical-offset="4743" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/nivo/nivo-lightbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="12" selection-start="11516" selection-end="11516" vertical-scroll-proportion="0.69042057" vertical-offset="4798" max-vertical-offset="6664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/nivo/nivo-lightbox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="1" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="3723" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/coverflowmaster/jquery.coverflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="37" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.31328037" vertical-offset="438" max-vertical-offset="5695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/semantic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="873" column="1" selection-start="21258" selection-end="21258" vertical-scroll-proportion="0.66613925" vertical-offset="14420" max-vertical-offset="261647" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="16" selection-start="790" selection-end="790" vertical-scroll-proportion="0.6850746" vertical-offset="0" max-vertical-offset="11271">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/nivo/themes/default/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="42" selection-start="753" selection-end="753" vertical-scroll-proportion="0.3860465" vertical-offset="193" max-vertical-offset="1751" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="254" selection-end="254" vertical-scroll-proportion="0.34423676" vertical-offset="0" max-vertical-offset="642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/historias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="10" selection-start="4440" selection-end="4440" vertical-scroll-proportion="-7.6923075" vertical-offset="2010" max-vertical-offset="2652" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="6" selection-start="949" selection-end="949" vertical-scroll-proportion="-22.576923" vertical-offset="59" max-vertical-offset="2125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/galeria.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="497" selection-end="1033" vertical-scroll-proportion="-17.846153" vertical-offset="165" max-vertical-offset="2669" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="6" selection-start="609" selection-end="609" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="1853" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="6" selection-start="861" selection-end="861" vertical-scroll-proportion="-19.307692" vertical-offset="161" max-vertical-offset="2108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="10" selection-start="7475" selection-end="7475" vertical-scroll-proportion="-17.346153" vertical-offset="3034" max-vertical-offset="3655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kids/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="852" selection-end="852" vertical-scroll-proportion="-22.576923" vertical-offset="42" max-vertical-offset="2091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/doctores/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="10" selection-start="3343" selection-end="3343" vertical-scroll-proportion="-16.038462" vertical-offset="1436" max-vertical-offset="2057" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/doctores/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="77" selection-start="6724" selection-end="6865" vertical-scroll-proportion="-20.461538" vertical-offset="3123" max-vertical-offset="3910" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kids/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="81" selection-start="6596" selection-end="6596" vertical-scroll-proportion="0.54416406" vertical-offset="3140" max-vertical-offset="3825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="37" selection-start="6294" selection-end="6294" vertical-scroll-proportion="-10.653846" vertical-offset="3106" max-vertical-offset="3842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="37" selection-start="665" selection-end="665" vertical-scroll-proportion="0.56309146" vertical-offset="0" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/tinymce.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/doctores/historias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="85" selection-start="3728" selection-end="3758" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="48" selection-start="1430" selection-end="1430" vertical-scroll-proportion="-15.692307" vertical-offset="255" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3181818" vertical-offset="1530" max-vertical-offset="42687">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/Google Android License.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/custom/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="68" selection-start="7547" selection-end="7554" vertical-scroll-proportion="0.0" vertical-offset="3408" max-vertical-offset="4131">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="5" selection-start="5827" selection-end="5857" vertical-scroll-proportion="-17.038462" vertical-offset="3110" max-vertical-offset="3774" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kids/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/doctores/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="38" selection-start="400" selection-end="400" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/resumen.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="38" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.78548896" vertical-offset="692" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/bases.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="38" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kids/bases.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="38" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/doctores/bases.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="76" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="29" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.59562844" vertical-offset="1370" max-vertical-offset="17476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

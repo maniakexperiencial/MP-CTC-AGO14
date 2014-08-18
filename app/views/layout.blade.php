@@ -207,7 +207,7 @@
         }
 
 
-
+     $('#center_actionbar').hide();
 
     });
 

@@ -15,6 +15,17 @@ Route::get('/',array('as'=>'root', function()
     return View::make('index');
 }));
 
+
+/*-----------------------------------------------ADMINISTRATOR-------------------------------*/
+
+Route::get("admin",array('as'=>'admin',function(){
+    return View::make('admin.index');
+}));
+
+
+
+
+/*-----------------------------------------------NORMAL---------------------*/
 /*KIDS*/
 Route::get("kids",array('as'=>'kids',function(){
     return View::make('kids.index');
