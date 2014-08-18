@@ -139,7 +139,19 @@ Cuentos
         </div>
     </div>
 </a>
-
+<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <div class="cuento_image"></div>
+        <div class="ui grid">
+            <div class="row">
+                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
+                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            </div>
+        </div>
+    </div>
+</a>
 
 
 <div class="pagination_wrap">

@@ -47,7 +47,7 @@ html,body{
 }
 body{
     padding-top: 110px;
-    background-image:url("../img/background-home.jpg");
+    background-image:url("../img/bg_land.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -100,8 +100,19 @@ body{
     height: 100%;
     z-index: -2;
 }
+.align_center{
+    text-align: center !important;
+}
+.align_center img{
+    max-width: 100%;
+    max-height: 12%;
+    margin-bottom: 15%;
 
-
+}
+.align_center_moreheight img{
+    max-height: 18% ;
+    margin-bottom: 0px;
+}
 .column img{
     max-width: 100%;
 
@@ -114,6 +125,7 @@ body{
     width: 100%;
     text-align: center !important;
 }
+
 #Left_bar{
     z-index: 90!important;
     position: relative;
@@ -283,10 +295,12 @@ body{
     line-height: 100px;
 }
 .papalote{
-    position: absolute;
+    position: absolute !important;
     z-index: -1;
-    top: 3%;
-    right:-100px;
+    top: 3% !important;
+    right:-100px !important;
+    max-height: none !important;
+    max-width: none!important;
 }
 .extra_sidebar{
     min-height:100px;
@@ -559,7 +573,7 @@ body{
     width: 25%;
     min-width: 148px;
     float: left;
-    margin-left: 14%;
+    margin-left: 15%;
     margin-top: 1%;
     padding: 10px;
     min-height:150px;
@@ -570,11 +584,11 @@ body{
     word-wrap:break-word;
 }
 #pizarron_historias{
-    background-size: 100% 100%;
+    background-size: 90% 100%;
     padding: 6% 0%;
     padding-bottom: 8%;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top center;
 
 }
 .historia_title{
@@ -599,13 +613,16 @@ body{
 .ganador_box{
     width: 25%;
     float: left;
-    margin-left:6.25%;
+    /*margin-left:6.25%;*/
+    margin-left:10.25%;
     margin-bottom: 6.25%;
     padding: 10px;
     /*min-width: 234px;
     min-height: 297px;*/
-    width: 206px;
-    height:261px;
+    /*width: 206px;
+    height:261px;*/
+    width: 165px;
+    height:209px;
     background-size:100% 100%;
     background-position: center center;
     color:#2b9fa4;
@@ -616,13 +633,14 @@ body{
     margin: auto;
     text-align: center;
     margin-top: 30%;
-    font-size: 21px;
+    font-size: .9em;
 }
 .ganador_info{
     width: 60%;
     margin: auto;
     text-align: center;
     font-weight: bold;
+    font-size: .8em;
 }
 .ganador_age{
     width: 60%;
