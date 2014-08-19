@@ -61,6 +61,9 @@ Videos
 
 </div>
 
+<div  class="resize_container">
+    <!--resize_contain-->
+
 <a href="#video2" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="video_box">
         <div class="video_title">La Casa Azul</div>
         <div class="video_by">José Garcia</div>
@@ -88,6 +91,9 @@ Videos
         <div class="video_age">13 años</div>
 
     </div></a>
+
+    <!--end resize_contain-->
+</div>
 
 <div class="pagination_wrap" style="">
     <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>

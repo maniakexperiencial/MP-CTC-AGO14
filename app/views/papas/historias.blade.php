@@ -55,6 +55,8 @@ Historias
 @stop
 
 @section('content_center')
+<div  class="resize_container">
+    <!--resize_contain-->
 <div class="ui grid" id="pizarron_historias">
 <div class="row">
     <div class="sixteen wide column">
@@ -109,6 +111,8 @@ Historias
     </div>
 </div>
 </div>
+    <!--end resize_contain-->
+</div>
 <div class="pagination_wrap" style="">
     <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
 </div>
@@ -136,13 +140,13 @@ Historias
         //alert($(window).height());
        // alert($('.historia_box').height());
         $(window).resize(function() {
-            $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+            //$('.historia_box').css('min-height',$(window).height()*.1532175) ;
             //$('.historia_box').css('height',$(window).height()*.1532175) ;
             $('#Left_bar img').css('max-height',$(window).height()*.14629049);
         });
 
 
-        $('.historia_box').css('min-height',$(window).height()*.1532175) ;
+       // $('.historia_box').css('min-height',$(window).height()*.1532175) ;
        //
         $('#Left_bar img').css('max-height',$(window).height()*.14629049);
     });
