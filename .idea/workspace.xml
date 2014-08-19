@@ -432,7 +432,11 @@
       <created>1408450332360</created>
       <updated>1408450332360</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="-cambio tamaño de cuentos niños">
+      <created>1408450358318</created>
+      <updated>1408450358318</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -504,7 +508,8 @@
     <MESSAGE value="-aliniar un poquito elementos como niño,copa,doctor,padres.. y empezar admin" />
     <MESSAGE value="-cambiar icono 3er concurso por 4 concurso de mientras" />
     <MESSAGE value="-pantalla login admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="-pantalla login admin" />
+    <MESSAGE value="-cambio tamaño de cuentos niños" />
+    <option name="LAST_COMMIT_MESSAGE" value="-cambio tamaño de cuentos niños" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
