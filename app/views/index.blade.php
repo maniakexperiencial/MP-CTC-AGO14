@@ -24,7 +24,7 @@
 
 
 @section('contest3')
-<img  src="{{ URL::to('/img/3concurso.png') }}">
+<img  src="{{ URL::to('/img/4concurso.png') }}">
 @stop
 
 @section('contest4')
