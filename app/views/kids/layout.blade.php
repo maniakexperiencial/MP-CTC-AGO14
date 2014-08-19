@@ -117,7 +117,9 @@
             </div>
             <div class="thirteen wide column ">
                    <div class="Title_section">@yield('title_section')</div>
+
                     @yield('content_center')
+
             </div>
 
 

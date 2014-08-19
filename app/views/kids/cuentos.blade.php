@@ -91,6 +91,8 @@ Cuentos
 
 </div>
 
+<div  class="resize_container">
+<!--resize_contain-->
 
 <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
@@ -99,8 +101,8 @@ Cuentos
         <div class="cuento_image"></div>
         <div class="ui grid">
             <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
          </div>
     </div>
@@ -113,8 +115,8 @@ Cuentos
         <div class="cuento_image"></div>
         <div class="ui grid">
             <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
@@ -125,9 +127,9 @@ Cuentos
         <div class="cuento_age">13 años</div>
         <div class="cuento_image"></div>
         <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
@@ -139,9 +141,9 @@ Cuentos
         <div class="cuento_age">13 años</div>
         <div class="cuento_image"></div>
         <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
@@ -153,9 +155,9 @@ Cuentos
         <div class="cuento_age">13 años</div>
         <div class="cuento_image"></div>
         <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
@@ -166,18 +168,21 @@ Cuentos
         <div class="cuento_age">13 años</div>
         <div class="cuento_image"></div>
         <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column"><i class="thumbs up icon"></i>153</div>
-                <div class="eight wide column"><i class="unhide icon"></i>2547</div>
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
 </a>
 
+    <!--end resize_contain-->
+</div>
 
 <div class="pagination_wrap">
     <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
 </div>
+
 
 @stop
 

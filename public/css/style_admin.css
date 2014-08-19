@@ -26,6 +26,10 @@
 }
 .loginbox button:hover { /*background-color: #f0721e;*/ }
 
+.login_option{
+    width: 100%;
+    text-align: center !important;
+}
 
 
 @media all and (min-width : 318px) and (max-width : 614px) {
