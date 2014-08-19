@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/historias.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/historias.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/layout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/doctores/videos.blade.php" afterPath="$PROJECT_DIR$/app/views/doctores/videos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/videos.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/videos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -96,7 +91,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1035" column="17" selection-start="19327" selection-end="19327" vertical-scroll-proportion="0.45875543" vertical-offset="17278" max-vertical-offset="20111">
+            <state line="1001" column="21" selection-start="18719" selection-end="18719" vertical-scroll-proportion="0.6772793" vertical-offset="16549" max-vertical-offset="20128">
               <folding />
             </state>
           </provider>
@@ -594,7 +589,11 @@
       <created>1408452519109</created>
       <updated>1408452519109</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="-cambiado tamaño de videos , cuentos e historias con contenedor resize_container">
+      <created>1408455040021</created>
+      <updated>1408455040021</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -668,7 +667,8 @@
     <MESSAGE value="-pantalla login admin" />
     <MESSAGE value="-cambio tamaño de cuentos niños" />
     <MESSAGE value="-cambiado tamaño de videos y cuentos, con contenedor resize_container" />
-    <option name="LAST_COMMIT_MESSAGE" value="-cambiado tamaño de videos y cuentos, con contenedor resize_container" />
+    <MESSAGE value="-cambiado tamaño de videos , cuentos e historias con contenedor resize_container" />
+    <option name="LAST_COMMIT_MESSAGE" value="-cambiado tamaño de videos , cuentos e historias con contenedor resize_container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -968,7 +968,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1035" column="17" selection-start="19327" selection-end="19327" vertical-scroll-proportion="0.45875543" vertical-offset="17278" max-vertical-offset="20111">
+        <state line="1001" column="21" selection-start="18719" selection-end="18719" vertical-scroll-proportion="0.6772793" vertical-offset="16549" max-vertical-offset="20128">
           <folding />
         </state>
       </provider>
