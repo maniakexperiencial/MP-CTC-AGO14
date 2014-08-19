@@ -1,0 +1,36 @@
+/*CSS FOR ADMIN*/
+
+
+.login_blue{
+    background-color: #0057a8 !important;
+    color: white !important;
+    margin: 10px 0px;
+    padding: 8px 0px !important;
+    width: 100% !important;
+}
+.login_label{
+    color: #01305c !important;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.loginbox .logo img {
+    max-width: 70%;
+
+}
+.loginbox button {
+ float: right;
+    width: 25%;
+    background-color: #0057a8;
+    border: 1px solid #0057a8;
+    margin: 10px 0px;
+}
+.loginbox button:hover { /*background-color: #f0721e;*/ }
+
+
+
+@media all and (min-width : 318px) and (max-width : 614px) {
+    .loginbox{
+        width: 95%;
+        min-width:95%;
+    }
+}

@@ -11,6 +11,8 @@
     {{ HTML::script('js/plugins/jquery.uniform.min.js') }}
     {{ HTML::script('js/custom/general.js') }}
     {{ HTML::script('js/custom/index.js') }}
+
+    {{ HTML::style('css/style_admin.css', array('media' => 'screen')) }}
     <!--[if IE 9]>
     {{ HTML::style('css/style.ie9.css', array('media' => 'screen')) }}
     <![endif]-->
@@ -58,20 +60,17 @@
             </div><!--nopassword-->
 
             <form id="login" action="dashboard.html" method="post">
+                <label for="username" class="login_label">NOMBRE DE USUARIO</label>
 
-                <div class="username">
-                	<div class="usernameinner">
-                    	<input type="text" name="username" id="username" />
-                    </div>
-                </div>
 
-                <div class="password">
-                	<div class="passwordinner">
-                    	<input type="password" name="password" id="password" />
-                    </div>
-                </div>
+                    	<input type="text" name="username" id="username" class="login_blue" />
 
-                <button>Sign In</button>
+                <label for="password" class="login_label">CONTRASEÑA</label>
+
+                    	<input type="password" name="password" id="password" class="login_blue" />
+
+
+                <button>ENTRAR</button>
 
                 <div class="keep"><input type="checkbox" /> Keep me logged in</div>
 
