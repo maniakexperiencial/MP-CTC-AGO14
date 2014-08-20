@@ -87,7 +87,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="562" column="16" selection-start="10981" selection-end="10981" vertical-scroll-proportion="0.45586106" vertical-offset="9239" max-vertical-offset="20638">
+            <state line="502" column="13" selection-start="9898" selection-end="9898" vertical-scroll-proportion="0.4804631" vertical-offset="8202" max-vertical-offset="20655">
               <folding />
             </state>
           </provider>
@@ -703,7 +703,11 @@
       <created>1408542303437</created>
       <updated>1408542303437</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="-Es igual que la pasada, pero no le pude cambiar nombre a Mejorando con posiciones fijas de casi todo">
+      <created>1408542380003</created>
+      <updated>1408542380003</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,7 +791,8 @@
     <MESSAGE value="-Cambios drasticos tamaño fijo, nomas movi papalote mas abajo" />
     <MESSAGE value="-Atorado en cambios para que no halla scroll" />
     <MESSAGE value="-Atorado en cambios para que no halla scroll, Cambio en Seccion CUENTOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Atorado en cambios para que no halla scroll, Cambio en Seccion CUENTOS" />
+    <MESSAGE value="-Es igual que la pasada, pero no le pude cambiar nombre a Mejorando con posiciones fijas de casi todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Es igual que la pasada, pero no le pude cambiar nombre a Mejorando con posiciones fijas de casi todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1163,7 +1168,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="562" column="16" selection-start="10981" selection-end="10981" vertical-scroll-proportion="0.45586106" vertical-offset="9239" max-vertical-offset="20638">
+        <state line="502" column="13" selection-start="9898" selection-end="9898" vertical-scroll-proportion="0.4804631" vertical-offset="8202" max-vertical-offset="20655">
           <folding />
         </state>
       </provider>

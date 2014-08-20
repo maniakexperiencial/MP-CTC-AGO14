@@ -499,7 +499,8 @@ body{
 /*----------------KIDS CUENTO------------*/
 .resize_container{
     width:680px;
-    height:550px;
+    /*height:550px;*/
+    height:500px;
     margin: auto;
     /*background-color: green;*/
 }
