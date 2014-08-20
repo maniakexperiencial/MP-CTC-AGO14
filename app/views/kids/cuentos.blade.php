@@ -13,7 +13,7 @@
 
 @section('bg_move')
 <div class="bg"></div>
-<div class="center_container">
+<!--<div class="center_container ">
 
     <div class="column" style="height:100%">
         <div class="ui grid" style="height:100%">
@@ -36,7 +36,33 @@
         </div>
 
     </div>
+</div>-->
+<div class="ui one column page grid bg_adition">
+    <div class="center_container">
+        <div class="column" style="height:100%">
+            <div class="ui grid" style="height:100%">
+                <div class="row" style="height:100%">
+
+                    <div class="three wide column"  style="height:100%">
+
+
+                        <img  border="0" src="{{ URL::to('/img/kid.png') }}" >
+
+
+
+                    </div>
+                    <div class="thirteen wide column ">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
 @stop
 
 
@@ -91,7 +117,7 @@ Cuentos
 
 </div>
 
-<div  class="resize_container">
+<div  class="resize_container resize_container_cuento">
 <!--resize_contain-->
 
 <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">

@@ -57,7 +57,8 @@
 </nav>-->
 <header>
     <div class="Topbar">
-        <div class="ui one column page grid">
+        <!--<div class="ui one column page grid">-->
+        <div class="center_container">
             <div class="column" id="center_topbar">
                 <div class="logo"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
                 <nav id="nav" role="navigation">
@@ -88,7 +89,8 @@
 
     </div>
     <div class="Action_bar">
-        <div class="ui one column page grid">
+        <!--<div class="ui one column page grid">-->
+        <div class="center_container">
             <div class="column" id="center_actionbar">
                 <input type="text" id="Searchbox" placeholder="Search">
                 <select id="Selectbox">
@@ -102,7 +104,8 @@
     </div>
 </header>
 
-<div class="ui one column page grid">
+<!--<div class="ui one column page grid">-->
+<div class="center_container">
 
     <div class="column" id="content_wrap">
         <div class="ui grid">

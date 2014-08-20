@@ -503,6 +503,9 @@ body{
     margin: auto;
     /*background-color: green;*/
 }
+.resize_container_cuento{
+    width:615px;
+}
 .cuento_box{
     /*width: 28%;*/
     /*width: 196px;
@@ -557,6 +560,7 @@ body{
     margin-top: 3%;
     vertical-align: middle;
     font-size: 14px !important;
+    float: left;
 }
 .cuento_opciones img{
     width: 25%;
@@ -639,7 +643,7 @@ body{
     word-wrap:break-word;
 }
 #pizarron_historias{
-    background-size: 90% 100%;
+    background-size: 100% 100%;
     padding: 6% 0%;
     padding-bottom: 3%;
     background-repeat: no-repeat;
@@ -669,7 +673,8 @@ body{
     width: 25%;
     float: left;
     /*margin-left:6.25%;*/
-    margin-left:10.25%;
+    /*margin-left:10.25%;*/
+    margin-left:8.25%;
     margin-bottom: 6.25%;
     padding: 10px;
     /*min-width: 234px;
@@ -978,7 +983,7 @@ body{
     /*----------------KIDS CUENTO------------*/
     .resize_container{
         width:450px;
-        height:360px;
+        height:340px;
     }
     .cuento_box{
         /*width: 28%;*/
@@ -1074,7 +1079,7 @@ body{
         word-wrap:break-word;
     }
     #pizarron_historias{
-        background-size: 90% 100%;
+        background-size: 100% 100%;
         padding: 6% 0%;
         padding-bottom: 3%;
         background-repeat: no-repeat;
