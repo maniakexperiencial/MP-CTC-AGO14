@@ -54,8 +54,7 @@
 </nav>-->
 <header>
     <div class="Topbar">
-        <div class="ui one column page grid">
-            <div class="column" id="center_topbar">
+       <div style="width:950px;margin: auto;">
                 <div class="logo"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
                 <nav id="nav" role="navigation">
                     <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
@@ -79,14 +78,12 @@
 
                     </ul>
                 </nav>
-             </div>
-
-
-        </div>
+       </div>
 
     </div>
     <div class="Action_bar">
-        <div class="ui one column page grid">
+        <div style="width:950px;margin: auto;">
+
             <div class="column" id="center_actionbar">
                 <input type="text" id="Searchbox" placeholder="Search">
                 <select id="Selectbox">
@@ -96,11 +93,12 @@
                     <option value=""></option>
                 </select>
              </div>
+
         </div>
     </div>
 </header>
 
-<div class="ui one column page grid">
+<div style="width:950px;margin: auto;">
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
@@ -116,7 +114,7 @@
                 @yield('bottom_sidebar')
 
             </div>
-            <div class="thirteen wide column ">
+            <div class="twelve wide column ">
                    <div class="Title_section">@yield('title_section')</div>
 
                     @yield('content_center')
@@ -130,7 +128,7 @@
     </div>
 </div>
 <div class="footer">
-    <div class="ui one column page grid">
+    <div style="width:950px;margin: auto;">
         <div class="column text_right" >
             <a href="#">Contáctanos</a>
          </div>

@@ -13,7 +13,7 @@
 
 @section('bg_move')
 <div class="bg"></div>
-<div class="ui one column page grid bg_adition">
+<div style="width:950px;margin: auto;">
 
     <div class="column" style="height:100%">
         <div class="ui grid" style="height:100%">
@@ -22,7 +22,7 @@
                 <div class="three wide column"  style="height:100%">
 
 
-                    <img  border="0" src="{{ URL::to('/img/kid.png') }}" style="position: absolute;bottom: 5%">
+                    <img  border="0" src="{{ URL::to('/img/kid.png') }}" style="position: fixed;bottom: 5%">
 
 
 
@@ -91,7 +91,7 @@ Cuentos
 
 </div>
 
-<div  class="resize_container">
+<!--<div  class="resize_container">-->
 <!--resize_contain-->
 
 <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
@@ -177,7 +177,7 @@ Cuentos
 </a>
 
     <!--end resize_contain-->
-</div>
+<!--</div>-->
 
 <div class="pagination_wrap">
     <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
