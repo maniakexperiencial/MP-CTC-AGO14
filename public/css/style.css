@@ -55,6 +55,15 @@ body{
     overflow-x: hidden;
 }
 @keyframes MOVE-BG{
+    0% {
+        background-position: 1000% 5%;
+    }
+
+    100% {
+        background-position: 5% 5%;
+    }
+}
+@keyframes MOVE-BG{
     from {
         background-position: 1000% 5%;
     }
@@ -85,7 +94,8 @@ body{
 
     -webkit-animation-name: MOVE-BG;
     animation-name: MOVE-BG;
-    animation-duration: 100s;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
     timing-function: linear;
     -webkit-animation-duration: 200s;
     -webkit-animation-timing-function: linear;

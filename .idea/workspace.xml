@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/doctores/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/doctores/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/papas/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/papas/layout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -46,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/kids/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="207" column="73" selection-start="6590" selection-end="6590" vertical-scroll-proportion="0.5231417" vertical-offset="3146" max-vertical-offset="3893">
+            <state line="207" column="73" selection-start="6590" selection-end="6590" vertical-scroll-proportion="-14.346154" vertical-offset="3146" max-vertical-offset="3893">
               <folding />
             </state>
           </provider>
@@ -91,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="554" column="0" selection-start="10822" selection-end="10822" vertical-scroll-proportion="-20.8" vertical-offset="8898" max-vertical-offset="20128">
+            <state line="97" column="40" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.7626405" vertical-offset="1106" max-vertical-offset="20298">
               <folding />
             </state>
           </provider>
@@ -148,10 +146,10 @@
         <option value="$PROJECT_DIR$/app/views/doctores/videos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/papas/historias.blade.php" />
         <option value="$PROJECT_DIR$/app/views/doctores/historias.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/views/papas/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/doctores/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -579,15 +577,20 @@
       <created>1408455733831</created>
       <updated>1408455733831</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="-Monos mas grandes">
+      <created>1408508811664</created>
+      <updated>1408508811665</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17564656" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17602591" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -601,7 +604,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -654,7 +656,8 @@
     <MESSAGE value="-cambio tamaño de cuentos niños" />
     <MESSAGE value="-cambiado tamaño de videos y cuentos, con contenedor resize_container" />
     <MESSAGE value="-cambiado tamaño de videos , cuentos e historias con contenedor resize_container" />
-    <option name="LAST_COMMIT_MESSAGE" value="-cambiado tamaño de videos , cuentos e historias con contenedor resize_container" />
+    <MESSAGE value="-Monos mas grandes" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Monos mas grandes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -915,13 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="0" selection-start="10822" selection-end="10822" vertical-scroll-proportion="-20.8" vertical-offset="8898" max-vertical-offset="20128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="197" column="0" selection-start="6175" selection-end="6175" vertical-scroll-proportion="-7.9615383" vertical-offset="3142" max-vertical-offset="3842">
@@ -938,7 +934,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/kids/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="73" selection-start="6590" selection-end="6590" vertical-scroll-proportion="0.5231417" vertical-offset="3146" max-vertical-offset="3893">
+        <state line="207" column="73" selection-start="6590" selection-end="6590" vertical-scroll-proportion="-14.346154" vertical-offset="3146" max-vertical-offset="3893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="40" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.7626405" vertical-offset="1106" max-vertical-offset="20298">
           <folding />
         </state>
       </provider>
