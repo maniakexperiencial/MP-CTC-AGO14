@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_admin.css" afterPath="$PROJECT_DIR$/public/css/style_admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -75,19 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style_admin.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style_admin.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="18" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+            <state line="8" column="14" selection-start="172" selection-end="172" vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.default.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="55" selection-start="3537" selection-end="3537" vertical-scroll-proportion="0.6737805" vertical-offset="1394" max-vertical-offset="42789">
+            <state line="104" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0" vertical-offset="1983" max-vertical-offset="42789">
               <folding />
             </state>
           </provider>
@@ -170,8 +168,8 @@
         <option value="$PROJECT_DIR$/app/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style_admin.css" />
         <option value="$PROJECT_DIR$/public/css/style.default.css" />
+        <option value="$PROJECT_DIR$/public/css/style_admin.css" />
       </list>
     </option>
   </component>
@@ -637,7 +635,11 @@
       <created>1408512450255</created>
       <updated>1408512450255</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="-login admin">
+      <created>1408516151993</created>
+      <updated>1408516151993</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -715,7 +717,8 @@
     <MESSAGE value="-Monos mas grandes" />
     <MESSAGE value="-agregando linea extra animacion no es relevante" />
     <MESSAGE value="-menu classe active" />
-    <option name="LAST_COMMIT_MESSAGE" value="-menu classe active" />
+    <MESSAGE value="-login admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="-login admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1004,16 +1007,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
+    <entry file="file://$PROJECT_DIR$/public/css/style.default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="18" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+        <state line="104" column="0" selection-start="3424" selection-end="3424" vertical-scroll-proportion="0.0" vertical-offset="1983" max-vertical-offset="42789">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.default.css">
+    <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="55" selection-start="3537" selection-end="3537" vertical-scroll-proportion="0.6737805" vertical-offset="1394" max-vertical-offset="42789">
+        <state line="8" column="14" selection-start="172" selection-end="172" vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
