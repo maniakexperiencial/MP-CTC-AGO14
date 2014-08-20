@@ -84,7 +84,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="321" column="10" selection-start="6533" selection-end="6533" vertical-scroll-proportion="0.406657" vertical-offset="5176" max-vertical-offset="19499">
+            <state line="553" column="30" selection-start="10837" selection-end="10837" vertical-scroll-proportion="0.7510854" vertical-offset="8882" max-vertical-offset="19584">
               <folding />
             </state>
           </provider>
@@ -641,7 +641,11 @@
       <created>1408527807511</created>
       <updated>1408527807511</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="-Cambios drasticos tamaño fijo, nomas movi papalote mas abajo">
+      <created>1408527893809</created>
+      <updated>1408527893809</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -722,7 +726,8 @@
     <MESSAGE value="-login admin" />
     <MESSAGE value="-padding login admin inputs" />
     <MESSAGE value="-Cambios drasticos tamaño fijo" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Cambios drasticos tamaño fijo" />
+    <MESSAGE value="-Cambios drasticos tamaño fijo, nomas movi papalote mas abajo" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Cambios drasticos tamaño fijo, nomas movi papalote mas abajo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1028,7 +1033,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="321" column="10" selection-start="6533" selection-end="6533" vertical-scroll-proportion="0.406657" vertical-offset="5176" max-vertical-offset="19499">
+        <state line="553" column="30" selection-start="10837" selection-end="10837" vertical-scroll-proportion="0.7510854" vertical-offset="8882" max-vertical-offset="19584">
           <folding />
         </state>
       </provider>

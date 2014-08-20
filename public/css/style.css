@@ -500,8 +500,10 @@ body{
 }
 .cuento_box{
     /*width: 28%;*/
-    width: 196px;
-    height: 230px;
+    /*width: 196px;
+    height: 230px;*/
+    width: 170px;
+    height: 200px;
     float: left;
     margin: 5px;
     margin-left: 10px;
@@ -521,18 +523,20 @@ body{
 .cuento_title{
     width: 100%;
     height: auto;
-    font-size: 21px;
-
+    /*font-size: 21px;*/
+    font-size: 18px;
 }
 .cuento_by{
     width: 100%;
     height: auto;
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 16px;
     color:#c8e4ff;
 }
 .cuento_age{
     width: 100%;
     height: auto;
+    /*font-size: 14px;*/
     font-size: 14px;
     color:#c8e4ff;
 }
@@ -547,6 +551,7 @@ body{
     color:#c8e4ff;
     margin-top: 3%;
     vertical-align: middle;
+    font-size: 14px !important;
 }
 .cuento_opciones img{
     width: 25%;
