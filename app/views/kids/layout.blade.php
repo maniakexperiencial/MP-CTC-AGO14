@@ -205,15 +205,17 @@
             //$('.historia_box').css('height',$(window).height()*.1532175) ;
             $('#Left_bar img').css('max-height',$(window).height()*.14629049);
             $('.bg_adition img').css('max-width',$('#Left_bar').width());
-            $('.bg_adition img').css('max-height',$(window).height() *.17578125);
+            $('.bg_adition img').css('max-height',$(window).height() *.21);
         });
 
 
 
         //
         $('#Left_bar img').css('max-height',$(window).height()*.14629049);
+        /*$('.bg_adition img').css('max-width',$('#Left_bar').width());
+        $('.bg_adition img').css('max-height',$(window).height() *.17578125);*/
         $('.bg_adition img').css('max-width',$('#Left_bar').width());
-        $('.bg_adition img').css('max-height',$(window).height() *.17578125);
+        $('.bg_adition img').css('max-height',$(window).height() *.21);
     });
 
 </script>
