@@ -108,13 +108,17 @@ body{
     top: 0;
     bottom: 0;
     height: 100%;
-    z-index: -2;
+    z-index: -30;
     padding: 0% 18%;
 }
 .bg_adition img{
     position: absolute;
     bottom: 5%;
     margin-left: 2%;
+}
+.center_container{
+    width:950px;
+    margin: auto;
 }
 .align_center{
     text-align: center !important;

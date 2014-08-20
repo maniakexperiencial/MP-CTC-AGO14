@@ -13,7 +13,7 @@
 
 @section('bg_move')
 <div class="bg"></div>
-<div style="width:950px;margin: auto;">
+<div class="center_container">
 
     <div class="column" style="height:100%">
         <div class="ui grid" style="height:100%">

@@ -54,7 +54,7 @@
 </nav>-->
 <header>
     <div class="Topbar">
-       <div style="width:950px;margin: auto;">
+       <div class="center_container">
                 <div class="logo"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
                 <nav id="nav" role="navigation">
                     <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
@@ -82,7 +82,7 @@
 
     </div>
     <div class="Action_bar">
-        <div style="width:950px;margin: auto;">
+        <div class="center_container">
 
             <div class="column" id="center_actionbar">
                 <input type="text" id="Searchbox" placeholder="Search">
@@ -98,7 +98,7 @@
     </div>
 </header>
 
-<div style="width:950px;margin: auto;">
+<div class="center_container">
     <div class="column" id="content_wrap">
         <div class="ui grid">
         <div class="row">
@@ -128,7 +128,7 @@
     </div>
 </div>
 <div class="footer">
-    <div style="width:950px;margin: auto;">
+    <div class="center_container">
         <div class="column text_right" >
             <a href="#">Contáctanos</a>
          </div>
