@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/galeria.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/galeria.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -25,30 +30,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cuentos.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
+      <file leaf-file-name="videos.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/kids/videos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1429" selection-end="1429" vertical-scroll-proportion="-24.73077" vertical-offset="445" max-vertical-offset="4182">
+            <state line="90" column="51" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-17.538462" vertical-offset="1074" max-vertical-offset="2244">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kids/videos.blade.php">
+      <file leaf-file-name="cuentos.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="6" selection-start="317" selection-end="904" vertical-scroll-proportion="-20.26923" vertical-offset="119" max-vertical-offset="2244">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="210" column="0" selection-start="2036" selection-end="7917" vertical-scroll-proportion="-18.846153" vertical-offset="3080" max-vertical-offset="4182">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,7 +58,7 @@
       <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="34" selection-start="4206" selection-end="4206" vertical-scroll-proportion="-19.076923" vertical-offset="1714" max-vertical-offset="3842">
+            <state line="214" column="71" selection-start="6860" selection-end="6994" vertical-scroll-proportion="-23.0" vertical-offset="3040" max-vertical-offset="3842">
               <folding />
             </state>
           </provider>
@@ -65,7 +67,7 @@
       <file leaf-file-name="videos.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/papas/videos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="-20.153847" vertical-offset="122" max-vertical-offset="2244">
+            <state line="38" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="35.423077" vertical-offset="1567" max-vertical-offset="2244">
               <folding />
             </state>
           </provider>
@@ -86,31 +88,16 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="489" column="1" selection-start="9652" selection-end="9652" vertical-scroll-proportion="0.16063675" vertical-offset="8202" max-vertical-offset="20655">
+            <state line="987" column="21" selection-start="18465" selection-end="18465" vertical-scroll-proportion="0.45586106" vertical-offset="16464" max-vertical-offset="20672">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resumen.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/premiacion/resumen.blade.php">
+      <file leaf-file-name="ganadores.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="162" selection-end="207" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1377">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="historias.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/papas/historias.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="6" selection-start="908" selection-end="908" vertical-scroll-proportion="-16.346153" vertical-offset="238" max-vertical-offset="2720">
+            <state line="28" column="6" selection-start="717" selection-end="717" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1887">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -120,28 +107,34 @@
         </entry>
       </file>
       <file leaf-file-name="videos.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/doctores/videos.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/views/premiacion/videos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="6" selection-start="378" selection-end="968" vertical-scroll-proportion="-22.23077" vertical-offset="102" max-vertical-offset="2227">
+            <state line="41" column="6" selection-start="969" selection-end="969" vertical-scroll-proportion="3.3846154" vertical-offset="785" max-vertical-offset="2227">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bases.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/kids/bases.blade.php">
+      <file leaf-file-name="resumen.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/premiacion/resumen.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="124" selection-end="712" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1343">
+            <state line="30" column="6" selection-start="719" selection-end="719" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1394">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="historias.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/papas/historias.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="6" selection-start="908" selection-end="908" vertical-scroll-proportion="50.346153" vertical-offset="1972" max-vertical-offset="2720">
+              <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -190,16 +183,16 @@
         <option value="$PROJECT_DIR$/app/views/premiacion/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/doctores/historias.blade.php" />
         <option value="$PROJECT_DIR$/app/views/doctores/videos.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/premiacion/galeria.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" />
         <option value="$PROJECT_DIR$/app/views/kids/bases.blade.php" />
         <option value="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/kids/videos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/papas/bases.blade.php" />
         <option value="$PROJECT_DIR$/app/views/papas/historias.blade.php" />
         <option value="$PROJECT_DIR$/app/views/papas/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/galeria.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/resumen.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/videos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/kids/videos.blade.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
@@ -710,7 +703,11 @@
       <created>1408542558042</created>
       <updated>1408542558042</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="-Cambio de height resize container">
+      <created>1408542598408</created>
+      <updated>1408542598408</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1022,70 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="30" selection-start="3242" selection-end="3242" vertical-scroll-proportion="-13.076923" vertical-offset="1479" max-vertical-offset="4182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="129" selection-end="159" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="1870">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/galeria.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-18.5" vertical-offset="165" max-vertical-offset="2686">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/videos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="411" selection-end="411" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2210">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/resumen.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="162" selection-end="207" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1377">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/doctores/videos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="6" selection-start="378" selection-end="968" vertical-scroll-proportion="-22.23077" vertical-offset="102" max-vertical-offset="2227">
@@ -1112,27 +1045,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/galeria.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1429" selection-end="1429" vertical-scroll-proportion="-24.73077" vertical-offset="445" max-vertical-offset="4182">
+        <state line="15" column="0" selection-start="553" selection-end="1141" vertical-scroll-proportion="-3.4615386" vertical-offset="165" max-vertical-offset="2720">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/kids/videos.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="317" selection-end="904" vertical-scroll-proportion="-20.26923" vertical-offset="119" max-vertical-offset="2244">
+        <state line="28" column="6" selection-start="717" selection-end="717" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1887">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/resumen.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="6" selection-start="719" selection-end="719" vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="1394">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/historias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="6" selection-start="908" selection-end="908" vertical-scroll-proportion="50.346153" vertical-offset="1972" max-vertical-offset="2720">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="35.423077" vertical-offset="1567" max-vertical-offset="2244">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,9 +1102,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/papas/historias.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="6" selection-start="908" selection-end="908" vertical-scroll-proportion="-16.346153" vertical-offset="238" max-vertical-offset="2720">
+        <state line="226" column="11" selection-start="7468" selection-end="7468" vertical-scroll-proportion="0.49778435" vertical-offset="3505" max-vertical-offset="4182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="71" selection-start="6860" selection-end="6994" vertical-scroll-proportion="-23.0" vertical-offset="3040" max-vertical-offset="3842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/videos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="6" selection-start="969" selection-end="969" vertical-scroll-proportion="3.3846154" vertical-offset="785" max-vertical-offset="2227">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1156,23 +1126,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="34" selection-start="4206" selection-end="4206" vertical-scroll-proportion="-19.076923" vertical-offset="1714" max-vertical-offset="3842">
+        <state line="210" column="0" selection-start="2036" selection-end="7917" vertical-scroll-proportion="-18.846153" vertical-offset="3080" max-vertical-offset="4182">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/papas/videos.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/kids/videos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="-20.153847" vertical-offset="122" max-vertical-offset="2244">
-          <folding />
+        <state line="90" column="51" selection-start="2556" selection-end="2556" vertical-scroll-proportion="-17.538462" vertical-offset="1074" max-vertical-offset="2244">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="489" column="1" selection-start="9652" selection-end="9652" vertical-scroll-proportion="0.16063675" vertical-offset="8202" max-vertical-offset="20655">
+        <state line="987" column="21" selection-start="18465" selection-end="18465" vertical-scroll-proportion="0.45586106" vertical-offset="16464" max-vertical-offset="20672">
           <folding />
         </state>
       </provider>

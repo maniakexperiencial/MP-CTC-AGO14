@@ -4,28 +4,29 @@
 @section('bg_move')
 <div class="bg"></div>
 <!--<div class="ui one column page grid bg_adition">-->
-<div class="center_container">
+<div class="ui one column page grid bg_adition">
+    <div class="center_container">
+        <div class="column" style="height:100%">
+            <div class="ui grid" style="height:100%">
+                <div class="row" style="height:100%">
 
-    <div class="column" style="height:100%">
-        <div class="ui grid" style="height:100%">
-            <div class="row" style="height:100%">
-
-                <div class="three wide column"  style="height:100%">
+                    <div class="three wide column"  style="height:100%">
 
 
-                    <img  border="0" src="{{ URL::to('/img/copa.png') }}" style="position: absolute;bottom: 5%">
+                        <img  border="0" src="{{ URL::to('/img/copa.png') }}" >
 
+
+
+                    </div>
+                    <div class="thirteen wide column ">
+
+                    </div>
 
 
                 </div>
-                <div class="thirteen wide column ">
-
-                </div>
-
-
             </div>
-        </div>
 
+        </div>
     </div>
 </div>
 @stop
