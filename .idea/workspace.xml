@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/premiacion/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/premiacion/layout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,7 +46,7 @@
       <file leaf-file-name="cuentos.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="116" selection-start="6308" selection-end="6308" vertical-scroll-proportion="-24.73077" vertical-offset="2264" max-vertical-offset="4182">
+            <state line="162" column="57" selection-start="5657" selection-end="5714" vertical-scroll-proportion="-14.923077" vertical-offset="2366" max-vertical-offset="4182">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -65,7 +63,7 @@
       <file leaf-file-name="ganadores.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="212" selection-end="212" vertical-scroll-proportion="16.346153" vertical-offset="510" max-vertical-offset="1887">
+            <state line="66" column="35" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-13.730769" vertical-offset="765" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -74,7 +72,7 @@
       <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="19" selection-start="3129" selection-end="3129" vertical-scroll-proportion="-6.769231" vertical-offset="1541" max-vertical-offset="4182">
+            <state line="101" column="19" selection-start="3129" selection-end="3129" vertical-scroll-proportion="8.923077" vertical-offset="1949" max-vertical-offset="4182">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -130,7 +128,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="15" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.7122905" vertical-offset="1377" max-vertical-offset="16354">
+            <state line="680" column="22" selection-start="13075" selection-end="13075" vertical-scroll-proportion="0.50506514" vertical-offset="11211" max-vertical-offset="16371">
               <folding />
             </state>
           </provider>
@@ -242,8 +240,8 @@
         <option value="$PROJECT_DIR$/app/views/kids/videos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
         <option value="$PROJECT_DIR$/app/views/premiacion/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
@@ -766,7 +764,11 @@
       <created>1408543981659</created>
       <updated>1408543981659</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="-Eliminacion de reglas de css media queries">
+      <created>1408547732106</created>
+      <updated>1408547732106</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -827,7 +829,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-13/08/2014" />
     <MESSAGE value="-CAMBIOS EN TAMAÑOS, posicion personas fixed, calculos de height en historias_box,videox_box etc.. 14/08/2014" />
     <MESSAGE value="-Cambios tamaño de galeria y seccion bases de paginas, 16/08/2014" />
     <MESSAGE value="-Home, cambios tamaño historia,premios. 18/08/2014" />
@@ -852,7 +853,8 @@
     <MESSAGE value="-Cambio de height resize container" />
     <MESSAGE value="-Cambio de height resize container en pantalla chica" />
     <MESSAGE value="-Cambio en home, 2 rows en vez de 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Cambio en home, 2 rows en vez de 1" />
+    <MESSAGE value="-Eliminacion de reglas de css media queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Eliminacion de reglas de css media queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1221,9 +1223,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="19" selection-start="3129" selection-end="3129" vertical-scroll-proportion="8.923077" vertical-offset="1949" max-vertical-offset="4182">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="116" selection-start="6308" selection-end="6308" vertical-scroll-proportion="-24.73077" vertical-offset="2264" max-vertical-offset="4182">
+        <state line="162" column="57" selection-start="5657" selection-end="5714" vertical-scroll-proportion="-14.923077" vertical-offset="2366" max-vertical-offset="4182">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -1238,23 +1249,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/premiacion/ganadores.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="212" selection-end="212" vertical-scroll-proportion="16.346153" vertical-offset="510" max-vertical-offset="1887">
+        <state line="66" column="35" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-13.730769" vertical-offset="765" max-vertical-offset="1904">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/premiacion/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="19" selection-start="3129" selection-end="3129" vertical-scroll-proportion="-6.769231" vertical-offset="1541" max-vertical-offset="4182">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="15" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.7122905" vertical-offset="1377" max-vertical-offset="16354">
+        <state line="680" column="22" selection-start="13075" selection-end="13075" vertical-scroll-proportion="0.50506514" vertical-offset="11211" max-vertical-offset="16371">
           <folding />
         </state>
       </provider>

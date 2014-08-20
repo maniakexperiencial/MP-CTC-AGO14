@@ -64,6 +64,7 @@ Ganadores
         <div class="ganador_info">-José García</div>
         <div class="ganador_age">13 años</div>
     </div>
+<div style="width: 100%; height: 60px;float:left;"></div>
     <div class="ganador_box ganador_1">
         <div class="ganador_title">La Casa Azul</div>
         <div class="ganador_info">-José García</div>
