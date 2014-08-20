@@ -105,7 +105,7 @@
 </header>
 
 <!--<div class="ui one column page grid">-->
-<div class="center_container">
+<div class="center_container" style="min-height: 100%;height:auto;">
 
     <div class="column" id="content_wrap">
         <div class="ui grid">

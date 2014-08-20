@@ -160,7 +160,7 @@ Cuentos
         </div>
     </div>
 </a>
-
+<div style="width: 100%; height: 45px;float:left;"></div>
 <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
