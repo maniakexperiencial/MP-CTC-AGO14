@@ -76,7 +76,7 @@
                         <li>
                             <a href="{{ URL::route('doctores') }}">Médicos</a>
                         </li>
-                        <li>
+                        <li class="menu_active">
                             <a href="{{ URL::route('premiacion') }}">Premiación</a>
                         </li>
                     </ul>

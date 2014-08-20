@@ -116,6 +116,8 @@ Videos
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
         $('body').css({'background-image': 'url('+bg+')'});
 
+        $('.video_box').eq( 2).css('margin-bottom','0px');
+        $('.video_box').eq( 3).css('margin-bottom','0px');
     });
 
 </script>

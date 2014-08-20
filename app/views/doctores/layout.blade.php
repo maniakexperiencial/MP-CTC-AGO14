@@ -70,7 +70,7 @@
                         <li>
                             <a href="{{ URL::route('papas') }}">Papás</a>
                         </li>
-                        <li>
+                        <li class="menu_active">
                             <a href="{{ URL::route('doctores') }}">Médicos</a>
                         </li>
                         <li>
