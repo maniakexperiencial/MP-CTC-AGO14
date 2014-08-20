@@ -75,10 +75,12 @@
                 <div class="keep"><input type="checkbox" /> Keep me logged in</div>
 
             </form>
-            <div>&nbsp;</div>
+            <div style="margin-bottom: 15%;">&nbsp;</div>
 
             <div class="login_option">¿Aún no estas registrado?</div>
-            <div class="login_option">Registrese Aquí</div>
+            <div class="login_option">Registrese <a href="#"><b>Aquí</b></a></div>
+
+            <div class="login_recover"><a href="#"><b>Recuperar contraseña</b></a></div>
         </div><!--loginboxinner-->
     </div><!--loginbox-->
 

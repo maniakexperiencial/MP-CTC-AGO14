@@ -29,9 +29,26 @@
 .login_option{
     width: 100%;
     text-align: center !important;
+    font-size: 1.5em;
+    color:#0057a8;
 }
+.login_option a{
+    color: inherit;
+    text-decoration: underline;
 
+}
+.login_recover{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center !important;
+    font-size: 1.1em;
+    color:#01305c;
+}
+.login_recover a{
+    color: inherit;
+    text-decoration: underline;
 
+}
 @media all and (min-width : 318px) and (max-width : 614px) {
     .loginbox{
         width: 95%;

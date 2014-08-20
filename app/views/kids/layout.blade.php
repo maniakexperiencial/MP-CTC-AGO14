@@ -76,6 +76,7 @@
                         <li>
                             <a href="{{ URL::route('premiacion') }}">Premiación</a>
                         </li>
+
                     </ul>
                 </nav>
              </div>
