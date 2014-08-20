@@ -119,20 +119,40 @@
                 </div>
                 <div class="four wide column align_center   ">
                     @yield('contest1')
-                    @yield('contest3')
+
 
 
                 </div>
                 <div class="four wide column align_center ">
                     @yield('contest2')
+
+                </div>
+                <div class="four wide column align_center ">
+
+
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="four wide column align_center ">
+
+
+                </div>
+                <div class="four wide column align_center   ">
+
+                    @yield('contest3')
+
+
+                </div>
+                <div class="four wide column align_center ">
+
                     @yield('contest4')
                 </div>
                 <div class="four wide column align_center ">
 
 
                 </div>
-
-
             </div>
         </div>
 
