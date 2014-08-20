@@ -91,7 +91,7 @@ Cuentos
 
 </div>
 
-<!--<div  class="resize_container">-->
+<div  class="resize_container">
 <!--resize_contain-->
 
 <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
@@ -177,7 +177,7 @@ Cuentos
 </a>
 
     <!--end resize_contain-->
-<!--</div>-->
+</div>
 
 <div class="pagination_wrap">
     <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>

@@ -2,7 +2,8 @@
 
 @section('bg_move')
 <div class="bg"></div>
-<div class="ui one column page grid bg_adition">
+<!--<div class="ui one column page grid bg_adition">-->
+<div class="center_container">
 
     <div class="column" style="height:100%">
         <div class="ui grid" style="height:100%">
