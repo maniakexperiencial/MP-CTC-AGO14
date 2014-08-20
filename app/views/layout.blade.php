@@ -61,7 +61,7 @@
                     <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
                     <a href="#" title="Hide navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
                     <ul id="">
-                        <li>
+                       <!-- <li>
                             <a href="{{ URL::route('root') }}">Home</a>
                         </li>
                         <li>
@@ -75,7 +75,7 @@
                         </li>
                         <li>
                             <a href="{{ URL::route('premiacion') }}">Premiación</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </nav>
             </div>
