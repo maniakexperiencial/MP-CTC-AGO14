@@ -28,9 +28,6 @@
 <![endif]-->
 
 
-
-
-
 </head>
 
 <body class="loginpage signup_bg">
@@ -61,9 +58,19 @@
                 </div><!--loginf-->
             </div><!--nopassword-->
 
-            <form id="login" action="dashboard.html" method="post">
+            {{ Form:open(['route' => 'signupUser_route']) }}
 
-                <label for="select_type" class="login_label">Tipo de usuario</label>
+                <div class="form-group">
+                    {{Form::label('name', 'Name') }}
+                    {{Form::text('name', null, ['class' => 'form-control']) }}
+                </div>
+
+
+
+            {{Form:close()}}
+
+            <form id="login" action="dashboard.html" method="post">
+                <label for="select_type" class="login_label">Tipo de usuario 123</label>
 
                 <select name="select_type" id="select_type" class="signup_blue signup_select">
                     <option value="padre" selected="selected">Padre</option>
@@ -105,7 +112,8 @@
                 <input type="text" name="mobile" id="mobile" class="signup_blue" required="required" />
 
                 <label for="password" class="login_label">Contraseña</label>
-                <input type="text" name="password" id="password" class="signup_blue" required="required" />
+
+                <input type="password" name="password" id="password" class="signup_blue" required="required" />
 
 
                <a href="{{ URL::route('login') }}"><div class="signup_backbtn">Regresar</div></a>

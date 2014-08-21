@@ -63,11 +63,11 @@
                 <label for="username" class="login_label">CORREO ELECTRÓNICO</label>
 
 
-                    	<input type="text" name="username" id="username" class="login_blue" />
+                    	<input type="text" name="username" id="username" class="login_blue" required="required"  />
 
                 <label for="password" class="login_label">CONTRASEÑA</label>
 
-                    	<input type="password" name="password" id="password" class="login_blue" />
+                    	<input type="password" name="password" id="password" class="login_blue" required="required"  />
 
 
                 <button>ENTRAR</button>
