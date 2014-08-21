@@ -60,7 +60,7 @@
             </div><!--nopassword-->
 
             <form id="login" action="dashboard.html" method="post">
-                <label for="username" class="login_label">NOMBRE DE USUARIO</label>
+                <label for="username" class="login_label">CORREO ELECTRÓNICO</label>
 
 
                     	<input type="text" name="username" id="username" class="login_blue" />
@@ -78,7 +78,7 @@
             <div style="margin-bottom: 15%;">&nbsp;</div>
 
             <div class="login_option">¿Aún no estas registrado?</div>
-            <div class="login_option">Registrese <a href="#"><b>Aquí</b></a></div>
+            <div class="login_option">Registrese <a href="{{ URL::route('signup') }}"><b>Aquí</b></a></div>
 
             <div class="login_recover"><a href="#"><b>Recuperar contraseña</b></a></div>
         </div><!--loginboxinner-->

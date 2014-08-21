@@ -18,8 +18,12 @@ Route::get('/',array('as'=>'root', function()
 
 /*-----------------------------------------------ADMINISTRATOR-------------------------------*/
 
-Route::get("admin",array('as'=>'admin',function(){
+Route::get("login",array('as'=>'login',function(){
     return View::make('admin.index');
+}));
+
+Route::get("signup",array('as'=>'signup',function(){
+    return View::make('admin.signup');
 }));
 
 
