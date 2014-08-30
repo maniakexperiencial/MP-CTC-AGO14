@@ -59,22 +59,29 @@
                 </div><!--loginf-->
             </div><!--nopassword-->
 
-            <form id="login" action="dashboard.html" method="post">
-                <label for="username" class="login_label">CORREO ELECTRÓNICO</label>
+            {{ Form::open(['route' => 'loginUser_route']) }}
+            @if (Session::has('mensaje_request'))
+            {{ Session::get('mensaje_request') }}
+            @endif
 
+            <div class="form-group">
+                {{Form::label('email', 'CORREO ELECTRÓNICO', ['class' => 'login_label']) }}
+                {{Form::email('email', null, ['class' => 'login_blue','id'=>'email']) }}
+                {{$errors->first('email',"<span class=error>:message</span>")}}
 
-                    	<input type="text" name="username" id="username" class="login_blue" required="required"  />
+            </div>
+            <div class="form-group">
+                {{Form::label('password', 'CONTRASEÑA', ['class' => 'login_label']) }}
+                {{Form::password('password',['class' => 'login_blue','id'=>'password']) }}
+                {{$errors->first('password',"<span class=error>:message</span>")}}
 
-                <label for="password" class="login_label">CONTRASEÑA</label>
-
-                    	<input type="password" name="password" id="password" class="login_blue" required="required"  />
-
-
+            </div>
                 <button>ENTRAR</button>
 
-                <div class="keep"><input type="checkbox" /> Keep me logged in</div>
+                <div class="keep"><input type="checkbox" name="remember" id="remember" /><label for="remember"> Keep me logged in</label></div>
 
-            </form>
+            {{Form::close()}}
+
             <div style="margin-bottom: 15%;">&nbsp;</div>
 
             <div class="login_option">¿Aún no estas registrado?</div>

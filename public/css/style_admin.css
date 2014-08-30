@@ -1,6 +1,28 @@
 /*CSS FOR ADMIN*/
+@font-face {
+    font-family: 'Mandingo';
+    src: url('../fonts/MANDINGO.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/MANDINGO.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MANDINGO.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/MANDINGO.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/MANDINGO.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
+@font-face {
+    font-family: 'Opensansreg';
+    src: url('../fonts/OpenSans-Regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 
+}
+.error{
+    color: red;
+}
+#message_ajax{
+    margin-left: 20px;
+}
 .login_blue{
     background-color: #0057a8 !important;
     color: white !important;
@@ -91,6 +113,465 @@
 #select_institution{
     display: none;
 }
+/*------------------------------------------------------------------------ADMIN SECTION------------------------------------------*/
+
+.bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90%;
+    background: url(../img/nubes_bg.png) 0% 0% repeat;
+    background-size: contain;
+    z-index: -3;
+    opacity: .2;
+
+
+}
+.vernav2{
+    border-right:1px solid #c3e4e8;
+}
+.vernav2 ul li{
+    border-bottom: 1px solid #c3e4e8;
+}
+.vernav2 ul li.active{
+    background-color: /*#fcfcfc;*/#dff1fc;
+}
+.vernav2 ul li a:hover { background-color: /*#fcfcfc;*/#dff1fc; }
+.iconmenu ul li a.history_icon {
+    background-image: url(../img/icons/historia_icon.png) !important;
+}
+.iconmenu ul li a.user_icon {
+    background-image: url(../img/icons/user_icon.png) !important;
+}
+.iconmenu ul li a.preselect_icon {
+    background-image: url(../img/icons/preselect_icon.png) !important;
+}
+.iconmenu ul li a.finalist_icon {
+    background-image: url(../img/icons/finalist_icon.png) !important;
+}
+.iconmenu ul li a.report_icon {
+    background-image: url(../img/icons/report_icon.png) !important;
+}
+.iconmenu ul li a {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-weight: 200;
+    padding-left: 60px;
+    font-size: 16px;
+}
+.pagetitle{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    font-size: 18px !important;
+}
+.pagesubtitle {
+    margin: 0 20px 10px 20px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+}
+.headermenu li a span.icon-flatscreen{
+    background: url(../img/icons/screen_icon.png) no-repeat center center !important;
+ }
+.headermenu li.current a{
+    background: url(../img/icons/arrow-active2.png) no-repeat center bottom !important;
+}
+
+/*TABLES*/
+/*.dataTables_length{
+    background-color:#cbe6fe ;
+    webkit-box-shadow:none;
+    box-shadow:none;
+    border:none;
+}*/
+.table_blue{
+    background-color: #cbe6fe;
+    border: 1px solid #5195d6;
+    font-size: 16px;
+}
+.t_white{
+    background-color: white;
+    color: #003362;
+    border-color:#5195d6 !important ;
+}
+.gradeA td{
+    padding: 20px 10px;
+    height: 50px;
+    border:none !important;
+    border-left: 1px solid #5195d6 !important;
+    border-bottom: 1px solid #5195d6 !important;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.btn_admin{
+    text-decoration: none;
+    background-color: #0057a8;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 12px!important;
+}
+.finalist_wrap_cell{
+    line-height: 40px;
+    height:auto;
+    vertical-align: middle;
+}
+.finalist_cup{
+    margin-left:5px ;
+    max-height: 40px ;
+    vertical-align: middle ;
+}
+
+.position_number{
+    width: 6px;
+    height: 16px;
+    padding: 5px 7px;
+    background-color: white;
+    color: #003362;
+    margin-left: 5px;
+    font-size: 11px;
+}
+.position_next,.position_last,.position_first,.position_prev{
+    padding: 5px 7px;
+    margin-left: 5px;
+    color: #003362;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+
+.form_wrap{
+    width: 500px;
+    padding: 15px;
+    height:auto;
+    background-color: #cbe6fe;
+}
+.form_btnwrap{
+    width:100%;
+    height:50px;
+    display: inline-block;
+}
+.form_wrap button {
+    float: right;
+    width: 25%;
+    background-color: #0057a8;
+    border: 1px solid #0057a8;
+    margin: 10px 0px;
+}
+.success_message{
+    color: white;
+    background-color:#09c52e;
+    padding: 5px 10px;
+}
+.error_message{
+    color: white;
+    background-color:#c52e20;
+    padding: 5px 10px;
+}
+
+/*----FORM FOR CUENTOS E HISTORIAS--*/
+.form_blue{
+    background-color: #70c6ff;
+    width: 95%;
+    height: 545px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.form_white{
+    background-color:white;
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.form_center{
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255,255,255,.4);
+
+}
+.cuento_label{
+    color: #485b79;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif;
+}
+.cuento_label_sub{
+    color: #485b79;
+    font-weight:lighter;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+}
+.cuento_input{
+    background-color: white !important;
+    margin: 2px 0px;
+    padding: 5px 5% !important;
+    width: 90% !important;
+    color: #485b79 !important;
+}
+.cuento_escribe{
+    width:90%;
+    background-color: #0057a8 !important;
+    line-height: 35px;
+    padding: 0px 5%;
+    color: white !important;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    height:35px;
+}
+.cuento_textarea{
+    background-color: #0057a8 !important;
+    color: white !important;
+    margin: 0px 0px;
+    padding: 5px 5% !important;
+    border: none;
+    width: 90% !important;
+}
+/*----------------KIDS CUENTO------------*/
+
+.cuento_box{
+    /*width: 28%;*/
+    /*width: 196px;
+    height: 230px;*/
+    width: 170px;
+    height: 280px;
+    float: left;
+    margin: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    /*min-height: 200px;*/
+    /*min-width: 214px;*/
+    /*min-width: 191px;*/
+    background-color: #0084ff;
+    color: white;
+    word-wrap:break-word;
+    margin-bottom: 0%;
+}
+.cuento_box i.icon{
+    opacity: 1 !important;
+
+}
+.cuento_title{
+    width: 100%;
+    height: auto;
+    /*font-size: 21px;*/
+    font-size: 18px;
+}
+.cuento_by{
+    width: 100%;
+    height: auto;
+    /*font-size: 18px;*/
+    font-size: 16px;
+    color:#c8e4ff;
+}
+.cuento_age{
+    width: 100%;
+    height: auto;
+    /*font-size: 14px;*/
+    font-size: 14px;
+    color:#c8e4ff;
+}
+.cuento_image{
+    width: 100%;
+    background-color: white;
+    height: 55%;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+.cuento_opciones{
+    color:#c8e4ff;
+    margin-top: 3%;
+    margin-left: 3%;
+    width:45%;
+    vertical-align: middle;
+    font-size: 14px !important;
+    float: left;
+}
+.cuento_opciones img{
+    width: 25%;
+    margin-right: 5%;
+}
+.cuento_love{
+    color: #c8e4ff;
+    margin-top: 3%;
+    vertical-align: middle;
+    font-size: 14px !important;
+    float: left;
+    margin-left:5% ;
+}
+.cuento_love img{
+    width: 70%;
+    margin-right: 5%;
+}
+
+.cuento_admin_options{
+    margin-top: 3%;
+    width:32%;
+    float: left;
+    text-align: center;
+    border-left:1px solid white;
+}
+.cuento_admin_options a{
+    color: inherit;
+    text-decoration: none;
+}
+.cuento_admin_options:first-child{
+    border: none !important;
+}
+
+/*-------------------PAPAS HISTORIAS---------*/
+#pizarron_historias{
+    width:700px;
+    height: 436px;
+    margin: auto;
+    background-size: 100% 100%;
+    padding: 6% 0%;
+    padding-bottom: 3%;
+    background-image: url(http://localhost:8000/img/pizarron2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+.historia_box{
+    width: 181px;
+    height:130px;
+    /* min-width: 148px;*/
+    float: left;
+    margin-left: 15%;
+    margin-top: 1%;
+    margin-bottom: 9%;
+    padding: 10px;
+    /* min-height:150px;*/
+    background-image:url("../img/historia.png") ;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: black;
+    word-wrap:break-word;
+}
+#pizarron_historias{
+    background-size: 100% 100%;
+    padding: 6% 0%;
+    padding-bottom: 3%;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+.historia_title{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 1.5em;
+
+}
+.historia_info{
+    width: 100%;
+    text-align:left;
+    font-size: 1em;
+
+}
+
+/*-----------------------------------------------------BUTTON----------------------------------------*/
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    background-color: #0057a8;
+    border: 1px solid #0057a8;
+    color:white;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+/*--------------------------------------------------LIGHTBOX----------------------*/
+/*FOR cuentos Lightbox*/
+
+.hidden_cuento{
+    position: relative;
+    display: none;
+    color:#0057a8;
+    min-width: 200px;
+    width: 60%;
+    min-height: 90%;
+    max-height: 90%;
+    height: auto;
+    text-align: center;
+    background-color: rgba(40,116,167,.7);
+    margin:auto;
+    overflow: auto;
+    font-family: 'Opensansreg' !important;
+    font-size: 16px;
+}
+.hidden_cuento_title{
+    width:100%;
+    min-height:50px;
+    height:auto;
+    text-align: center;
+}
+.hidden_cuento_title h2,h5{
+    font-family: 'Opensansreg' !important;
+}
+.cuento_first_wrap{
+    width: 95%;
+    display: inline-block;
+    margin-top: 3%;
+    min-height: 30%;
+    max-height: 30%;
+    height: auto;
+    background-color: #e5f5ff;
+}
+.cuento_first_wrap img{
+    height: auto;
+    max-width: 100%;
+    max-height: 50%;
+    width: auto;
+}
+.cuento_second_wrap{
+    width: 95%;
+    display: inline-block;
+    margin-top: 3%;
+    min-height: 20%;
+    max-height: 20%;
+    overflow: auto;
+    height: auto;
+    background-color: #0057a8;
+    color: white;
+    text-align: left;
+}
+.cuento_second_wrap_title{
+    width:95%;
+    margin: auto;
+    margin-top: 5px;
+    min-height:20px;
+    height:auto;
+    text-align:left;
+}
+
 @media all and (min-width : 318px) and (max-width : 614px) {
     .loginbox{
         width: 95%;

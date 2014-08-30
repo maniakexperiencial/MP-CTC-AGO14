@@ -32,6 +32,29 @@ App::after(function($request, $response)
 | integrates HTTP Basic authentication for quick, simple checking.
 |
 */
+/* FILTERS FOR USER TYPE*/
+Route::filter('admin_filter', function(){
+    if(Auth::user()->type == 0){
+
+    }else{
+        return Redirect::route('redirect');
+    };
+});
+Route::filter('juez_filter', function(){
+    if(Auth::user()->type == 1){
+
+    }else{
+        return Redirect::route('redirect');
+    };
+});
+Route::filter('pd_filter', function(){
+    if(Auth::user()->type == 2){
+
+    }else{
+        return Redirect::route('redirect');
+    };
+});
+/*END FILTERS FOR USER TYPE*/
 
 Route::filter('auth', function()
 {

@@ -64,6 +64,9 @@
                 <nav id="nav" role="navigation">
                     <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
                     <a href="#" title="Hide navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                    <ul class="login_ul">
+                        <li><a href="{{Url::route('loginUser_route')}}">Login</a></li>
+                    </ul>
                     <ul id="">
                         <li>
                             <a href="{{ URL::route('root') }}">Home</a>
@@ -137,7 +140,7 @@
     </div>
 </div>
 <div class="footer">
-    <div class="ui one column page grid">
+    <div class="center_container">
         <div class="column text_right" >
             <a href="#">Contáctanos</a>
          </div>

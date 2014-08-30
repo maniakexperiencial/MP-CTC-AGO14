@@ -41,11 +41,11 @@
                 <p>premium admin template</p>-->
             </div><!--logo-->
 
-            <br clear="all" /><br />
+            <!--<br clear="all" /><br />-->
 
-            <div class="nousername">
+            <!--<div class="nousername">
 				<div class="loginmsg">The password you entered is incorrect.</div>
-            </div><!--nousername-->
+            </div>
 
             <div class="nopassword">
 				<div class="loginmsg">The password you entered is incorrect.</div>
@@ -55,74 +55,70 @@
                         <h4></h4>
                         <a href="index.blade.php">Not <span></span>?</a>
                     </div>
-                </div><!--loginf-->
-            </div><!--nopassword-->
+                </div>
+            </div>-->
 
-            {{ Form:open(['route' => 'signupUser_route']) }}
+            {{ Form::open(['route' => 'signupUser_route']) }}
 
                 <div class="form-group">
-                    {{Form::label('name', 'Name') }}
-                    {{Form::text('name', null, ['class' => 'form-control']) }}
+                    {{Form::label('select_type', 'Tipo de usuario', ['class' => 'login_label',]) }}
+                    {{Form::select('select_type',['padre' => 'Padre', 'doctor' => 'Doctor'], 'padre',['class'=>'signup_blue signup_select', 'id'=>'select_type'])}}
                 </div>
+            <div class="form-group">
+                    {{Form::label('select_institution', 'Institución', ['class' => 'login_label','id'=>'institution_label']) }}
+                    {{Form::select('select_institution',['IMSS' => 'IMSS'], null,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}
+            </div>
+            <div class="form-group">
+                    {{Form::label('name', 'Nombre Completo', ['class' => 'login_label']) }}
+                    {{Form::text('name', null, ['class' => 'signup_blue','id'=>'name']) }}
+                {{$errors->first('name',"<span class=error>:message</span>")}}
+            </div>
+            <div class="form-group">
+                    {{Form::label('lastname', 'Apellidos', ['class' => 'login_label']) }}
+                    {{Form::text('lastname', null, ['class' => 'signup_blue','id'=>'lastname']) }}
+                {{$errors->first('lastname',"<span class=error>:message</span>")}}
+            </div>
+            <div class="form-group">
+                    {{Form::label('email', 'Correo electrónico', ['class' => 'login_label']) }}
+                    {{Form::email('email', null, ['class' => 'signup_blue','id'=>'email']) }}
+                {{$errors->first('email',"<span class=error>:message</span>")}}
+            </div>
+            <div class="form-group">
+                    {{Form::label('address', 'Dirección', ['class' => 'login_label']) }}
+                    {{Form::text('address', null, ['class' => 'signup_blue','id'=>'address']) }}
+                {{$errors->first('address',"<span class=error>:message</span>")}}
+            </div>
+            <div class="form-group">
+                    {{Form::label('phone', 'Teléfono', ['class' => 'login_label']) }}
+                    {{Form::text('phone', null, ['class' => 'signup_blue','id'=>'phone']) }}
+                    {{$errors->first('phone',"<span class=error>:message</span>")}}
+             </div>
+            <div class="form-group">
+                    {{Form::label('mobile', 'Celular', ['class' => 'login_label']) }}
+                    {{Form::text('mobile', null, ['class' => 'signup_blue','id'=>'mobile']) }}
+                     {{$errors->first('mobile', "<span class=error>:message</span>")}}
+             </div>
+            <div class="form-group">
+                    {{Form::label('password', 'Contraseña', ['class' => 'login_label']) }}
+                    {{Form::password('password',['class' => 'signup_blue','id'=>'password']) }}
+                {{$errors->first('password',"<span class=error>:message</span>")}}
+            </div>
+            <div class="form-group">
+                {{Form::label('password_confirmation', 'Repetir Contraseña', ['class' => 'login_label']) }}
+                {{Form::password('password_confirmation',['class' => 'signup_blue','id'=>'password']) }}
+
+            </div>
+                    <a href="{{ URL::route('loginUser_route') }}"><div class="signup_backbtn">Regresar</div></a>
+
+                    <button>Registrar</button>
 
 
 
-            {{Form:close()}}
-
-            <form id="login" action="dashboard.html" method="post">
-                <label for="select_type" class="login_label">Tipo de usuario 123</label>
-
-                <select name="select_type" id="select_type" class="signup_blue signup_select">
-                    <option value="padre" selected="selected">Padre</option>
-                    <option value="doctor">Doctor</option>
 
 
-                </select>
-
-                <label for="institution" class="login_label" id="institution_label">Institución</label>
-                <select name="select_institution" id="select_institution" class="signup_blue signup_select">
-                    <option value="IMSS" selected="selected">IMSS</option>
+            {{Form::close()}}
 
 
-
-                </select>
-
-
-                <label for="name" class="login_label">Nombre completo</label>
-                	<input type="text" name="username" id="name" class="signup_blue" required="required" />
-
-
-                <label for="lastname" class="login_label" required="required">Apellidos</label>
-                <input type="text" name="lastname" id="lastname" class="signup_blue" />
-
-
-                <label for="email" class="login_label">Correo electrónico</label>
-                <input type="email" name="email" id="email" class="signup_blue" required="required" />
-
-
-
-                <label for="address" class="login_label">Dirección</label>
-                <input type="text" name="address" id="address" class="signup_blue" required="required" />
-
-                <label for="phone" class="login_label">Teléfono</label>
-                <input type="text" name="phone" id="phone" class="signup_blue" required="required" />
-
-
-                <label for="mobile" class="login_label">Celular</label>
-                <input type="text" name="mobile" id="mobile" class="signup_blue" required="required" />
-
-                <label for="password" class="login_label">Contraseña</label>
-
-                <input type="password" name="password" id="password" class="signup_blue" required="required" />
-
-
-               <a href="{{ URL::route('login') }}"><div class="signup_backbtn">Regresar</div></a>
-
-                <button>Registrar</button>
-
-
-
-            </form>
 
         </div><!--loginboxinner-->
     </div><!--loginbox-->
@@ -132,6 +128,24 @@
         var bg="{{ URL::to('/img/bg_land.jpg') }}";
 
        $('.loginpage').css({'background-image': 'url('+bg+')'});
+
+        switch($('#select_type').val()){
+            case 'doctor':
+                $('#institution_label').fadeIn(200);
+                $('#select_institution').fadeIn(200);
+                $('#select_institution').prop('disabled', false);
+                break;
+            case 'padre':
+                $('#institution_label').fadeOut(200);
+                $('#select_institution').fadeOut(200);
+                $('#select_institution').prop('disabled', true);
+
+
+                break;
+            default:
+                break;
+        }
+
         $('#select_type').on('change', function() {
             var election= this.value
 
@@ -139,10 +153,14 @@
                 case 'doctor':
                     $('#institution_label').fadeIn(200);
                     $('#select_institution').fadeIn(200);
+                    $('#select_institution').prop('disabled', false);
                         break;
                 case 'padre':
                     $('#institution_label').fadeOut(200);
                     $('#select_institution').fadeOut(200);
+                    $('#select_institution').prop('disabled', true);
+
+
                     break;
                 default:
                     break;

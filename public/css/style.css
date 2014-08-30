@@ -152,6 +152,9 @@ body{
     color:#D7ECEF;
 
 }
+.login_ul{
+    width: 50px !important;
+}
 #Left_bar{
     z-index: 90!important;
     position: relative;

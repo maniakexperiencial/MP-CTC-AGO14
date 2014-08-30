@@ -15,14 +15,14 @@ class CreateUserDetailsTable extends Migration {
 		Schema::create('user_details', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->integer('id_User');
+            $table->integer('user_id');
             $table->string('name');
             $table->string('lastname');
             $table->integer('phone');
             $table->integer('mobile');
             $table->string('institution')->nullable();
             $table->string('address');
-
+            $table->string('rol');
 			$table->timestamps();
 		});
 	}
