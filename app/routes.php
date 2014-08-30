@@ -67,6 +67,11 @@ Route::group(array("before" => "auth"), function () {
         Route::get('dashboard_juez', array("as" => "dashboard_juez", "uses" => "AcJuezController@index"));
         Route::get('preselect_juez', array("as" => "preselect_juez", "uses" => "AcJuezController@preselect"));
         Route::get('finalist_juez', array("as" => "finalist_juez", "uses" => "AcJuezController@finalist"));
+
+                   /*----------PRESELECT-------------*/
+        Route::post('dashboard_juez/preselectAdd', array("as" => "preselectAdd", "uses" => "AcJuezController@preselectAdd"));
+        Route::post('dashboard_juez/preselectDelete', array("as" => "preselectDelete", "uses" => "AcJuezController@preselectDelete"));
+
     });
 
 

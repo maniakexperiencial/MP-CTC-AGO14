@@ -40,7 +40,8 @@ class AdminController extends Controller
 
     public function historias()
     {
-        return View::make('admin.account.Admin.historias');
+        $user=User::all();
+        return View::make('admin.account.Admin.historias',['users'=>$user]);
     }
 
     public function preselect()

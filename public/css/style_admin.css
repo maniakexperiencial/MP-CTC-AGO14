@@ -355,6 +355,24 @@
     word-wrap:break-word;
     margin-bottom: 0%;
 }
+.cuento_box2{
+    /*width: 28%;*/
+    /*width: 196px;
+    height: 230px;*/
+    width: 170px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    /*min-height: 200px;*/
+    /*min-width: 214px;*/
+    /*min-width: 191px;*/
+    background-color: #0084ff;
+    color: white;
+    word-wrap:break-word;
+    margin-bottom: 0%;
+}
 .cuento_box i.icon{
     opacity: 1 !important;
 
@@ -398,6 +416,18 @@
     font-size: 14px !important;
     float: left;
 }
+.cuento_opciones2{
+    color:#c8e4ff;
+    margin-top: 3%;
+    margin-left: 3%;
+    width:35%;
+    vertical-align: middle;
+    font-size: 14px !important;
+    float: left;
+}
+.cuento_opciones2 img{
+    width: 20%;
+}
 .cuento_opciones img{
     width: 25%;
     margin-right: 5%;
@@ -409,9 +439,10 @@
     font-size: 14px !important;
     float: left;
     margin-left:5% ;
+    cursor: pointer;
 }
 .cuento_love img{
-    width: 70%;
+    width: 60%;
     margin-right: 5%;
 }
 

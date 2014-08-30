@@ -5,6 +5,7 @@
 {{ HTML::script('js/jquery.fancybox.js') }}
 {{ HTML::script('/js/custom/tables.js') }}
 {{ HTML::script('/js/plugins/jquery.dataTables.min.js') }}
+{{ HTML::script('http://code.jquery.com/jquery-latest.min.js') }}
 @stop
 
 @section('content')
@@ -45,40 +46,53 @@
             </tr>
             </thead>
             <tbody>
+                <?php
+                foreach($user->preselects as $preselect){
+                    if($preselect->status==0){
+
+                        $cuento=Cuento::where('id','=',$preselect->document_id)->first();
+                        if($cuento){
+                            echo " <div class=hidden_cuento id=cuento$cuento->id >
+                                <div class=cuento_first_wrap>
+                                    <div class=hidden_cuento_title><h2 style=margin-top:0;>$cuento->title</h2><h5>-$cuento->name  $cuento->age  años</h5></div>
+
+                                    <img height=100% src=".URL::to('/cuentos_images/'.$cuento->images->first()->path).">
+                                </div>
+                                <div class=cuento_second_wrap>
+                                    <div class=cuento_second_wrap_title><p>TRANSCRIPCION</p>
+                                        <p>$cuento->text</p>
+                                    </div>
+
+                                </div>
+                        </div>";
+                            echo "
+                                    <tr class=gradeA>
+
+                                            <td>$cuento->name</td>
+                                            <td>$cuento->title</td>
+                                            <td>$cuento->category</td>
+                                            <td> <a href=#cuento$cuento->id  data-lightbox-type=inline data-lightbox-gallery=gallery1 class=underline>Leer Cuento</a></td>
+                                            <td class=center><a href='' class=evaluate>evaluar</a></td>
+                                    </tr>";
+                        }else{
+
+                        }
 
 
-            <tr class="gradeA">
 
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><a href="#" class="underline">Leer Cuento</a></td>
-                <td class="center"><a href="" class="evaluate">evaluar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="" class="delete">borrar</a></td>
-            </tr>
-            <tr class="gradeA">
+                    }
 
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><a href="#" class="underline">Leer Cuento</a></td>
-                <td class="center"><a href="" class="evaluate">evaluar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="" class="delete">borrar</a></td>
-            </tr>
-            <tr class="gradeA">
 
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><a href="#" class="underline">Leer Cuento</a></td>
-                <td class="center"><a href="" class="evaluate">evaluar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="" class="delete">borrar</a></td>
-            </tr>
-            <tr class="gradeA">
+                }
+                ?>
 
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><a href="#" class="underline">Leer Cuento</a></td>
-                <td class="center"><a href="" class="evaluate">evaluar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="" class="delete">borrar</a></td>
-            </tr>
+
+
+
+
+
+
+
 
             </tbody>
         </table>
@@ -89,7 +103,7 @@
                 <span class="paginate_button">3</span><span class="paginate_button">4</span>
                 <span class="paginate_button">5</span>
             </span>-->
-            <span class="position_number">2</span>
+            <span class="position_number">1</span>
             <span class="position_next" id="dyntable_next">Siguiente</span>
             <span class="position_last" id="dyntable_last">Ùltimo</span>
         </div>
@@ -101,6 +115,11 @@
 <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery('#m_preselect').addClass('active');
+        //LIGHTBOX//
+        jQuery('a').nivoLightbox({
+            afterShowLightbox: function(lightbox){
+            }
+        });
     });
 </script>
 @stop

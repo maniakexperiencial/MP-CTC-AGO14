@@ -15,7 +15,19 @@
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
             <!--HISTORIAS-->
+        @foreach($users as $user)
+                @foreach($user->historias as $historia)
+                        <a href="#historia2" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+                            <div class="historia_box">
+                                <div class="historia_title">{{$historia->title}}</div>
+                                <div class="historia_info">
+                                    - {{$historia->name}}
 
+                                </div>
+                            </div>
+                        </a>
+                @endforeach
+        @endforeach
 
 
 
