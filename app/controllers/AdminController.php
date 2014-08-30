@@ -98,17 +98,23 @@ class AdminController extends Controller
         ]));
 
         //////SUBIR IMAGENES///////
-       foreach(Input::file('image') as $image){
-           $imagename =time().str_random(5).$image->getClientOriginalName();
-           $upload_flag=$image->move('public/cuentos_images',$imagename);
-               if($upload_flag){
-                   $cuento->images()->save(new Image([
-                        'path'=>$imagename
-                   ]));
-               }else{
+        if(Input::hasfile('image')){
+               foreach(Input::file('image') as $image){
+                   $imagename =time().str_random(5).$image->getClientOriginalName();
+                   $upload_flag=$image->move('public/cuentos_images',$imagename);
+                       if($upload_flag){
+                           $cuento->images()->save(new Image([
+                                'path'=>$imagename
+                           ]));
+                       }else{
 
+                       }
                }
-       }
+        }else{
+            $cuento->images()->save(new Image([
+                'path'=>'imagen_nodisponible.jpg'
+            ]));
+        }
       return Redirect::back()->with('mensaje_request','<span class=success_message>Cuento Registrado Correctamente</span>');
 
     }

@@ -31,7 +31,8 @@
                         <div class="hidden_cuento" id="cuento<?= $cuento->id ?>" >
                             <div class="cuento_first_wrap">
                                 <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{ $cuento->title }}</h2><h5>-{{ $cuento->name }} {{ $cuento->age }} años</h5></div>
-                                <img height="100%" src="<?=URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+
+                                <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
                             </div>
                             <div class="cuento_second_wrap">
                                 <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
@@ -45,7 +46,7 @@
                                 <div class="cuento_title">{{ $cuento->title }}</div>
                                 <div class="cuento_by">{{ $cuento->name }}</div>
                                 <div class="cuento_age">{{ $cuento->age }} años</div>
-                                <div class="cuento_image" style="background-image:url('<?=URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                                <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
                                         <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
