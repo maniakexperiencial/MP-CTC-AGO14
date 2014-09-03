@@ -23,6 +23,11 @@ class AcJuezController extends Controller
         return View::make('admin.account.Juez.cuentos',['users'=>$user]);
     }
 
+    public function historia(){
+        $user=User::all();
+        return View::make('admin.account.Juez.historias',['users'=>$user]);
+    }
+
     public function preselect()
     {
         ///USUARIO JUEZ///
@@ -42,18 +47,50 @@ class AcJuezController extends Controller
 
     public function preselectAdd(){
         $user=Auth::user();
-        $preselect= $user->preselects()->save(new Preselect([
+        $find=Preselect::where('user_id','=',$user->id)->where('document_id','=',Input::get('document_id'))->where('type','=',Input::get('type'))->first();
+        if($find){
+            return '';
+        }else{
+            $preselect= $user->preselects()->save(new Preselect([
+                'document_id' => Input::get('document_id'),
+                'type' => Input::get('type'),
+            ]));
+            return 'añadido';
+        }
+        /*$preselect= $user->preselects()->save(new Preselect([
             'document_id' => Input::get('document_id'),
             'type' => Input::get('type'),
-        ]));
-            return 'añadido';
+        ]));*/
+
     }
 
     public function preselectDelete(){
-        $preselect=Preselect::where('document_id','=',Input::get('document_id'))->where('type','=',Input::get('type'));
-        $preselect->delete();
-        return 'eliminado';
+        $user=Auth::user();
+        $find=Preselect::where('user_id','=',$user->id)->where('document_id','=',Input::get('document_id'))->where('type','=',Input::get('type'))->where('status','=',1)->first();
+        if($find){
+            return '';
+        }else{
+
+            $preselect=Preselect::where('document_id','=',Input::get('document_id'))->where('type','=',Input::get('type'))->delete();
+
+            return 'eliminado';
+        }
+
     }
+
+   public function evaluate(){
+       ////////////////EVALUAR CUENTOS////////////////
+       $user_auth=Auth::user();
+       $average=(Input::get('evalcontent')+Input::get('evaloriginal')+Input::get('evalmensaje'))/3;
+       $preselect=Preselect::where('document_id','=',Input::get('document_id'))->where('type','=',Input::get('type'))->where('user_id','=',$user_auth->id)->first();
+        $preselect->eval1=Input::get('evalcontent');
+       $preselect->eval2=Input::get('evaloriginal');
+       $preselect->eval3=Input::get('evalmensaje');
+       $preselect->status=1;
+       $preselect->average=$average;
+        $preselect->save();
+       return  Input::get('document_id');
+   }
 
 
 

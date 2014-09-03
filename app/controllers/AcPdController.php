@@ -19,7 +19,8 @@ class AcPdController extends Controller
      */
     public function index()
     {
-        return View::make('admin.account.Pd.dashboard');
+        $user=User::all();
+        return View::make('admin.account.Pd.dashboard',['users'=>$user]);
     }
 
     ///////////////////////////////////////NEW Historia//////////////////////////
@@ -64,7 +65,48 @@ class AcPdController extends Controller
         return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Registrado Correctamente</span>');
     }
 
+/////////////////////////////////DELETE HISTORIA//////////////////////////////////////
+    public function delete_historia(){
+        $userauth=Auth::user();
 
+        $historia=Historia::find(Input::get('id_historia'))->first();
+        if($userauth->id==$historia->user_id){
+            $historia->delete();
+        }else{
+            return Redirect::back();
+        }
+
+        return '<span class=success_message>Historia eliminada</span>';
+    }
+////////////////////////////EDIT HISTORIA///////////////////////
+    public function edit_historia_index($idhistoria){
+        $userauth=Auth::user();
+
+        $historia=Historia::find($idhistoria)->first();
+        if($userauth->id==$historia->user_id){
+            return View::make('admin.account.Pd.edit_historia',['historia'=>$historia]);
+        }else {
+            return Redirect::back();
+        }
+
+    }
+    public function edit_historia($historia_id){
+        $userauth=Auth::user();
+
+        $historia=Historia::find($historia_id);
+
+        if($userauth->id==$historia->user_id){
+            $historia->title=Input::get('title');
+            $historia->name=Input::get('name');
+            $historia->state=Input::get('state');
+            $historia->text=Input::get('text');
+            $historia->save();
+            return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Actualizada Correctamente</span>');
+        }else{
+            return Redirect::back();
+        }
+
+    }
 
 
 }

@@ -59,18 +59,34 @@ Route::group(array("before" => "auth"), function () {
             /*DELETE CUENTO*/
                  Route::post('dashboard_admin/delete_cuento', ['as' => 'delete_cuento', 'uses' => 'AdminController@delete_cuento']);
 
+
+        /*---VER DETALLE DE PRESELECCION*/
+        Route::get('dashboard_admin/preselect/{type}/{document_id}', array("as" => "detalle_preselect", "uses" => "AdminController@detalle_preselect"));
+
+        /*DELETE HISTORIA*/
+        Route::post('dashboard_admin/delete_historia', ['as' => 'delete_historia', 'uses' => 'AdminController@delete_historia']);
+        /*EDIT HISTORIA*/
+        Route::get('dashboard_admin/historia/edit/{idhistoria}', array("as" => "edithistoria", "uses" => "AdminController@edit_historia_index"));
+        Route::post('dashboard_admin/historia/edit/{idcuento}', array("as" => "edit_historiaRoute", "uses" => "AdminController@edit_historia"));
+
     });
 
 
     /*-----------------------------JUEZ---------------------------------*/
     Route::group(array("before" => "juez_filter"), function () {
         Route::get('dashboard_juez', array("as" => "dashboard_juez", "uses" => "AcJuezController@index"));
-        Route::get('preselect_juez', array("as" => "preselect_juez", "uses" => "AcJuezController@preselect"));
-        Route::get('finalist_juez', array("as" => "finalist_juez", "uses" => "AcJuezController@finalist"));
+        Route::get('dashboard_juez/historias', array("as" => "historia_juez", "uses" => "AcJuezController@historia"));
+        Route::get('dashboard_juez/preselect_juez', array("as" => "preselect_juez", "uses" => "AcJuezController@preselect"));
+        Route::get('dashboard_juez/finalist_juez', array("as" => "finalist_juez", "uses" => "AcJuezController@finalist"));
 
                    /*----------PRESELECT-------------*/
         Route::post('dashboard_juez/preselectAdd', array("as" => "preselectAdd", "uses" => "AcJuezController@preselectAdd"));
         Route::post('dashboard_juez/preselectDelete', array("as" => "preselectDelete", "uses" => "AcJuezController@preselectDelete"));
+
+                /*-----------------EVALUAR------*/
+
+        Route::post('dashboard_juez/evaluate/', array("as" => "evaluate", "uses" => "AcJuezController@evaluate"));
+
 
     });
 
@@ -83,6 +99,12 @@ Route::group(array("before" => "auth"), function () {
         /*----ADD HISTORIA---*/
         Route::get('dashboard_pd/new_historia', array("as" => "new_historia", "uses" => "AcPdController@new_historia_index"));
         Route::post('dashboard_pd/new_historia', ['as' => 'create_historia_route', 'uses' => 'AcPdController@new_historia']);
+
+        /*DELETE HISTORIA*/
+        Route::post('dashboard_pd/delete_historia', ['as' => 'delete_historiaPd', 'uses' => 'AcPdController@delete_historia']);
+        /*EDIT HISTORIA*/
+        Route::get('dashboard_pd/historia/edit/{idhistoria}', array("as" => "edithistoriaPd", "uses" => "AcPdController@edit_historia_index"));
+        Route::post('dashboard_pdn/historia/edit/{idcuento}', array("as" => "edit_historiaRoutePd", "uses" => "AcPdController@edit_historia"));
 
 
     });

@@ -18,10 +18,10 @@ class CreatePreselectsTable extends Migration {
             $table->integer('user_id');
             $table->integer('document_id');
             $table->integer('type');//0 cuento, 1 historia
-            $table->integer('eval1');
-            $table->integer('eval2');
-            $table->integer('eval3');
-            $table->integer('average');
+            $table->float('eval1');
+            $table->float('eval2');
+            $table->float('eval3');
+            $table->float('average');
             $table->integer('status');
 			$table->timestamps();
 		});

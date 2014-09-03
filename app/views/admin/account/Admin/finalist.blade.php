@@ -38,47 +38,30 @@
             <tr>
 
                 <th class="t_white">Nombre</th>
-                <th class="t_white">Nombre del Cuento</th>
+                <th class="t_white">Nombre del Cuento o Historia</th>
                 <th class="t_white">Categoría</th>
                 <th class="t_white">Calificación</th>
-                <th class="t_white">Acciones</th>
+                <!--<th class="t_white">Acciones</th>-->
             </tr>
             </thead>
             <tbody>
+            <?php
+                $preselects=DB::table('preselects')->where('type','=','0')->groupBy('document_id')->avg('average');
+                    dd(var_dump($preselects));
+                //$preselects=Preselect::where('type','=','0')->where('status','=','1')->groupBy('document_id','type')->orderBy('average', 'DESC')->get();
+                foreach($preselects as $preselect){
+                    $cuento=Cuento::where('id','=',$preselect->document_id)->first();
+                    echo "                           <tr class=gradeA>
 
+                                                                <td>$cuento->name</td>
+                                                                <td>$cuento->title</td>
+                                                                <td>$cuento->category</td>
+                                                                <td>$preselect->average</td>
 
-            <tr class="gradeA">
+                                                        </tr>";
 
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><div  class="finalist_wrap_cell">9.3 <img class="finalist_cup" src="{{ URL::to('/img/icons/copa_oro.png') }}"></div></td>
-                <td class="center"><a href="" class="delete">leer</a></td>
-            </tr>
-            <tr class="gradeA">
-
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><div  class="finalist_wrap_cell">9.1 <img class="finalist_cup" src="{{ URL::to('/img/icons/copa_plata.png') }}"></div></td>
-                <td class="center"><a href="" class="delete">leer</a></td>
-            </tr>
-            <tr class="gradeA">
-
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td><div  class="finalist_wrap_cell">8.6 <img class="finalist_cup" src="{{ URL::to('/img/icons/copa_bronce.png') }}"></div></td>
-                <td class="center"><a href="" class="delete">leer</a></td>
-            </tr>
-            <tr class="gradeA">
-
-                <td>Alvaro</td>
-                <td>Nombre del cuento</td>
-                <td>Niños</td>
-                <td>8.2</td>
-                <td class="center"><a href="" class="delete">leer</a></td>
-            </tr>
+                }
+            ?>
 
             </tbody>
         </table>

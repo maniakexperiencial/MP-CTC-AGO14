@@ -131,11 +131,17 @@ class AdminController extends Controller
         $cuento->category=Input::get('category');
         $cuento->age=Input::get('age');
         $cuento->state=Input::get('state');
+        $cuento->text=Input::get('text');
         $cuento->save();
         //IF HAS IMAGE FILE//
         if(Input::hasfile('image')){
             foreach($cuento->images as $images){
-                File::delete('public/cuentos_images/'.$images->path);
+                if($images->path=='imagen_nodisponible.jpg'){
+
+                }else{
+                    File::delete('public/cuentos_images/'.$images->path);
+                }
+                //File::delete('public/cuentos_images/'.$images->path);
                 $images->delete();
             }
             foreach(Input::file('image') as $image){
@@ -161,7 +167,13 @@ class AdminController extends Controller
     public function delete_cuento(){
         $cuento=Cuento::find(Input::get('id_cuento'));
         foreach($cuento->images as $images){
-            File::delete('public/cuentos_images/'.$images->path);
+            if($images->path=='imagen_nodisponible.jpg'){
+
+            }else{
+                File::delete('public/cuentos_images/'.$images->path);
+            }
+
+            //File::delete('public/cuentos_images/'.$images->path);
             $images->delete();
         }
         $cuento->delete();
@@ -223,10 +235,32 @@ class AdminController extends Controller
     }
 
 
+//////////////////////DETALLE PRESELECT///////////////
+public function detalle_preselect($type,$document_id){
 
+ return View::make('admin.account.Admin.preselect_detail',['type'=>$type,'document_id'=>$document_id]);
+}
 
-
-
+/////////////////////////////////DELETE HISTORIA//////////////////////////////////////
+public function delete_historia(){
+    $historia=Historia::find(Input::get('id_historia'));
+    $historia->delete();
+    return '<span class=success_message>Historia eliminada</span>';
+}
+////////////////////////////EDIT HISTORIA///////////////////////
+public function edit_historia_index($idhistoria){
+    $historia=Historia::find($idhistoria)->first();
+    return View::make('admin.account.Admin.edit_historia',['historia'=>$historia]);
+}
+public function edit_historia($historia_id){
+    $historia=Historia::find($historia_id);
+    $historia->title=Input::get('title');
+    $historia->name=Input::get('name');
+    $historia->state=Input::get('state');
+    $historia->text=Input::get('text');
+    $historia->save();
+    return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Actualizada Correctamente</span>');
+    }
 
 /////////////////////////////DELETE USER///////////////////
      public function delete_user(){

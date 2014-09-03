@@ -382,6 +382,8 @@
     height: auto;
     /*font-size: 21px;*/
     font-size: 18px;
+    height: 25px;
+    overflow: hidden;
 }
 .cuento_by{
     width: 100%;
@@ -462,10 +464,16 @@
 }
 
 /*-------------------PAPAS HISTORIAS---------*/
+.resize_container {
+    width: 680px;
+    /* height: 550px; */
+    height: 500px;
+    /* background-color: green; */
+}
 #pizarron_historias{
     width:700px;
     height: 436px;
-    margin: auto;
+    /*margin: auto;*/
     background-size: 100% 100%;
     padding: 6% 0%;
     padding-bottom: 3%;
@@ -477,6 +485,7 @@
 .historia_box{
     width: 181px;
     height:130px;
+    position: relative;
     /* min-width: 148px;*/
     float: left;
     margin-left: 15%;
@@ -489,6 +498,7 @@
     background-position: center center;
     color: black;
     word-wrap:break-word;
+    overflow: auto;
 }
 #pizarron_historias{
     background-size: 100% 100%;
@@ -510,7 +520,24 @@
     width: 100%;
     text-align:left;
     font-size: 1em;
+    padding-bottom:10px;
 
+}
+.historia_option_wrap{
+    margin-top: 9%;
+    color: #FF007B;
+    position: absolute;
+    bottom: 5px;
+    width: 90%;
+}
+.historia_option_wraphist{
+    margin-top: 9%;
+    color: #FF007B;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    text-align: right;
+    cursor: pointer;
 }
 
 /*-----------------------------------------------------BUTTON----------------------------------------*/
@@ -540,6 +567,90 @@
     filter: alpha(opacity=0);
 }
 /*--------------------------------------------------LIGHTBOX----------------------*/
+.hidden_evaluar{
+    position: relative;
+    display: none;
+    color:inherit;
+    min-width: 200px;
+    width: 60%;
+    min-height: 90%;
+    max-height: 90%;
+    height: auto;
+    text-align: center;
+    margin:auto;
+    overflow: auto;
+    font-family: 'Opensansreg' !important;
+    font-size: 16px;
+}
+.evaluar_title{
+    position: relative;
+    z-index: -1;
+    color: lawngreen;
+    font-family: Mandingo;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    min-height: 100px;
+    line-height: 100px;
+}
+.evaluar_cutitle{
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+.evaluar_desc_wrap{
+    width:150px;
+    margin: auto;
+}
+.evaluar_name{
+    width: 100%;
+    margin: auto;
+    color: #90a3b5;
+}
+.evaluar_age{
+    width: 100%;
+    margin: auto;
+    color: #90a3b5;
+}
+.evaluar_column{
+    margin-top: 5%;
+    width:33.3%;
+/*background-color: green;*/
+    height: auto;
+    color: #90a3b5;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+}
+.title_cucolumn{
+    display: inline-block;
+    color: white;
+    width: 100%;
+}
+.evaluar_column input[type="text"]{
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+    font-size: 32px;
+    text-align: center;
+    height: 50px;
+}
+.evaluar_btn_wrap{
+    width: 100%;
+    float: left;
+    height: auto;
+    text-align: center;
+    margin-top: 10%;
+}
+.evaluar_btn{
+    width: 100px;
+    padding: 5px 15px;
+    background-color: white;
+    color: blue;
+    margin: auto;
+    cursor: pointer;
+}
 /*FOR cuentos Lightbox*/
 
 .hidden_cuento{
@@ -568,6 +679,7 @@
     font-family: 'Opensansreg' !important;
 }
 .cuento_first_wrap{
+    position: relative;
     width: 95%;
     display: inline-block;
     margin-top: 3%;
@@ -583,6 +695,7 @@
     width: auto;
 }
 .cuento_second_wrap{
+    position: relative;
     width: 95%;
     display: inline-block;
     margin-top: 3%;
@@ -602,7 +715,58 @@
     height:auto;
     text-align:left;
 }
+/*FOR HIstories Lightbox*/
+.hidden_history{
+    display: none;color:
+    white;
 
+    min-width: 200px;
+    width: 60%;
+    min-height: 100%;
+    text-align: center;
+    height: auto;
+    margin:auto;
+    background-image:url("../img/history_blank.png") ;
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    background-position: bottom center;
+
+}
+.hidden_history_title{
+    width:40%;
+    background-image:url("../img/history_headpink.png") ;
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height:50px;
+    padding: 5px;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    word-wrap: break-word;
+
+}
+.hidden_history_content{
+    color:#686868;
+    width: 70%;
+    margin-left:3%;
+    text-align: left;
+    margin-top: 12%;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+/*--------------------PRESELECT DETAIL-----*/
+.preselect_detail_info{
+    width:96%;
+    height:auto;
+    background-color: #CBE6FE;
+    border:1px solid #5195d6;
+    padding:5px 2%;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color:  #32415a;
+}
 @media all and (min-width : 318px) and (max-width : 614px) {
     .loginbox{
         width: 95%;

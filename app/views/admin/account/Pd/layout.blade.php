@@ -24,6 +24,10 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 {{ HTML::style('/css/style_admin.css', array('media' => 'screen')) }}
+
+{{ HTML::style('js/nivo/nivo-lightbox.css') }}
+{{ HTML::style('js/nivo/themes/default/default.css') }}
+{{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
 </head>
 <body class="withvernav">
 <div class="bg"></div>

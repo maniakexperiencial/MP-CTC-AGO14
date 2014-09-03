@@ -106,7 +106,7 @@
 @section('jscode')
 <script type="text/javascript">
 jQuery(document).ready(function(){
-   jQuery('#m_usuario').addClass('active');
+   jQuery('#m_cuentos').addClass('active');
 
 ////////////////////////////FILE READER/////////////////////////
     jQuery("#select_image").change(function (){

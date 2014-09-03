@@ -1,10 +1,17 @@
 @extends('admin.account.Admin.layout')
 
 @section('scripts')
-{{ HTML::style('css/jquery.fancybox.css', array('media' => 'screen')) }}
-{{ HTML::script('js/jquery.fancybox.js') }}
+
 {{ HTML::script('/js/custom/tables.js') }}
-{{ HTML::script('/js/plugins/jquery.dataTables.min.js') }}
+
+
+{{ HTML::script('http://code.jquery.com/jquery-latest.min.js') }}
+
+
+{{ HTML::style('//cdn.datatables.net/1.10.2/css/jquery.dataTables.css', array('media' => 'screen')) }}
+{{ HTML::script('http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js') }}
+
+{{ HTML::style('css/plugins/styledataTables.css', array('media' => 'screen')) }}
 @stop
 
 @section('content')
@@ -19,18 +26,8 @@
     <div id="contentwrapper" class="contentwrapper">
 
         <a href="{{ URL::route('new_juez') }}" class="btn_admin">Agregar Usuario</a>
-        <div id="dyntable_length" class="dataTables_length table_blue">
-            <label>
-                Mostrar
-                <select size="1" name="dyntable_length">
-                    <option value="10" selected="selected">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                </select> entradas
-            </label>
-        </div>
-        <table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablequick table_blue" >
+
+        <table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablequick table_blue" id="table_preselect" >
             <!--<colgroup>
                 <col class="con0" />
                 <col class="con1" />
@@ -79,17 +76,7 @@
 
             </tbody>
         </table>
-        <div class="dataTables_paginate paging_full_numbers table_blue" id="dyntable_paginate">
-            <span class="position_first" id="dyntable_first">Inicio</span>
-            <span class="position_prev" id="dyntable_previous">Anterior</span>
-            <!--<span><span class="paginate_active">1</span><span class="paginate_button">2</span>
-                <span class="paginate_button">3</span><span class="paginate_button">4</span>
-                <span class="paginate_button">5</span>
-            </span>-->
-            <span class="position_number">2</span>
-            <span class="position_next" id="dyntable_next">Siguiente</span>
-            <span class="position_last" id="dyntable_last">Ùltimo</span>
-        </div>
+
     </div><!--contentwrapper-->
 </div><!-- centercontent -->
 @stop
@@ -123,6 +110,17 @@ jQuery(document).ready(function(){
             });
 
     });
+
+    $('#table_preselect').dataTable( {
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ entradas",
+            "zeroRecords": "Ningun resultado - lo sentimos",
+            "info": "Mostrando _PAGE_ de _PAGES_",
+            "infoEmpty": "Registros no disponibles",
+            "infoFiltered": "(filtered from _MAX_ total records)"
+        },
+        "lengthMenu": [[5, 25, 50, -1], [5, 25, 50, "All"]]
+    } );
 
 });
 </script>

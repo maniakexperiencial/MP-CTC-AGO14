@@ -25,10 +25,12 @@
                 <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{ $cuento->title }}</h2><h5>-{{ $cuento->name }} {{ $cuento->age }} años</h5></div>
 
                 <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+
             </div>
             <div class="cuento_second_wrap">
                 <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
                     <p>{{ $cuento->text }}</p>
+
                 </div>
 
             </div>
@@ -46,7 +48,8 @@
                     <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/likes.png') }}">153</div>
                     <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/views.png') }}">2547</div>
                     <?php
-                    $preselect=Preselect::where('document_id','=',$cuento->id)->where('type','=','0')->first();
+                    $user_auth=Auth::user();
+                    $preselect=Preselect::where('document_id','=',$cuento->id)->where('type','=','0')->where('user_id','=',$user_auth->id)->first();
                     if($preselect)
                     {
                         echo "<div class='eight wide column cuento_love' data-status=active data-id=$cuento->id data-type=0>
@@ -90,7 +93,9 @@
             afterShowLightbox: function(lightbox){
             }
         });
-        jQuery('.cuento_love').click(function(){
+
+
+        $('body').on('click', '.cuento_love', function() {
             var urlaction="";
             var objeto=jQuery(this);
             var document_id=objeto.data('id');
@@ -116,14 +121,27 @@
                         //data: return data from server
                         //jQuery('.notab').append(data);
                         //alert(data);
-                        if(data=="añadido"){
+
+                        switch(data){
+                            case 'añadido':
+                                objeto.attr('data-status','active');
+                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love_active.png') }}");
+                                break;
+                            case 'eliminado':
+                                objeto.attr('data-status','inactive');
+                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");
+                                break;
+                            default:
+                                break;
+                        }
+                        /*if(data=="añadido"){
 
                             objeto.attr('data-status','active');
                             objeto.find('img').attr('src',"{{ URL::to('/img/icons/love_active.png') }}");
                         }else{
                             objeto.attr('data-status','inactive');
                             objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");
-                        }
+                        }*/
 
 
 
@@ -134,8 +152,9 @@
                         alert(errorThrown);
                     }
                 });
-
         });
+
+
 
     });
 </script>

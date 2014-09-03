@@ -66,6 +66,7 @@
                 </ul>-->
             </li>
             <li id="m_cuentos"><a href="{{Url::route('dashboard_juez')}}" class="history_icon">Cuentos</a></li>
+            <li id="m_historias"><a href="{{Url::route('historia_juez')}}" class="history_icon">Historias</a></li>
             <li id="m_preselect"><a href="{{Url::route('preselect_juez')}}" class="preselect_icon">Preseleccionados</a></li>
             <li id="m_finalist"><a href="{{Url::route('finalist_juez')}}" class="finalist_icon">Finalistas</a></li>
 
