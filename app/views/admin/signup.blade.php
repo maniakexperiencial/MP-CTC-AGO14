@@ -69,7 +69,7 @@
                     {{Form::select('select_institution',['IMSS' => 'IMSS'], null,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}
             </div>
             <div class="form-group">
-                    {{Form::label('name', 'Nombre Completo', ['class' => 'login_label']) }}
+                    {{Form::label('name', 'Nombre', ['class' => 'login_label']) }}
                     {{Form::text('name', null, ['class' => 'signup_blue','id'=>'name']) }}
                 {{$errors->first('name',"<span class=error>:message</span>")}}
             </div>
