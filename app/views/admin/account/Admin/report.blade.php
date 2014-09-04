@@ -80,13 +80,14 @@
         foreach($historias as $historia){
             $user=User::where('id','=',$historia->user_id)->get();
 
-            $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
+            if($historia->category=='padres'){
+                $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
 
-            echo " <tr>
-                <td >".$user."</td>
+                echo " <tr>
+                <td >".$user->details->name."</td>
                 <td >".$historia->title."</td>
-                <td >.$user.</td>
-                <td >".$user."</td>
+                <td >.$user->phone.</td>
+                <td >".$user->email."</td>
                 <td >".$historia->state."</td>
                 <td >".$average."</td>
 
@@ -94,6 +95,58 @@
 
 
                 ";
+
+            }
+
+
+
+        }
+        ?>
+    </table>
+
+    <!------DOCTORES----->
+    <table style="border: 1px solid black; margin: 10px;">
+        <thead>
+        <tr>
+
+            <th class="t_white">Nombre</th>
+            <th class="t_white">Nombre de la Historia</th>
+            <th class="t_white">Telefono</th>
+            <th class="t_white">Correo Electrónico</th>
+            <th class="t_white">Estado</th>
+            <th class="t_white">Calificacion</th>
+            <th class="t_white">Institucion</th>
+
+            <!--<th class="t_white">Acciones</th>-->
+        </tr>
+        </thead>
+        <?php
+        $historias=Historia::all();
+        foreach($historias as $historia){
+            $user=User::where('id','=',$historia->user_id)->first();
+           if($user->details)
+           {
+                    if($historia->category=='doctores'){
+                        $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
+
+                        echo " <tr>
+                        <td >".$user->details->name."</td>
+                        <td >".$historia->title."</td>
+                        <td >".$user->details->phone."</td>
+                        <td >".$user->email."</td>
+                        <td >".$historia->state."</td>
+                        <td >".$average."</td>
+                        <td >".$user->details->institution."</td>
+
+                       </tr>
+
+
+                        ";
+
+                    }
+           }
+
+
 
         }
         ?>

@@ -146,4 +146,15 @@ class UsersController extends Controller
     }
 
 
+    ////////////////////LIKES/////////////////////
+    public function likes(){
+        /*Request::getClientIp();*/
+        /*$cuento->images()->save(new Image([
+            'path'=>$imagename
+        ]));*/
+        return Input::get('document_id');
+    }
+
+
+
 }

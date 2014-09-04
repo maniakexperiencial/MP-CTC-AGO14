@@ -120,87 +120,83 @@ Cuentos
 <div  class="resize_container resize_container_cuento">
 <!--resize_contain-->
 
-<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
         <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
-         </div>
+        </div>
     </div>
-</a>
 
-<a href="#cuento2" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
-        <div class="ui grid">
-            <div class="row">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
-            </div>
-        </div>
-    </div>
-</a>
-<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
-        <div class="cuento_title">La Casa Azul</div>
-        <div class="cuento_by">José Garcia</div>
-        <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
-</a>
-<div style="width: 100%; height: 45px;float:left;"></div>
-<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
-        <div class="cuento_title">La Casa Azul</div>
-        <div class="cuento_by">José Garcia</div>
-        <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
-        <div class="ui grid">
-            <div class="row ">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
-            </div>
-        </div>
-    </div>
-</a>
 
-<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
-</a>
-<a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >    <div class="cuento_box">
+
+    <div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <div class="cuento_image"></div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
             </div>
         </div>
     </div>
-</a>
+
+    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <div class="ui grid">
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cuento_box">
+        <div class="cuento_title">La Casa Azul</div>
+        <div class="cuento_by">José Garcia</div>
+        <div class="cuento_age">13 años</div>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <div class="ui grid">
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
+                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+            </div>
+        </div>
+    </div>
 
     <!--end resize_contain-->
 </div>
@@ -233,6 +229,69 @@ Cuentos
         var extra="{{ URL::to('/img/kid.png') }}";
         //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
+
+
+
+
+
+
+
+
+        $('body').on('click', '.cuento_like', function() {
+            var urlaction="{{ URL::route('likeSystem') }}";
+            var objeto=jQuery(this);
+            var document_id=objeto.data('id');
+            var status1=objeto.attr('data-status');
+            //alert(type);
+            var parameters={document_id: document_id,status1: status1};
+           alert(status1+document_id);
+
+            jQuery.ajax(
+                {
+                    url : urlaction,
+                    type: "POST",
+                    data : parameters,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        //data: return data from server
+                        //jQuery('.notab').append(data);
+                        //alert(data);
+                        alert(data);
+                        switch(data){
+                            case 'añadido':
+                                /*objeto.attr('data-status','active');
+                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love_active.png') }}");*/
+                                break;
+                            case 'eliminado':
+                                /*objeto.attr('data-status','inactive');
+                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");*/
+                                break;
+                            default:
+                                break;
+                        }
+                        /*if(data=="añadido"){
+
+                         objeto.attr('data-status','active');
+                         objeto.find('img').attr('src',"{{ URL::to('/img/icons/love_active.png') }}");
+                         }else{
+                         objeto.attr('data-status','inactive');
+                         objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");
+                         }*/
+
+
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        //if fails
+                        alert(errorThrown);
+                    }
+                });
+        });
+
+
+
+
 
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
     });
