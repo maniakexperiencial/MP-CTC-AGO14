@@ -1,7 +1,9 @@
 <?php
 
-class View extends \Eloquent {
+class CuentoView extends \Eloquent {
 	protected $fillable = ['ip'];
+
+    protected $table = "views";
 
     public function cuento()
     {

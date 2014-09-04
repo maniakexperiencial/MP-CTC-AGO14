@@ -51,7 +51,7 @@
                                 <div class="ui grid">
                                     <div class="row">
                                         <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">{{$cuento->likes->count()}}</div>
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"></div>
+                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">{{$cuento->views->count()}}</div>
 
                                     </div>
                                     <div class="row">

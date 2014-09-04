@@ -10,6 +10,8 @@ class Historia extends \Eloquent {
     }
 
 
+
+
     public function preselects()
     {
         return $this->morphMany('Preselect', 'document');

@@ -19,7 +19,7 @@ class Cuento extends \Eloquent {
     }
     public function views()
     {
-        return $this->hasMany('View');
+        return $this->hasMany('CuentoView');
     }
 
 
