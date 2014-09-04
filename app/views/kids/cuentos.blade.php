@@ -88,7 +88,7 @@ Cuentos
 @stop
 
 @section('content_center')
-<div class="hidden_cuento" id="cuento1" >
+<!--<div class="hidden_cuento" id="cuento1" >
     <div class="cuento_first_wrap">
         <div class="hidden_cuento_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h5>-Jose García 13 años</h5></div>
         <img height="100%" src="{{ URL::to('/img/cuentos_examples/cuento_lightbox.jpg') }}">
@@ -115,20 +115,87 @@ Cuentos
     </div>
 
 
-</div>
+</div>-->
 
 <div  class="resize_container resize_container_cuento">
 <!--resize_contain-->
 
-    <div class="cuento_box">
+    @foreach($cuentos as $cuento)
+            @if($count!=3)
+            <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
+                <div class="cuento_first_wrap">
+                    <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
+                    <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+                </div>
+                <div class="cuento_second_wrap">
+                    <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+                        <p>{{$cuento->text}} </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cuento_box">
+                <div class="cuento_title">{{$cuento->title}}</div>
+                <div class="cuento_by">{{$cuento->name}}</div>
+                <div class="cuento_age">{{$cuento->age}} años</div>
+                <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+                    <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
+                </a>
+                <div class="ui grid">
+                    <div class="row ">
+                        <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"
+                            @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
+                            <span class="number_likes">{{$cuento->likes->count()}}</span>
+                        </div>
+                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+                    </div>
+                </div>
+            </div>
+
+        @else
+             <div style="width: 100%; height: 45px;float:left;"></div>
+
+                <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
+                    <div class="cuento_first_wrap">
+                        <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
+                        <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?> ">
+                    </div>
+                    <div class="cuento_second_wrap">
+                        <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+                            <p>{{$cuento->text}} </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cuento_box">
+                    <div class="cuento_title">{{$cuento->title}}</div>
+                    <div class="cuento_by">{{$cuento->name}}</div>
+                    <div class="cuento_age">{{$cuento->age}} años</div>
+                    <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+                        <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                    </a>
+                    <div class="ui grid">
+                        <div class="row ">
+                            <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"  @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
+                                <span class="number_likes">{{$cuento->likes->count()}}</span>
+                            </div>
+                            <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+                        </div>
+                    </div>
+                </div>
+        @endif
+    <?php $count+=1; ?>
+
+    @endforeach
+    <!--<div class="cuento_box">
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="1" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
     </div>
@@ -137,11 +204,11 @@ Cuentos
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="2" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
     </div>
@@ -150,11 +217,11 @@ Cuentos
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="3" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
     </div>
@@ -163,11 +230,11 @@ Cuentos
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="1" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
     </div>
@@ -176,11 +243,11 @@ Cuentos
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="1" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
     </div>
@@ -189,20 +256,20 @@ Cuentos
         <div class="cuento_title">La Casa Azul</div>
         <div class="cuento_by">José Garcia</div>
         <div class="cuento_age">13 años</div>
-        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="cuento_image"></div></a>
+        <a href="#cuento1" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div  data-id="1" class="cuento_image"></div></a>
         <div class="ui grid">
             <div class="row ">
-                <div class="eight wide column cuento_opciones"><img data-id="2" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}">153</div>
-                <div class="eight wide column cuento_opciones"><img data-id="2" class="cuento_view"  src="{{ URL::to('/img/views.png') }}">2547</div>
+                <div class="eight wide column cuento_opciones"><img data-id="1" data-status="inactive" class="cuento_like" src="{{ URL::to('/img/likes.png') }}"><span class="number_likes"> 153</span></div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views"> 153</span></div>
             </div>
         </div>
-    </div>
-
+    </div>-->
     <!--end resize_contain-->
 </div>
 
 <div class="pagination_wrap">
-    <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
+    <!--<ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>-->
+    {{$cuentos->links()}}
 </div>
 
 
@@ -242,9 +309,10 @@ Cuentos
             var objeto=jQuery(this);
             var document_id=objeto.data('id');
             var status1=objeto.attr('data-status');
+            var numero_likes="";
             //alert(type);
             var parameters={document_id: document_id,status1: status1};
-           alert(status1+document_id);
+           //alert(status1+document_id);
 
             jQuery.ajax(
                 {
@@ -256,15 +324,25 @@ Cuentos
                         //data: return data from server
                         //jQuery('.notab').append(data);
                         //alert(data);
-                        alert(data);
+
                         switch(data){
                             case 'añadido':
-                                /*objeto.attr('data-status','active');
-                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love_active.png') }}");*/
+                                objeto.attr('data-status','active');
+                                objeto.attr('src',"{{ URL::to('/img/likes_active.png') }}");
+                                numero_likes=parseInt(objeto.parent().find('.number_likes').text());
+                                numero_likes+=1;
+                                objeto.parent().find('.number_likes').text(numero_likes);
                                 break;
                             case 'eliminado':
-                                /*objeto.attr('data-status','inactive');
-                                objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");*/
+                                objeto.attr('data-status','inactive');
+                                objeto.attr('src',"{{ URL::to('/img/likes.png') }}");
+                                numero_likes=parseInt(objeto.parent().find('.number_likes').text());
+                                if(numero_likes==0){
+
+                                }else{
+                                    numero_likes-=1;
+                                    objeto.parent().find('.number_likes').text(numero_likes);
+                                }
                                 break;
                             default:
                                 break;
@@ -277,6 +355,61 @@ Cuentos
                          objeto.attr('data-status','inactive');
                          objeto.find('img').attr('src',"{{ URL::to('/img/icons/love.png') }}");
                          }*/
+
+
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        //if fails
+                        alert(errorThrown);
+                    }
+                });
+        });
+
+
+
+
+
+
+
+        $('body').on('click', '.cuento_image', function() {
+            var urlaction="{{ URL::route('viewSystem') }}";
+
+            var document_id=jQuery(this).attr('data-id');
+            var objeto=jQuery(this);
+            //alert(document_id);
+
+            var number_views="";
+            //alert(type);
+            var parameters={document_id: document_id};
+            //alert(status1+document_id);
+
+            jQuery.ajax(
+                {
+                    url : urlaction,
+                    type: "POST",
+                    data : parameters,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        //data: return data from server
+                        //jQuery('.notab').append(data);
+                        //alert(data);
+
+                        switch(data){
+                            case 'añadido':
+
+
+
+                                number_views=parseInt(objeto.parent().parent().find('.number_views').text());
+                                number_views+=1;
+                                objeto.parent().parent().find('.number_views').text(number_views);
+                                break;
+
+                            default:
+                                break;
+                        }
+
 
 
 

@@ -13,7 +13,8 @@ class PapasController extends Controller {
     }
     public function historias()
     {
-        return View::make('papas.historias');
+        $historias=Historia::paginate(4);
+        return View::make('papas.historias',['historias'=>$historias]);
     }
     public function videos()
     {

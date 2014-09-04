@@ -148,11 +148,51 @@ class UsersController extends Controller
 
     ////////////////////LIKES/////////////////////
     public function likes(){
+        $status=Input::get('status1');
+        $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
+
+            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
+            if($liked){
+                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->delete();
+                return 'eliminado';
+            }else{
+                $cuento->likes()->save(new Like([
+                    'ip'=>Request::getClientIp()
+                ]));
+                return 'añadido';
+            }
+
+
+
         /*Request::getClientIp();*/
         /*$cuento->images()->save(new Image([
             'path'=>$imagename
         ]));*/
-        return Input::get('document_id');
+        return 'error algo paso';
+    }
+
+    ////////////////////LIKES/////////////////////
+    public function views(){
+
+        $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
+
+        $view=CuentoView::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
+        if($view){
+
+        }else{
+            $cuento->views()->save(new CuentoView([
+                'ip'=>Request::getClientIp()
+            ]));
+            return 'añadido';
+        }
+
+
+
+        /*Request::getClientIp();*/
+        /*$cuento->images()->save(new Image([
+            'path'=>$imagename
+        ]));*/
+        return 'error algo paso';
     }
 
 

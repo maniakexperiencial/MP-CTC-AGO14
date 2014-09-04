@@ -13,7 +13,8 @@ class DoctoresController extends Controller {
     }
     public function historias()
     {
-        return View::make('doctores.historias');
+        $historias=Historia::paginate(4);
+        return View::make('doctores.historias',['historias'=>$historias]);
     }
     public function videos()
     {

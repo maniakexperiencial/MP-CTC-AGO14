@@ -13,7 +13,8 @@ class KidsController extends Controller {
     }
 	public function cuentos()
 	{
-        return View::make('kids.cuentos');
+        $cuentos=Cuento::paginate(6);
+        return View::make('kids.cuentos',['cuentos'=>$cuentos,'count'=>0]);
 	}
     public function videos()
     {

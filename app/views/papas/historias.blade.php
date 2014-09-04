@@ -60,8 +60,25 @@ Historias
 <div class="ui grid" id="pizarron_historias">
 <div class="row">
     <div class="sixteen wide column">
+        @foreach($historias as $historia)
+                    <div class="hidden_history" id="historia{{$historia->id}}" >
+                        <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}</h4></div>
 
-        <div class="hidden_history" id="historia2" >
+                        <div class="hidden_history_content">
+                            <p>{{$historia->text}}</p>
+                        </div>
+                    </div>
+                    <a href="#historia{{$historia->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+                        <div class="historia_box">
+                            <div class="historia_title">{{$historia->title}}</div>
+                            <div class="historia_info">
+                                -{{$historia->name}}
+
+                            </div>
+                        </div>
+                    </a>
+        @endforeach
+        <!--<div class="hidden_history" id="historia2" >
             <div class="hidden_history_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h4>-Jose García 13 años</h4></div>
 
             <div class="hidden_history_content">
@@ -106,15 +123,16 @@ Historias
 
                 </div>
             </div>
-        </a>
+        </a>-->
 
     </div>
 </div>
 </div>
     <!--end resize_contain-->
 </div>
-<div class="pagination_wrap" style="">
-    <ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>
+<div class="pagination_wrap" style="margin:0px;">
+    <!--<ul class="number_page" ><a href="#"><li><img src="{{ URL::to('/img/back.png') }}" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="{{ URL::to('/img/next.png') }}" ></li></a></ul>-->
+    {{$historias->links()}}
 </div>
 @stop
 

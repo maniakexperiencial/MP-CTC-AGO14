@@ -141,6 +141,8 @@ Route::post('signup', ['as' => 'signupUser_route', 'uses' => 'UsersController@si
 /*-----------------------------------------------NORMAL---------------------*/
 
 Route::post('kids/like',['as'=>'likeSystem','uses'=>'UsersController@likes']);
+Route::post('kids/view',['as'=>'viewSystem','uses'=>'UsersController@views']);
+
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
 Route::get('kids/cuentos', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
