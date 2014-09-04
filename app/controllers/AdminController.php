@@ -58,7 +58,46 @@ class AdminController extends Controller
 
     public function report()
     {
-        return View::make('admin.account.Admin.report');
+        $report=array();
+        /*NIÑOS*/
+        $cuentos=Cuento::all();
+        foreach($cuentos as $cuento){
+            $user=User::where('id','=',$cuento->user_id)->first();
+            $average=Preselect::where('type','=','0')->where('status','=','1')->where('document_id','=',$cuento->id)->groupBy('document_id')->avg('average');
+            $views=$cuento->views->count();
+            $likes=$cuento->likes->count();
+            $report[0]=$cuento->name.$cuento->title.$cuento->age.$cuento->category.$cuento->state.$average.$views.$likes;
+        }
+        /*PAPAS*/
+        $historias=Historia::all();
+        foreach($historias as $historia){
+            $user=User::where('id','=',$historia->user_id)->first();
+
+            if($historia->category=='padres'){
+                $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
+                $report[1]=$user->details->name.$historia->title.$user->details->phone.$user->email.$historia->state.$average;
+            }
+
+
+
+        }
+        /*DOCTORES*/
+        $historias=Historia::all();
+        foreach($historias as $historia){
+            $user=User::where('id','=',$historia->user_id)->first();
+
+            if($historia->category=='doctores'){
+                $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
+                $report[2]=$user->details->name.$historia->title.$user->details->phone.$user->email.$historia->state.$average.$user->details->institution;
+            }
+
+
+
+        }
+
+        return $report[0];
+
+        //return View::make('admin.account.Admin.report');
     }
     /////////////////////////////////////NEW JUEZ//////////////////////////
     public function new_juez_index(){
