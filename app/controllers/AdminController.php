@@ -35,13 +35,15 @@ class AdminController extends Controller
     public function cuentos()
     {
         $user=User::all();
-        return View::make('admin.account.Admin.cuentos',['users'=>$user]);
+        $cuentos=Cuento::paginate(8);
+        return View::make('admin.account.Admin.cuentos',['cuentos'=>$cuentos]);
     }
 
     public function historias()
     {
         $user=User::all();
-        return View::make('admin.account.Admin.historias',['users'=>$user]);
+        $historias=Historia::paginate(4);
+        return View::make('admin.account.Admin.historias',['historias'=>$historias]);
     }
 
     public function preselect()

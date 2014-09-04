@@ -9,4 +9,11 @@ class Historia extends \Eloquent {
         return $this->belongsTo('User');
     }
 
+
+    public function preselects()
+    {
+        return $this->morphMany('Preselect', 'document');
+    }
+
+
 }

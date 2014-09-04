@@ -20,12 +20,14 @@ class AcJuezController extends Controller
     public function index()
     {
         $user=User::all();
-        return View::make('admin.account.Juez.cuentos',['users'=>$user]);
+        $cuentos=Cuento::paginate(8);
+        return View::make('admin.account.Juez.cuentos',['cuentos'=>$cuentos]);
     }
 
     public function historia(){
         $user=User::all();
-        return View::make('admin.account.Juez.historias',['users'=>$user]);
+        $historias=Historia::paginate(4);
+        return View::make('admin.account.Juez.historias',['historias'=>$historias]);
     }
 
     public function preselect()

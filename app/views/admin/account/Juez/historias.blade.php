@@ -19,8 +19,8 @@
         <div class="resize_container">
         <div id="pizarron_historias">
             <!--HISTORIAS-->
-        @foreach($users as $user)
-                @foreach($user->historias as $historia)
+
+                @foreach($historias as $historia)
                             <div class="hidden_history" id="historia<?= $historia->id ?>" >
                                 <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}</h4></div>
 
@@ -60,10 +60,12 @@
 
 
                 @endforeach
-        @endforeach
 
 
         </div>
+            <div class="pagination_wrap">
+                {{$historias->links();}}
+            </div>
         </div>
     </div><!--contentwrapper-->
 </div><!-- centercontent -->

@@ -1,7 +1,7 @@
 <?php
 
 class View extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['ip'];
 
     public function cuento()
     {

@@ -16,9 +16,9 @@
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
         <!--CUENTOS-->
-        @foreach($users as $user)
+        <div  class="cuentos_resize">
 
-        @foreach($user->cuentos as $cuento)
+        @foreach($cuentos as $cuento)
 
         <div class="hidden_cuento" id="cuento<?= $cuento->id ?>" >
             <div class="cuento_first_wrap">
@@ -45,8 +45,8 @@
             </a>
             <div class="ui grid">
                 <div class="row">
-                    <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                    <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+                    <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/likes.png') }}">{{count($cuento->likes)}}</div>
+                    <div class="eight wide column cuento_opciones2"><img src="{{ URL::to('/img/views.png') }}">{{count($cuento->likes)}}</div>
                     <?php
                     $user_auth=Auth::user();
                     $preselect=Preselect::where('document_id','=',$cuento->id)->where('type','=','0')->where('user_id','=',$user_auth->id)->first();
@@ -76,8 +76,12 @@
 
 
         @endforeach
-        @endforeach
 
+            <div class="pagination_wrap">
+                {{$cuentos->links();}}
+            </div>
+
+    </div>
 
     </div><!--contentwrapper-->
 </div><!-- centercontent -->

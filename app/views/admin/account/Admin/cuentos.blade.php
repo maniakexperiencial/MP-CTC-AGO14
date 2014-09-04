@@ -19,14 +19,15 @@
         <div id="message_ajax"></div>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
+        <div  class="cuentos_resize">
+
 
             <!--CUENTOS-->
 
 
 
-        @foreach($users as $user)
 
-            @foreach($user->cuentos as $cuento)
+            @foreach($cuentos as $cuento)
 
                         <div class="hidden_cuento" id="cuento<?= $cuento->id ?>" >
                             <div class="cuento_first_wrap">
@@ -49,8 +50,8 @@
                                 <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">153</div>
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">2547</div>
+                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">{{$cuento->likes->count()}}</div>
+                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"></div>
 
                                     </div>
                                     <div class="row">
@@ -63,10 +64,14 @@
                             </div>
 
 
-            @endforeach
+
         @endforeach
+<div class="pagination_wrap">
+    {{$cuentos->links();}}
+</div>
 
 
+        </div>
 
     </div><!--contentwrapper-->
 </div><!-- centercontent -->

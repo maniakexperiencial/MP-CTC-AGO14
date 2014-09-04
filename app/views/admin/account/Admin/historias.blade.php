@@ -5,6 +5,7 @@
 {{ HTML::script('js/jquery.fancybox.js') }}
 {{ HTML::script('/js/custom/tables.js') }}
 {{ HTML::script('/js/plugins/jquery.dataTables.min.js') }}
+
 {{ HTML::script('http://code.jquery.com/jquery-latest.min.js') }}
 @stop
 
@@ -19,8 +20,8 @@
         <div class="resize_container">
         <div id="pizarron_historias">
             <!--HISTORIAS-->
-        @foreach($users as $user)
-                @foreach($user->historias as $historia)
+
+                @foreach($historias as $historia)
                             <div class="hidden_history" id="historia<?= $historia->id ?>" >
                                 <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}</h4></div>
 
@@ -31,7 +32,7 @@
 
 
                             <div class="historia_box" id="h<?= $historia->id ?>">
-                                <a href="#historia<?php $historia->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="historia_title">{{$historia->title}}</div></a>
+                                <a href="#historia<?= $historia->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="historia_title">{{$historia->title}}</div></a>
                                 <div class="historia_info">
                                     - {{$historia->name}}
 
@@ -45,9 +46,12 @@
 
 
                 @endforeach
-        @endforeach
 
 
+
+            </div>
+            <div class="pagination_wrap">
+                {{$historias->links();}}
             </div>
             </div>
     </div><!--contentwrapper-->

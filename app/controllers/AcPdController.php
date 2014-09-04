@@ -20,7 +20,8 @@ class AcPdController extends Controller
     public function index()
     {
         $user=User::all();
-        return View::make('admin.account.Pd.dashboard',['users'=>$user]);
+        $historias=Historia::paginate(4);
+        return View::make('admin.account.Pd.dashboard',['historias'=>$historias]);
     }
 
     ///////////////////////////////////////NEW Historia//////////////////////////

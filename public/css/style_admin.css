@@ -470,6 +470,10 @@
     height: 500px;
     /* background-color: green; */
 }
+.cuentos_resize{
+    width:830px;
+    height:350px;
+}
 #pizarron_historias{
     width:700px;
     height: 436px;
@@ -566,6 +570,76 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
+/*-----------------------------------------------PAGINATION-------------------------------------*/
+/***** 24. PAGINATION STYLE *****/
+/********************************/
+
+
+.pagination { list-style: none; overflow: hidden; }
+.pagination li { display: inline-block; float: left; margin-right: 5px; }
+.pagination li.first, .pagination li.previous, .pagination li.next, .pagination li.last { font-size: 18px; }
+.pagination li a { display: block; font-weight: bold; border: 1px solid #ccc; padding: 5px 10px; color: #333; line-height: 21px; vertical-align: top; }
+.pagination li a { background: #f7f7f7; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.pagination li a:hover { cursor: pointer; text-decoration: none; background: #eee; }
+.pagination li a.current { background: #FB9337; color: #fff; border: 1px solid #F0882C; }
+.pagination li.first a:active, .pagination li.previous a:active, .pagination li.next a:active, .pagination li.last a:active {
+    background: #333; color: #fff; border 1px solid #272727;
+}
+.pagination li a.disable { color: #ccc; }
+.pagination li a.disable:hover { background: #f7f7f7; cursor: default; }
+.pagination li a.disable:active { background: #f7f7f7; border: 1px solid #ccc; color: #ccc; }
+
+.pagination2 li a { padding: 4px 12px 6px 12px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; }
+
+.pagination_wrap{
+    width:100%;
+    height:50px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+.pagination_wrap ul{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #0057a8 !important;
+}
+.pagination_wrap ul li{
+    padding: 0px 5px; !important;
+    width: 37px;
+    height: 31px;
+    line-height: 31px;
+}
+
+.pagination li a{
+    background: none;
+    border: none;
+    color: #0057a8 !important;
+}
+.pagination li .active{
+    font-weight: bold;
+}
+.pagination li span{
+
+    color: #0057a8;
+
+    font-size: 12px;
+    line-height: 21px;
+}
+.pagination li.first, .pagination li.previous, .pagination li.next, .pagination li.last {
+    font-size: 12px;
+}
+.pagination li a:hover {
+    cursor: pointer; text-decoration: none; background: #0057a8; color: white !important;
+}
+
+
+/*-------------MY STYLE-------*/
+.table.dataTable thead .sorting {
+    background: url("/img/icons/sort_both.png") no-repeat center right !important;
+}
+
+
 /*--------------------------------------------------LIGHTBOX----------------------*/
 .hidden_evaluar{
     position: relative;

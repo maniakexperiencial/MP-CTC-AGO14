@@ -21,4 +21,12 @@ class Cuento extends \Eloquent {
     {
         return $this->hasMany('View');
     }
+
+
+    public function preselects()
+    {
+        return $this->morphMany('Preselect', 'document');
+    }
+
+
 }

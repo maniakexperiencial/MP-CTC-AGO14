@@ -8,4 +8,10 @@ class Preselect extends \Eloquent {
         return $this->belongsTo('User');
     }
 
+    public function document()
+    {
+        return $this->morphTo();
+    }
+
+
 }
