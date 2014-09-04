@@ -13,8 +13,8 @@
         <h1 class="pagetitle">Reportes</h1>
         <span class="pagedesc"></span>
     </div><!--pageheader-->
-    <div id="contentwrapper" class="contentwrapper">
-
+    <div id="contentwrapper" class="contentwrapper" style="text-align: center;">
+                <a href="#" class="btn_admin">Descargar Reporte</a>
     </div><!--contentwrapper-->
 </div><!-- centercontent -->
 @stop

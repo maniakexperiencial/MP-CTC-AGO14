@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1409783167n5PmVbackground.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1409783228ajESHCilindro_Folklore.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1409783245W4dDEindex.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1409783269XXSzn5.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/Sorting icons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/back_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/back_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/back_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/forward_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/forward_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/forward_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2014_09_03_191031_ad_column_preselects_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structure/pagination.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AcJuezController.php" afterPath="$PROJECT_DIR$/app/controllers/AcJuezController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AcPdController.php" afterPath="$PROJECT_DIR$/app/controllers/AcPdController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdminController.php" afterPath="$PROJECT_DIR$/app/controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Cuento.php" afterPath="$PROJECT_DIR$/app/models/Cuento.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Historia.php" afterPath="$PROJECT_DIR$/app/models/Historia.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Like.php" afterPath="$PROJECT_DIR$/app/models/Like.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Preselect.php" afterPath="$PROJECT_DIR$/app/models/Preselect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/View.php" afterPath="$PROJECT_DIR$/app/models/View.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Juez/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Juez/cuentos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Pd/dashboard.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Pd/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/finalist.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/finalist.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Juez/finalist.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Juez/finalist.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/historias.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/historias.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Juez/historias.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Juez/historias.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/jquery.dataTables.css" afterPath="$PROJECT_DIR$/public/css/plugins/jquery.dataTables.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_admin.css" afterPath="$PROJECT_DIR$/public/css/style_admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/plugins/styledataTables.css" afterPath="$PROJECT_DIR$/public/css/plugins/styledataTables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/report.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/report.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -64,22 +29,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="preselect.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/preselect.blade.php">
+      <file leaf-file-name="cuentos.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="12" selection-start="6455" selection-end="6911" vertical-scroll-proportion="-25.5" vertical-offset="2346" max-vertical-offset="3230">
-              <folding />
+            <state line="53" column="130" selection-start="2699" selection-end="2699" vertical-scroll-proportion="-32.692307" vertical-offset="51" max-vertical-offset="2193">
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cuentos.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
+      <file leaf-file-name="report.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/report.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="130" selection-start="2699" selection-end="2699" vertical-scroll-proportion="1.0119047" vertical-offset="51" max-vertical-offset="2193">
+            <state line="16" column="26" selection-start="594" selection-end="594" vertical-scroll-proportion="0.31887457" vertical-offset="0" max-vertical-offset="853">
               <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/account/Admin/new_juez.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/edit_juez.blade.php" />
@@ -232,6 +198,7 @@
         <option value="$PROJECT_DIR$/app/models/View.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Juez/cuentos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/account/Admin/report.blade.php" />
       </list>
     </option>
   </component>
@@ -448,6 +415,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Juez" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -860,7 +857,11 @@
       <created>1409770388131</created>
       <updated>1409770388131</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="-FALTA REPORTE, lo de la galeria de cuentos y front end">
+      <created>1409793506366</created>
+      <updated>1409793506366</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -921,7 +922,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-cambiar icono 3er concurso por 4 concurso de mientras" />
     <MESSAGE value="-pantalla login admin" />
     <MESSAGE value="-cambio tamaño de cuentos niños" />
     <MESSAGE value="-cambiado tamaño de videos y cuentos, con contenedor resize_container" />
@@ -946,7 +946,8 @@
     <MESSAGE value="-HACIENDO ADMINISTRADOR" />
     <MESSAGE value="-EL JUEZ YA PUEDE PRESELECCIONAR Y SALE LA TABLA DE PRESELECCIONADOS" />
     <MESSAGE value="-SOLO FALTA SECCION FINALISTAS." />
-    <option name="LAST_COMMIT_MESSAGE" value="-SOLO FALTA SECCION FINALISTAS." />
+    <MESSAGE value="-FALTA REPORTE, lo de la galeria de cuentos y front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="-FALTA REPORTE, lo de la galeria de cuentos y front end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -954,11 +955,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_28_201352_create_historias_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="537" selection-end="537" vertical-scroll-proportion="0.40753424" vertical-offset="0" max-vertical-offset="876" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/UserDetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.21347032" vertical-offset="0" max-vertical-offset="876" />
@@ -1321,10 +1317,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="130" selection-start="2699" selection-end="2699" vertical-scroll-proportion="1.0119047" vertical-offset="51" max-vertical-offset="2193">
+        <state line="53" column="130" selection-start="2699" selection-end="2699" vertical-scroll-proportion="-32.692307" vertical-offset="51" max-vertical-offset="2193">
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/report.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="594" selection-end="594" vertical-scroll-proportion="0.31887457" vertical-offset="0" max-vertical-offset="853">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
