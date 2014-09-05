@@ -428,9 +428,10 @@ a.active{
     width: 95%;
     display: inline-block;
     margin-top: 3%;
-    min-height: 30%;
-    max-height: 30%;
-    height: auto;
+    /*min-height: 30%;
+    max-height: 30%;*/
+    /*height: 400px !important;*/
+    height:auto;
     background-color: #e5f5ff;
 }
 .cuento_first_wrap img{
