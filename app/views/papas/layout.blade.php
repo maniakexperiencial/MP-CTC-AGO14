@@ -93,10 +93,9 @@
             <div class="column" id="center_actionbar">
                 <input type="text" id="Searchbox" placeholder="Search">
                 <select id="Selectbox">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="" selected>Categoria</option>
+                    <option value="{{URL::to('papas/historias/papas')}}">papas</option>
+                    <option value="{{URL::to('papas/historias/doctores')}}">doctores</option>
                 </select>
              </div>
         </div>

@@ -23,7 +23,7 @@
 <div class="centercontent tables">
     <div class="pageheader notab">
         <h1 class="pagetitle">Preseleccionados</h1>
-        <span class="pagedesc">Cuentos</span>
+        <span class="pagedesc"></span>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
        <!-- <div id="dyntable_length" class="dataTables_length table_blue">

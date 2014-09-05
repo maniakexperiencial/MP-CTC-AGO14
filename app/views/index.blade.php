@@ -19,14 +19,14 @@
 @stop
 
 @section('contest2')
-<img  src="{{ URL::to('/img/4concurso.png') }}">
+<img  src="{{ URL::to('/img/3erconcurso.png') }}">
 @stop
 
 
 @section('contest3')
-<img  src="{{ URL::to('/img/4concurso.png') }}">
+<!--<img  src="{{ URL::to('/img/4concurso.png') }}">-->
 @stop
 
 @section('contest4')
-<img  src="{{ URL::to('/img/4concurso.png') }}">
+<!--<img  src="{{ URL::to('/img/4concurso.png') }}">-->
 @stop

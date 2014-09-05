@@ -7,6 +7,9 @@
 {{ HTML::style('js/nivo/nivo-lightbox.css') }}
 {{ HTML::style('js/nivo/themes/default/default.css') }}
 {{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
+
+
+
 <!-- Optionally add helpers - button, thumbnail and/or media -->
 @stop
 
@@ -118,72 +121,101 @@ Cuentos
 </div>-->
 
 <div  class="resize_container resize_container_cuento">
-<!--resize_contain-->
+    <!--resize_contain-->
 
     @foreach($cuentos as $cuento)
-            @if($count!=3)
-            <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
-                <div class="cuento_first_wrap">
-                    <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
-                    <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
-                </div>
-                <div class="cuento_second_wrap">
-                    <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
-                        <p>{{$cuento->text}} </p>
-                    </div>
-                </div>
+    @if($count!=3)
+    <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
+        <div class="cuento_first_wrap">
+            <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h4>{{$cuento->state}}</h4><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
+
+            <img height="100%" id="img_central{{$cuento->id}}" class="img_central{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+            @if($cuento->images->count()>1)
+            <div id="slider" class="slider" >
+                <ul class="thumb_images_wrap">
+                    @foreach($cuento->images as $image)
+
+                    <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+
+
+                    @endforeach
+                </ul>
             </div>
+            @endif
 
-            <div class="cuento_box">
-                <div class="cuento_title">{{$cuento->title}}</div>
-                <div class="cuento_by">{{$cuento->name}}</div>
-                <div class="cuento_age">{{$cuento->age}} años</div>
-                <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-                    <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
-                </a>
-                <div class="ui grid">
-                    <div class="row ">
-                        <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"
-                            @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
-                            <span class="number_likes">{{$cuento->likes->count()}}</span>
-                        </div>
-                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
-                    </div>
-                </div>
+        </div>
+        <div class="cuento_second_wrap">
+            <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+                <p>{{$cuento->text}} </p>
             </div>
+        </div>
+    </div>
 
-        @else
-             <div style="width: 100%; height: 45px;float:left;"></div>
-
-                <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
-                    <div class="cuento_first_wrap">
-                        <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
-                        <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?> ">
-                    </div>
-                    <div class="cuento_second_wrap">
-                        <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
-                            <p>{{$cuento->text}} </p>
-                        </div>
-                    </div>
+    <div class="cuento_box">
+        <div class="cuento_title">{{$cuento->title}}</div>
+        <div class="cuento_by">{{$cuento->name}}</div>
+        <div class="cuento_age">{{$cuento->age}} años, {{$cuento->state}}</div>
+        <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
+        </a>
+        <div class="ui grid">
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"
+                    @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
+                    <span class="number_likes">{{$cuento->likes->count()}}</span>
                 </div>
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+            </div>
+        </div>
+    </div>
 
-                <div class="cuento_box">
-                    <div class="cuento_title">{{$cuento->title}}</div>
-                    <div class="cuento_by">{{$cuento->name}}</div>
-                    <div class="cuento_age">{{$cuento->age}} años</div>
-                    <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-                        <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
-                    </a>
-                    <div class="ui grid">
-                        <div class="row ">
-                            <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"  @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
-                                <span class="number_likes">{{$cuento->likes->count()}}</span>
-                            </div>
-                            <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
-                        </div>
-                    </div>
+    @else
+    <div style="width: 100%; height: 45px;float:left;"></div>
+
+    <div class="hidden_cuento" id="cuento{{$cuento->id}}" >
+        <div class="cuento_first_wrap">
+            <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$cuento->title}}</h2><h4>{{$cuento->state}}</h4><h5>-{{$cuento->name}} {{$cuento->age}} años</h5></div>
+
+            <img height="100%" id="img_central{{$cuento->id}}" class="img_central{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+            @if($cuento->images->count()>1)
+            <div id="slider" class="slider" >
+                <ul class="thumb_images_wrap">
+                    @foreach($cuento->images as $image)
+
+                    <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+
+
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+
+        </div>
+        <div class="cuento_second_wrap">
+            <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+                <p>{{$cuento->text}} </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cuento_box">
+        <div class="cuento_title">{{$cuento->title}}</div>
+        <div class="cuento_by">{{$cuento->name}}</div>
+        <div class="cuento_age">{{$cuento->age}} años, {{$cuento->state}}</div>
+        <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
+        </a>
+        <div class="ui grid">
+            <div class="row ">
+                <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"
+                    @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
+                    <span class="number_likes">{{$cuento->likes->count()}}</span>
                 </div>
-        @endif
+                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+            </div>
+        </div>
+    </div>
+    @endif
     <?php $count+=1; ?>
 
     @endforeach
@@ -283,16 +315,19 @@ Cuentos
     // Running the code when the document is ready
     $(document).ready(function(){
 
+
+
         $('a').nivoLightbox({
             afterShowLightbox: function(lightbox){
-
 
 
             }
         });
 
-     var bg="{{ URL::to('/img/bg_land.jpg') }}";
-     $(window).height();
+
+
+        var bg="{{ URL::to('/img/bg_land.jpg') }}";
+        $(window).height();
         var extra="{{ URL::to('/img/kid.png') }}";
         //$('#content_wrap').css({'background-image': 'url('+extra+')','background-position':'2% 100%','background-repeat':'no-repeat','background-size':'12%'});
         $('body').css({'background-image': 'url('+bg+')'});
@@ -312,7 +347,7 @@ Cuentos
             var numero_likes="";
             //alert(type);
             var parameters={document_id: document_id,status1: status1};
-           //alert(status1+document_id);
+            //alert(status1+document_id);
 
             jQuery.ajax(
                 {
@@ -427,6 +462,22 @@ Cuentos
 
 
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
+
+        jQuery("#Selectbox").change(function () {
+            location.href = jQuery(this).val();
+        });
+
+
+        $('body').on('click', '.thumb_images_wrap img', function() {
+
+            var doc_id=$(this).attr('data-id');
+
+            var src=$(this).attr('src');
+            $('.img_central'+doc_id).attr('src',src);
+        });
+
+
+
     });
 
 </script>

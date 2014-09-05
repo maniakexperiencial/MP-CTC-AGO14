@@ -16,7 +16,7 @@ class CreateLikesTable extends Migration {
 		{
 			$table->increments('id');
             $table->integer('cuento_id');
-            $table->integer('ip')->nullable();
+            $table->text('ip')->nullable();
 			$table->timestamps();
 		});
 	}

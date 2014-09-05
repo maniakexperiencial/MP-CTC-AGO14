@@ -127,7 +127,7 @@ body{
 }
 .align_center img{
     max-width: 100%;
-    max-height: 12%;
+    max-height: 15%;
     margin-bottom: 15%;
 
 }
@@ -355,6 +355,14 @@ body{
 .toggle_menu i.icon{
     opacity: 1 !important;
 }
+/*-------------PAGINATION-----------*/
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+a.active{
+    font-weight: bold;
+}
 /*NUMBER_PAGES*/
 
 .number_page{
@@ -452,6 +460,33 @@ body{
     height:auto;
     text-align:left;
 }
+
+/*GALERIA INSIDE CUENTOS*/
+.slider{
+    height:100px;
+    width:100%;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+}
+.thumb_images_wrap{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+.thumb_images_wrap li{
+    list-style: none;
+    display: inline-block!important;
+    padding: 5px;
+}
+.thumb_images_wrap img{
+    max-height: 90%;
+}
+.hidden_cuento_title h2,h4,h5{
+    margin: 5px;
+}
+
+
 /*FOR VIDEOS Lightbox*/
 .hidden_video{
     display: none;color:

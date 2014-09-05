@@ -35,7 +35,7 @@
                 <th class="t_white">Nombre</th>
                 <th class="t_white">Nombre del Cuento o Historia</th>
                 <th class="t_white">Categoría</th>
-                <th class="t_white">Cuentos</th>
+                <th class="t_white">Cuentos/Historias</th>
                 <th class="t_white">Acciones</th>
             </tr>
             </thead>

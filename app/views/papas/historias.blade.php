@@ -167,6 +167,11 @@ Historias
        // $('.historia_box').css('min-height',$(window).height()*.1532175) ;
        //
         $('#Left_bar img').css('max-height',$(window).height()*.14629049);
+
+
+        jQuery("#Selectbox").change(function () {
+            location.href = jQuery(this).val();
+        });
     });
 
 </script>

@@ -428,11 +428,14 @@
     float: left;
 }
 .cuento_opciones2 img{
-    width: 20%;
+    width: 25%;
 }
 .cuento_opciones img{
     width: 25%;
     margin-right: 5%;
+}
+.cuento_opciones2 span{
+    margin-left: 5px;
 }
 .cuento_love{
     color: #c8e4ff;
@@ -570,67 +573,57 @@
     opacity: 0;
     filter: alpha(opacity=0);
 }
-/*-----------------------------------------------PAGINATION-------------------------------------*/
-/***** 24. PAGINATION STYLE *****/
-/********************************/
-
-
-.pagination { list-style: none; overflow: hidden; }
-.pagination li { display: inline-block; float: left; margin-right: 5px; }
-.pagination li.first, .pagination li.previous, .pagination li.next, .pagination li.last { font-size: 18px; }
-.pagination li a { display: block; font-weight: bold; border: 1px solid #ccc; padding: 5px 10px; color: #333; line-height: 21px; vertical-align: top; }
-.pagination li a { background: #f7f7f7; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
-.pagination li a:hover { cursor: pointer; text-decoration: none; background: #eee; }
-.pagination li a.current { background: #FB9337; color: #fff; border: 1px solid #F0882C; }
-.pagination li.first a:active, .pagination li.previous a:active, .pagination li.next a:active, .pagination li.last a:active {
-    background: #333; color: #fff; border 1px solid #272727;
+/*-------------PAGINATION-----------*/
+a.disabled {
+    pointer-events: none;
+    cursor: default;
 }
-.pagination li a.disable { color: #ccc; }
-.pagination li a.disable:hover { background: #f7f7f7; cursor: default; }
-.pagination li a.disable:active { background: #f7f7f7; border: 1px solid #ccc; color: #ccc; }
-
-.pagination2 li a { padding: 4px 12px 6px 12px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; }
-
-.pagination_wrap{
-    width:100%;
-    height:50px;
-    float: left;
-    text-align: center;
-    margin-top: 10px;
-}
-.pagination_wrap ul{
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    color: #0057a8 !important;
-}
-.pagination_wrap ul li{
-    padding: 0px 5px; !important;
-    width: 37px;
-    height: 31px;
-    line-height: 31px;
-}
-
-.pagination li a{
-    background: none;
-    border: none;
-    color: #0057a8 !important;
-}
-.pagination li .active{
+a.active{
     font-weight: bold;
 }
-.pagination li span{
+/*NUMBER_PAGES*/
 
+.number_page{
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     color: #0057a8;
 
-    font-size: 12px;
-    line-height: 21px;
 }
-.pagination li.first, .pagination li.previous, .pagination li.next, .pagination li.last {
-    font-size: 12px;
+.number_page li{
+    padding: 0px 5px;
 }
-.pagination li a:hover {
-    cursor: pointer; text-decoration: none; background: #0057a8; color: white !important;
+.number_page li img{
+    vertical-align: middle;
+}
+.number_page a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+.pagination_wrap{
+    width:100%;
+    float:left;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 10px;
+
+}
+.pagination_wrap ul{
+    display:inline-block!important;
+    zoom:1;
+    vertical-align:top;
+    margin-top: 0px !important;
+}
+.pagination_wrap li{
+    display:inline-block!important;
+    zoom:1;
+    vertical-align:top;
 }
 
 
@@ -641,6 +634,31 @@
 
 
 /*--------------------------------------------------LIGHTBOX----------------------*/
+/*GALERIA INSIDE CUENTOS*/
+.slider{
+    height:100px;
+    width:100%;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+}
+.thumb_images_wrap{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+.thumb_images_wrap li{
+    list-style: none;
+    display: inline-block!important;
+    padding: 5px;
+}
+.thumb_images_wrap img{
+    max-height: 90% !important;
+}
+.hidden_cuento_title h2,h4,h5{
+    margin: 5px;
+}
+/*---------------------------------------------------*/
 .hidden_evaluar{
     position: relative;
     display: none;

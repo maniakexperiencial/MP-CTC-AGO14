@@ -31,9 +31,21 @@
 
                         <div class="hidden_cuento" id="cuento<?= $cuento->id ?>" >
                             <div class="cuento_first_wrap">
-                                <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{ $cuento->title }}</h2><h5>-{{ $cuento->name }} {{ $cuento->age }} años</h5></div>
+                                <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{ $cuento->title }}</h2><h5>{{$cuento->state}}</h5><h5>-{{ $cuento->name }} {{ $cuento->age }} años</h5></div>
 
-                                <img height="100%" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+                                <img height="100%" id="img_central{{$cuento->id}}" class="img_central{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>">
+                                @if($cuento->images->count()>1)
+                                <div id="slider" class="slider" >
+                                    <ul class="thumb_images_wrap">
+                                        @foreach($cuento->images as $image)
+
+                                        <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+
+
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endif
                             </div>
                             <div class="cuento_second_wrap">
                                 <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
@@ -46,7 +58,7 @@
                             <div class="cuento_box" id="{{ $cuento->id }}">
                                 <div class="cuento_title">{{ $cuento->title }}</div>
                                 <div class="cuento_by">{{ $cuento->name }}</div>
-                                <div class="cuento_age">{{ $cuento->age }} años</div>
+                                <div class="cuento_age">{{ $cuento->age }} años, {{$cuento->state}}</div>
                                 <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
@@ -119,6 +131,18 @@
                 });
 
         });
+
+
+
+        $('body').on('click', '.thumb_images_wrap img', function() {
+
+            var doc_id=$(this).attr('data-id');
+
+            var src=$(this).attr('src');
+            $('.img_central'+doc_id).attr('src',src);
+        });
+
+
     });
 </script>
 @stop

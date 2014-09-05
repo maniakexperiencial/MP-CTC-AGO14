@@ -38,16 +38,16 @@
             <div  class="historia_option_wrap">
 
                 <?php $userauth=Auth::user();
-                      if($userauth->id==$historia->user_id){
+                     /* if($userauth->id==$historia->user_id){
                        echo "   <div class=cuento_admin_options><a href=".URL::route('edithistoriaPd',['idhistoria' => $historia->id] ).">editar</a></div>
                            <div class=cuento_admin_options><a href=# class=delete data-id=". $historia->id." >borrar</a></div>";
                       }else{
 
 
-                      }
+                      }*/
                 ?>
 
-                <a href="#historia<?= $historia->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1" style="color: inherit;"> <div class="cuento_admin_options">leer</div></a>
+                <!--<a href="#historia<?= $historia->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1" style="color: inherit;"> <div class="cuento_admin_options">leer</div></a>-->
             </div>
         </div>
 

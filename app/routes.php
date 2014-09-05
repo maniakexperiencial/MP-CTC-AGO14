@@ -145,20 +145,20 @@ Route::post('kids/view',['as'=>'viewSystem','uses'=>'UsersController@views']);
 
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
-Route::get('kids/cuentos', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
+Route::get('kids/cuentos/{category?}', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
 Route::get('kids/videos', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
 Route::get('kids/bases', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
 
 /*PAPAS*/
 Route::get('papas', ['as' => 'papas', 'uses' => 'PapasController@index']);
-Route::get('papas/historias', ['as' => 'papas_historias', 'uses' => 'PapasController@historias']);
+Route::get('papas/historias/{category?}', ['as' => 'papas_historias', 'uses' => 'PapasController@historias']);
 Route::get('papas/videos', ['as' => 'papas_videos', 'uses' => 'PapasController@videos']);
 Route::get('papas/bases', ['as' => 'papas_bases', 'uses' => 'PapasController@bases']);
 
 /*DOCTORS*/
 Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index']);
 Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index']);
-Route::get('doctores/historias', ['as' => 'doctores_historias', 'uses' => 'DoctoresController@historias']);
+Route::get('doctores/historias/{category?}', ['as' => 'doctores_historias', 'uses' => 'DoctoresController@historias']);
 Route::get('doctores/bases', ['as' => 'doctores_bases', 'uses' => 'DoctoresController@bases']);
 Route::get('doctores/videos', ['as' => 'doctores_videos', 'uses' => 'DoctoresController@videos']);
 

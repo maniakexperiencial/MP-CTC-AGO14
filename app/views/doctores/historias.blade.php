@@ -168,6 +168,11 @@ Historias
 
 
 
+        jQuery("#Selectbox").change(function () {
+            location.href = jQuery(this).val();
+        });
+
+
     });
 
 </script>

@@ -102,7 +102,7 @@
 <div class="center_container">
     <div class="column" id="content_wrap">
         <div class="ui grid">
-            <div class="row">
+            <div class="row" style="margin-top: 15%">
 
                 <div class="sixteen wide column align_center  align_center_moreheight ">
                     <div class="Title_section">@yield('title_section')</div>
@@ -113,21 +113,21 @@
             </div>
             <div class="row">
 
-                <div class="four wide column align_center ">
+                <div class="three wide column align_center ">
 
 
                 </div>
-                <div class="four wide column align_center   ">
+                <div class="five wide column align_center   ">
                     @yield('contest1')
 
 
 
                 </div>
-                <div class="four wide column align_center ">
+                <div class="five wide column align_center ">
                     @yield('contest2')
 
                 </div>
-                <div class="four wide column align_center ">
+                <div class="three wide column align_center ">
 
 
                 </div>
