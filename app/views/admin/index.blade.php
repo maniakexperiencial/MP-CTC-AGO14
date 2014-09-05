@@ -78,7 +78,7 @@
             </div>
                 <button>ENTRAR</button>
 
-                <div class="keep"><input type="checkbox" name="remember" id="remember" /><label for="remember"> Keep me logged in</label></div>
+                <div class="keep"><input type="checkbox" name="remember" id="remember" /><label for="remember"> Mantenerme Logeado</label></div>
 
             {{Form::close()}}
 
