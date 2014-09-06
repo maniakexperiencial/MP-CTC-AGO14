@@ -114,6 +114,12 @@
     display: none;
 }
 /*------------------------------------------------------------------------ADMIN SECTION------------------------------------------*/
+/*ADMIN CERRRAR SESION*/
+.user_logout {
+    padding: 6px 18px 6px 6px; color: #003362; cursor: pointer;
+}
+.user_logout:hover { background-color: #0057a8; color: white !important; }
+.user_logout:hover a{ color: white}
 
 .bg{
     position: fixed;

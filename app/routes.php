@@ -135,7 +135,13 @@ Route::get('login', ['as' => 'loginUser_route', 'uses' => 'UsersController@login
 Route::post('login', ['as' => 'loginUser_route', 'uses' => 'UsersController@login']);
 Route::post('signup', ['as' => 'signupUser_route', 'uses' => 'UsersController@signup']);
 
+////////////---------------------RECOVER PASSWORD--------------*/
+Route::get('recovpass', ['as' => 'recovpass_route', 'uses' => 'UsersController@recovpass_index']);
+Route::post('recovpass', ['as' => 'recovpass_route', 'uses' => 'UsersController@recovpass']);
+Route::get('recover/{code}',['as' => 'recover_code','uses' => 'UsersController@getRecover']);
 
+
+Route::post('changepass/{email}',['as' => 'changepass_route','uses' => 'UsersController@changepass']);
 
 
 /*-----------------------------------------------NORMAL---------------------*/

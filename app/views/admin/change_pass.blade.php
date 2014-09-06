@@ -31,7 +31,7 @@
 
 </head>
 
-<body class="loginpage">
+<body class="loginpage  signup_bg">
 
 	<div class="loginbox">
     	<div class="loginboxinner">
@@ -44,50 +44,33 @@
 
             <br clear="all" /><br />
 
-            <div class="nousername">
-				<div class="loginmsg">The password you entered is incorrect.</div>
-            </div><!--nousername-->
 
-            <div class="nopassword">
-				<div class="loginmsg">The password you entered is incorrect.</div>
-                <div class="loginf">
-                    <div class="thumb"><img alt="" src="images/thumbs/avatar1.png" /></div>
-                    <div class="userlogged">
-                        <h4></h4>
-                        <a href="index.blade.php">Not <span></span>?</a>
-                    </div>
-                </div><!--loginf-->
-            </div><!--nopassword-->
 
-            {{ Form::open(['route' => 'loginUser_route']) }}
+            {{ Form::open(['route' => ['changepass_route',$email]]) }}
             @if (Session::has('mensaje_request'))
             {{ Session::get('mensaje_request') }}
             @endif
 
             <div class="form-group">
-                {{Form::label('email', 'CORREO ELECTRÓNICO', ['class' => 'login_label']) }}
-                {{Form::email('email', null, ['class' => 'login_blue','id'=>'email']) }}
-                {{$errors->first('email',"<span class=error>:message</span>")}}
-
+                {{Form::label('password', 'Contraseña', ['class' => 'login_label']) }}
+                {{Form::password('password',['class' => 'signup_blue','id'=>'password']) }}
+                {{$errors->first('password',"<span class=error>:message</span>")}}
             </div>
             <div class="form-group">
-                {{Form::label('password', 'CONTRASEÑA', ['class' => 'login_label']) }}
-                {{Form::password('password',['class' => 'login_blue','id'=>'password']) }}
-                {{$errors->first('password',"<span class=error>:message</span>")}}
+                {{Form::label('password_confirmation', 'Repetir Contraseña', ['class' => 'login_label']) }}
+                {{Form::password('password_confirmation',['class' => 'signup_blue','id'=>'password']) }}
 
             </div>
-                <button>ENTRAR</button>
 
-                <div class="keep"><input type="checkbox" name="remember" id="remember" /><label for="remember"> Mantenerme Logeado</label></div>
+            <button>Cambiar Contraseña</button>
+
+
 
             {{Form::close()}}
 
             <div style="margin-bottom: 15%;">&nbsp;</div>
 
-            <div class="login_option">¿Aún no estas registrado?</div>
-            <div class="login_option">Registrese <a href="{{ URL::route('signup') }}"><b>Aquí</b></a></div>
 
-            <div class="login_recover"><a href="{{ URL::route('recovpass_route') }}"><b>Recuperar contraseña</b></a></div>
         </div><!--loginboxinner-->
     </div><!--loginbox-->
 

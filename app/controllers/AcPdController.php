@@ -20,7 +20,9 @@ class AcPdController extends Controller
     public function index()
     {
         $user=User::all();
-        $historias=Historia::paginate(4);
+        $userauth=Auth::user();
+        /*$historias=Historia::paginate(4);*/
+        $historias=Historia::where('user_id','=',$userauth->id)->orderBy('id', 'DESC')->paginate(4);
         return View::make('admin.account.Pd.dashboard',['historias'=>$historias]);
     }
 
@@ -63,7 +65,7 @@ class AcPdController extends Controller
             'state' => Input::get('state'),
             'text' => Input::get('text'),
         ]));
-        return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Registrado Correctamente</span>');
+        return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Registrada Correctamente</span>');
     }
 
 /////////////////////////////////DELETE HISTORIA//////////////////////////////////////

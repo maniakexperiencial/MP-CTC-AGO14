@@ -2,13 +2,15 @@
 
 use Janssen\Forms\SignupForm;
 use Janssen\Forms\LoginForm;
+use Janssen\Forms\PassForm;
 
 class UsersController extends Controller
 {
-    function __construct(SignupForm $signupForm,LoginForm $loginForm)
+    function __construct(SignupForm $signupForm,LoginForm $loginForm,PassForm $passForm)
     {
             $this->signupForm = $signupForm;
             $this->loginForm = $loginForm;
+            $this->passForm = $passForm;
     }
 
 
@@ -193,6 +195,55 @@ class UsersController extends Controller
             'path'=>$imagename
         ]));*/
         return 'error algo paso';
+    }
+
+
+    ///////////////////////////RECOVER PASS/////////
+    public function recovpass_index(){
+
+         return View::make('admin.recover_pass');
+    }
+    public function recovpass(){
+
+        $user=User::where('email','=',Input::get('email'))->first();
+        if($user->active==0){
+
+                         return 'primero debes activar tu cuenta';
+        }else{
+
+
+                            $code=str_random(60);
+                            $user->code=$code;
+                            $user->save();
+                            if($user){
+                                Mail::send('emails.recoverpass',['link'=>URL::route('recover_code',$code),'nombre'=>Input::get('name')],function($message) use ($user){
+                                    $message->to($user->email,$user->name)->subject('Reestablecer contraseña');
+                                });
+                            }
+
+                            return View::make('admin.recoversend_pass');
+
+
+        }
+
+
+
+    }
+    public function getRecover($code){
+        $user=User::where('code','=',$code)->where('active','=','1')->first();
+            if($user){
+                return View::make('admin.change_pass',['email'=>$user->email]);
+            }else{
+                 return 'codigo invalido o vencido';
+            }
+
+    }
+    public function changepass($email){
+        $this->passForm->validate(Input::all());
+            $user=User::where('email','=',$email)->where('active','=','1')->first();
+        $user->password=Hash::make(Input::get('password'));
+        $user->save();
+        return Redirect::route('loginUser_route');
     }
 
 

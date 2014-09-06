@@ -40,16 +40,10 @@
             <br clear="all" />
         </div><!--left-->
         <div class="right">
-            <div class="userinfo">
-                <span>Admin</span>
+            <div class="user_logout">
+                <a href="<?=URL::route('logout')?>"><span>Cerrar sesión</span></a>
             </div><!--userinfo-->
-            <div class="userinfodrop">
-                <div class="userdata">
-                    <ul>
-                        <li><a href="<?=URL::route('logout')?>">Cerrar sesión</a></li>
-                    </ul>
-                </div><!--userdata-->
-            </div><!--userinfodrop-->
+
         </div><!--right-->
     </div><!--topheader-->
     <div class="header">

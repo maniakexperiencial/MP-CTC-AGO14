@@ -4,6 +4,7 @@ use Janssen\Forms\SignupForm;
 use Janssen\Forms\LoginForm;
 use Janssen\Forms\JuezForm;
 use Janssen\Forms\CuentoForm;
+use Janssen\Forms\PassForm;
 
 class AdminController extends Controller
 {
@@ -12,11 +13,11 @@ class AdminController extends Controller
             $this->signupForm = $signupForm;
             $this->loginForm = $loginForm;
     }*/
-    function __construct(SignupForm $signupForm,LoginForm $loginForm,JuezForm $juezForm,CuentoForm $cuentoForm)
+    function __construct(SignupForm $signupForm,LoginForm $loginForm,JuezForm $juezForm,CuentoForm $cuentoForm,PassForm $passForm)
     {
         $this->juezForm = $juezForm;
         $this->cuentoForm = $cuentoForm;
-
+        $this->passForm = $passForm;
     }
 
 
@@ -35,14 +36,14 @@ class AdminController extends Controller
     public function cuentos()
     {
         $user=User::all();
-        $cuentos=Cuento::paginate(8);
+        $cuentos=Cuento::orderBy('id', 'DESC')->paginate(8);
         return View::make('admin.account.Admin.cuentos',['cuentos'=>$cuentos]);
     }
 
     public function historias()
     {
         $user=User::all();
-        $historias=Historia::paginate(4);
+        $historias=Historia::orderBy('id', 'DESC')->paginate(4);
         return View::make('admin.account.Admin.historias',['historias'=>$historias]);
     }
 

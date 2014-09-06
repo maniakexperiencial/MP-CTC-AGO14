@@ -20,13 +20,13 @@ class AcJuezController extends Controller
     public function index()
     {
         $user=User::all();
-        $cuentos=Cuento::paginate(8);
+        $cuentos=Cuento::orderBy('id', 'DESC')->paginate(8);
         return View::make('admin.account.Juez.cuentos',['cuentos'=>$cuentos]);
     }
 
     public function historia(){
         $user=User::all();
-        $historias=Historia::paginate(4);
+        $historias=Historia::orderBy('id', 'DESC')->paginate(4);
         return View::make('admin.account.Juez.historias',['historias'=>$historias]);
     }
 

@@ -16,14 +16,14 @@ class KidsController extends Controller {
         switch($category){
             case 6:
                 $filter='6-7';
-                $cuentos=Cuento::where('category','=',$filter)->paginate(6);
+                $cuentos=Cuento::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(6);
                 break;
             case 8:
                 $filter='8-12';
-                $cuentos=Cuento::where('category','=',$filter)->paginate(6);
+                $cuentos=Cuento::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(6);
                 break;
             default:
-                $cuentos=Cuento::paginate(6);
+                $cuentos=Cuento::orderBy('id', 'DESC')->paginate(6);
                 break;
         }
 

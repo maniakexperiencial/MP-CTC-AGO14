@@ -16,17 +16,17 @@ class DoctoresController extends Controller {
         switch($category){
             case 'papas':
                 $filter='padres';
-                $historias=Historia::where('category','=',$filter)->paginate(4);
+                $historias=Historia::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
                 break;
             case 'doctores':
                 $filter='doctores';
-                $historias=Historia::where('category','=',$filter)->paginate(4);
+                $historias=Historia::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
                 break;
             case 3:
-                $historias=Historia::paginate(4);
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
                 break;
             default:
-                $historias=Historia::paginate(4);
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
                 break;
         }
         //$historias=Historia::paginate(4);
