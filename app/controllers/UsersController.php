@@ -152,7 +152,7 @@ class UsersController extends Controller
     public function likes(){
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
-            $clientIp = new \Helpers\IpClient();
+            $clientIp = new IpClient();
             $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$clientIp->get_client_ip())->first();
             if($liked){
 

@@ -6,9 +6,6 @@
  * Time: 3:37 PM
  */
 
-namespace Helpers;
-
-
 class IpClient {
 // Function to get the client IP address
    public function get_client_ip() {
