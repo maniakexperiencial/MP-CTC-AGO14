@@ -40,13 +40,13 @@
                             <div class="cuento_first_wrap">
                                 <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{ $cuento->title }}</h2><h5>{{$cuento->state}}</h5><h5>-{{ $cuento->name }} {{ $cuento->age }} años</h5></div>
 
-                                <img height="100%" id="img_central{{$cuento->id}}" class="img_central{{$cuento->id}}" src="<?= URL::to(public_path().'/cuentos_images/'.$cuento->images->first()->path)?>">
+                                <img height="100%" id="img_central{{$cuento->id}}" class="img_central{{$cuento->id}}" src="<?= public_path().'/cuentos_images/'.$cuento->images->first()->path?>">
                                 @if($cuento->images->count()>1)
                                 <div id="slider" class="slider" >
                                     <ul class="thumb_images_wrap">
                                         @foreach($cuento->images as $image)
 
-                                        <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to(public_path().'/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+                                        <li><a ><img data-id="{{$cuento->id}}" src="<?= public_path().'/cuentos_images/'.$image->path?>" alt="Css Template Preview" /></a></li>
 
 
                                         @endforeach
@@ -69,8 +69,8 @@
                                 <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
-                                        <div class="eight wide column cuento_opciones"><img src="<?= URL::to(public_path().'/img/likes.png') ?>">{{$cuento->likes->count()}}</div>
-                                        <div class="eight wide column cuento_opciones"><img src="<?= URL::to(public_path().'/img/views.png') ?>">{{$cuento->views->count()}}</div>
+                                        <div class="eight wide column cuento_opciones"><img src="<?= public_path().'/img/likes.png' ?>">{{$cuento->likes->count()}}</div>
+                                        <div class="eight wide column cuento_opciones"><img src="<?= public_path().'/img/views.png' ?>">{{$cuento->views->count()}}</div>
 
                                     </div>
                                     <div class="row">
