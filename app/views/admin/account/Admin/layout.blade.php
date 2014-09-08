@@ -68,6 +68,7 @@
             </li>
             <li id="m_cuentos"><a href="{{URL::route('cuentos_admin')}}" class="history_icon">Cuentos</a></li>
             <li id="m_historias"><a href="{{URL::route('historias_admin')}}" class="history_icon">Historias</a></li>
+            <li id="m_videos"><a href="{{URL::route('videos_admin')}}" class="history_icon">Videos</a></li>
             <li id="m_preselect"><a href="{{URL::route('preselect_admin')}}" class="preselect_icon">Preseleccionados</a></li>
             <li id="m_finalist"><a href="{{URL::route('finalist_admin')}}" class="finalist_icon">Finalistas</a></li>
             <li id="m_report"><a href="{{URL::route('report_admin')}}" class="report_icon">Descargar Reporte</a></li>

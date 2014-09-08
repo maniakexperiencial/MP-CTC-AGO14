@@ -321,6 +321,21 @@ public function edit_historia($historia_id){
     return Redirect::back()->with('mensaje_request','<span class=success_message>Historia Actualizada Correctamente</span>');
     }
 
+ ///////////////////////VIDEOS///////////////////////
+    public function videos(){
+        return View::make('admin.account.Admin.videos');
+    }
+
+    public function new_video_index(){
+        return View::make('admin.account.Admin.new_video');
+    }
+
+    public function new_video(){
+        return 'hola';
+    }
+
+
+
 /////////////////////////////DELETE USER///////////////////
      public function delete_user(){
 

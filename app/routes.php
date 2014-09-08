@@ -31,6 +31,7 @@ Route::group(array("before" => "auth"), function () {
         Route::get('dashboard_admin', array("as" => "dashboard_admin", "uses" => "AdminController@index"));
         Route::get('cuentos_admin', array("as" => "cuentos_admin", "uses" => "AdminController@cuentos"));
         Route::get('historias_admin', array("as" => "historias_admin", "uses" => "AdminController@historias"));
+        Route::get('videos_admin', array("as" => "videos_admin", "uses" => "AdminController@videos"));
         Route::get('preselect_admin', array("as" => "preselect_admin", "uses" => "AdminController@preselect"));
         Route::get('finalist_admin', array("as" => "finalist_admin", "uses" => "AdminController@finalist"));
         Route::get('report_admin', array("as" => "report_admin", "uses" => "AdminController@report"));
@@ -41,6 +42,9 @@ Route::group(array("before" => "auth"), function () {
             /*----ADD CUENTO---*/
         Route::get('dashboard_admin/new_cuento', array("as" => "new_cuento", "uses" => "AdminController@new_cuento_index"));
         Route::post('dashboard_admin/new_cuento', ['as' => 'create_cuento_route', 'uses' => 'AdminController@new_cuento']);
+        /*--------ADD VIDEO----*/
+        Route::get('dashboard_admin/new_video', array("as" => "new_video", "uses" => "AdminController@new_video_index"));
+        Route::post('dashboard_admin/new_video', ['as' => 'create_video_route', 'uses' => 'AdminController@new_video']);
         /*--DELETE USER--*/
         Route::post('dashboard_admin/delete_user', array("as" => "delete_user", "uses" => "AdminController@delete_user"));
         /*----EDIT USER---*/
