@@ -74,7 +74,7 @@
             var parameters={id_historia: id_historia};
 
 
-            alertify.confirm("Message", function (e) {
+            alertify.confirm("Borrar historia?", function (e) {
                 if (e) {
                     // user clicked "ok"
                     jQuery.ajax(
