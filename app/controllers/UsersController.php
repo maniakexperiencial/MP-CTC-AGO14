@@ -152,15 +152,15 @@ class UsersController extends Controller
     public function likes(){
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
-            $clientIp = new IpClient();
-            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$clientIp->get_client_ip())->first();
+
+            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
             if($liked){
 
-                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$clientIp->get_client_ip())->delete();
+                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->delete();
                 return 'eliminado';
             }else{
                 $cuento->likes()->save(new Like([
-                    'ip'=>$clientIp->get_client_ip()
+                    'ip'=>Request::getClientIp()
                 ]));
                 return 'añadido';
             }

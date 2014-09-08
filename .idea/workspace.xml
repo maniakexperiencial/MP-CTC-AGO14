@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/IpClient.php" afterPath="$PROJECT_DIR$/app/Helpers/IpClient.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -49,19 +47,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="39" selection-start="4501" selection-end="4501" vertical-scroll-proportion="-19.423077" vertical-offset="2079" max-vertical-offset="4352">
+            <state line="157" column="0" selection-start="4611" selection-end="4611" vertical-scroll-proportion="0.65181714" vertical-offset="2079" max-vertical-offset="4352">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IpClient.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IpClient.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Helpers/IpClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.01992966" vertical-offset="0" max-vertical-offset="853">
+            <state line="6" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -192,8 +190,8 @@
         <option value="$PROJECT_DIR$/app/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/_ide_helper.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Helpers/IpClient.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
       </list>
     </option>
   </component>
@@ -876,7 +874,11 @@
       <created>1410216036143</created>
       <updated>1410216036143</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="-function get ip new in php">
+      <created>1410216450473</created>
+      <updated>1410216450473</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -937,7 +939,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-EL JUEZ YA PUEDE PRESELECCIONAR Y SALE LA TABLA DE PRESELECCIONADOS" />
     <MESSAGE value="-SOLO FALTA SECCION FINALISTAS." />
     <MESSAGE value="-FALTA REPORTE, lo de la galeria de cuentos y front end" />
     <MESSAGE value="-Boton reporte" />
@@ -962,7 +963,8 @@
     <MESSAGE value="-alertify delete historia" />
     <MESSAGE value="-like" />
     <MESSAGE value="function getip" />
-    <option name="LAST_COMMIT_MESSAGE" value="function getip" />
+    <MESSAGE value="-function get ip new in php" />
+    <option name="LAST_COMMIT_MESSAGE" value="-function get ip new in php" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1285,16 +1287,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
+    <entry file="file://$PROJECT_DIR$/app/Helpers/IpClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="39" selection-start="4501" selection-end="4501" vertical-scroll-proportion="-19.423077" vertical-offset="2079" max-vertical-offset="4352">
+        <state line="6" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/IpClient.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="99" selection-end="99" vertical-scroll-proportion="0.01992966" vertical-offset="0" max-vertical-offset="853">
+        <state line="157" column="0" selection-start="4611" selection-end="4611" vertical-scroll-proportion="0.65181714" vertical-offset="2079" max-vertical-offset="4352">
           <folding />
         </state>
       </provider>
