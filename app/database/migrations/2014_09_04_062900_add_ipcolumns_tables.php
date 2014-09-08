@@ -14,11 +14,11 @@ class AddIpcolumnsTables extends Migration {
 	{
         Schema::table('likes', function($table)
         {
-            $table->text('ip');
+            //$table->text('ip');
         });
         Schema::table('views', function($table)
         {
-            $table->text('ip');
+           // $table->text('ip');
         });
 
 

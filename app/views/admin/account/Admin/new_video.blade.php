@@ -10,8 +10,8 @@
 @section('content')
 <div class="centercontent tables">
     <div class="pageheader notab">
-        <h1 class="pagetitle">Cuentos</h1>
-        <h3 class="pagesubtitle">Agregar nuevo cuento</h3>
+        <h1 class="pagetitle">Videos</h1>
+        <h3 class="pagesubtitle">Agregar nuevo video</h3>
         <span class="pagedesc"></span>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
@@ -61,8 +61,8 @@
 
 
                                             <div class="form-group">
-                                                {{Form::label('video', 'codigo del video', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('video', null, ['class' => 'cuento_input','id'=>'video']) }}
+                                                {{Form::label('code', 'codigo del video', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::text('code', null, ['class' => 'cuento_input','id'=>'video']) }}
                                                 {{$errors->first('state',"<span class=error>:message</span>")}}
                                             </div>
 
@@ -85,7 +85,7 @@
 
 
                         <div  class="form_btnwrap">
-                            <a href="{{ URL::route('cuentos_admin') }}"><div class="signup_backbtn" >Regresar</div></a>
+                            <a href="{{ URL::route('videos_admin') }}"><div class="signup_backbtn" >Regresar</div></a>
 
                             <button >Subir</button>
                         </div>

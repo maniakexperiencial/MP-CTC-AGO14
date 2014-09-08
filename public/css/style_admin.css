@@ -582,7 +582,35 @@
     text-align: right;
     cursor: pointer;
 }
+/*-------------------VIDEOS------------*/
+.video_box{
+    /*width: 31%;*/
 
+    float: left;
+    margin: 5px;
+    margin-left: 5%;
+    margin-bottom: 9%;
+    padding: 10px;
+    width: 271px;
+    height: 200px;
+    background-image:url("../img/video_box.jpg") ;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: white;
+}
+
+.video_mbottom{
+    margin-bottom: 0%;
+}
+.video_title{
+    font-size: 21px;
+}
+.video_by{
+    color: #90a3b5;
+}
+.video_age{
+    color: #90a3b5;
+}
 /*-----------------------------------------------------BUTTON----------------------------------------*/
 .fileUpload {
     position: relative;
@@ -882,7 +910,19 @@ a.active{
     font-size: 16px;
     padding-bottom: 40px;
 }
-
+/*FOR VIDEOS Lightbox*/
+.hidden_video{
+    display: none;color:
+    white;min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+.hidden_video_title{
+    width:100%;
+    min-height:50px;
+    height:auto;
+    text-align: center;
+}
 /*--------------------PRESELECT DETAIL-----*/
 .preselect_detail_info{
     width:96%;

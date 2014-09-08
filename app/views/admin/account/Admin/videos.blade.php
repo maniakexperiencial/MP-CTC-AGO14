@@ -38,36 +38,28 @@
                 </select> entradas
             </label>
         </div>-->
-        <table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablequick table_blue" id="table_preselect" >
-            <!--<colgroup>
-                <col class="con0" />
-                <col class="con1" />
-                <col class="con0" />
-                <col class="con1" />
-                <col class="con0" />
-                <col class="con1" />
-            </colgroup>-->
-            <thead>
-            <tr>
-
-                <th class="t_white">Nombre</th>
-                <th class="t_white">Nombre del Cuento o Historia</th>
-                <th class="t_white">Categoría</th>
-                <th class="t_white">Calificación</th>
-                <th class="t_white">Acciones</th>
-            </tr>
-            </thead>
-            <tbody>
+        <div  class="resize_container">
+            <!--resize_contain-->
+            @foreach($videos as $video)
+                    <div class="hidden_video" id="video{{$video->id}}" >
+                        <div class="hidden_video_title"><h2 style="margin-top: 0;">{{$video->title}}</h2><h5>-{{$video->name}} {{$video->age}} años</h5></div>
+                        <iframe style="min-height:70%; width:70%;height:300px;margin: auto;"  src="//www.youtube.com/embed/{{$video->code}}" frameborder="0" allowfullscreen></iframe>
 
 
-            <?php
+                    </div>
 
-            ?>
+
+                    <a href="#video{{$video->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="video_box">
+                            <div class="video_title">{{$video->title}}</div>
+                            <div class="video_by">{{$video->name}}</div>
+                            <div class="video_age">{{$video->age}} años</div>
+
+                        </div></a>
 
 
 
-            </tbody>
-        </table>
+            @endforeach
+       </div>
 
 
     </div><!--contentwrapper-->

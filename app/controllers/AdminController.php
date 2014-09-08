@@ -46,6 +46,11 @@ class AdminController extends Controller
         $historias=Historia::orderBy('id', 'DESC')->paginate(4);
         return View::make('admin.account.Admin.historias',['historias'=>$historias]);
     }
+    public function videos(){
+        $user=User::all();
+        $videos=Video::orderBy('id', 'DESC')->paginate(4);
+        return View::make('admin.account.Admin.videos',['videos'=>$videos]);
+    }
 
     public function preselect()
     {
@@ -322,16 +327,28 @@ public function edit_historia($historia_id){
     }
 
  ///////////////////////VIDEOS///////////////////////
-    public function videos(){
-        return View::make('admin.account.Admin.videos');
-    }
+
 
     public function new_video_index(){
         return View::make('admin.account.Admin.new_video');
     }
 
     public function new_video(){
-        return 'hola';
+        $user=Auth::user();
+        $url = Input::get('code');
+        parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+
+
+        $video= $user->videos()->save(new Video([
+            'title' => Input::get('title'),
+            'name' => Input::get('name'),
+            'category' => Input::get('category'),
+            'age' => Input::get('age'),
+            'state' => Input::get('state'),
+            'code' => $my_array_of_vars['v'],
+
+        ]));
+        return Redirect::back()->with('mensaje_request','<span class=success_message>Video Subido Correctamente</span>');
     }
 
 

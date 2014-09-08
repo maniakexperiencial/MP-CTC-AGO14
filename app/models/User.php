@@ -45,6 +45,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface
     {
         return $this->hasMany('Preselect');
     }
+
+
+    public function videos()
+    {
+        return $this->hasMany('Video');
+    }
     //fin relaciones
 
 }
