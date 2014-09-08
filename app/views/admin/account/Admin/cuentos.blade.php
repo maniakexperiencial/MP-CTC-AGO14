@@ -46,7 +46,7 @@
                                     <ul class="thumb_images_wrap">
                                         @foreach($cuento->images as $image)
 
-                                        <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to('/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+                                        <li><a ><img data-id="{{$cuento->id}}" src="<?= URL::to(public_path().'/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
 
 
                                         @endforeach
@@ -69,8 +69,8 @@
                                 <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">{{$cuento->likes->count()}}</div>
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}">{{$cuento->views->count()}}</div>
+                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to(public_path()'/img/likes.png') }}">{{$cuento->likes->count()}}</div>
+                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to(public_path()'/img/views.png') }}">{{$cuento->views->count()}}</div>
 
                                     </div>
                                     <div class="row">
