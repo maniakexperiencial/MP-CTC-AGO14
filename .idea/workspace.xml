@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/new_video.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/videos.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdminController.php" afterPath="$PROJECT_DIR$/app/controllers/AdminController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/layout.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -55,7 +50,7 @@
       <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="49" selection-start="4925" selection-end="4925" vertical-scroll-proportion="0.75146544" vertical-offset="2079" max-vertical-offset="4352">
+            <state line="161" column="49" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.73153573" vertical-offset="2079" max-vertical-offset="4352">
               <folding />
             </state>
           </provider>
@@ -840,7 +835,11 @@
       <created>1410206592578</created>
       <updated>1410206592578</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="-alertify delete historia">
+      <created>1410215489661</created>
+      <updated>1410215489661</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1254,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="49" selection-start="4925" selection-end="4925" vertical-scroll-proportion="0.75146544" vertical-offset="2079" max-vertical-offset="4352">
+        <state line="161" column="49" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.73153573" vertical-offset="2079" max-vertical-offset="4352">
           <folding />
         </state>
       </provider>
