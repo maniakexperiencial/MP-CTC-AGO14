@@ -29,6 +29,12 @@
     {{ HTML::style('js/nivo/themes/default/default.css') }}
     {{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
 
+    {{ HTML::style('css/plugins/alertify/alertify.default.css') }}
+    {{ HTML::style('css/plugins/alertify/alertify.core.css') }}
+    {{ HTML::style('css/plugins/alertify/alertify.bootstrap.css') }}
+
+    {{ HTML::script('js/alertify/alertify.js') }}
+
 </head>
 <body class="withvernav">
 <div class="bg"></div>

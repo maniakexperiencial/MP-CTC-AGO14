@@ -9,6 +9,13 @@
 {{ HTML::style('js/nivo/nivo-lightbox.css') }}
 {{ HTML::style('js/nivo/themes/default/default.css') }}
 {{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
+
+
+
+
+
+
+
 @stop
 
 @section('content')
@@ -92,6 +99,9 @@
 @section('jscode')
 <script type="text/javascript">
     jQuery(document).ready(function(){
+
+
+
         jQuery('#m_cuentos').addClass('active');
         //LIGHTBOX//
         jQuery('a').nivoLightbox({
@@ -100,35 +110,43 @@
         });
 
         jQuery('.delete').click(function(){
-
             var id_cuento=jQuery(this).data('id');
             var parameters={id_cuento: id_cuento};
-            jQuery.ajax(
-                {
-                    url : "{{ URL::route('delete_cuento') }}",
-                    type: "POST",
-                    data : parameters,
-                    success:function(data, textStatus, jqXHR)
-                    {
-                        //data: return data from server
-                        //jQuery('.notab').append(data);
-                        //alert(data);
-                        jQuery('#'+id_cuento).hide();
-                        jQuery('#message_ajax').fadeIn(200);
-                        jQuery('#message_ajax').html(data);
-                        setTimeout(function() {
-                            // Do something after 5 seconds
-                            jQuery('#message_ajax').fadeOut(200);
-                        }, 2000);
+           alertify.confirm("Eliminar cuento?", function (e) {
+                if (e) {
+                    // user clicked "ok"
+                    jQuery.ajax(
+                        {
+                            url : "{{ URL::route('delete_cuento') }}",
+                            type: "POST",
+                            data : parameters,
+                            success:function(data, textStatus, jqXHR)
+                            {
+                                //data: return data from server
+                                //jQuery('.notab').append(data);
+                                //alert(data);
+                                jQuery('#'+id_cuento).hide();
+                                jQuery('#message_ajax').fadeIn(200);
+                                jQuery('#message_ajax').html(data);
+                                setTimeout(function() {
+                                    // Do something after 5 seconds
+                                    jQuery('#message_ajax').fadeOut(200);
+                                }, 2000);
 
 
-                    },
-                    error: function(jqXHR, textStatus, errorThrown)
-                    {
-                        //if fails
-                        alert(errorThrown);
-                    }
-                });
+                            },
+                            error: function(jqXHR, textStatus, errorThrown)
+                            {
+                                //if fails
+                                alert(errorThrown);
+                            }
+                        });
+                } else {
+                   return false;
+                }
+            });
+
+
 
         });
 

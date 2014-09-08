@@ -73,33 +73,45 @@
             var id_historia=jQuery(this).data('id');
             var parameters={id_historia: id_historia};
 
-            jQuery.ajax(
-                {
-                    url : "{{ URL::route('delete_historia') }}",
-                    type: "POST",
-                    data : parameters,
-                    success:function(data, textStatus, jqXHR)
-                    {
-                        //data: return data from server
-                        //jQuery('.notab').append(data);
-                        //alert(data);
-                        jQuery('#h'+id_historia).hide();
-                        jQuery('#message_ajax').fadeIn(200);
-                        jQuery('#message_ajax').html(data);
-                        setTimeout(function() {
-                            // Do something after 5 seconds
-                            jQuery('#message_ajax').fadeOut(200);
-                        }, 2000);
+
+            alertify.confirm("Message", function (e) {
+                if (e) {
+                    // user clicked "ok"
+                    jQuery.ajax(
+                        {
+                            url : "{{ URL::route('delete_historia') }}",
+                            type: "POST",
+                            data : parameters,
+                            success:function(data, textStatus, jqXHR)
+                            {
+                                //data: return data from server
+                                //jQuery('.notab').append(data);
+                                //alert(data);
+                                jQuery('#h'+id_historia).hide();
+                                jQuery('#message_ajax').fadeIn(200);
+                                jQuery('#message_ajax').html(data);
+                                setTimeout(function() {
+                                    // Do something after 5 seconds
+                                    jQuery('#message_ajax').fadeOut(200);
+                                }, 2000);
 
 
 
-                    },
-                    error: function(jqXHR, textStatus, errorThrown)
-                    {
-                        //if fails
-                        alert(errorThrown);
-                    }
-                });
+                            },
+                            error: function(jqXHR, textStatus, errorThrown)
+                            {
+                                //if fails
+                                alert(errorThrown);
+                            }
+                        });
+
+                } else {
+                    // user clicked "cancel"
+                    return false;
+                }
+            });
+
+
 
         });
 

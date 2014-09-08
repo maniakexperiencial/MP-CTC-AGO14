@@ -23,66 +23,73 @@
                     <div class="form_blue">
 
                         {{ Form::open(['route' => 'create_cuento_route','files'=>true]) }}
-                        <div class="form_white">
-                                <div class="form_center">
+                                <div class="form_white">
+                                        <div class="form_center">
 
 
 
-                                    <div class="form-group">
-                                        {{Form::label('title', 'Escribe el Titulo del Cuento', ['class' => 'cuento_label']) }}
-                                        {{Form::text('title', null, ['class' => 'cuento_input','id'=>'name']) }}
-                                        {{$errors->first('title',"<span class=error>:message</span>")}}
-                                    </div>
+                                            <div class="form-group">
+                                                {{Form::label('title', 'Escribe el Titulo del Cuento', ['class' => 'cuento_label']) }}
+                                                {{Form::text('title', null, ['class' => 'cuento_input','id'=>'name']) }}
+                                                {{$errors->first('title',"<span class=error>:message</span>")}}
+                                            </div>
 
-                                    <div class="form-group">
-                                        {{Form::label('name', 'Nombre', ['class' => 'cuento_label_sub']) }}
-                                        {{Form::text('name', null, ['class' => 'cuento_input','id'=>'name']) }}
-                                        {{$errors->first('name',"<span class=error>:message</span>")}}
-                                    </div>
+                                            <div class="form-group">
+                                                {{Form::label('name', 'Nombre', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::text('name', null, ['class' => 'cuento_input','id'=>'name']) }}
+                                                {{$errors->first('name',"<span class=error>:message</span>")}}
+                                            </div>
 
-                                    <div class="form-group">
-                                        {{Form::label('category', 'Categoria', ['class' => 'cuento_label_sub']) }}
-                                        {{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], '6-7',['class'=>'cuento_input', 'id'=>'category'])}}
-                                    </div>
+                                            <div class="form-group">
+                                                {{Form::label('category', 'Categoria', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], '6-7',['class'=>'cuento_input', 'id'=>'category'])}}
+                                            </div>
 
-                                    <div class="form-group">
-                                        {{Form::label('age', 'Edad', ['class' => 'cuento_label_sub']) }}
-                                        {{Form::text('age', null, ['class' => 'cuento_input','id'=>'age']) }}
-                                        {{$errors->first('age',"<span class=error>:message</span>")}}
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        {{Form::label('state', 'Estado', ['class' => 'cuento_label_sub']) }}
-                                        {{Form::text('state', null, ['class' => 'cuento_input','id'=>'state']) }}
-                                        {{$errors->first('state',"<span class=error>:message</span>")}}
-                                    </div>
+                                            <div class="form-group">
+                                                {{Form::label('age', 'Edad', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::text('age', null, ['class' => 'cuento_input','id'=>'age']) }}
+                                                {{$errors->first('age',"<span class=error>:message</span>")}}
+                                            </div>
 
 
+                                            <div class="form-group">
+                                                {{Form::label('state', 'Estado', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::text('state', null, ['class' => 'cuento_input','id'=>'state']) }}
+                                                {{$errors->first('state',"<span class=error>:message</span>")}}
+                                            </div>
 
-                                    <div class="form-group">
 
-                                        <div class="fileUpload">
-                                            <span>Subir Imagen<span id="number_files"></span></span>
-                                            {{Form::file('image',['name'=>'image[]','multiple'=>true,'accept'=>'image/*','class'=>'upload','id'=>'select_image'])}}
-                                            <!--<input type="file" name="image[]" accept="image/*" class="upload" id="select_image" multiple>-->
+
+
+
+
+
+
+
+
+
+
                                         </div>
 
-                                        {{$errors->first('image',"<span class=error>:message</span>")}}
-                                    </div>
-
-
-
-
-
-
-
-
+                                </div>
+                        <div style="height: 350px; width: 50%;float: left; background-color: white;">
+                                <div class="Image_preview">
 
                                 </div>
+                                <div class="form-group">
 
+                                    <div class="fileUpload">
+                                        <span>Subir Imagen<span id="number_files"></span></span>
+                                        {{Form::file('image',['name'=>'image[]','multiple'=>true,'accept'=>'image/*','class'=>'upload','id'=>'select_image'])}}
+                                        <!--<input type="file" name="image[]" accept="image/*" class="upload" id="select_image" multiple>-->
+                                    </div>
+
+                                    {{$errors->first('image',"<span class=error>:message</span>")}}
+                                </div>
                         </div>
-                        <div class="form-group">
+
+
+                        <div class="form-group" style="display: inline-block; width: 100%;">
                             <div class="cuento_escribe">{{Form::label('text', 'Escribe tu cuento') }}</div>
                             {{Form::textarea('text', null, ['class' => 'cuento_textarea','id'=>'text']) }}
                             {{$errors->first('text',"<span class=error>:message</span>")}}
@@ -136,7 +143,7 @@ jQuery(document).ready(function(){
         /*var image = $('<img>').attr('src', e.target.result);
         jQuery(image).appendTo('#images');*/
         jQuery('#number_files').html('('+numFiles+')');
-        jQuery('.form_white').css({'background-image': 'url('+ e.target.result +')'});
+        jQuery('.Image_preview').css({'background-image': 'url('+ e.target.result +')'});
         // if there are more files run the file reader again
         if (i < numFiles) {
             i++;

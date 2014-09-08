@@ -69,7 +69,7 @@
                             break;
                 }
                 ?>
-                <td class="center"><a href="" data-user="{{$user->id}}" class="delete">borrar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="<?=$ruta ?>" class="edit">editar</a></td>
+                <td class="center"><a href="#"  data-user="{{$user->id}}" class="delete">borrar</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="<?=$ruta ?>" class="edit">editar</a></td>
             </tr>
             @endforeach
 
@@ -85,29 +85,41 @@
 <script type="text/javascript">
 jQuery(document).ready(function(){
    jQuery('#m_usuario').addClass('active');
+
+
     jQuery('.delete').click(function(){
         var id_user1=jQuery(this).data('user');
         var parameters={id_user: id_user1};
-        jQuery.ajax(
-            {
-                url : "{{ URL::route('delete_user') }}",
-                type: "POST",
-                data : parameters,
-                success:function(data, textStatus, jqXHR)
-                {
-                    //data: return data from server
-                    jQuery('#message_ajax').html(data);
-                    setTimeout(function() {
-                        // Do something after 5 seconds
-                        jQuery('#message_ajax').fadeOut(200);
-                    }, 5000);
-                },
-                error: function(jqXHR, textStatus, errorThrown)
-                {
-                    //if fails
-                    alert(errorThrown);
-                }
-            });
+
+        alertify.confirm("Eliminar usuario?", function (e) {
+            if (e) {
+                // user clicked "ok"
+                jQuery.ajax(
+                    {
+                        url : "{{ URL::route('delete_user') }}",
+                        type: "POST",
+                        data : parameters,
+                        success:function(data, textStatus, jqXHR)
+                        {
+                            //data: return data from server
+                            jQuery('#message_ajax').html(data);
+                            setTimeout(function() {
+                                // Do something after 5 seconds
+                                jQuery('#message_ajax').fadeOut(200);
+                            }, 5000);
+                        },
+                        error: function(jqXHR, textStatus, errorThrown)
+                        {
+                            //if fails
+                            alert(errorThrown);
+                        }
+                    });
+            } else {
+                // user clicked "cancel"
+                return false;
+            }
+        });
+
 
     });
 

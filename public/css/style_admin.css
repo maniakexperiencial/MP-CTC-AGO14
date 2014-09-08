@@ -295,14 +295,33 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+
+
+    width:50%;float:right;background-color: white;
+
 }
 .form_center{
-    width: 50%;
-    height: 350px;
+    width: 80%;
+    height: 330px;
     margin: auto;
+    margin-top:20px;
     text-align: center;
-    background-color: rgba(255,255,255,.4);
+    /*background-color: rgba(255,255,255,.4);*/
 
+}
+.form_center select{
+    width: 100% !important;
+}
+.Image_preview{
+    width:130px;
+    height: 130px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #dee1e1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .cuento_label{
     color: #485b79;
