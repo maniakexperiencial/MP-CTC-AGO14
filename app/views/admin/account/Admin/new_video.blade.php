@@ -61,7 +61,7 @@
 
 
                                             <div class="form-group">
-                                                {{Form::label('code', 'codigo del video', ['class' => 'cuento_label_sub']) }}
+                                                {{Form::label('code', 'link(URL) del video', ['class' => 'cuento_label_sub']) }}
                                                 {{Form::text('code', null, ['class' => 'cuento_input','id'=>'video']) }}
                                                 {{$errors->first('state',"<span class=error>:message</span>")}}
                                             </div>
