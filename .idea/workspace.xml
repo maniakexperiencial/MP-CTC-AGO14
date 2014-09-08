@@ -86,7 +86,7 @@
       <file leaf-file-name="cuentos.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="121" selection-start="3280" selection-end="3280" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2907">
+            <state line="71" column="122" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2907">
               <folding />
             </state>
           </provider>
@@ -634,7 +634,11 @@
       <created>1410203770105</created>
       <updated>1410203770105</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="images cuento public path&#10;">
+      <created>1410204195148</created>
+      <updated>1410204195148</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -695,7 +699,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-Cambio de height resize container en pantalla chica" />
     <MESSAGE value="-Cambio en home, 2 rows en vez de 1" />
     <MESSAGE value="-Eliminacion de reglas de css media queries" />
     <MESSAGE value="-ganadores sin margen" />
@@ -720,7 +723,8 @@
     <MESSAGE value="-Change selectbox icon signup" />
     <MESSAGE value="-Change class cerrar sesion" />
     <MESSAGE value="add GitIgnore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add GitIgnore" />
+    <MESSAGE value="images cuento public path&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="images cuento public path&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="121" selection-start="3280" selection-end="3280" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2907">
+        <state line="71" column="122" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2907">
           <folding />
         </state>
       </provider>
