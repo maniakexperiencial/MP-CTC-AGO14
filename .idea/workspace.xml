@@ -86,12 +86,11 @@
       <file leaf-file-name="cuentos.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="143" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.84090906" vertical-offset="521" max-vertical-offset="2907">
+            <state line="72" column="136" selection-start="3453" selection-end="3453" vertical-scroll-proportion="0.59689" vertical-offset="725" max-vertical-offset="2907">
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <marker date="1410205404279" expanded="true" signature="3599:3697" placeholder="..." />
-                <marker date="1410205404279" expanded="true" signature="4267:4301" placeholder="..." />
-                <marker date="1410205404279" expanded="true" signature="4438:4496" placeholder="..." />
+                <marker date="1410205558359" expanded="true" signature="3585:3683" placeholder="..." />
+                <marker date="1410205558359" expanded="true" signature="4424:4482" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -667,7 +666,11 @@
       <created>1410204795531</created>
       <updated>1410204795531</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="images cuento public path back">
+      <created>1410205413668</created>
+      <updated>1410205413668</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1043,12 +1046,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="143" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.84090906" vertical-offset="521" max-vertical-offset="2907">
+        <state line="72" column="136" selection-start="3453" selection-end="3453" vertical-scroll-proportion="0.59689" vertical-offset="725" max-vertical-offset="2907">
           <folding>
             <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1410205404279" expanded="true" signature="3599:3697" placeholder="..." />
-            <marker date="1410205404279" expanded="true" signature="4267:4301" placeholder="..." />
-            <marker date="1410205404279" expanded="true" signature="4438:4496" placeholder="..." />
+            <marker date="1410205558359" expanded="true" signature="3585:3683" placeholder="..." />
+            <marker date="1410205558359" expanded="true" signature="4424:4482" placeholder="..." />
           </folding>
         </state>
       </provider>
