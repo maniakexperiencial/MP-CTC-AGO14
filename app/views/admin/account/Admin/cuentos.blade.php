@@ -69,8 +69,7 @@
                                 <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
                                 <div class="ui grid">
                                     <div class="row">
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to(public_path().'/img/likes.png') }}">{{$cuento->likes->count()}}</div>
-                                        <div class="eight wide column cuento_opciones"><img src="{{ URL::to(public_path().'/img/views.png') }}">{{$cuento->views->count()}}</div>
+
 
                                     </div>
                                     <div class="row">
