@@ -47,7 +47,7 @@
             </thead>
             <tbody>
             @foreach($users as $user)
-            <tr class="gradeA">
+            <tr class="gradeA" id="tr{{$user->id}}">
 
                 <td>{{ $user->details->name }}</td>
                 <td>{{ $user->email }}</td>
@@ -102,6 +102,7 @@ jQuery(document).ready(function(){
                         success:function(data, textStatus, jqXHR)
                         {
                             //data: return data from server
+                            jQuery('#tr'+id_user1).fadeOut();
                             jQuery('#message_ajax').html(data);
                             setTimeout(function() {
                                 // Do something after 5 seconds

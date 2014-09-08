@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -40,7 +41,7 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="30" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.13950762" vertical-offset="714" max-vertical-offset="2448">
+            <state line="104" column="59" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.63774914" vertical-offset="1224" max-vertical-offset="2465">
               <folding />
             </state>
           </provider>
@@ -185,10 +186,10 @@
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/historias.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/new_cuento.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/edit_cuento.blade.php" />
         <option value="$PROJECT_DIR$/public/css/style_admin.css" />
+        <option value="$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -935,7 +936,11 @@
       <created>1410195297193</created>
       <updated>1410195297193</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="-Cambios">
+      <created>1410197311758</created>
+      <updated>1410197311758</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1324,7 +1329,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="30" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.13950762" vertical-offset="714" max-vertical-offset="2448">
+        <state line="104" column="59" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.63774914" vertical-offset="1224" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
