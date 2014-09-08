@@ -24,7 +24,7 @@
                     <div class="form_blue" style="height:auto;margin-bottom: 0px;">
 
 
-                        <div class="form_white" style="height: auto;padding: 10px 0px;" >
+                        <div class="form_white" style="height: auto;padding: 10px 0px;width:100%;float:none;" >
                                 <div class="form_center" style="height: auto;" >
 
 
