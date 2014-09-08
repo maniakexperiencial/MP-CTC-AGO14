@@ -29,7 +29,7 @@
                  </div>
                  <div class="form-group">
                      {{Form::label('select_institution', 'Institución', ['class' => 'login_label','id'=>'institution_label']) }}
-                     {{Form::select('select_institution',['IMSS' => 'IMSS'], $user->details->institution,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}
+                     {{Form::select('select_institution',['IMSS' => 'IMSS','ISSSTE' => 'ISSSTE', 'SSA' => 'SSA'], $user->details->institution,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}
                  </div>
                  <div class="form-group">
                      {{Form::label('name', 'Nombre Completo', ['class' => 'login_label']) }}

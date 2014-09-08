@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/imagen_nodisponible1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/icons/dropdown_arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_admin.css" afterPath="$PROJECT_DIR$/public/css/style_admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -56,10 +59,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_08_28_201624_create_views_table.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014_08_28_201624_create_views_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="378" selection-end="378" vertical-scroll-proportion="0.33880422" vertical-offset="0" max-vertical-offset="853">
+            <state line="18" column="31" selection-start="379" selection-end="379" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/signup.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="110" selection-start="2933" selection-end="2970" vertical-scroll-proportion="-11.115385" vertical-offset="867" max-vertical-offset="3077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_pd.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="111" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.3845238" vertical-offset="204" max-vertical-offset="2159">
               <folding />
             </state>
           </provider>
@@ -93,25 +114,7 @@
       <file leaf-file-name="style_admin.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="26" selection-start="7335" selection-end="7335" vertical-scroll-proportion="0.0" vertical-offset="4674" max-vertical-offset="15249">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/layout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="59" selection-start="1680" selection-end="1680" vertical-scroll-proportion="3.0769231" vertical-offset="641" max-vertical-offset="1496">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="48" selection-start="7170" selection-end="7170" vertical-scroll-proportion="0.0" vertical-offset="3516" max-vertical-offset="4369">
+            <state line="102" column="0" selection-start="2626" selection-end="2626" vertical-scroll-proportion="-22.24" vertical-offset="1178" max-vertical-offset="15436">
               <folding />
             </state>
           </provider>
@@ -139,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/Like.php" />
         <option value="$PROJECT_DIR$/app/models/View.php" />
         <option value="$PROJECT_DIR$/app/models/Cuento.php" />
         <option value="$PROJECT_DIR$/app/models/Historia.php" />
@@ -152,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/config/view.php" />
         <option value="$PROJECT_DIR$/app/views/structure/pagination.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_08_28_201605_create_likes_table.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php" />
         <option value="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/papas/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/doctores/layout.blade.php" />
@@ -188,8 +189,10 @@
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/historias.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/new_cuento.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/edit_cuento.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style_admin.css" />
         <option value="$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php" />
+        <option value="$PROJECT_DIR$/public/css/style_admin.css" />
+        <option value="$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php" />
       </list>
     </option>
   </component>
@@ -273,7 +276,139 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cuentos_images" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MP-CTC-AGO14" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,11 +429,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\MP-CTC-AGO14\public\img\icons" />
       <recent name="C:\projects\MP-CTC-AGO14\public\cuentos_images" />
       <recent name="C:\projects\MP-CTC-AGO14\public\js\alertify" />
       <recent name="C:\projects\MP-CTC-AGO14\app\Janssen\Forms" />
       <recent name="C:\projects\MP-CTC-AGO14\app\views\admin" />
-      <recent name="C:\projects\MP-CTC-AGO14\app\views\emails" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\MP-CTC-AGO14\public\css\plugins\alertify" />
@@ -652,7 +787,11 @@
       <created>1410197948024</created>
       <updated>1410197948024</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="-image">
+      <created>1410197986713</created>
+      <updated>1410197986713</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -746,16 +885,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/papas/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="46" selection-start="2989" selection-end="2989" vertical-scroll-proportion="-15.807693" vertical-offset="1204" max-vertical-offset="3893" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/doctores/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="46" selection-start="3094" selection-end="3094" vertical-scroll-proportion="0.53927314" vertical-offset="1172" max-vertical-offset="4029" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Juez/preselect.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="53" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.3130129" vertical-offset="362" max-vertical-offset="5372" />
@@ -821,11 +950,6 @@
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_04_062900_add_ipcolumns_tables.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="38" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.51817113" vertical-offset="561" max-vertical-offset="2210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/index.blade.php">
@@ -910,11 +1034,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/emails/recoverpass.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="31" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0194508" vertical-offset="0" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="18" selection-start="5035" selection-end="5619" vertical-scroll-proportion="-28.115385" vertical-offset="1122" max-vertical-offset="3077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/recover_pass.blade.php">
@@ -1022,13 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="26" selection-start="7335" selection-end="7335" vertical-scroll-proportion="0.0" vertical-offset="4674" max-vertical-offset="15249">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="59" selection-start="3566" selection-end="3566" vertical-scroll-proportion="-20.923077" vertical-offset="1224" max-vertical-offset="2465">
@@ -1043,9 +1155,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="40" selection-start="1783" selection-end="1840" vertical-scroll-proportion="0.51817113" vertical-offset="561" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_08_28_201624_create_views_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="378" selection-end="378" vertical-scroll-proportion="0.33880422" vertical-offset="0" max-vertical-offset="853">
+        <state line="18" column="31" selection-start="379" selection-end="379" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style_admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="0" selection-start="2626" selection-end="2626" vertical-scroll-proportion="-22.24" vertical-offset="1178" max-vertical-offset="15436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/edit_admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.05978898" vertical-offset="51" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="110" selection-start="2933" selection-end="2970" vertical-scroll-proportion="-11.115385" vertical-offset="867" max-vertical-offset="3077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/edit_pd.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="111" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.3845238" vertical-offset="204" max-vertical-offset="2159">
           <folding />
         </state>
       </provider>

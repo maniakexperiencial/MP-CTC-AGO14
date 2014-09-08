@@ -89,7 +89,18 @@
 .signup_select{
     width: 100% !important;
     font-size: 14px;
+    -webkit-appearance: none;
+    padding: 5px;
+    background-image:url(../img/icons/dropdown_arrow.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: right;
+    overflow: hidden;
 }
+.signup_select:focus{
+    background-repeat: no-repeat !important;
+    background-position: right;
+}
+
 .signup_backbtn{
     float: left; text-align: center; height: 30px; line-height: 30px;
     width: 25%;
