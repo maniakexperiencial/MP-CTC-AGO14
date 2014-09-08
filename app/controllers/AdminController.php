@@ -161,7 +161,7 @@ class AdminController extends Controller
         if(Input::hasfile('image')){
                foreach(Input::file('image') as $image){
                    $imagename =time().str_random(5).$image->getClientOriginalName();
-                   $upload_flag=$image->move('public/cuentos_images',$imagename);
+                   $upload_flag=$image->move(public_path().'/cuentos_images',$imagename);
                        if($upload_flag){
                            $cuento->images()->save(new Image([
                                 'path'=>$imagename

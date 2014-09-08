@@ -16,7 +16,7 @@ class CreateViewsTable extends Migration {
 		{
 			$table->increments('id');
             $table->integer('cuento_id');
-            $table->text('ip')s;
+            $table->text('ip');
 			$table->timestamps();
 		});
 	}
