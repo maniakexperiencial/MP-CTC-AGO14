@@ -46,7 +46,7 @@
             <br clear="all" />
         </div><!--left-->
         <div class="right">
-            <div class="user_logout">
+            <div class="user_logout1">
                 <a href="<?=URL::route('logout')?>"><span>Cerrar sesión</span></a>
             </div><!--userinfo-->
 
