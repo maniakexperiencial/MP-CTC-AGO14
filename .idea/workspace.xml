@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/views/admin/account/Admin/finalist.blade.php" line="43" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
+    <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="images cuento public path&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -86,7 +86,7 @@
       <file leaf-file-name="cuentos.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2890">
+            <state line="71" column="0" selection-start="3173" selection-end="3173" vertical-scroll-proportion="0.6318235" vertical-offset="663" max-vertical-offset="2873">
               <folding />
             </state>
           </provider>
@@ -642,7 +642,11 @@
       <created>1410204272770</created>
       <updated>1410204272770</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="images cuento public path&#10;">
+      <created>1410204307364</created>
+      <updated>1410204307364</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1016,7 +1020,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.6910569" vertical-offset="612" max-vertical-offset="2890">
+        <state line="71" column="0" selection-start="3173" selection-end="3173" vertical-scroll-proportion="0.6318235" vertical-offset="663" max-vertical-offset="2873">
           <folding />
         </state>
       </provider>
