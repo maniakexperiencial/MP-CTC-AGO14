@@ -153,23 +153,14 @@ class UsersController extends Controller
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
 
-        $value = Cookie::get('ipvirtual');
-        if($value){
-
-        }else{
-            $cookie = Cookie::forever('ipvirtual', Request::getClientIp().str_random(6));
-            $value = Cookie::get('ipvirtual');
-        }
-
-
-            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$value)->first();
+            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
             if($liked){
 
-                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$value)->delete();
+                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->delete();
                 return 'eliminado';
             }else{
                 $cuento->likes()->save(new Like([
-                    'ip'=>$value
+                    'ip'=>Request::getClientIp()
                 ]));
                 return 'añadido';
             }
