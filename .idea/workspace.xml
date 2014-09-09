@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -40,19 +40,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="48" selection-start="5165" selection-end="5196" vertical-scroll-proportion="-11.384615" vertical-offset="2560" max-vertical-offset="5049">
+            <state line="175" column="37" selection-start="5518" selection-end="5518" vertical-scroll-proportion="0.49427918" vertical-offset="2509" max-vertical-offset="5321">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cuentos.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cuentos.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="25" selection-start="6182" selection-end="6182" vertical-scroll-proportion="0.51335657" vertical-offset="2550" max-vertical-offset="8653">
+            <state line="176" column="25" selection-start="6182" selection-end="6182" vertical-scroll-proportion="-17.0" vertical-offset="2550" max-vertical-offset="8653">
               <folding>
                 <marker date="1410305305015" expanded="true" signature="9102:9612" placeholder="..." />
                 <marker date="1410305305015" expanded="true" signature="9906:10395" placeholder="..." />
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/app/views/kids/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/KidsController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
       </list>
     </option>
   </component>
@@ -816,7 +816,11 @@
       <created>1410304863995</created>
       <updated>1410304863995</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="-Likes with cookies system">
+      <created>1410305329309</created>
+      <updated>1410305329310</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1215,16 +1219,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="48" selection-start="5165" selection-end="5196" vertical-scroll-proportion="-11.384615" vertical-offset="2560" max-vertical-offset="5049">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/kids/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="25" selection-start="6182" selection-end="6182" vertical-scroll-proportion="0.51335657" vertical-offset="2550" max-vertical-offset="8653">
+        <state line="176" column="25" selection-start="6182" selection-end="6182" vertical-scroll-proportion="-17.0" vertical-offset="2550" max-vertical-offset="8653">
           <folding>
             <marker date="1410305305015" expanded="true" signature="9102:9612" placeholder="..." />
             <marker date="1410305305015" expanded="true" signature="9906:10395" placeholder="..." />
@@ -1245,6 +1242,13 @@
             <marker date="1410305305015" expanded="true" signature="13852:13923" placeholder="..." />
             <marker date="1410305305015" expanded="true" signature="14206:14306" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="37" selection-start="5518" selection-end="5518" vertical-scroll-proportion="0.49427918" vertical-offset="2509" max-vertical-offset="5321">
+          <folding />
         </state>
       </provider>
     </entry>
