@@ -27,6 +27,8 @@
 
 
 </head>
+
+
 <body id="main">
 @yield('bg_move')
 
@@ -96,12 +98,7 @@
         <div class="center_container">
             <div class="column" id="center_actionbar">
                 <input type="text" id="Searchbox" placeholder="Search">
-                <select id="Selectbox">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                @yield('filter')
              </div>
         </div>
     </div>

@@ -32,9 +32,22 @@ class DoctoresController extends Controller {
         //$historias=Historia::paginate(4);
         return View::make('doctores.historias',['historias'=>$historias]);
     }
-    public function videos()
+    public function videos($category=0)
     {
-        return View::make('doctores.videos');
+        switch($category){
+            case 6:
+                $filter='6-7';
+                $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
+                break;
+            case 8:
+                $filter='8-12';
+                $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
+                break;
+            default:
+                $videos=Video::orderBy('id', 'DESC')->paginate(4);
+                break;
+        }
+        return View::make('doctores.videos',['videos'=>$videos,'count'=>0]);
     }
     public function bases()
     {

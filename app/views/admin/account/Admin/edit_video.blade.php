@@ -22,7 +22,7 @@
              <div class="form_wrap">
                     <div class="form_blue" style="height: 400px; margin-bottom: 0px;">
 
-                        {{ Form::open(['route' => 'create_video_route']) }}
+                        {{ Form::open(['route' => ['edit_video_route',$video->id]]) }}
                                 <div class="form_white" style="width: 100%; float: none;">
                                         <div class="form_center">
 
@@ -30,31 +30,31 @@
 
                                             <div class="form-group">
                                                 {{Form::label('title', 'Escribe el Titulo del Cuento', ['class' => 'cuento_label']) }}
-                                                {{Form::text('title', null, ['class' => 'cuento_input','id'=>'name']) }}
+                                                {{Form::text('title', $video->title, ['class' => 'cuento_input','id'=>'name']) }}
                                                 {{$errors->first('title',"<span class=error>:message</span>")}}
                                             </div>
 
                                             <div class="form-group">
                                                 {{Form::label('name', 'Nombre', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('name', null, ['class' => 'cuento_input','id'=>'name']) }}
+                                                {{Form::text('name',  $video->name, ['class' => 'cuento_input','id'=>'name']) }}
                                                 {{$errors->first('name',"<span class=error>:message</span>")}}
                                             </div>
 
                                             <div class="form-group">
                                                 {{Form::label('category', 'Categoria', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], '6-7',['class'=>'cuento_input', 'id'=>'category'])}}
+                                                {{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], ' $video->category',['class'=>'cuento_input', 'id'=>'category'])}}
                                             </div>
 
                                             <div class="form-group">
                                                 {{Form::label('age', 'Edad', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('age', null, ['class' => 'cuento_input','id'=>'age']) }}
+                                                {{Form::text('age',  $video->age, ['class' => 'cuento_input','id'=>'age']) }}
                                                 {{$errors->first('age',"<span class=error>:message</span>")}}
                                             </div>
 
 
                                             <div class="form-group">
                                                 {{Form::label('state', 'Estado', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('state', null, ['class' => 'cuento_input','id'=>'state']) }}
+                                                {{Form::text('state',  $video->state, ['class' => 'cuento_input','id'=>'state']) }}
                                                 {{$errors->first('state',"<span class=error>:message</span>")}}
                                             </div>
 
@@ -62,7 +62,7 @@
 
                                             <div class="form-group">
                                                 {{Form::label('code', 'link(URL) del video', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('code', null, ['class' => 'cuento_input','id'=>'video']) }}
+                                                {{Form::text('code', 'https://www.youtube.com/watch?v='.$video->code, ['class' => 'cuento_input','id'=>'video']) }}
                                                 {{$errors->first('state',"<span class=error>:message</span>")}}
                                             </div>
 

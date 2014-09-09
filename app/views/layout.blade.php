@@ -102,7 +102,7 @@
 <div class="center_container">
     <div class="column" id="content_wrap">
         <div class="ui grid">
-            <div class="row" style="margin-top: 15%">
+            <div class="row" style="margin-top: 5%">
 
                 <div class="sixteen wide column align_center  align_center_moreheight ">
                     <div class="Title_section">@yield('title_section')</div>

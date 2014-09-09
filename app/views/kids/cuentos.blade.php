@@ -13,7 +13,14 @@
 <!-- Optionally add helpers - button, thumbnail and/or media -->
 @stop
 
+@section('filter')
+<select id="Selectbox">
+    <option value="" selected>Categoria</option>
+    <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
+    <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>
 
+</select>
+@stop
 @section('bg_move')
 <div class="bg"></div>
 <!--<div class="center_container ">

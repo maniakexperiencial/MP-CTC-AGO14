@@ -41,6 +41,7 @@
         <div  class="resize_container">
             <!--resize_contain-->
             @foreach($videos as $video)
+
                     <div class="hidden_video" id="video{{$video->id}}" >
                         <div class="hidden_video_title"><h2 style="margin-top: 0;">{{$video->title}}</h2><h5>-{{$video->name}} {{$video->age}} años</h5></div>
                         <iframe style="min-height:70%; width:70%;height:300px;margin: auto;"  src="//www.youtube.com/embed/{{$video->code}}" frameborder="0" allowfullscreen></iframe>
@@ -49,16 +50,23 @@
                     </div>
 
 
-                    <a href="#video{{$video->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="video_box">
+                    <div class="video_box" id="v<?= $video->id ?>">
                             <div class="video_title">{{$video->title}}</div>
                             <div class="video_by">{{$video->name}}</div>
                             <div class="video_age">{{$video->age}} años</div>
-
-                        </div></a>
+                            <div  class="video_option_wrap">
+                                <div class="video_admin_options"><a href="<?=URL::route('edit_video',['idvideo' => $video->id] ) ?>">editar</a></div>
+                                <div class="video_admin_options" ><a href="#" class="delete" data-id="{{$video->id}}">borrar</a></div>
+                                <a href="#video{{$video->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="video_admin_options">Ver</div></a>
+                            </div>
+                    </div>
 
 
 
             @endforeach
+            <div class="pagination_wrap">
+                {{$videos->links()}}
+            </div>
        </div>
 
 
@@ -92,6 +100,54 @@
         /*$('#table_preselect').dataTable( {
             "pagingType": "full_numbers"
         } );*/
+
+
+        jQuery('.delete').click(function(){
+
+            var id_video=jQuery(this).data('id');
+            var parameters={id_video: id_video};
+
+
+            alertify.confirm("Borrar video?", function (e) {
+                if (e) {
+                    // user clicked "ok"
+                    jQuery.ajax(
+                        {
+                            url : "{{ URL::route('delete_video') }}",
+                            type: "POST",
+                            data : parameters,
+                            success:function(data, textStatus, jqXHR)
+                            {
+                                //data: return data from server
+                                //jQuery('.notab').append(data);
+                                //alert(data);
+                                jQuery('#v'+id_video).hide();
+                                jQuery('#message_ajax').fadeIn(200);
+                                jQuery('#message_ajax').html(data);
+                                setTimeout(function() {
+                                    // Do something after 5 seconds
+                                    jQuery('#message_ajax').fadeOut(200);
+                                }, 2000);
+
+
+
+                            },
+                            error: function(jqXHR, textStatus, errorThrown)
+                            {
+                                //if fails
+                                alert(errorThrown);
+                            }
+                        });
+
+                } else {
+                    // user clicked "cancel"
+                    return false;
+                }
+            });
+
+
+
+        });
 
     });
 </script>

@@ -330,9 +330,11 @@ public function edit_historia($historia_id){
 
 
     public function new_video_index(){
+
         return View::make('admin.account.Admin.new_video');
     }
 
+//////NEW VIDEO//////
     public function new_video(){
         $user=Auth::user();
         $url = Input::get('code');
@@ -350,8 +352,39 @@ public function edit_historia($historia_id){
         ]));
         return Redirect::back()->with('mensaje_request','<span class=success_message>Video Subido Correctamente</span>');
     }
+//////EDIT VIDEO//////
+public function edit_video_index($idvideo){
+        $video=Video::find($idvideo);
+        return View::make('admin.account.Admin.edit_video',['video'=>$video]);
+       /* return $video->id;*/
+
+}
 
 
+    public function edit_video($idvideo1){
+        $video=Video::find($idvideo1);
+
+        $url = Input::get('code');
+        parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+
+        $video->title=Input::get('title');
+        $video->name=Input::get('name');
+        $video->category=Input::get('category');
+        $video->age=Input::get('age');
+        $video->state=Input::get('state');
+        $video->code=$my_array_of_vars['v'];
+        $video->save();
+        return Redirect::back()->with('mensaje_request','<span class=success_message>Video Actualizado Correctamente</span>');
+
+    }
+
+
+        //////DELETE VIDEO//////
+    public function delete_video(){
+        $video=Video::find(Input::get('id_video'));
+        $video->delete();
+        return '<span class=success_message>Video eliminada</span>';
+    }
 
 /////////////////////////////DELETE USER///////////////////
      public function delete_user(){

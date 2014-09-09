@@ -19,9 +19,23 @@ class PremiacionController extends Controller {
     {
         return View::make('premiacion.galeria');
     }
-    public function videos()
+    public function videos($category=0)
     {
-        return View::make('premiacion.videos');
+        switch($category){
+            case 6:
+                $filter='6-7';
+                $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
+                break;
+            case 8:
+                $filter='8-12';
+                $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
+                break;
+            default:
+                $videos=Video::orderBy('id', 'DESC')->paginate(4);
+                break;
+        }
+
+        return View::make('premiacion.videos',['videos'=>$videos,'count'=>0]);
     }
     public function resumen()
     {

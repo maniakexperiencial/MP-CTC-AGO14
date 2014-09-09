@@ -45,6 +45,11 @@ Route::group(array("before" => "auth"), function () {
         /*--------ADD VIDEO----*/
         Route::get('dashboard_admin/new_video', array("as" => "new_video", "uses" => "AdminController@new_video_index"));
         Route::post('dashboard_admin/new_video', ['as' => 'create_video_route', 'uses' => 'AdminController@new_video']);
+            /*----EDIT VIDEO--*/
+        Route::get('dashboard_admin/edit_video/{id_video}', array("as" => "edit_video", "uses" => "AdminController@edit_video_index"));
+        Route::post('dashboard_admin/edit_video/{id_video}', ['as' => 'edit_video_route', 'uses' => 'AdminController@edit_video']);
+                /*DELETE VIDEO*/
+        Route::post('dashboard_admin/delete_video', ['as' => 'delete_video', 'uses' => 'AdminController@delete_video']);
         /*--DELETE USER--*/
         Route::post('dashboard_admin/delete_user', array("as" => "delete_user", "uses" => "AdminController@delete_user"));
         /*----EDIT USER---*/
@@ -156,13 +161,13 @@ Route::post('kids/view',['as'=>'viewSystem','uses'=>'UsersController@views']);
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
 Route::get('kids/cuentos/{category?}', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
-Route::get('kids/videos', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
+Route::get('kids/videos/{category?}', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
 Route::get('kids/bases', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
 
 /*PAPAS*/
 Route::get('papas', ['as' => 'papas', 'uses' => 'PapasController@index']);
 Route::get('papas/historias/{category?}', ['as' => 'papas_historias', 'uses' => 'PapasController@historias']);
-Route::get('papas/videos', ['as' => 'papas_videos', 'uses' => 'PapasController@videos']);
+Route::get('papas/videos/{category?}', ['as' => 'papas_videos', 'uses' => 'PapasController@videos']);
 Route::get('papas/bases', ['as' => 'papas_bases', 'uses' => 'PapasController@bases']);
 
 /*DOCTORS*/
@@ -170,11 +175,11 @@ Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index'
 Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index']);
 Route::get('doctores/historias/{category?}', ['as' => 'doctores_historias', 'uses' => 'DoctoresController@historias']);
 Route::get('doctores/bases', ['as' => 'doctores_bases', 'uses' => 'DoctoresController@bases']);
-Route::get('doctores/videos', ['as' => 'doctores_videos', 'uses' => 'DoctoresController@videos']);
+Route::get('doctores/videos/{category?}', ['as' => 'doctores_videos', 'uses' => 'DoctoresController@videos']);
 
 /*PREMIACION*/
 Route::get('premiacion', ['as' => 'premiacion', 'uses' => 'PremiacionController@index']);
 Route::get('premiacion/ganadores', ['as' => 'premiacion_ganadores', 'uses' => 'PremiacionController@ganadores']);
 Route::get('premiacion/galeria', ['as' => 'premiacion_galeria', 'uses' => 'PremiacionController@galeria']);
-Route::get('premiacion/videos', ['as' => 'premiacion_videos', 'uses' => 'PremiacionController@videos']);
+Route::get('premiacion/videos/{category?}', ['as' => 'premiacion_videos', 'uses' => 'PremiacionController@videos']);
 Route::get('premiacion/resumen', ['as' => 'premiacion_resumen', 'uses' => 'PremiacionController@resumen']);

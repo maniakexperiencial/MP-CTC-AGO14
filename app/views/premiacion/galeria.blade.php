@@ -149,6 +149,9 @@ Galeria
 
 
        // $('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 100%','background-repeat':'no-repeat','background-size':'7%'});
+
+
+        $('.Action_bar').hide();
     });
 
 </script>

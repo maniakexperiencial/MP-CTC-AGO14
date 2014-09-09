@@ -10,6 +10,14 @@
 <!-- Optionally add helpers - button, thumbnail and/or media -->
 @stop
 
+@section('filter')
+<select id="Selectbox">
+    <option value="" selected>Categoria</option>
+    <option value="{{URL::to('doctores/historias/papas')}}">papas</option>
+    <option value="{{URL::to('doctores/historias/doctores')}}">doctores</option>
+</select>
+@stop
+
 
 
 @section('bg_move')

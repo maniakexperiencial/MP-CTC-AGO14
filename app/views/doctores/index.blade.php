@@ -21,7 +21,7 @@
         $('body').css({'background-image': 'url('+bg+')'});
 
         $('#center_actionbar').hide();
-
+        $('.Action_bar').hide();
     });
 
 </script>

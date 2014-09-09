@@ -585,7 +585,7 @@
 /*-------------------VIDEOS------------*/
 .video_box{
     /*width: 31%;*/
-
+     position: relative;
     float: left;
     margin: 5px;
     margin-left: 5%;
@@ -610,6 +610,19 @@
 }
 .video_age{
     color: #90a3b5;
+}
+.video_option_wrap{
+    position: absolute;bottom: 25px;right:10px;
+    width: 270px;
+    margin: auto;
+}
+.video_option_wrap a{
+    color:#afc0d8;
+}
+.video_admin_options{
+    width: 33%;
+    float: left;
+    text-align: center;
 }
 /*-----------------------------------------------------BUTTON----------------------------------------*/
 .fileUpload {
