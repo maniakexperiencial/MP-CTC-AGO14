@@ -182,7 +182,7 @@
                 $('.footer').css('position','absolute');
             }
         });
-
+        $('.Action_bar').hide();
         ////PAPALOTE LOOP//
         /* function loop_papalote() {
 
