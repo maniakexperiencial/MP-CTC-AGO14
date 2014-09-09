@@ -153,14 +153,23 @@ class UsersController extends Controller
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
 
-            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
+        $value = Cookie::get('ipvirtual');
+        if($value){
+
+        }else{
+            $cookie = Cookie::forever('ipvirtual', Request::getClientIp().str_random(6));
+            $value = Cookie::get('ipvirtual');
+        }
+
+
+            $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$value)->first();
             if($liked){
 
-                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->delete();
+                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$value)->delete();
                 return 'eliminado';
             }else{
                 $cuento->likes()->save(new Like([
-                    'ip'=>Request::getClientIp()
+                    'ip'=>$value
                 ]));
                 return 'añadido';
             }
@@ -174,7 +183,7 @@ class UsersController extends Controller
         return 'error algo paso';
     }
 
-    ////////////////////LIKES/////////////////////
+    ////////////////////VIEWS/////////////////////
     public function views(){
 
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();

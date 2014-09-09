@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Janssen/Forms/HistoriaForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Janssen/Forms/VideoForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AcPdController.php" afterPath="$PROJECT_DIR$/app/controllers/AcPdController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdminController.php" afterPath="$PROJECT_DIR$/app/controllers/AdminController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -82,13 +79,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AcPdController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AcPdController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/AcPdController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.40753424" vertical-offset="408" max-vertical-offset="2074">
+            <state line="58" column="22" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-37.923077" vertical-offset="0" max-vertical-offset="2074">
               <folding>
                 <element signature="e#7#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="32" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.6025791" vertical-offset="2359" max-vertical-offset="4505">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,7 +141,6 @@
         <option value="$PROJECT_DIR$/_ide_helper.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Helpers/IpClient.php" />
-        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/models/Video.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_225349_create_videos_table.php" />
@@ -175,6 +180,7 @@
         <option value="$PROJECT_DIR$/app/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/app/Janssen/Forms/HistoriaForm.php" />
         <option value="$PROJECT_DIR$/app/controllers/AcPdController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UsersController.php" />
       </list>
     </option>
   </component>
@@ -863,13 +869,18 @@
       <created>1410228177554</created>
       <updated>1410228177554</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="-validate historia and video form&#10;">
+      <created>1410281572331</created>
+      <updated>1410281572331</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2036638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -885,7 +896,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33045357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -924,7 +934,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-Cambio de nombre clase View porque laravel ya la tenia" />
     <MESSAGE value="-Arregle lo de Report" />
     <MESSAGE value="-cambio en signup Nombre completo -&gt;Nombre" />
     <MESSAGE value="-Falta convertir array de reporte, estilo paginacion y filtros de front end" />
@@ -949,7 +958,8 @@
     <MESSAGE value="-regresar a como estaba ip" />
     <MESSAGE value="-subir videos" />
     <MESSAGE value="-casi terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="-casi terminado" />
+    <MESSAGE value="-validate historia and video form&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-validate historia and video form&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -990,11 +1000,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/account/Admin/cuentos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="6" selection-start="4209" selection-end="4272" vertical-scroll-proportion="-27.73077" vertical-offset="792" max-vertical-offset="2907" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="4611" selection-end="4611" vertical-scroll-proportion="3.0890973" vertical-offset="0" max-vertical-offset="4352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Cuento.php">
@@ -1244,10 +1249,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AcPdController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.40753424" vertical-offset="408" max-vertical-offset="2074">
+        <state line="58" column="22" selection-start="1568" selection-end="1568" vertical-scroll-proportion="-37.923077" vertical-offset="0" max-vertical-offset="2074">
           <folding>
             <element signature="e#7#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="32" selection-start="5075" selection-end="5075" vertical-scroll-proportion="0.6025791" vertical-offset="2359" max-vertical-offset="4505">
+          <folding />
         </state>
       </provider>
     </entry>
