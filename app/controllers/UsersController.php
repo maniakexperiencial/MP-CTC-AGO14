@@ -153,6 +153,9 @@ class UsersController extends Controller
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
 
+      /*  if(!Cookie::has('ip_virtual')){
+            $value = Cookie::forever('ip_virtual', Request::getClientIp().str_random(6));
+        }
             $liked=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
             if($liked){
 
@@ -163,7 +166,45 @@ class UsersController extends Controller
                     'ip'=>Request::getClientIp()
                 ]));
                 return 'añadido';
+            }*/
+        $id=Input::get('document_id');
+        if(isset($_COOKIE['likeDislike'."_".$id])) // check cookie
+            {
+                // if exist display message
+                $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',$_COOKIE['likeDislike'."_".$id])->delete();
+                setcookie("likeDislike"."_".$id, "", time()-3600);
+                return 'eliminado';
             }
+
+
+        else{
+            $virtual_ip=Request::getClientIp().str_random(6);
+            $cuento->likes()->save(new Like([
+                'ip'=>$virtual_ip
+            ]));
+            $expire=time()+60*60*24*30;
+          /*  Cookie::forever("likeDislike"."_".$id,"likeDislike"."_".$id);*/
+           /* Cookie::make("likeDislike"."_".$id, "likeDislike"."_".$id, $expire);*/
+            setcookie("likeDislike"."_".$id,$virtual_ip, $expire);
+            return 'añadido';
+             }
+            //set cookie
+
+
+
+
+
+
+       /* if(Cookie::has('ip_virtual')){
+
+            $delete=Like::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Cookie::get('ip_virtual'))->delete();
+            return 'eliminado';
+        }else{
+            $cuento->likes()->save(new Like([
+                'ip'=>Cookie::get('ip_virtual')
+            ]));
+            return 'añadido';
+        }*/
 
 
 

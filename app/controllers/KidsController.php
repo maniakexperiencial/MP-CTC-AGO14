@@ -28,8 +28,9 @@ class KidsController extends Controller {
         }
 
         //$cuentos=Cuento::paginate(6);
-       /* if(!Cookie::has('ip_virtual')){
+     /*  if(!Cookie::has('ip_virtual')){
             $value = Cookie::forever('ip_virtual', Request::getClientIp().str_random(6));
+           return $value;
         }*/
 
         return View::make('kids.cuentos',['cuentos'=>$cuentos,'count'=>0]);

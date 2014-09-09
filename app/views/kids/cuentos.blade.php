@@ -215,7 +215,14 @@ Cuentos
         <div class="ui grid">
             <div class="row ">
                 <div class="eight wide column cuento_opciones"><img data-id="{{$cuento->id}}" data-status="inactive" class="cuento_like"
-                    @if(Like::where('cuento_id','=',$cuento->id)->where('ip','=',Request::getClientIp())->first()) src="{{ URL::to('/img/likes_active.png') }}" @else src="{{ URL::to('/img/likes.png') }}" @endif >
+
+                    <?php if(isset($_COOKIE['likeDislike'."_".$cuento->id])){
+                        echo "src='".URL::to('/img/likes_active.png')."'";
+                        }else{
+                        echo "src='".URL::to('/img/likes.png')."'";
+                        }
+                    ?>
+                    >
                     <span class="number_likes">{{$cuento->likes->count()}}</span>
                 </div>
                 <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
