@@ -2,14 +2,14 @@
 
 use Janssen\Forms\SignupForm;
 use Janssen\Forms\LoginForm;
+use Janssen\Forms\HistoriaForm;
 
 class AcPdController extends Controller
 {
-    /*function __construct(SignupForm $signupForm,LoginForm $loginForm)
+    function __construct(HistoriaForm $historiaForm)
     {
-            $this->signupForm = $signupForm;
-            $this->loginForm = $loginForm;
-    }*/
+            $this->historiaForm = $historiaForm;
+    }
 
 
     /**
@@ -45,6 +45,7 @@ class AcPdController extends Controller
     }
 
     public function new_historia(){
+        $this->historiaForm->validate(Input::all());
         $user=Auth::user();
         $category="";
         switch($user->details->rol){

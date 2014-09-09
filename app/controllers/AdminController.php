@@ -5,6 +5,7 @@ use Janssen\Forms\LoginForm;
 use Janssen\Forms\JuezForm;
 use Janssen\Forms\CuentoForm;
 use Janssen\Forms\PassForm;
+use Janssen\Forms\VideoForm;
 
 class AdminController extends Controller
 {
@@ -13,11 +14,12 @@ class AdminController extends Controller
             $this->signupForm = $signupForm;
             $this->loginForm = $loginForm;
     }*/
-    function __construct(SignupForm $signupForm,LoginForm $loginForm,JuezForm $juezForm,CuentoForm $cuentoForm,PassForm $passForm)
+    function __construct(SignupForm $signupForm,LoginForm $loginForm,JuezForm $juezForm,CuentoForm $cuentoForm,PassForm $passForm,VideoForm $videoForm)
     {
         $this->juezForm = $juezForm;
         $this->cuentoForm = $cuentoForm;
         $this->passForm = $passForm;
+        $this->videoForm = $videoForm;
     }
 
 
@@ -336,6 +338,7 @@ public function edit_historia($historia_id){
 
 //////NEW VIDEO//////
     public function new_video(){
+        $this->videoForm->validate(Input::all());
         $user=Auth::user();
         $url = Input::get('code');
         parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
