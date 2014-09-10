@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" afterPath="$PROJECT_DIR$/app/views/kids/cuentos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/views.png" afterPath="$PROJECT_DIR$/public/img/views.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -81,7 +81,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="616" column="32" selection-start="11940" selection-end="11940" vertical-scroll-proportion="0.64444447" vertical-offset="9892" max-vertical-offset="17204">
+            <state line="615" column="13" selection-start="11905" selection-end="11905" vertical-scroll-proportion="0.6255556" vertical-offset="9892" max-vertical-offset="17204">
               <folding />
             </state>
           </provider>
@@ -852,7 +852,11 @@
       <created>1410306959351</created>
       <updated>1410306959351</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="-mas espacio entre icono views y numero">
+      <created>1410307491325</created>
+      <updated>1410307491325</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -913,7 +917,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-cambio en texto mail activacion" />
     <MESSAGE value="-Recover password,cambios pequeños." />
     <MESSAGE value="-Cambios" />
     <MESSAGE value="-Delete confirmation for user" />
@@ -938,7 +941,8 @@
     <MESSAGE value="-quitar meta en header para mobiles" />
     <MESSAGE value="-Likes with cookies system" />
     <MESSAGE value="-Likes with cookies system no puedes ahora dar dislike" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Likes with cookies system no puedes ahora dar dislike" />
+    <MESSAGE value="-mas espacio entre icono views y numero" />
+    <option name="LAST_COMMIT_MESSAGE" value="-mas espacio entre icono views y numero" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1279,7 +1283,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="616" column="32" selection-start="11940" selection-end="11940" vertical-scroll-proportion="0.64444447" vertical-offset="9892" max-vertical-offset="17204">
+        <state line="615" column="13" selection-start="11905" selection-end="11905" vertical-scroll-proportion="0.6255556" vertical-offset="9892" max-vertical-offset="17204">
           <folding />
         </state>
       </provider>
