@@ -63,7 +63,7 @@
                               <td>$cuento->name</td>
                               <td>$cuento->title</td>
                               <td>$cuento->category</td>
-                              <td>$preselcuent</td>
+                              <td>".number_format($preselcuent,2)."</td>
                            </tr>";
                 }else{
 
@@ -78,7 +78,7 @@
                               <td>$historia->name</td>
                               <td>$historia->title</td>
                               <td>$historia->category</td>
-                              <td>$preselcuent</td>
+                              <td>".number_format($preselcuent,2)."</td>
                            </tr>";
             }
 

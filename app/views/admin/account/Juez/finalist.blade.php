@@ -56,13 +56,18 @@
             $preselects=Preselect::where('type','=','0')->where('status','=','1')->groupBy('document_id')->orderBy('average', 'DESC')->get();
             foreach($preselects as $preselect){
                 $cuento=Cuento::where('id','=',$preselect->document_id)->first();
-                $preselcuent=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','0')->avg('average');
-                echo "<tr class=gradeA>
+                if($cuento){
+                    $preselcuent=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','0')->avg('average');
+                    echo "<tr class=gradeA>
                               <td>$cuento->name</td>
                               <td>$cuento->title</td>
                               <td>$cuento->category</td>
-                              <td>$preselcuent</td>
+                              <td>".number_format($preselcuent,2)."</td>
                            </tr>";
+                }else{
+
+                }
+
             }
             $preselects=Preselect::where('type','=','1')->where('status','=','1')->groupBy('document_id')->orderBy('average', 'DESC')->get();
             foreach($preselects as $preselect){
@@ -72,7 +77,7 @@
                               <td>$historia->name</td>
                               <td>$historia->title</td>
                               <td>$historia->category</td>
-                              <td>$preselcuent</td>
+                              <td>".number_format($preselcuent,2)."</td>
                            </tr>";
             }
 
@@ -80,6 +85,7 @@
 
             </tbody>
         </table>
+
 
     </div><!--contentwrapper-->
 </div><!-- centercontent -->

@@ -1,23 +1,21 @@
+"--- ","--- ","NINOS ",---,---,---,---,---
 Nombre,"Nombre del Cuento",Edad,Categoria,Estado,Calificacion,Views,Likes
-alvaro,Prueba123,7,6-7,Jalisco,8.835000038147,1,1
-alvaro,"CUENTO Flautista",10,8-12,Jalisco,7.664999961853,1,0
-Alejandro,Cuento2,7,6-7,Guanajuato,8.5,1,1
-Jose,"CUENTO ULTIMO",11,8-12,Jalisco,,1,0
-Pepe,Cuento5,10,8-12,Guanajuato,,1,0
-Pepe,Cuento6,7,6-7,Jalisco,,1,0
-Pepe,Cuento7,7,6-7,Jalisco,,1,1
-Alvaro,cuento8,9,8-12,Jalisco,,1,1
-alvaro,Cuento9,7,6-7,Guanajuato,,1,0
-alvaro,Cuento10,6,6-7,Jalisco,,1,0
-alvaro,Cuento11,6,6-7,Jalisco,,1,0
+Alejandro,Cuento2,7,6-7,Guanajuato,8.335000038147,0,1
+Pepe,Cuento6,7,6-7,Jalisco,,0,0
+Alvaro,cuento8,9,8-12,Jalisco,9,0,1
+alvaro,Cuento9,7,6-7,Guanajuato,,1,1
+alvaro,Cuento10,6,6-7,Jalisco,,0,1
+alvaro,Cuento11,6,6-7,Jalisco,,0,0
+alvaro,Prueba,11,8-12,Jalisco,,1,1
 " "," "," "," "," "," "
-" "," "," "," "," "," "
+"--- ","--- ","PADRES ","--- ","--- ","--- "
 Nombre,"Nombre de la Historia",Teléfono,Correo,Estado,Calificacion
 " "," "," "," "," "," "," "
-" "," "," "," "," "," "," "
+"--- ",---,"--- ","DOCTORES ","--- ","--- ","--- "
 Nombre,"Nombre de la Historia",Teléfono,Correo,Estado,Calificacion,Institucion
 alvaro,PruebaHistoria,336584,pruebas_1_@hotmail.com,asdasdads,,IMSS
 alvaro,Historia2,336584,pruebas_1_@hotmail.com,Guanajuato,,IMSS
 alvaro,Historia3,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS
 alvaro,Historia4,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS
 alvaro,Historia5,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS
+alvaro,Prueba,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS

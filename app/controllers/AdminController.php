@@ -67,6 +67,7 @@ class AdminController extends Controller
     public function report()
     {
         $report=array();
+        $report[]=array('--- ','--- ','NINOS ','---','---','---','---','---');
         /*NIÑOS*/
         $report[]=array('Nombre','Nombre del Cuento','Edad','Categoria','Estado','Calificacion','Views','Likes');
         $cuentos=Cuento::all();
@@ -79,7 +80,7 @@ class AdminController extends Controller
         }
         /*PAPAS*/
         $report[]=array(' ',' ',' ',' ',' ',' ');
-        $report[]=array(' ',' ',' ',' ',' ',' ');
+        $report[]=array('--- ','--- ','PADRES ','--- ','--- ','--- ');
 
         $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion');
         $historias=Historia::all();
@@ -97,7 +98,7 @@ class AdminController extends Controller
         /*DOCTORES*/
         $historias=Historia::all();
         $report[]=array(' ',' ',' ',' ',' ',' ',' ');
-        $report[]=array(' ',' ',' ',' ',' ',' ',' ');
+        $report[]=array('--- ','---','--- ','DOCTORES ','--- ','--- ','--- ');
          $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion','Institucion');
         foreach($historias as $historia){
             $user=User::where('id','=',$historia->user_id)->first();
