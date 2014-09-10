@@ -177,7 +177,7 @@ Cuentos
                         >
                     <span class="number_likes">{{$cuento->likes->count()}}</span>
                 </div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+                <div class="eight wide column cuento_opciones"><img class="cuento_views" src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
             </div>
         </div>
     </div>
@@ -231,7 +231,7 @@ Cuentos
                     >
                     <span class="number_likes">{{$cuento->likes->count()}}</span>
                 </div>
-                <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
+                <div class="eight wide column cuento_opciones"><img class="cuento_views" src="{{ URL::to('/img/views.png') }}"><span class="number_views">{{$cuento->views->count()}}</span></div>
             </div>
         </div>
     </div>

@@ -612,6 +612,10 @@ a.active{
     width: 25%;
     margin-right: 5%;
 }
+.cuento_views{
+    width: 25%;
+    margin-right: 10% !important;
+}
 /*----------------KIDS VIDEO------------*/
 .video_box{
     /*width: 31%;*/
