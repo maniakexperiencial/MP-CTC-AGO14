@@ -35,7 +35,8 @@
 <div class="bodywrapper">
     <div class="topheader">
         <div class="left">
-           <img style="max-height: 50px" src="{{ URL::to('/img/admin_logo_index.png') }}" >
+            <!--  <img style="max-height: 50px" src="{{ URL::to('/img/admin_logo_index.png') }}" >-->
+            <img style="max-height: 50px" src="{{ URL::to('/img/logo.png') }}" >
             <span class="slogan"></span>
             <br clear="all" />
         </div><!--left-->
@@ -61,7 +62,7 @@
             <li id="m_cuentos"><a href="{{Url::route('dashboard_juez')}}" class="history_icon">Cuentos</a></li>
             <li id="m_historias"><a href="{{Url::route('historia_juez')}}" class="history_icon">Historias</a></li>
             <li id="m_preselect"><a href="{{Url::route('preselect_juez')}}" class="preselect_icon">Preseleccionados</a></li>
-            <li id="m_finalist"><a href="{{Url::route('finalist_juez')}}" class="finalist_icon">Finalistas</a></li>
+            <!--<li id="m_finalist"><a href="{{Url::route('finalist_juez')}}" class="finalist_icon">Finalistas</a></li>-->
 
         </ul>
         <a class="togglemenu"></a>

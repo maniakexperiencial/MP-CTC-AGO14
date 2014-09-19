@@ -47,7 +47,13 @@
 
                                     <div class="form-group">
                                         {{Form::label('state', 'Estado', ['class' => 'cuento_label_sub']) }}
-                                        {{Form::text('state', null, ['class' => 'cuento_input','id'=>'state']) }}
+
+                                        <?php
+                                        $states = State::lists('state','state');
+                                        ?>
+                                        {{Form::select('state',$states, null,['class'=>'cuento_input','id'=>'state'])}}
+
+                                        <!--{{Form::text('state', null, ['class' => 'cuento_input','id'=>'state']) }}-->
                                         {{$errors->first('state',"<span class=error>:message</span>")}}
                                     </div>
 

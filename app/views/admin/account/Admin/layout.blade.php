@@ -41,7 +41,8 @@
 <div class="bodywrapper">
     <div class="topheader">
         <div class="left">
-           <img style="max-height: 50px" src="{{ URL::to('/img/admin_logo_index.png') }}" >
+         <!--  <img style="max-height: 50px" src="{{ URL::to('/img/admin_logo_index.png') }}" >-->
+            <img style="max-height: 50px" src="{{ URL::to('/img/logo.png') }}" >
             <span class="slogan"></span>
             <br clear="all" />
         </div><!--left-->
@@ -59,7 +60,7 @@
     </div><!--header-->
     <div class="vernav2 iconmenu">
         <ul>
-            <li id="m_usuario"><a href="{{URL::route('dashboard_admin')}}" class="user_icon">Usuario</a>
+            <li id="m_usuario"><a href="{{URL::route('dashboard_admin')}}" class="user_icon">Usuarios</a>
                 <!--<span class="arrow"></span>
                 <ul id="usersub">
                     <li><a href="">Registrados</a></li>

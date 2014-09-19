@@ -23,10 +23,10 @@
 
                 @foreach($historias as $historia)
                             <div class="hidden_history" id="historia<?= $historia->id ?>" >
-                                <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}</h4></div>
+                                <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}, {{$historia->state}}</h4></div>
 
                                 <div class="hidden_history_content">
-                                    {{$historia->text}}
+                                    {{nl2br($historia->text)}}
                                 </div>
                             </div>
 
@@ -34,7 +34,7 @@
                             <div class="historia_box" id="h<?= $historia->id ?>">
                                 <a href="#historia<?= $historia->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  ><div class="historia_title">{{$historia->title}}</div></a>
                                 <div class="historia_info">
-                                    - {{$historia->name}}
+                                    - {{$historia->name}}, {{$historia->state}}
 
                                 </div>
                                 <div  class="historia_option_wrap">

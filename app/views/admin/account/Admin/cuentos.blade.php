@@ -56,7 +56,7 @@
                             </div>
                             <div class="cuento_second_wrap">
                                 <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
-                                    <p>{{ $cuento->text }}</p>
+                                    <p>{{ nl2br($cuento->text) }}</p>
                                 </div>
 
                             </div>
@@ -66,7 +66,9 @@
                                 <div class="cuento_title">{{ $cuento->title }}</div>
                                 <div class="cuento_by">{{ $cuento->name }}</div>
                                 <div class="cuento_age">{{ $cuento->age }} años, {{$cuento->state}}</div>
-                                <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                                <a href="#cuento<?= $cuento->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+                                    <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                                </a>
                                 <div class="ui grid">
                                     <div class="row">
                                         <div class="eight wide column cuento_opciones"><img src="{{ URL::to('/img/likes.png') }}">{{$cuento->likes->count()}}</div>

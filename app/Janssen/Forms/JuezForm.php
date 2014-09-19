@@ -18,7 +18,7 @@ class JuezForm extends FormValidator{
         'name' => 'required',
         'lastname' => 'required',
         'email'         => 'required|email|unique:users',
-        'password'     =>   'required|confirmed',
+        'password'     =>   'required|confirmed|Min:8',
 
     ];
 } 

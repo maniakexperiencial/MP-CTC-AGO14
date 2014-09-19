@@ -49,7 +49,7 @@
             @foreach($users as $user)
             <tr class="gradeA" id="tr{{$user->id}}">
 
-                <td>{{ $user->details->name }}</td>
+                <td>{{ $user->details->name }} {{ $user->details->lastname }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->details->rol }}</td>
                 <?php

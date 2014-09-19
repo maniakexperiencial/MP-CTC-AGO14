@@ -41,7 +41,7 @@
             </div>
             <div class="cuento_second_wrap">
                 <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
-                    <p>{{ $cuento->text }}</p>
+                    <p>{{ nl2br($cuento->text) }}</p>
 
                 </div>
 

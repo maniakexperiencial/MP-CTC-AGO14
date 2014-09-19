@@ -32,10 +32,40 @@
 
 <body class="loginpage signup_bg">
 
+<header>
+    <div class="Topbar">
+        <div class="center_container">
+            <div class="logo2"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
+            <nav id="nav" role="navigation">
+                <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                <a href="#" title="Hide navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                <!-- <ul class="login_ul">
+                     <li><a href="{{Url::route('loginUser_route')}}">Login</a></li>
+                 </ul>-->
+                <ul id="">
+                    <li>
+                        <a href="{{ URL::route('root') }}">Home</a>
+                    </li>
+                    <li class="menu_active">
+                        <a href="{{Url::route('loginUser_route')}}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{ URL::route('signup') }}">Registro</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+</header>
+
 	<div class="loginbox" style="margin:2% auto 0 auto">
     	<div class="loginboxinner">
 
-            <div class="logo">
+            <div class="logo" style="margin-top: 10px">
                 <img src="{{ URL::to('/img/admin_logo_index.png') }}">
             	<!--<h1><span>AMAN.</span>DA</h1>
                 <p>premium admin template</p>-->
@@ -84,8 +114,13 @@
                 {{$errors->first('email',"<span class=error>:message</span>")}}
             </div>
             <div class="form-group">
-                    {{Form::label('address', 'Dirección', ['class' => 'login_label']) }}
-                    {{Form::text('address', null, ['class' => 'signup_blue','id'=>'address']) }}
+                    {{Form::label('address', 'Estado', ['class' => 'login_label']) }}
+                <?php
+                $states = State::lists('state','state');
+                ?>
+                {{Form::select('address',$states, null,['class'=>'signup_blue signup_select'])}}
+
+                <!--{{Form::text('address', null, ['class' => 'signup_blue','id'=>'address']) }}-->
                 {{$errors->first('address',"<span class=error>:message</span>")}}
             </div>
             <div class="form-group">

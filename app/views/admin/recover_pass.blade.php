@@ -32,7 +32,35 @@
 </head>
 
 <body class="loginpage  signup_bg">
+<header>
+    <div class="Topbar">
+        <div class="center_container">
+            <div class="logo2"><a href="{{ URL::route('root') }}"><img src="{{ URL::to('/img/logo.png') }}"></a></div>
+            <nav id="nav" role="navigation">
+                <a href="#nav" title="Show navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                <a href="#" title="Hide navigation"><div class="toggle_menu"><i class="reorder icon"></i></div></a>
+                <!-- <ul class="login_ul">
+                     <li><a href="{{Url::route('loginUser_route')}}">Login</a></li>
+                 </ul>-->
+                <ul id="">
+                    <li>
+                        <a href="{{ URL::route('root') }}">Home</a>
+                    </li>
+                    <li class="menu_active">
+                        <a href="{{Url::route('loginUser_route')}}">Login</a>
+                    </li>
+                    <li>
+                        <a href="{{ URL::route('signup') }}">Registro</a>
+                    </li>
 
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+</header>
 	<div class="loginbox">
     	<div class="loginboxinner">
 

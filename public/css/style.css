@@ -1,4 +1,9 @@
 /*CSS*/
+/* new clearfix */
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+html .clearfix { zoom: 1; } /* IE6 */
+html:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 @font-face {
     font-family: 'Mandingo';
     src: url('../fonts/MANDINGO.eot'); /* IE9 Compat Modes */
@@ -554,7 +559,9 @@ a.active{
     /*width: 196px;
     height: 230px;*/
     width: 170px;
-    height: 200px;
+    /*height: 200px;*/
+    min-height:200px;;
+    height: auto;
     float: left;
     margin: 5px;
     margin-left: 10px;
@@ -594,7 +601,8 @@ a.active{
 .cuento_image{
     width: 100%;
     background-color: white;
-    height: 55%;
+    /*height: 55%;*/
+    height: 112px;
     margin-bottom: 5px;
     overflow: hidden;
     background-size: contain;

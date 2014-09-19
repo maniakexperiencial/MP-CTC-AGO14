@@ -139,7 +139,7 @@
                                                 <div class='evaluar_desc_wrap'>
                                                     <div class=evaluar_cutitle>$historia->title</div>
                                                     <div class=evaluar_name>-$historia->name</div>
-                                                    <div class=evaluar_age>$historia->age años</div>
+                                                    <div class=evaluar_age><!--$historia->age años--></div>
                                                 </div>
                                                 <div style='width: 100%;height: auto;'>
 
@@ -148,7 +148,7 @@
                                                         <input type=text class='input_eval' data-eval='contenido' id='evcont$historia->id' name='evcont' >
                                                     </div>
                                                     <div class=evaluar_column >
-                                                        <span class=title_cucolumn>originalidad</span>
+                                                        <span class=title_cucolumn>redacción</span>
                                                         <input type=text class='input_eval' data-eval='originalidad' id='evoriginal$historia->id' name='evoriginal'>
                                                     </div>
                                                     <div class=evaluar_column >

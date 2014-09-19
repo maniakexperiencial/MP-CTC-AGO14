@@ -395,8 +395,12 @@ public function edit_video_index($idvideo){
 
 
         $user=User::find(Input::get('id_user'));
-         if($user->delete()){
-             return '<span class=success_message>Usuario eliminado</span>';
+         if($user->details->delete()){
+
+             if($user->delete()){
+                 return '<span class=success_message>Usuario eliminado</span>';
+             }
+
          }else{
              return '<span class=error_message>Error al tratar de eliminar</span>';
          }
