@@ -493,7 +493,9 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     /*width: 196px;
     height: 230px;*/
     width: 170px;
-    height: 280px;
+    /*height: 200px;*/
+    min-height:200px;;
+    height: auto;
     float: left;
     margin: 5px;
     margin-left: 10px;
@@ -553,12 +555,13 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
 .cuento_image{
     width: 100%;
     background-color: white;
-    height: 55%;
+    /*height: 55%;*/
+    height: 112px;
     margin-bottom: 5px;
+    overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    overflow: hidden;
 }
 .cuento_opciones{
     color:#c8e4ff;
