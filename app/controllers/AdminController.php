@@ -397,9 +397,63 @@ public function edit_video_index($idvideo){
         $user=User::find(Input::get('id_user'));
          if($user->details->delete()){
 
-             if($user->delete()){
-                 return '<span class=success_message>Usuario eliminado</span>';
+             $videos=$user->videos->count();
+             $cuentos=$user->cuentos->count();
+             $historias=$user->historias->count();
+
+                ///DELETE VIDEOS /////
+                 if($videos!=0){
+                     $user->videos->delete();
+                 }
+
+
+                ///DELETE CUENTOS/////
+                 if($cuentos!=0){
+                     foreach($user->cuentos as $cuento){
+                         //DELETE PRESELECT//
+                         $preselect_count=Preselect::where('document_id','=',$cuento->id)->where('type','=','0')->count();
+
+                         if($preselect_count!=0){
+                             $preselect=Preselect::where('document_id','=',$cuento->id)->where('type','=','0')->delete();
+                         }
+                        //////
+                         ////DELETE CUENTO IMAGES////
+                         foreach($cuento->images as $images){
+                             if($images->path=='imagen_nodisponible.jpg'){
+
+                             }else{
+                                 File::delete('public/cuentos_images/'.$images->path);
+                             }
+
+                             //File::delete('public/cuentos_images/'.$images->path);
+                             $images->delete();
+                         }
+                         //NOW DELETE CUENTO//
+                         $cuento->delete();
+                     }
+
+                 }
+
+             ////DELETE HISTORIAS///
+             if($historias!=0){
+                 foreach($user->historias as $historia){
+                     //DELETE PRESELECT//
+                     $preselect_count=Preselect::where('document_id','=',$historia->id)->where('type','=','1')->count();
+
+                     if($preselect_count!=0){
+                         $preselect=Preselect::where('document_id','=',$historia->id)->where('type','=','1')->delete();
+                     }
+
+                    // NOW DELETE HISTORIA//
+                     $historia->delete();
+                 }
              }
+                ////NOW DELETE USER///
+                if($user->delete()){
+                     return '<span class=success_message>Usuario eliminado</span>';
+                 }
+
+
 
          }else{
              return '<span class=error_message>Error al tratar de eliminar</span>';
