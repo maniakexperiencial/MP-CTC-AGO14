@@ -104,6 +104,9 @@ Route::group(array("before" => "auth"), function () {
     /*-----------------------------PADRES Y DOCTORES---------------------------------*/
     Route::group(array("before" => "pd_filter"), function () {
         Route::get('dashboard_pd', array("as" => "dashboard_pd", "uses" => "AcPdController@index"));
+        Route::get('profile_pd', array("as" => "profile_pd", "uses" => "AcPdController@profile_index"));
+
+        Route::post('profile_pd/{iduser}', array("as" => "edit_profile_route", "uses" => "AcPdController@edit_profile"));
 
         /*----ADD HISTORIA---*/
         Route::get('dashboard_pd/new_historia', array("as" => "new_historia", "uses" => "AcPdController@new_historia_index"));

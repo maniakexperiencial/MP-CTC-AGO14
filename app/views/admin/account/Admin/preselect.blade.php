@@ -71,6 +71,7 @@
 
                           $cuento=Cuento::where('id','=',$preselect->document_id)->first();
                           if($cuento){
+                              $preselcuent=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','0')->avg('average');
                               echo " <div class=hidden_cuento id=cuento$cuento->id >
                                                     <div class=cuento_first_wrap>
                                                         <div class=hidden_cuento_title><h2 style=margin-top:0;>$cuento->title</h2><h5>-$cuento->name  $cuento->age  años</h5></div>
@@ -91,7 +92,7 @@
                                                                 <td>$cuento->name</td>
                                                                 <td>$cuento->title</td>
                                                                 <td>$cuento->category</td>
-                                                                <td> <a href='".URL::route('detalle_preselect',['type'=>0,'preselect_id'=>$preselect->document_id])."'  class=underline>Ver Promedio</a></td>
+                                                                <td> <a href='".URL::route('detalle_preselect',['type'=>0,'preselect_id'=>$preselect->document_id])."'  class=underline>".number_format($preselcuent,2)."</a></td>
                                                                 <td class=center> <a a href=#cuento$cuento->id  data-lightbox-type=inline data-lightbox-gallery=gallery1 class=edit>Leer</a></td>
                                                         </tr>";
                           }else{
@@ -107,6 +108,7 @@
 
                           $historia=Historia::where('id','=',$preselect->document_id)->first();
                           if($historia){
+                              $preselhist=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','1')->avg('average');
                               echo "   <div class=hidden_history id=historia$historia->id  >
                                             <div class=hidden_history_title><h2 style=margin-top: 0;>$historia->title</h2><h4>-$historia->name</h4></div>
 
@@ -121,7 +123,7 @@
                                                                 <td>$historia->name</td>
                                                                 <td>$historia->title</td>
                                                                 <td>$historia->category</td>
-                                                                <td> <a href='".URL::route('detalle_preselect',['type'=>1,'preselect_id'=>$preselect->document_id])."'  class=underline>Ver Promedio</a></td>
+                                                                <td> <a href='".URL::route('detalle_preselect',['type'=>1,'preselect_id'=>$preselect->document_id])."'  class=underline>".number_format($preselhist,2)."</a></td>
                                                                 <td class=center> <a a href=#historia$historia->id  data-lightbox-type=inline data-lightbox-gallery=gallery1 class=edit>Leer</a></td>
                                                         </tr>";
                           }else{

@@ -52,7 +52,8 @@
     </div><!--header-->
     <div class="vernav2 iconmenu">
         <ul>
-            <li id="m_usuario" class="active"><a href="{{Url::route('dashboard_pd')}}" class="user_icon">Historias</a>
+            <li id="m_historias" ><a href="{{Url::route('dashboard_pd')}}" class="history_icon">Historias</a>
+            <li id="m_profile"><a href="{{Url::route('profile_pd')}}" class="user_icon">Perfil</a>
                 <!--<span class="arrow"></span>
                 <ul id="usersub">
                     <li><a href="">Registrados</a></li>

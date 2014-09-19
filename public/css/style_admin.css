@@ -153,6 +153,10 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     font-size: 1.5em;
     color:#0057a8;
 }
+.keep{
+    font-size: 1em !important;
+    color:#0057a8 !important;
+}
 .login_option a{
     color: inherit;
     text-decoration: underline;
@@ -216,6 +220,9 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     font-weight: bold;
     color: white !important;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.politica_privacidad a{
+    text-decoration: underline;
 }
 #institution_label{
     display: none;

@@ -96,7 +96,15 @@
                 </div>
             <div class="form-group">
                     {{Form::label('select_institution', 'Institución', ['class' => 'login_label','id'=>'institution_label']) }}
-                    {{Form::select('select_institution',['IMSS' => 'IMSS','ISSSTE' => 'ISSSTE', 'SSA' => 'SSA'], null,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}
+                    <select name="select_institution" class="signup_blue signup_select" id="select_institution" disabled required>
+                        <option value="" selected disabled>Nombre de la institución</option>
+                        <option value="IMSS">IMSS</option>
+                        <option value="ISSSTE">ISSSTE</option>
+                        <option value="SSA">SSA</option>
+                        <option value="Privado">Privado</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    <!--{{Form::select('select_institution',['IMSS' => 'IMSS','ISSSTE' => 'ISSSTE', 'SSA' => 'SSA'], null,['class'=>'signup_blue signup_select', 'id'=>'select_institution','disabled' => 'disabled'])}}-->
             </div>
             <div class="form-group">
                     {{Form::label('name', 'Nombre', ['class' => 'login_label']) }}
@@ -142,6 +150,16 @@
                 {{Form::label('password_confirmation', 'Repetir Contraseña', ['class' => 'login_label']) }}
                 {{Form::password('password_confirmation',['class' => 'signup_blue','id'=>'password']) }}
 
+            </div>
+            <div class="form-group">
+
+                {{Form::checkbox('terms', 'value')}}
+                <label class="politica_privacidad"> Le daremos acceso al portal al completar voluntariamente este cuestionario y al marcar el casillero
+                    correspondiente. Al enviar este formulario, la información proporcionada, estará regida por la <a href="#">Política de privacidad</a>
+                    de nuestro sitio. Para no recibir más comunicados, póngase en contacto con nosotros según se especifica
+                    en nuestra <a href="#">Politica de Privacidad</a>
+                </label>
+                {{$errors->first('terms',"<span class=error>:message</span>")}}
             </div>
                     <a href="{{ URL::route('loginUser_route') }}"><div class="signup_backbtn">Regresar</div></a>
 

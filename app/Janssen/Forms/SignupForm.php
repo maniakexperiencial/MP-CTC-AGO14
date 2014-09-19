@@ -21,6 +21,7 @@ class SignupForm extends FormValidator{
         'email'         => 'required|email|unique:users',
         'password'     =>   'required|confirmed|Min:8',
         'phone'       => 'required|numeric',
-        'mobile'       => 'required|numeric'
+        'mobile'       => 'required|numeric',
+        'terms'       => 'required'
     ];
 } 

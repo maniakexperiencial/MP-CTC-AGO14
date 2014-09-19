@@ -26,6 +26,22 @@ class AcPdController extends Controller
         return View::make('admin.account.Pd.dashboard',['historias'=>$historias]);
     }
 
+    public function profile_index(){
+        $user=Auth::user();
+        return View::make('admin.account.Pd.profile',['user'=>$user]);
+        /*return 'hola';*/
+    }
+    public function edit_profile($iduser){
+        $user=User::find($iduser);
+        $user->details->name=Input::get('name');
+        $user->details->lastname=Input::get('lastname');
+        $user->details->address=Input::get('address');
+        $user->details->phone=Input::get('phone');
+        $user->details->mobile=Input::get('mobile');
+        $user->details->save();
+        return Redirect::back()->with('mensaje_request','<span class=success_message>Perfil Actualizado Correctamente</span>');
+    }
+
     ///////////////////////////////////////NEW Historia//////////////////////////
     public function new_historia_index(){
        /* $user=Auth::user();

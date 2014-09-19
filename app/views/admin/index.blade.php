@@ -114,12 +114,12 @@
 
             {{Form::close()}}
 
-            <div style="margin-bottom: 15%;">&nbsp;</div>
+            <div style="margin-bottom: 12%;">&nbsp;</div>
 
             <div class="login_option">¿Aún no estas registrado?</div>
-            <div class="login_option">Registrese <a href="{{ URL::route('signup') }}"><b>Aquí</b></a></div>
+            <div class="login_option">Registrese <a href="{{ URL::route('signup') }}"><b>Aquí.</b></a></div>
 
-            <div class="login_recover"><a href="{{ URL::route('recovpass_route') }}"><b>Recuperar contraseña</b></a></div>
+            <div class="login_option"><a href="{{ URL::route('recovpass_route') }}"><b>Recuperar contraseña</b></a></div>
         </div><!--loginboxinner-->
     </div><!--loginbox-->
 

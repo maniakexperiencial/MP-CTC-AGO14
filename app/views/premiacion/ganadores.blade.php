@@ -33,7 +33,7 @@
 <img  src="{{ URL::to('/img/sol.png') }}">
 @stop
 @section('bottom_sidebar')
-<img class="invisible"  src="{{ URL::to('/img/copa.png') }}">
+<!--<img class="invisible"  src="{{ URL::to('/img/copa.png') }}">-->
 @stop
 
 
