@@ -1,13 +1,13 @@
 <?php
 
 // Composer: "fzaninotto/faker": "v1.3.0"
-use Faker\Factory as Faker;
+/*use Faker\Factory as Faker;*/
 
 class StateTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
+		/*$faker = Faker::create();*/
 
 
         DB::table('states')->insert([
