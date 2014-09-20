@@ -316,7 +316,7 @@ public function delete_historia(){
 }
 ////////////////////////////EDIT HISTORIA///////////////////////
 public function edit_historia_index($idhistoria){
-    $historia=Historia::find($idhistoria)->first();
+    $historia=Historia::find($idhistoria);
     return View::make('admin.account.Admin.edit_historia',['historia'=>$historia]);
 }
 public function edit_historia($historia_id){

@@ -11,11 +11,24 @@
 @stop
 
 @section('filter')
-<select id="Selectbox">
+<?php
+$states = array_merge(array('3'=>'selecciona'),State::lists('state','state'));
+$selection=0;
+?>
+@if($historias->count()!=0)
+@foreach($historias as $historia)
+<?php $selection=$historia->state ?>
+@endforeach
+@endif
+
+{{Form::select('selectbox', $states, null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
+
+<!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
+
     <option value="{{URL::to('papas/historias/papas')}}">papas</option>
     <option value="{{URL::to('papas/historias/doctores')}}">doctores</option>
-</select>
+</select>-->
 @stop
 
 @section('bg_move')
@@ -177,7 +190,7 @@ Historias
 
 
         jQuery("#Selectbox").change(function () {
-            location.href = jQuery(this).val();
+            location.href = "{{URL::to('papas/historias')}}"+"/"+jQuery(this).val();
         });
     });
 

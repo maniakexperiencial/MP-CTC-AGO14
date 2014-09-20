@@ -14,7 +14,14 @@ class PapasController extends Controller {
 
     public function historias($category = 3)
     {
-        switch($category){
+
+        if($category==3){
+            $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+        }else{
+            $historias=Historia::where('state','=',$category)->orderBy('id', 'DESC')->paginate(4);
+        }
+
+       /* switch($category){
             case 'papas':
                 $filter='padres';
                 $historias=Historia::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
@@ -29,7 +36,7 @@ class PapasController extends Controller {
             default:
                 $historias=Historia::orderBy('id', 'DESC')->paginate(4);
                 break;
-        }
+        }*/
 
         //$historias=Historia::paginate(4);
         return View::make('papas.historias',['historias'=>$historias]);
