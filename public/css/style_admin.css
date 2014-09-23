@@ -645,7 +645,9 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
 }
 .historia_box{
     width: 181px;
-    height:130px;
+    /*height:130px;*/
+    min-height: 130px;
+    height: auto;
     position: relative;
     /* min-width: 148px;*/
     float: left;

@@ -686,7 +686,9 @@ a.active{
 /*-------------------PAPAS HISTORIAS---------*/
 .historia_box{
     width: 181px;
-    height:130px;
+    /*height:130px;*/
+    min-height: 130px;
+    height: auto;
    /* min-width: 148px;*/
     float: left;
     margin-left: 15%;
