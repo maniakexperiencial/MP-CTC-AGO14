@@ -163,6 +163,9 @@
         <div class="column text_right" >
             <a href="#">Contáctanos</a>
         </div>
+        <div class="disclaimer" style="font-size: 10px">
+            © Janssen-Cilag S.A. de C.V. 2014.
+        </div>
     </div>
 </div>
 @yield('javacode')

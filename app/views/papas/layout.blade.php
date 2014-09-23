@@ -134,8 +134,13 @@
 <div class="footer">
     <div class="center_container">
         <div class="column text_right" >
+            <a href="{{ URL::to('/documents/PoliticaPrivacidad.pdf') }}" target="_blank" style="padding-right:5px">Política de privacidad</a>
+            <a href="{{ URL::to('/documents/Aviso Legal 2014.pdf') }}" target="_blank" style="padding-right:5px">Aviso legal</a>
             <a href="#">Contáctanos</a>
          </div>
+        <div class="disclaimer" style="font-size: 10px">
+            © Janssen-Cilag S.A. de C.V. 2014.
+        </div>
      </div>
 </div>
 @yield('javacode')

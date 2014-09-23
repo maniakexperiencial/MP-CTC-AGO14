@@ -901,6 +901,10 @@ a.active{
         background-position:center;
 
     }
+    .disclaimer{
+        float:left;
+        font-size: 10px !important;
+    }
     #center_actionbar input[type="text"]{
 
         width: 30%;
