@@ -53,7 +53,8 @@ class PapasController extends Controller {
                 $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
                 break;
             default:
-                $videos=Video::orderBy('id', 'DESC')->paginate(4);
+                /* $videos=Video::orderBy('id', 'DESC')->paginate(4);*/
+                $videos=Video::where('category','=','papas')->orderBy('id', 'DESC')->paginate(4);
                 break;
         }
         return View::make('papas.videos',['videos'=>$videos,'count'=>0]);

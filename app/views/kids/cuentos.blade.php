@@ -14,12 +14,23 @@
 @stop
 
 @section('filter')
-<select id="Selectbox">
+<?php
+$states = array_merge(array('3'=>'selecciona'),State::lists('state','state'));
+$selection=0;
+?>
+@if($cuentos->count()!=0)
+@foreach($cuentos as $cuento)
+<?php $selection=$cuento->state ?>
+@endforeach
+@endif
+
+{{Form::select('selectbox', $states, null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
+<!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
     <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
     <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>
 
-</select>
+</select>-->
 @stop
 @section('bg_move')
 <div class="bg"></div>
@@ -483,8 +494,11 @@ Cuentos
 
         //$('.bg_adition').css({'background-image': 'url('+extra+')','background-position':'13% 93%','background-repeat':'no-repeat','background-size':'7%'});
 
-        jQuery("#Selectbox").change(function () {
+       /* jQuery("#Selectbox").change(function () {
             location.href = jQuery(this).val();
+        });*/
+        jQuery("#Selectbox").change(function () {
+            location.href = "{{URL::to('kids/cuentos')}}"+"/"+jQuery(this).val();
         });
 
 

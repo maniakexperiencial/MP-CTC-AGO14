@@ -37,6 +37,7 @@
                 <th class="t_white">Categoría</th>
                 <th class="t_white">Cuentos/Historias</th>
                 <th class="t_white">Acciones</th>
+                <th class="t_white">Calificación</th>
             </tr>
             </thead>
             <tbody>
@@ -108,11 +109,16 @@
                                             <td class=center>
                                             ";
                         if($preselect->status==0){
-                            echo "<a href=#evaluar$cuento->id  data-lightbox-type=inline  class=underline>evaluar</a>";
+                            echo "<a href=#evaluar$cuento->id  data-lightbox-type=inline  class=underline>evaluar</a></td>";
                         }else{
 
                         }
 
+                        if($preselect->status==0){
+                            echo "<td></td>";
+                        }else{
+                            echo "<td>".number_format($preselect->average,2)."</td>";
+                        }
                         echo "</tr>";
                     }else{
 
@@ -180,7 +186,11 @@
                         }else{
 
                         }
-
+                        if($preselect->status==0){
+                            echo "<td></td>";
+                        }else{
+                            echo "<td>".number_format($preselect->average,2)."</td>";
+                        }
                         echo "</tr>";
                     }else{
 

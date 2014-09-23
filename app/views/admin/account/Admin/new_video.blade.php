@@ -42,7 +42,8 @@
 
                                             <div class="form-group">
                                                 {{Form::label('category', 'Categoria', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], '6-7',['class'=>'cuento_input', 'id'=>'category'])}}
+                                                <!--{{Form::select('category',['6-7' => '6-7', '8-12' => '8-12'], '6-7',['class'=>'cuento_input', 'id'=>'category'])}}-->
+                                                {{Form::select('category',['niños' => 'niños', 'papas' => 'papas','doctores'=>'doctores','evento de premiación'=>'evento de premiación'], 'niños',['class'=>'cuento_input', 'id'=>'category'])}}
                                             </div>
 
                                             <div class="form-group">

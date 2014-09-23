@@ -149,6 +149,7 @@ Videos
         jQuery("#Selectbox").change(function () {
             location.href = jQuery(this).val();
         });
+        $('.Action_bar').hide();
     });
 
 </script>

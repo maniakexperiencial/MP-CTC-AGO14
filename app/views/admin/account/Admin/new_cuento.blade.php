@@ -84,7 +84,7 @@
                                 <div class="form-group">
 
                                     <div class="fileUpload">
-                                        <span>Subir Imagen<span id="number_files"></span></span>
+                                        <span>Subir Imagenes<span id="number_files"></span></span>
                                         {{Form::file('image',['name'=>'image[]','multiple'=>true,'accept'=>'image/*','class'=>'upload','id'=>'select_image'])}}
                                         <!--<input type="file" name="image[]" accept="image/*" class="upload" id="select_image" multiple>-->
                                     </div>

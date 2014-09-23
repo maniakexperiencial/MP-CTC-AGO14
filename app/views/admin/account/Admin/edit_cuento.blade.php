@@ -55,7 +55,11 @@
 
                                             <div class="form-group">
                                                 {{Form::label('state', 'Estado', ['class' => 'cuento_label_sub']) }}
-                                                {{Form::text('state', $cuento->state, ['class' => 'cuento_input','id'=>'state']) }}
+                                                <?php
+                                                $states = array_merge(State::lists('state','state'));
+                                                ?>
+                                                {{Form::select('state', $states, $cuento->state,['class'=>'cuento_input','id'=>'state'])}}
+                                               <!-- {{Form::text('state', $cuento->state, ['class' => 'cuento_input','id'=>'state']) }}-->
                                                 {{$errors->first('state',"<span class=error>:message</span>")}}
                                             </div>
 
@@ -72,7 +76,7 @@
                                     <div class="form-group">
 
                                         <div class="fileUpload">
-                                            <span>Subir Imagen<span id="number_files"></span></span>
+                                            <span>Subir Imagenes<span id="number_files"></span></span>
                                             {{Form::file('image',['name'=>'image[]','multiple'=>true,'accept'=>'image/*','class'=>'upload','id'=>'select_image'])}}
                                             <!--<input type="file" name="image[]" accept="image/*" class="upload" id="select_image" multiple>-->
                                         </div>

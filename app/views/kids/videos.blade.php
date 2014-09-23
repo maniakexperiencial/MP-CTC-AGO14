@@ -11,12 +11,13 @@
 @stop
 
 @section('filter')
-<select id="Selectbox">
+<!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
     <option value="{{URL::to('kids/videos/6')}}">6-7</option>
     <option value="{{URL::to('kids/videos/8')}}">8-12</option>
 
-</select>
+</select>-->
+
 @stop
 
 
@@ -152,6 +153,8 @@ Videos
         jQuery("#Selectbox").change(function () {
             location.href = jQuery(this).val();
         });
+
+        $('.Action_bar').hide();
 
     });
 

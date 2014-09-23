@@ -11,9 +11,14 @@ class KidsController extends Controller {
     {
         return View::make('kids.index');
     }
-	public function cuentos($category = 0)
+	public function cuentos($category = 3)
 	{
-        switch($category){
+        if($category==3){
+            $cuentos=Cuento::orderBy('id', 'DESC')->paginate(6);
+        }else{
+            $cuentos=Cuento::where('state','=',$category)->orderBy('id', 'DESC')->paginate(6);
+        }
+       /* switch($category){
             case 6:
                 $filter='6-7';
                 $cuentos=Cuento::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(6);
@@ -25,7 +30,7 @@ class KidsController extends Controller {
             default:
                 $cuentos=Cuento::orderBy('id', 'DESC')->paginate(6);
                 break;
-        }
+        }*/
 
         //$cuentos=Cuento::paginate(6);
      /*  if(!Cookie::has('ip_virtual')){
@@ -36,6 +41,7 @@ class KidsController extends Controller {
         return View::make('kids.cuentos',['cuentos'=>$cuentos,'count'=>0]);
         //return $category;
 	}
+
     public function videos($category=0)
     {
         switch($category){
@@ -48,7 +54,8 @@ class KidsController extends Controller {
                 $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
                 break;
             default:
-                $videos=Video::orderBy('id', 'DESC')->paginate(4);
+               /* $videos=Video::orderBy('id', 'DESC')->paginate(4);*/
+                $videos=Video::where('category','=','niños')->orderBy('id', 'DESC')->paginate(4);
                 break;
         }
         return View::make('kids.videos',['videos'=>$videos,'count'=>0]);

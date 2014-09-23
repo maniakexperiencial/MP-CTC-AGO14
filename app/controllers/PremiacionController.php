@@ -31,7 +31,8 @@ class PremiacionController extends Controller {
                 $videos=Video::where('category','=',$filter)->orderBy('id', 'DESC')->paginate(4);
                 break;
             default:
-                $videos=Video::orderBy('id', 'DESC')->paginate(4);
+                /* $videos=Video::orderBy('id', 'DESC')->paginate(4);*/
+                $videos=Video::where('category','=','evento de premiación')->orderBy('id', 'DESC')->paginate(4);
                 break;
         }
 
