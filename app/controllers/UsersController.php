@@ -260,15 +260,20 @@ class UsersController extends Controller
     public function likes_h(){
 
       $status=Input::get('status1');
+
         $historia=Historia::where('id','=',Input::get('document_id'))->first();
 
 
         $id=Input::get('document_id');
-        //setcookie("likeH"."_".$id, "", time()-3600);
-        if(isset($_COOKIE['likeH'."_".$id])) // check cookie
+        $cookieName = "likeH_".$id;
+
+
+        if(isset($_COOKIE[$cookieName])) // check cookie
         {
             /*return array('cockies'=>$_COOKIE, 'id'=>$id);*/
+            /*Cookie::make('name', '123', 100);*/
             return 'have cookie';
+
         }
 
 
@@ -278,7 +283,7 @@ class UsersController extends Controller
                 'ip'=>$virtual_ip
             ]));
             $expire=time()+60*60*24*30;
-            setcookie("likeH"."_".$id,$virtual_ip, $expire);
+            setcookie($cookieName,$virtual_ip, $expire,'/');
             return 'añadido';
         }
 
@@ -318,7 +323,7 @@ class UsersController extends Controller
             $expire=time()+60*60*24*30;
             /*  Cookie::forever("likeDislike"."_".$id,"likeDislike"."_".$id);*/
             /* Cookie::make("likeDislike"."_".$id, "likeDislike"."_".$id, $expire);*/
-            setcookie("ViewH"."_".$id,$virtual_ip, $expire);
+            setcookie("ViewH"."_".$id,$virtual_ip, $expire,'/');
             /*Cookie::queue("ViewH"."_".$id,$virtual_ip,$expire);*/
             return 'añadido';
         }

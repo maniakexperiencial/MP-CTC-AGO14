@@ -99,9 +99,14 @@ Historias
                             </div>
                             </a>
                             <div class="historia_likeview_wrap">
+                                <?php
+                                    $cookieName = "likeH_".$historia->id;
+                                    //dd($_COOKIE[$cookieName]);
+                                ?>
                                 <img style="max-height: 16px" data-id="{{$historia->id}}" data-status="inactive" class="historia_like"
 
-                                    <?php if(isset($_COOKIE['likeH'."_".$historia->id])){
+                                    <?php
+                                    if(isset($_COOKIE[$cookieName])){
                                         echo "src='".URL::to('/img/likes_active.png')."'";
                                     }else{
                                         echo "src='".URL::to('/img/likesh.png')."'";
@@ -119,6 +124,8 @@ Historias
                             </div>
 
                         </div>
+
+
 
         @endforeach
         <!--<div class="hidden_history" id="historia2" >
@@ -222,6 +229,7 @@ Historias
             var urlaction="{{ URL::route('likeSystemH') }}";
             var objeto=jQuery(this);
             var document_id=objeto.data('id');
+
             var status1=objeto.attr('data-status');
             var numero_likes="";
             //alert(type);
