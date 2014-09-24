@@ -630,6 +630,13 @@ a.active{
     width: 20% !important;
     margin-right: 10% !important;
 }
+.btn_blue{
+    background-color: #0057a8 !important;
+    color: white !important;
+    border:none;
+    padding: 5px 10px !important;
+    width:auto !important;
+}
 /*----------------KIDS VIDEO------------*/
 .video_box{
     /*width: 31%;*/

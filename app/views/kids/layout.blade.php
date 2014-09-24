@@ -88,7 +88,7 @@
         <div class="center_container">
 
             <div class="column" id="center_actionbar">
-                <input type="text" id="Searchbox" placeholder="Search">
+                <!--<input type="text" id="Searchbox" placeholder="Search">-->
                 @yield('filter')
                 <!--<select id="Selectbox">
                     <option value="" selected>Categoria</option>

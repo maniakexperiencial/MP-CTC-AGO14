@@ -97,7 +97,7 @@
         <!--<div class="ui one column page grid">-->
         <div class="center_container">
             <div class="column" id="center_actionbar">
-                <input type="text" id="Searchbox" placeholder="Search">
+                <!--<input type="text" id="Searchbox" placeholder="Search">-->
                 @yield('filter')
              </div>
         </div>

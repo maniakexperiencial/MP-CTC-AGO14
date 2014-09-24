@@ -24,7 +24,15 @@ $selection=0;
 @endforeach
 @endif
 
+
 {{Form::select('selectbox', $states, null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
+<!--<select id="SelectCategory">
+    <option value="" selected>Categoria</option>
+    <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
+    <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>
+
+</select>
+<input type="submit" class="btn_blue" value="Buscar">-->
 <!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
     <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
