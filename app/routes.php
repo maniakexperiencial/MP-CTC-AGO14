@@ -175,6 +175,7 @@ Route::post('pd/view',['as'=>'viewSystemH','uses'=>'UsersController@views_h']);
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
 Route::get('kids/cuentos/{category?}', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
+Route::post('kids/cuentos/', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
 Route::get('kids/videos/{category?}', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
 Route::get('kids/bases/{base?}', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
 

@@ -42,6 +42,16 @@ class KidsController extends Controller {
         //return $category;
 	}
 
+    public function cuentos_clasif(){
+       /* if($category==3){
+            $cuentos=Cuento::orderBy('id', 'DESC')->paginate(6);
+        }else{
+            $cuentos=Cuento::where('state','=',$category)->orderBy('id', 'DESC')->paginate(6);
+        }
+        return View::make('kids.cuentos',['cuentos'=>$cuentos,'count'=>0]);*/
+
+    }
+
     public function videos($category=0)
     {
         switch($category){

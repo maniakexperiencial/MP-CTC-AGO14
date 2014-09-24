@@ -513,7 +513,8 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     /*width: 196px;
     height: 230px;*/
     width: 170px;
-    height: 200px;
+    min-height:200px;;
+    height: auto;
     float: left;
     margin: 5px;
     margin-left: 10px;
@@ -546,6 +547,9 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     /*font-size: 18px;*/
     font-size: 16px;
     color:#c8e4ff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .cuento_age{
     width: 100%;
