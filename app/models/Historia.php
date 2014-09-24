@@ -18,4 +18,15 @@ class Historia extends \Eloquent {
     }
 
 
+    public function likes()
+    {
+        return $this->hasMany('HistoriaLike');
+    }
+    public function views()
+    {
+        return $this->hasMany('HistoriaView');
+    }
+
+
+
 }

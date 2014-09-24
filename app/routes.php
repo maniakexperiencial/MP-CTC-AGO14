@@ -96,6 +96,10 @@ Route::group(array("before" => "auth"), function () {
 
         Route::post('dashboard_juez/evaluate/', array("as" => "evaluate", "uses" => "AcJuezController@evaluate"));
 
+                /*-----------------EDITAR EVALUAR------*/
+        Route::get('dashboard_juez/evaluate/edit/{document_id}/{type}', array("as" => "evaluate_edit", "uses" => "AcJuezController@evaluate_chindex"));
+        Route::post('dashboard_juez/evaluate/change/{preselect}', array("as" => "evaluate_change", "uses" => "AcJuezController@evaluate_change"));
+
 
     });
 
@@ -160,6 +164,9 @@ Route::post('changepass/{email}',['as' => 'changepass_route','uses' => 'UsersCon
 
 Route::post('kids/like',['as'=>'likeSystem','uses'=>'UsersController@likes']);
 Route::post('kids/view',['as'=>'viewSystem','uses'=>'UsersController@views']);
+
+Route::post('pd/like',['as'=>'likeSystemH','uses'=>'UsersController@likes_h']);
+Route::post('pd/view',['as'=>'viewSystemH','uses'=>'UsersController@views_h']);
 
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);

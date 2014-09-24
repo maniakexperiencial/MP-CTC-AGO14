@@ -684,6 +684,8 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     text-align:left;
     font-size: 1rem;
     padding-bottom:10px;
+    max-height: 44px;
+    overflow: auto;
 
 }
 .historia_option_wrap{
@@ -934,7 +936,7 @@ a.active{
     text-align: center;
     margin-top: 10%;
 }
-.evaluar_btn{
+.evaluar_btn,.evaluar_btn_ch{
     width: 100px;
     padding: 5px 15px;
     background-color: white;
@@ -942,6 +944,7 @@ a.active{
     margin: auto;
     cursor: pointer;
 }
+
 /*FOR cuentos Lightbox*/
 
 .hidden_cuento{

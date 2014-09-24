@@ -148,7 +148,7 @@ class UsersController extends Controller
     }
 
 
-    ////////////////////LIKES/////////////////////
+    ////////////////////LIKES CUENTOS/////////////////////
     public function likes(){
         $status=Input::get('status1');
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
@@ -215,7 +215,7 @@ class UsersController extends Controller
         return 'error algo paso';
     }
 
-    ////////////////////VIEWS/////////////////////
+    ////////////////////VIEWS CUENTOS/////////////////////
     public function views(){
 
         $cuento=Cuento::where('id','=',Input::get('document_id'))->first();
@@ -254,6 +254,92 @@ class UsersController extends Controller
 
         return 'error algo paso';
     }
+
+
+/////////////////////LIKES HISTORIAS/////////////////////////////
+    public function likes_h(){
+
+      $status=Input::get('status1');
+        $historia=Historia::where('id','=',Input::get('document_id'))->first();
+
+
+        $id=Input::get('document_id');
+        //setcookie("likeH"."_".$id, "", time()-3600);
+        if(isset($_COOKIE['likeH'."_".$id])) // check cookie
+        {
+            /*return array('cockies'=>$_COOKIE, 'id'=>$id);*/
+            return 'have cookie';
+        }
+
+
+        else{
+            $virtual_ip=Request::getClientIp().str_random(6);
+            $historia->likes()->save(new HistoriaLike([
+                'ip'=>$virtual_ip
+            ]));
+            $expire=time()+60*60*24*30;
+            setcookie("likeH"."_".$id,$virtual_ip, $expire);
+            return 'añadido';
+        }
+
+        return 'error algo paso';
+    }
+
+
+    ////////////////////VIEWS HISTORIAS/////////////////////
+    public function views_h(){
+
+        $historia=Historia::where('id','=',Input::get('document_id'))->first();
+
+        /* $view=CuentoView::where('cuento_id','=',Input::get('document_id'))->where('ip','=',Request::getClientIp())->first();
+         if($view){
+
+         }else{
+             $cuento->views()->save(new CuentoView([
+                 'ip'=>Request::getClientIp()
+             ]));
+             return 'añadido';
+         }*/
+
+
+        $id=Input::get('document_id');
+        /*setcookie("ViewH"."_".$id, "", time()-3600);*/
+        if(isset($_COOKIE['ViewH'."_".$id])) // check cookie
+        {
+            // if exist display message
+            return 'have cookie';
+        }
+
+        else{
+            $virtual_ip=Request::getClientIp().str_random(6);
+            $historia->views()->save(new HistoriaView([
+                'ip'=>$virtual_ip
+            ]));
+            $expire=time()+60*60*24*30;
+            /*  Cookie::forever("likeDislike"."_".$id,"likeDislike"."_".$id);*/
+            /* Cookie::make("likeDislike"."_".$id, "likeDislike"."_".$id, $expire);*/
+            setcookie("ViewH"."_".$id,$virtual_ip, $expire);
+            /*Cookie::queue("ViewH"."_".$id,$virtual_ip,$expire);*/
+            return 'añadido';
+        }
+
+
+
+
+        return 'error algo paso';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     ///////////////////////////RECOVER PASS/////////

@@ -111,7 +111,8 @@
                         if($preselect->status==0){
                             echo "<a href=#evaluar$cuento->id  data-lightbox-type=inline  class=underline>evaluar</a></td>";
                         }else{
-
+                            $route=URL::route('evaluate_edit',array('document_id'=>$cuento->id,'type'=>0));
+                            echo "<a href=$route  data-lightbox-type=inline  class=underline>editar</a>";
                         }
 
                         if($preselect->status==0){
@@ -185,6 +186,9 @@
                             echo "<a href=#evaluarh$historia->id  data-lightbox-type=inline  class=underline>evaluar</a>";
                         }else{
 
+                            $route=URL::route('evaluate_edit',array('document_id'=>$historia->id,'type'=>1));
+
+                            echo "<a href=$route  data-lightbox-type=inline  class=underline>editar</a>";
                         }
                         if($preselect->status==0){
                             echo "<td></td>";
@@ -234,12 +238,14 @@
         var evaluacionmensaje="";
 
 
+
         //LIGHTBOX//
         jQuery('a').nivoLightbox({
             afterShowLightbox: function(lightbox){
                 evaluacioncontenido="";
                 evaluacionoriginal="";
                 evaluacionmensaje="";
+
             }
         });
 
@@ -264,6 +270,7 @@
                // evaluacioncontenido=$(this).val();
                //$(this).attr('value',$(this).val());
         });
+
 
 
 
@@ -303,6 +310,9 @@
                     }
                 });
         });
+
+
+
 
 
         $('#table_preselect').dataTable( {

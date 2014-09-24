@@ -94,6 +94,32 @@ class AcJuezController extends Controller
        return  Input::get('document_id');
    }
 
+    public function evaluate_chindex($documentid,$type){
+           $preselect=Preselect::where('document_id','=',$documentid)->where('type','=',$type)->first();
+            return View::make('admin.account.Juez.edit_eval',['preselect'=>$preselect]);
+        /*return $preselect->eval1.$preselect->eval2.$preselect->eval3;*/
+
+    }
+     public function evaluate_change($preselect_id){
+         $validator = Validator::make(array('id'=>$preselect_id), array(
+             'id'=>'exists:preselects,id',
+
+         ));
+         if(!$validator->fails()){
+             $user_auth=Auth::user();
+             $average=(Input::get('eval1')+Input::get('eval2')+Input::get('eval3'))/3;
+             $preselect=Preselect::where('id','=',$preselect_id)->first();
+             $preselect->eval1=Input::get('eval1');
+             $preselect->eval2=Input::get('eval2');
+             $preselect->eval3=Input::get('eval3');
+             $preselect->status=1;
+             $preselect->average=$average;
+             $preselect->save();
+             return Redirect::back()->with('mensaje_request','<span class=success_message>Evaluación Actualizada Correctamente</span>');
+         }
+         return Redirect::back()->with('mensaje_request','<span class=error>Evaluación Erronea</span>');
+     }
+
 
 
 }

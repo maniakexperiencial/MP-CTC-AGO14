@@ -685,6 +685,7 @@ a.active{
 
 /*-------------------PAPAS HISTORIAS---------*/
 .historia_box{
+    position: relative;
     width: 181px;
     /*height:130px;*/
     min-height: 130px;
@@ -723,7 +724,24 @@ a.active{
     width: 100%;
     text-align:left;
     font-size: 1em;
+    padding-bottom:10px;
+    max-height: 44px;
+    overflow: auto;
 
+}
+.historia_likeview_wrap{
+    position: absolute;
+    bottom: 0px;
+}
+.historia_likeview_wrap img{
+    max-height: 16px;
+}
+.historia_likeview_wrap span{
+   font-size: 14px;
+    color: #cdc3cd;
+}
+.historia_like{
+    cursor: pointer;
 }
 /*PREMIACION*/
 .imagen_absoluta{

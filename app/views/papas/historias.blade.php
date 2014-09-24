@@ -82,21 +82,44 @@ Historias
     <div class="sixteen wide column">
         @foreach($historias as $historia)
                     <div class="hidden_history" id="historia{{$historia->id}}" >
+
                         <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$historia->title}}</h2><h4>-{{$historia->name}}, {{$historia->state}}</h4></div>
 
                         <div class="hidden_history_content">
                             <p>{{nl2br($historia->text)}}</p>
                         </div>
                     </div>
-                    <a href="#historia{{$historia->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+
                         <div class="historia_box">
+                            <a href="#historia{{$historia->id}}" data-id="{{$historia->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1" class="view_click"  >
                             <div class="historia_title">{{$historia->title}}</div>
                             <div class="historia_info">
                                 -{{$historia->name}}, {{$historia->state}}
 
                             </div>
+                            </a>
+                            <div class="historia_likeview_wrap">
+                                <img style="max-height: 16px" data-id="{{$historia->id}}" data-status="inactive" class="historia_like"
+
+                                    <?php if(isset($_COOKIE['likeH'."_".$historia->id])){
+                                        echo "src='".URL::to('/img/likes_active.png')."'";
+                                    }else{
+                                        echo "src='".URL::to('/img/likesh.png')."'";
+                                    }
+                                    ?>
+
+                                    >
+                                <span class="number_likes">{{$historia->likes->count()}}</span>
+                                <img style="max-height: 16px"  data-status="inactive" class="historia_view"
+                                    <?php
+                                    echo "src='".URL::to('/img/viewsh.png')."'";
+                                    ?>
+                                    >
+                                <span class="number_views">{{$historia->views->count()}}</span>
+                            </div>
+
                         </div>
-                    </a>
+
         @endforeach
         <!--<div class="hidden_history" id="historia2" >
             <div class="hidden_history_title"><h2 style="margin-top: 0;">Titulo del Cuento</h2><h4>-Jose García 13 años</h4></div>
@@ -192,6 +215,124 @@ Historias
         jQuery("#Selectbox").change(function () {
             location.href = "{{URL::to('papas/historias')}}"+"/"+jQuery(this).val();
         });
+
+
+        ///////////LIKES////////////
+        $('body').on('click', '.historia_like', function() {
+            var urlaction="{{ URL::route('likeSystemH') }}";
+            var objeto=jQuery(this);
+            var document_id=objeto.data('id');
+            var status1=objeto.attr('data-status');
+            var numero_likes="";
+            //alert(type);
+            var parameters={document_id: document_id,status1: status1};
+            //alert(status1+document_id);
+
+            jQuery.ajax(
+                {
+                    url : urlaction,
+                    type: "POST",
+                    data : parameters,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        //data: return data from server
+                        //jQuery('.notab').append(data);
+                        //alert(data);
+                        console.log(data);
+                        switch(data){
+                            case 'añadido':
+                                objeto.attr('data-status','active');
+                                objeto.attr('src',"{{ URL::to('/img/likes_active.png') }}");
+                                numero_likes=parseInt(objeto.parent().find('.number_likes').text());
+                                numero_likes+=1;
+                                objeto.parent().find('.number_likes').text(numero_likes);
+                                break;
+                            case 'eliminado':
+                                objeto.attr('data-status','inactive');
+                                objeto.attr('src',"{{ URL::to('/img/likes.png') }}");
+                                numero_likes=parseInt(objeto.parent().find('.number_likes').text());
+                                if(numero_likes==0){
+
+                                }else{
+                                    numero_likes-=1;
+                                    objeto.parent().find('.number_likes').text(numero_likes);
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+
+
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        //if fails
+                        alert(errorThrown);
+                    }
+                });
+        });
+
+
+        ////////////////////////////HISTORIAS VIEWS///////////////
+        $('body').on('click', '.view_click', function() {
+           /*alert('entro');*/
+            var urlaction="{{ URL::route('viewSystemH') }}";
+
+            var document_id=jQuery(this).attr('data-id');
+            var objeto=jQuery(this);
+            //alert(document_id);
+
+            var number_views="";
+            //alert(type);
+            var parameters={document_id: document_id};
+
+            jQuery.ajax(
+                {
+                    url : urlaction,
+                    type: "POST",
+                    data : parameters,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        //data: return data from server
+                        //jQuery('.notab').append(data);
+                        /*alert(data);*/
+
+                        switch(data){
+                            case 'añadido':
+
+
+
+                                number_views=parseInt(objeto.parent().find('.number_views').text());
+                                number_views+=1;
+                                objeto.parent().find('.number_views').text(number_views);
+                                break;
+
+                            default:
+                                break;
+                        }
+
+
+
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        //if fails
+                        alert(errorThrown);
+                    }
+                });
+        });
+
+
+
+
+
+
+
+
+
+
     });
 
 </script>
