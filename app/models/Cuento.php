@@ -2,7 +2,7 @@
 
 class Cuento extends \Eloquent {
     //protected $table = 'cuentos';
-	protected $fillable = ['title','name','category','age','state','text'];
+	protected $fillable = ['title','name','category','age','state','text','place'];
 
     public function user()
     {

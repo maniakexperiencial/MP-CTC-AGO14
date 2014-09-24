@@ -78,6 +78,10 @@ Route::group(array("before" => "auth"), function () {
         Route::get('dashboard_admin/historia/edit/{idhistoria}', array("as" => "edithistoria", "uses" => "AdminController@edit_historia_index"));
         Route::post('dashboard_admin/historia/edit/{idcuento}', array("as" => "edit_historiaRoute", "uses" => "AdminController@edit_historia"));
 
+        /*---WIN POSITION--*/
+        Route::get('win_position/{type}/{document_id}', array("as" => "win_position", "uses" => "AdminController@win_position_index"));
+        Route::post('position_win/{type}/{document_id}', array("as" => "position_win", "uses" => "AdminController@win_position"));
+
     });
 
 
@@ -172,24 +176,24 @@ Route::post('pd/view',['as'=>'viewSystemH','uses'=>'UsersController@views_h']);
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
 Route::get('kids/cuentos/{category?}', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
 Route::get('kids/videos/{category?}', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
-Route::get('kids/bases', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
+Route::get('kids/bases/{base?}', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
 
 /*PAPAS*/
 Route::get('papas', ['as' => 'papas', 'uses' => 'PapasController@index']);
 Route::get('papas/historias/{category?}', ['as' => 'papas_historias', 'uses' => 'PapasController@historias']);
 Route::get('papas/videos/{category?}', ['as' => 'papas_videos', 'uses' => 'PapasController@videos']);
-Route::get('papas/bases', ['as' => 'papas_bases', 'uses' => 'PapasController@bases']);
+Route::get('papas/bases/{base?}', ['as' => 'papas_bases', 'uses' => 'PapasController@bases']);
 
 /*DOCTORS*/
 Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index']);
 Route::get('doctores', ['as' => 'doctores', 'uses' => 'DoctoresController@index']);
 Route::get('doctores/historias/{category?}', ['as' => 'doctores_historias', 'uses' => 'DoctoresController@historias']);
-Route::get('doctores/bases', ['as' => 'doctores_bases', 'uses' => 'DoctoresController@bases']);
+Route::get('doctores/bases/{base?}', ['as' => 'doctores_bases', 'uses' => 'DoctoresController@bases']);
 Route::get('doctores/videos/{category?}', ['as' => 'doctores_videos', 'uses' => 'DoctoresController@videos']);
 
 /*PREMIACION*/
 Route::get('premiacion', ['as' => 'premiacion', 'uses' => 'PremiacionController@index']);
-Route::get('premiacion/ganadores', ['as' => 'premiacion_ganadores', 'uses' => 'PremiacionController@ganadores']);
+Route::get('premiacion/ganadores/{category?}', ['as' => 'premiacion_ganadores', 'uses' => 'PremiacionController@ganadores']);
 Route::get('premiacion/galeria', ['as' => 'premiacion_galeria', 'uses' => 'PremiacionController@galeria']);
 Route::get('premiacion/videos/{category?}', ['as' => 'premiacion_videos', 'uses' => 'PremiacionController@videos']);
 Route::get('premiacion/resumen', ['as' => 'premiacion_resumen', 'uses' => 'PremiacionController@resumen']);

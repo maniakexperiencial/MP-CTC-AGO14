@@ -11,9 +11,63 @@ class PremiacionController extends Controller {
     {
         return View::make('premiacion.index');
     }
-    public function ganadores()
+    public function ganadores($category=3)
     {
-        return View::make('premiacion.ganadores');
+        /*$category="6-7";
+        $category="8-12";
+        $category="8-12";*/
+
+        switch($category){
+            case '6-7':
+            case '8-12':
+                $cuento1=Cuento::where('place','=',1)->where('category','=',$category)->first();
+                $cuento2=Cuento::where('place','=',2)->where('category','=',$category)->first();
+                $cuento3=Cuento::where('place','=',3)->where('category','=',$category)->first();
+                $cuento4=Cuento::where('place','=',4)->where('category','=',$category)->first();
+                $cuento5=Cuento::where('place','=',5)->where('category','=',$category)->first();
+                return View::make('premiacion.ganadores',[
+                    'winner1a'=>$cuento1,
+                    'winner2a'=>$cuento2,
+                    'winner3a'=>$cuento3,
+                    'winner4a'=>$cuento4,
+                    'winner5a'=>$cuento5
+                ]);
+                break;
+
+            case 'papas':
+            case 'doctores':
+                    $historia1=Historia::where('place','=',1)->where('category','=',$category)->first();
+                    $historia2=Historia::where('place','=',2)->where('category','=',$category)->first();
+                    $historia3=Historia::where('place','=',3)->where('category','=',$category)->first();
+                    $historia4=Historia::where('place','=',4)->where('category','=',$category)->first();
+                    $historia5=Historia::where('place','=',5)->where('category','=',$category)->first();
+                    return View::make('premiacion.ganadores',[
+                        'winner1a'=>$historia1,
+                        'winner2a'=>$historia2,
+                        'winner3a'=>$historia3,
+                        'winner4a'=>$historia4,
+                        'winner5a'=>$historia5
+                    ]);
+                break;
+
+            default:
+                $category="6-7";
+                $cuento1=Cuento::where('place','=',1)->where('category','=',$category)->first();
+                $cuento2=Cuento::where('place','=',2)->where('category','=',$category)->first();
+                $cuento3=Cuento::where('place','=',3)->where('category','=',$category)->first();
+                $cuento4=Cuento::where('place','=',4)->where('category','=',$category)->first();
+                $cuento5=Cuento::where('place','=',5)->where('category','=',$category)->first();
+                return View::make('premiacion.ganadores',[
+                    'winner1a'=>$cuento1,
+                    'winner2a'=>$cuento2,
+                    'winner3a'=>$cuento3,
+                    'winner4a'=>$cuento4,
+                    'winner5a'=>$cuento5
+                ]);
+                break;
+        }
+
+
     }
     public function galeria()
     {

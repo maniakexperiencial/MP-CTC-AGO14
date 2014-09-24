@@ -583,6 +583,9 @@ a.active{
     height: auto;
     /*font-size: 21px;*/
     font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .cuento_by{
     width: 100%;
@@ -590,6 +593,9 @@ a.active{
     /*font-size: 18px;*/
     font-size: 16px;
     color:#c8e4ff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .cuento_age{
     width: 100%;
@@ -719,6 +725,10 @@ a.active{
     margin-top: 10%;
     font-size: 1.5em;
 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
 }
 .historia_info{
     width: 100%;
@@ -727,6 +737,9 @@ a.active{
     padding-bottom:10px;
     max-height: 44px;
     overflow: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 }
 .historia_likeview_wrap{

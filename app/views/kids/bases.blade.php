@@ -47,7 +47,29 @@ Bases
 
 @section('content_center')
 <div class="center_text">
-<img src="{{ URL::to('/img/base1.png') }}">
+    <img src="<?= URL::to('/img/'.$source.'') ?>">
+
+</div>
+<div class="pagination_wrap" style="margin-top:-10px;z-index: 9999;">
+    <!--<ul class="number_page" ><a href="#"><li><img src="http://localhost:8000/img/back.png" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="http://localhost:8000/img/next.png" ></li></a></ul>-->
+    <ul class="number_page">
+        @if($page==1)
+            <li><a href="#" class="item disabled"><img src="{{URL::to('/img/back.png')}}"></a></li>
+            <a href="{{URL::route('kids_bases')}}" class="item active">1</a>
+            <?php $route=URL::route('kids_bases',array('bases'=>2)); ?>
+            <a href="<?=$route?>" class="item">2</a>
+            <li><a href="<?=$route?>" class="item"><img src="{{URL::to('/img/next.png')}}"></a></li>
+        @else
+        <li><a href="{{URL::route('kids_bases')}}" class="item"><img src="{{URL::to('/img/back.png')}}"></a></li>
+        <a href="{{URL::route('kids_bases')}}" class="item">1</a>
+        <?php $route=URL::route('kids_bases',array('bases'=>2)); ?>
+        <a href="<?=$route?>" class="item active">2</a>
+        <li><a href="<?=$route?>" class="item disabled"><img src="{{URL::to('/img/next.png')}}"></a></li>
+        @endif
+
+    </ul>
+
+
 </div>
 
 

@@ -80,16 +80,18 @@ class AdminController extends Controller
         }
         /*PAPAS*/
         $report[]=array(' ',' ',' ',' ',' ',' ');
-        $report[]=array('--- ','--- ','PADRES ','--- ','--- ','--- ');
+        $report[]=array('--- ','--- ','PADRES ','--- ','--- ','--- ','--- ','--- ');
 
-        $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion');
+        $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion','Views','Likes');
         $historias=Historia::all();
         foreach($historias as $historia){
             $user=User::where('id','=',$historia->user_id)->first();
 
             if($historia->category=='padres'){
                 $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
-                $report[]=array($user->details->name,$historia->title,$user->details->phone,$user->email,$historia->state,$average);
+                $views=$historia->views->count();
+                $likes=$historia->likes->count();
+                $report[]=array($user->details->name,$historia->title,$user->details->phone,$user->email,$historia->state,$average,$views,$likes);
             }
 
 
@@ -98,14 +100,16 @@ class AdminController extends Controller
         /*DOCTORES*/
         $historias=Historia::all();
         $report[]=array(' ',' ',' ',' ',' ',' ',' ');
-        $report[]=array('--- ','---','--- ','DOCTORES ','--- ','--- ','--- ');
-         $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion','Institucion');
+        $report[]=array('--- ','---','--- ','DOCTORES ','--- ','--- ','--- ','--- ','--- ');
+         $report[]=array('Nombre','Nombre de la Historia','Teléfono','Correo','Estado','Calificacion','Institucion','Views','Likes');
         foreach($historias as $historia){
             $user=User::where('id','=',$historia->user_id)->first();
 
             if($historia->category=='doctores'){
                 $average=Preselect::where('type','=','1')->where('status','=','1')->where('document_id','=',$historia->id)->groupBy('document_id')->avg('average');
-                $report[]=array($user->details->name,$historia->title,$user->details->phone,$user->email,$historia->state,$average,$user->details->institution);
+                $views=$historia->views->count();
+                $likes=$historia->likes->count();
+                $report[]=array($user->details->name,$historia->title,$user->details->phone,$user->email,$historia->state,$average,$user->details->institution,$views,$likes);
             }
 
 
@@ -356,6 +360,8 @@ public function edit_historia($historia_id){
         ]));
         return Redirect::back()->with('mensaje_request','<span class=success_message>Video Subido Correctamente</span>');
     }
+
+
 //////EDIT VIDEO//////
 public function edit_video_index($idvideo){
         $video=Video::find($idvideo);
@@ -389,6 +395,41 @@ public function edit_video_index($idvideo){
         $video->delete();
         return '<span class=success_message>Video eliminada</span>';
     }
+
+
+ /////////////////////WINNER////////////////
+    public function win_position_index($type,$document_id){
+
+        return View::make('admin.account.Admin.win_position',['type'=>$type,'document_id'=>$document_id]);
+        /*return $document_id.$type;*/
+    }
+    public function win_position($type,$document_id){
+        switch($type){
+            case 0:
+                $cuento=Cuento::find($document_id);
+                $cuento->place=Input::get('win_position');
+                $cuento->save();
+                break;
+            case 1:
+                $historia=Historia::find($document_id);
+                $historia->place=Input::get('win_position');
+                $historia->save();
+                break;
+            default:
+                break;
+        }
+        return Redirect::route('finalist_admin');
+        /*return $document_id.$type;*/
+    }
+
+
+
+
+
+
+
+
+
 
 /////////////////////////////DELETE USER///////////////////
      public function delete_user(){

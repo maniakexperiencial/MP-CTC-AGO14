@@ -31,7 +31,7 @@
                     <div class="three wide column"  style="height:100%">
 
 
-                        <img  border="0" src="{{ URL::to('/img/copa.png') }}" >
+                        <!--<img  border="0" src="{{ URL::to('/img/copa.png') }}" >-->
 
 
 

@@ -55,9 +55,17 @@ class DoctoresController extends Controller {
         }
         return View::make('doctores.videos',['videos'=>$videos,'count'=>0]);
     }
-    public function bases()
+    public function bases($base=1)
     {
-        return View::make('doctores.bases');
+        if($base==1){
+            $source='basesmedicos1.png';
+            $page=1;
+        }else{
+            $page=2;
+            $source='basesmedicos2.png';
+        }
+
+        return View::make('doctores.bases',['source'=>$source,'page'=>$page]);
     }
 
 

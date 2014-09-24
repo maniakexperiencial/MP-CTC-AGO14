@@ -2,7 +2,7 @@
 
 class Historia extends \Eloquent {
 
-	protected $fillable = ['title','name','category','state','text'];
+	protected $fillable = ['title','name','category','state','text','place'];
 
     public function user()
     {

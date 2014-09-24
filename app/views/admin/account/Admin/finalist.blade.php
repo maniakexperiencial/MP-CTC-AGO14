@@ -35,6 +35,7 @@
                 <th class="t_white">Nombre del Cuento o Historia</th>
                 <th class="t_white">Categoría</th>
                 <th class="t_white">Calificación</th>
+                <th class="t_white">Lugar</th>
                 <!--<th class="t_white">Acciones</th>-->
             </tr>
             </thead>
@@ -55,16 +56,26 @@
                            </tr>";
                 }*/
             $preselects=Preselect::where('type','=','0')->where('status','=','1')->groupBy('document_id')->orderBy('average', 'DESC')->get();
+
+
+
             foreach($preselects as $preselect){
                 $cuento=Cuento::where('id','=',$preselect->document_id)->first();
                 if($cuento){
                     $preselcuent=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','0')->avg('average');
+                    $route=URL::route('win_position',array('document_id'=>$cuento->id,'type'=>0));
                     echo "<tr class=gradeA>
                               <td>$cuento->name</td>
                               <td>$cuento->title</td>
                               <td>$cuento->category</td>
-                              <td>".number_format($preselcuent,2)."</td>
-                           </tr>";
+                              <td>".number_format($preselcuent,2)."</td>";
+                            if($cuento->place!=0){
+                                echo "<td>".$cuento->place."</td>";
+                            }else{
+                                echo "<td><a href=$route  data-lightbox-type=inline  class=underline>Asignar Lugar</a></td>";
+                            }
+
+                           echo "</tr>";
                 }else{
 
                 }
@@ -74,12 +85,21 @@
             foreach($preselects as $preselect){
                 $historia=Historia::where('id','=',$preselect->document_id)->first();
                 $preselcuent=Preselect::where('document_id','=',$preselect->document_id)->where('type','=','1')->avg('average');
-                echo "<tr class=gradeA>
+                $route=URL::route('win_position',array('document_id'=>$historia->id,'type'=>1));
+                 echo "<tr class=gradeA>
                               <td>$historia->name</td>
                               <td>$historia->title</td>
                               <td>$historia->category</td>
-                              <td>".number_format($preselcuent,2)."</td>
-                           </tr>";
+                              <td>".number_format($preselcuent,2)."</td>";
+
+                                if($historia->place!=0){
+                                    echo "<td>".$historia->place."</td>";
+                                }else{
+                                    echo "<td><a href=$route  data-lightbox-type=inline  class=underline>Asignar Lugar</a></td>";
+                                }
+
+
+                           echo "</tr>";
             }
 
             ?>

@@ -59,9 +59,17 @@ class PapasController extends Controller {
         }
         return View::make('papas.videos',['videos'=>$videos,'count'=>0]);
     }
-    public function bases()
+    public function bases($base=1)
     {
-        return View::make('papas.bases');
+        if($base==1){
+            $source='basespapas1.png';
+            $page=1;
+        }else{
+            $page=2;
+            $source='basespapas2.png';
+        }
+
+        return View::make('papas.bases',['source'=>$source,'page'=>$page]);
     }
 
 

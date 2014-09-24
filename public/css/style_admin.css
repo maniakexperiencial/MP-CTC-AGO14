@@ -537,6 +537,8 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     font-size: 18px;
     height: 25px;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .cuento_by{
     width: 100%;
@@ -686,6 +688,9 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     padding-bottom:10px;
     max-height: 44px;
     overflow: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 }
 .historia_option_wrap{

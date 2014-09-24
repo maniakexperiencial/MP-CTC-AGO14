@@ -60,9 +60,19 @@ class KidsController extends Controller {
         }
         return View::make('kids.videos',['videos'=>$videos,'count'=>0]);
     }
-    public function bases()
+    public function bases($base=1)
     {
-        return View::make('kids.bases');
+        if($base==1){
+            $source='bases1.png';
+            $page=1;
+        }else{
+            $page=2;
+            $source='bases2.png';
+        }
+
+        /*$bases=['bases1'=>'base1.png','bases2'=>'base2.png']->paginate(1);*/
+
+        return View::make('kids.bases',['source'=>$source,'page'=>$page]);
     }
 
 
