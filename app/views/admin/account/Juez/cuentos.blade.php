@@ -53,7 +53,9 @@
             <div class="cuento_by">{{ $cuento->name }}</div>
             <div class="cuento_age">{{ $cuento->age }} años, {{$cuento->state}}</div>
             <a href="#cuento<?= $cuento->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-                <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')">
+                    <img src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>" alt="Css Template Preview" />
+                </div>
             </a>
             <div class="ui grid">
                 <div class="row">

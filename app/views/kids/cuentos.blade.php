@@ -24,15 +24,20 @@ $selection=0;
 @endforeach
 @endif
 
+{{ Form::open(['route' => 'kids_cuentos_filter']) }}
 
-{{Form::select('selectbox', $states, null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
-<!--<select id="SelectCategory">
+{{Form::select('state', $states, null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
+<select id="SelectCategory" name="category">
     <option value="" selected>Categoria</option>
-    <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
-    <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>
+    <!--<option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
+    <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>-->
+    <option value="6-7">6-7</option>
+    <option value="8-12">8-12</option>
+
 
 </select>
-<input type="submit" class="btn_blue" value="Buscar">-->
+<input type="submit" class="btn_blue" value="Buscar">
+{{Form::close()}}
 <!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
     <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
@@ -182,7 +187,9 @@ Cuentos
         <div class="cuento_by">{{$cuento->name}}</div>
         <div class="cuento_age">{{$cuento->age}} años, {{$cuento->state}}</div>
         <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
+            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" >
+                <img src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>" alt="Css Template Preview" />
+            </div>
         </a>
         <div class="ui grid">
             <div class="row ">
@@ -235,7 +242,9 @@ Cuentos
         <div class="cuento_by">{{$cuento->name}}</div>
         <div class="cuento_age">{{$cuento->age}} años, {{$cuento->state}}</div>
         <a href="#cuento{{$cuento->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" ></div>
+            <div  data-id="{{$cuento->id}}" class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')" >
+                <img src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>" alt="Css Template Preview" />
+            </div>
         </a>
         <div class="ui grid">
             <div class="row ">
@@ -505,9 +514,9 @@ Cuentos
        /* jQuery("#Selectbox").change(function () {
             location.href = jQuery(this).val();
         });*/
-        jQuery("#Selectbox").change(function () {
+       /* jQuery("#Selectbox").change(function () {
             location.href = "{{URL::to('kids/cuentos')}}"+"/"+jQuery(this).val();
-        });
+        });*/
 
 
         $('body').on('click', '.thumb_images_wrap img', function() {

@@ -11,6 +11,33 @@ class KidsController extends Controller {
     {
         return View::make('kids.index');
     }
+
+    public function cuentos_filter(){
+
+
+
+
+            if(Input::get('state')== '0'){
+
+                    if(Input::get('category')==""){
+                        $cuentos=Cuento::orderBy('id', 'DESC')->orderBy('id', 'DESC')->paginate(6);
+                    }else{
+                        $cuentos=Cuento::where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);
+                    }
+
+            }else{
+
+                    if(Input::get('category')==""){
+                        $cuentos=Cuento::where('state','=',Input::get('state'))->orderBy('id', 'DESC')->paginate(6);
+                    }else{
+                        $cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);
+                    }
+            }
+
+        /*$cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);*/
+       /* $cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);*/
+        return View::make('kids.cuentos',['cuentos'=>$cuentos,'count'=>0]);
+    }
 	public function cuentos($category = 3)
 	{
         if($category==3){

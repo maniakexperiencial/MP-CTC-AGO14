@@ -91,6 +91,8 @@
 
                                     {{$errors->first('image',"<span class=error>:message</span>")}}
                                 </div>
+                                <p style="text-align: center">Es recomendable una imagen de 1928x978px o el mismo aspect radio .</p>
+                                <!--<p style="text-align: center">Es recomendable una imagen de 1928x978px o el mismo aspect radio .</p>-->
                         </div>
 
 

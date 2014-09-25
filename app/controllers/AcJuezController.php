@@ -24,9 +24,24 @@ class AcJuezController extends Controller
         return View::make('admin.account.Juez.cuentos',['cuentos'=>$cuentos]);
     }
 
-    public function historia(){
+    public function historia($category="no"){
+
         $user=User::all();
-        $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+
+        switch($category){
+            case 'papas':
+            case 'doctores':
+                $historias=Historia::orderBy('id', 'DESC')->where('category','=',$category)->paginate(4);
+                break;
+            case 'todos':
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+                break;
+            default:
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+                break;
+        }
+
+        /*$historias=Historia::orderBy('id', 'DESC')->paginate(4);*/
         return View::make('admin.account.Juez.historias',['historias'=>$historias]);
     }
 

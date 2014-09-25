@@ -11,7 +11,7 @@
 {{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
 
 
-
+{{ HTML::script('js/fakecrop/jquery.fakecrop.js') }}
 
 
 
@@ -67,7 +67,9 @@
                                 <div class="cuento_by">{{ $cuento->name }}</div>
                                 <div class="cuento_age">{{ $cuento->age }} años, {{$cuento->state}}</div>
                                 <a href="#cuento<?= $cuento->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-                                    <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')"></div>
+                                    <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')">
+                                        <img src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>" alt="Css Template Preview" />
+                                    </div>
                                 </a>
                                 <div class="ui grid">
                                     <div class="row">
@@ -161,6 +163,12 @@
             var src=$(this).attr('src');
             $('.img_central'+doc_id).attr('src',src);
         });
+
+
+        /*$('.cuento_image img').fakecrop({
+            wrapperWidth : 170,
+            wrapperHeight : 112
+        });*/
 
 
     });

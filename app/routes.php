@@ -30,7 +30,7 @@ Route::group(array("before" => "auth"), function () {
 
         Route::get('dashboard_admin', array("as" => "dashboard_admin", "uses" => "AdminController@index"));
         Route::get('cuentos_admin', array("as" => "cuentos_admin", "uses" => "AdminController@cuentos"));
-        Route::get('historias_admin', array("as" => "historias_admin", "uses" => "AdminController@historias"));
+        Route::get('historias_admin/{category?}', array("as" => "historias_admin", "uses" => "AdminController@historias"));
         Route::get('videos_admin', array("as" => "videos_admin", "uses" => "AdminController@videos"));
         Route::get('preselect_admin', array("as" => "preselect_admin", "uses" => "AdminController@preselect"));
         Route::get('finalist_admin', array("as" => "finalist_admin", "uses" => "AdminController@finalist"));
@@ -88,7 +88,7 @@ Route::group(array("before" => "auth"), function () {
     /*-----------------------------JUEZ---------------------------------*/
     Route::group(array("before" => "juez_filter"), function () {
         Route::get('dashboard_juez', array("as" => "dashboard_juez", "uses" => "AcJuezController@index"));
-        Route::get('dashboard_juez/historias', array("as" => "historia_juez", "uses" => "AcJuezController@historia"));
+        Route::get('dashboard_juez/historias/{category?}', array("as" => "historia_juez", "uses" => "AcJuezController@historia"));
         Route::get('dashboard_juez/preselect_juez', array("as" => "preselect_juez", "uses" => "AcJuezController@preselect"));
         Route::get('dashboard_juez/finalist_juez', array("as" => "finalist_juez", "uses" => "AcJuezController@finalist"));
 
@@ -175,7 +175,7 @@ Route::post('pd/view',['as'=>'viewSystemH','uses'=>'UsersController@views_h']);
 /*KIDS*/
 Route::get('kids', ['as' => 'kids', 'uses' => 'KidsController@index']);
 Route::get('kids/cuentos/{category?}', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
-Route::post('kids/cuentos/', ['as' => 'kids_cuentos', 'uses' => 'KidsController@cuentos']);
+Route::post('kids/cuentos/', ['as' => 'kids_cuentos_filter', 'uses' => 'KidsController@cuentos_filter']);
 Route::get('kids/videos/{category?}', ['as' => 'kids_videos', 'uses' => 'KidsController@videos']);
 Route::get('kids/bases/{base?}', ['as' => 'kids_bases', 'uses' => 'KidsController@bases']);
 

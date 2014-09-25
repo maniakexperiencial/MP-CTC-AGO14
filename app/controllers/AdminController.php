@@ -42,10 +42,23 @@ class AdminController extends Controller
         return View::make('admin.account.Admin.cuentos',['cuentos'=>$cuentos]);
     }
 
-    public function historias()
+    public function historias($category="no")
     {
         $user=User::all();
-        $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+
+        switch($category){
+            case 'papas':
+            case 'doctores':
+                $historias=Historia::orderBy('id', 'DESC')->where('category','=',$category)->paginate(4);
+                break;
+            case 'todos':
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+                break;
+            default:
+                $historias=Historia::orderBy('id', 'DESC')->paginate(4);
+                break;
+        }
+
         return View::make('admin.account.Admin.historias',['historias'=>$historias]);
     }
     public function videos(){

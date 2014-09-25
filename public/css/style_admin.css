@@ -565,9 +565,16 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     height: 112px;
     margin-bottom: 5px;
     overflow: hidden;
-    background-size: contain;
+    /*background-size: contain;*/
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.cuento_image img{
+    width: 170px;
+    height: auto;
+    border: none;
+    opacity: 0;
 }
 .cuento_opciones{
     color:#c8e4ff;
@@ -1069,6 +1076,12 @@ a.active{
     min-height:50px;
     height:auto;
     text-align: center;
+}
+.select_filter{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: white;
 }
 /*--------------------PRESELECT DETAIL-----*/
 .preselect_detail_info{

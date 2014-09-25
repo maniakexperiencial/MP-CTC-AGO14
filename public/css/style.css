@@ -611,9 +611,17 @@ a.active{
     height: 112px;
     margin-bottom: 5px;
     overflow: hidden;
-    background-size: contain;
+    /*background-size: contain;*/
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+.cuento_image img{
+    width: 170px;
+    /*height: 112px;*/
+    height: auto;
+    border: none;
+    opacity: 0;
 }
 .cuento_opciones{
     color:#c8e4ff;

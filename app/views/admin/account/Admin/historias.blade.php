@@ -14,6 +14,11 @@
     <div class="pageheader notab">
         <h1 class="pagetitle">Historias</h1>
         <span class="pagedesc"></span>
+        <?php
+        $states = array_merge(array('3'=>'selecciona'),State::lists('state','state'));
+        $selection=0;
+        ?>
+        {{Form::select('selectbox', [''=>'Categoria','papas'=>'papas','doctores'=>'doctores','todos'=>'todos'], null,['class'=>'select_filter','id'=>'Selectbox'])}}
         <div id="message_ajax"></div>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
@@ -113,6 +118,11 @@
 
 
 
+        });
+
+
+        jQuery("#Selectbox").change(function () {
+            location.href = "{{URL::to('historias_admin')}}"+"/"+jQuery(this).val();
         });
 
     });
