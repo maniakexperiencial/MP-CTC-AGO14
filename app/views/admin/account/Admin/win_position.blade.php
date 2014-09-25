@@ -41,7 +41,7 @@
 
                  <div class="form-group" style="text-align: center;">
                      {{Form::label('win_position', 'Lugar del Participante', ['class' => 'login_label']) }}
-                     <input style="width: 25%!important" type="number" min="1" name="win_position" class="signup_blue" id="win_position">
+                     <input style="width: 25%!important" type="number" min="1" max="5" name="win_position" class="signup_blue" id="win_position">
 
                      {{$errors->first('name',"<span class=error>:message</span>")}}
                  </div>
