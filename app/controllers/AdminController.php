@@ -47,7 +47,7 @@ class AdminController extends Controller
         $user=User::all();
 
         switch($category){
-            case 'papas':
+            case 'padres':
             case 'doctores':
                 $historias=Historia::orderBy('id', 'DESC')->where('category','=',$category)->paginate(4);
                 break;

@@ -17,7 +17,7 @@
         $states = array_merge(array('3'=>'selecciona'),State::lists('state','state'));
         $selection=0;
         ?>
-        {{Form::select('selectbox', [''=>'Categoria','papas'=>'papas','doctores'=>'doctores','todos'=>'todos'], null,['class'=>'select_filter','id'=>'Selectbox'])}}
+        {{Form::select('selectbox', [''=>'Categoria','padres'=>'padres','doctores'=>'doctores','todos'=>'todos'], null,['class'=>'select_filter','id'=>'Selectbox'])}}
         <div id="message_ajax"></div>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">

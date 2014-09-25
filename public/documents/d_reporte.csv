@@ -1,12 +1,12 @@
 "--- ","--- ","NINOS ",---,---,---,---,---
 Nombre,"Nombre del Cuento",Edad,Categoria,Estado,Calificacion,Views,Likes
-Alejandro,Cuento2,7,6-7,Guanajuato,8.335000038147,0,0
-Pepe,Cuento6,7,6-7,Jalisco,,0,0
-Alvaro,cuento8,9,8-12,Jalisco,9,1,0
-alvaro,Cuento9,7,6-7,Guanajuato,,1,0
-alvaro,Cuento10,6,6-7,Jalisco,,1,1
-alvaro,Cuento11,6,6-7,Jalisco,,2,2
-alvaro,Prueba,11,8-12,Jalisco,,2,1
+Alejandro,Cuento2,7,6-7,Guanajuato,8.335000038147,1,0
+Pepe,Cuento6,7,6-7,Jalisco,,0,1
+Alvaro,cuento8,9,8-12,Jalisco,9,2,0
+alvaro,Cuento9,7,6-7,Guanajuato,,2,0
+alvaro,Cuento10,6,6-7,Jalisco,,2,1
+alvaro,Cuento11,6,6-7,Jalisco,8,2,2
+alvaro,Prueba,11,8-12,Jalisco,8.3299999237061,2,1
 " "," "," "," "," "," "
 "--- ","--- ","PADRES ","--- ","--- ","--- ","--- ","--- "
 Nombre,"Nombre de la Historia",Teléfono,Correo,Estado,Calificacion,Views,Likes
@@ -19,4 +19,3 @@ Pruebas,Historia3,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS,0,0
 Pruebas,Historia4,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS,1,0
 Pruebas,Historia5,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS,2,0
 Pruebas,Prueba,336584,pruebas_1_@hotmail.com,Jalisco,,IMSS,1,1
-Pruebas,"BORRAR HISTORIA",336584,pruebas_1_@hotmail.com,Aguascalientes,9.6700000762939,IMSS,1,1
