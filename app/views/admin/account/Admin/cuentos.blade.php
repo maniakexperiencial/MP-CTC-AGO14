@@ -11,7 +11,7 @@
 {{ HTML::script('js/nivo/nivo-lightbox.min.js') }}
 
 
-{{ HTML::script('js/fakecrop/jquery.fakecrop.js') }}
+
 
 
 
