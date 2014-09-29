@@ -30,7 +30,8 @@ class PremiacionController extends Controller {
                     'winner2a'=>$cuento2,
                     'winner3a'=>$cuento3,
                     'winner4a'=>$cuento4,
-                    'winner5a'=>$cuento5
+                    'winner5a'=>$cuento5,
+                    'type'=>0
                 ]);
                 break;
 
@@ -46,7 +47,8 @@ class PremiacionController extends Controller {
                         'winner2a'=>$historia2,
                         'winner3a'=>$historia3,
                         'winner4a'=>$historia4,
-                        'winner5a'=>$historia5
+                        'winner5a'=>$historia5,
+                        'type'=>1
                     ]);
                 break;
 
@@ -62,7 +64,8 @@ class PremiacionController extends Controller {
                     'winner2a'=>$cuento2,
                     'winner3a'=>$cuento3,
                     'winner4a'=>$cuento4,
-                    'winner5a'=>$cuento5
+                    'winner5a'=>$cuento5,
+                    'type'=>0
                 ]);
                 break;
         }
