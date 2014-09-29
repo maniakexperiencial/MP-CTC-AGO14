@@ -290,7 +290,18 @@ Ganadores
 
 
 
+    @if($winner5a)
 
+    <a href="#cuento{{$winner5a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+        <div class="ganador_title">{{$winner5a->title}}</div>
+        <div class="ganador_info">-{{$winner5a->name}}</div>
+        @if($winner5a->age)
+        <div class="ganador_age">{{$winner5a->age}} años</div>
+        @endif
+    </div>
+    </a>
+
+    @endif
 
 
 
