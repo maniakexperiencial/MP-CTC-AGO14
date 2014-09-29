@@ -53,7 +53,7 @@ Bases
     <img src="<?= URL::to('/img/'.$source.'') ?>">
 
 </div>
-<div class="pagination_wrap" style="margin-top:-10px;z-index: 9999;margin-bottom: 10px;">
+<div class="pagination_wrap" style="margin-top:-40px;z-index: 9999;margin-bottom: 10px; position: relative">
     <!--<ul class="number_page" ><a href="#"><li><img src="http://localhost:8000/img/back.png" ></li></a><a href="#"><li >1</li></a><a href="#"><li>2</li></a><a href="#"><li>3</li></a><a href="#"><li><img src="http://localhost:8000/img/next.png" ></li></a></ul>-->
     <ul class="number_page">
         @if($page==1)
