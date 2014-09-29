@@ -8,7 +8,7 @@ class StateTableSeeder extends Seeder {
 	public function run()
 	{
 		/*$faker = Faker::create();*/
-
+        DB::table('states')->truncate();
 
         DB::table('states')->insert([
             ['state'=>'Aguascalientes'],
