@@ -35,7 +35,7 @@ class PremiacionController extends Controller {
                 ]);
                 break;
 
-            case 'papas':
+            case 'padres':
             case 'doctores':
                     $historia1=Historia::where('place','=',1)->where('category','=',$category)->first();
                     $historia2=Historia::where('place','=',2)->where('category','=',$category)->first();

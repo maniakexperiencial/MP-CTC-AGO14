@@ -45,7 +45,7 @@
 @stop
 
 @section('filter')
-{{Form::select('selectbox', [''=>'Categoria','6-7'=>'6-7','8-12'=>'8-12','papas'=>'papas','doctores'=>'doctores'], null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
+{{Form::select('selectbox', [''=>'Categoria','6-7'=>'6-7','8-12'=>'8-12','padres'=>'papas','doctores'=>'doctores'], null,['class'=>'signup_blue signup_select','id'=>'Selectbox'])}}
 <!--<select id="Selectbox">
     <option value="" selected>Categoria</option>
 
@@ -81,6 +81,7 @@ Ganadores
 @section('content_center')
 
     @if($winner1a)
+
         @if($type==0)
                         <div class="hidden_cuento" id="cuento{{$winner1a->id}}" >
                             <div class="cuento_first_wrap">
@@ -108,6 +109,15 @@ Ganadores
                             </div>
                         </div>
         @else
+
+                    <div class="hidden_history" id="cuento{{$winner1a->id}}" >
+
+                        <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner1a->title}}</h2><h4>-{{$winner1a->name}}, {{$winner1a->state}}</h4></div>
+
+                        <div class="hidden_history_content">
+                            <p>{{nl2br($winner1a->text)}}</p>
+                        </div>
+                    </div>
 
         @endif
     <a href="#cuento{{$winner1a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
@@ -151,7 +161,14 @@ Ganadores
                         </div>
                     </div>
                     @else
+                    <div class="hidden_history" id="cuento{{$winner2a->id}}" >
 
+                        <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner2a->title}}</h2><h4>-{{$winner2a->name}}, {{$winner2a->state}}</h4></div>
+
+                        <div class="hidden_history_content">
+                            <p>{{nl2br($winner2a->text)}}</p>
+                        </div>
+                    </div>
                     @endif
     <a href="#cuento{{$winner2a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
     <div class="ganador_box ganador_2">
@@ -194,7 +211,14 @@ Ganadores
                     </div>
                 </div>
                 @else
+                <div class="hidden_history" id="cuento{{$winner3a->id}}" >
 
+                    <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner3a->title}}</h2><h4>-{{$winner3a->name}}, {{$winner3a->state}}</h4></div>
+
+                    <div class="hidden_history_content">
+                        <p>{{nl2br($winner3a->text)}}</p>
+                    </div>
+                </div>
                 @endif
 
     <a href="#cuento{{$winner3a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
@@ -242,7 +266,14 @@ Ganadores
                     </div>
                 </div>
                 @else
+                <div class="hidden_history" id="cuento{{$winner4a->id}}" >
 
+                    <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner4a->title}}</h2><h4>-{{$winner4a->name}}, {{$winner4a->state}}</h4></div>
+
+                    <div class="hidden_history_content">
+                        <p>{{nl2br($winner4a->text)}}</p>
+                    </div>
+                </div>
                 @endif
 
     <a href="#cuento{{$winner4a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
@@ -287,7 +318,14 @@ Ganadores
                     </div>
                 </div>
                 @else
+                <div class="hidden_history" id="cuento{{$winner5a->id}}" >
 
+                    <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner5a->title}}</h2><h4>-{{$winner5a->name}}, {{$winner5a->state}}</h4></div>
+
+                    <div class="hidden_history_content">
+                        <p>{{nl2br($winner5a->text)}}</p>
+                    </div>
+                </div>
                 @endif
     <a href="#cuento{{$winner5a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
         <div class="ganador_title">{{$winner5a->title}}</div>
