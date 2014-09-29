@@ -804,6 +804,9 @@ a.active{
     text-align: center;
     margin-top: 30%;
     font-size: .9em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .ganador_info{
     width: 60%;
@@ -811,6 +814,9 @@ a.active{
     text-align: center;
     font-weight: bold;
     font-size: .8em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .ganador_age{
     width: 60%;

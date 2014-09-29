@@ -5,13 +5,8 @@
     <bookmark url="file://$PROJECT_DIR$/app/database/seeds/StateTableSeeder.php" line="9" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="-Test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1411978735dORusbackMemb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1411978735eRZwAback1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cuentos_images/1411978735sMjYRbackResidencial.jpg" />
-      <change type="DELETED" beforePath="C:\projects\MP-CTC-AGO14\public\cuentos_images\1410194782VRB3Hlogo_new.png" afterPath="" />
+    <list default="true" id="0fed7056-404a-4937-8c2b-7f507219d4d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style_admin.css" afterPath="$PROJECT_DIR$/public/css/style_admin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MP-CTC-AGO14.iws" />
@@ -140,7 +135,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="481" column="20" selection-start="9534" selection-end="9534" vertical-scroll-proportion="0.41217798" vertical-offset="7825" max-vertical-offset="18258">
+            <state line="818" column="28" selection-start="15924" selection-end="15924" vertical-scroll-proportion="0.90983605" vertical-offset="13129" max-vertical-offset="18360">
               <folding />
             </state>
           </provider>
@@ -1090,7 +1085,11 @@
       <created>1411977806725</created>
       <updated>1411977806725</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="-Cuentos lightbox gallery more images overflow auto">
+      <created>1411979092991</created>
+      <updated>1411979092992</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1151,7 +1150,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="-casi terminado" />
     <MESSAGE value="-validate historia and video form&#10;" />
     <MESSAGE value="-Sistema likes por cookies" />
     <MESSAGE value="-Sistema likes anterior" />
@@ -1176,7 +1174,8 @@
     <MESSAGE value="-historias lightbox premiacion" />
     <MESSAGE value="-Test" />
     <MESSAGE value="-Fix winner 5 premiacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Fix winner 5 premiacion" />
+    <MESSAGE value="-Cuentos lightbox gallery more images overflow auto" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Cuentos lightbox gallery more images overflow auto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1491,7 +1490,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="481" column="20" selection-start="9534" selection-end="9534" vertical-scroll-proportion="0.41217798" vertical-offset="7825" max-vertical-offset="18258">
+        <state line="818" column="28" selection-start="15924" selection-end="15924" vertical-scroll-proportion="0.90983605" vertical-offset="13129" max-vertical-offset="18360">
           <folding />
         </state>
       </provider>
