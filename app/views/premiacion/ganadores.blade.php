@@ -291,8 +291,44 @@ Ganadores
 
 
     @if($winner5a)
+                @if($type==0)
+                    <div class="hidden_cuento" id="cuento{{$winner5a->id}}" >
+                        <div class="cuento_first_wrap">
+                            <div class="hidden_cuento_title"><h2 style="margin-top: 0;">{{$winner5a->title}}</h2><h4>{{$winner5a->state}}</h4><h5>-{{$winner5a->name}} {{$winner5a->age}} años</h5></div>
 
+                            <img height="100%" id="img_central{{$winner5a->id}}" class="img_central{{$winner5a->id}}" src="<?= URL::to('/cuentos_images/'.$winner5a->images->first()->path)?>">
+                            @if($winner5a->images->count()>1)
+                            <div id="slider" class="slider" >
+                                <ul class="thumb_images_wrap">
+                                    @foreach($winner5a->images as $image)
+
+                                    <li><a ><img data-id="{{$winner5a->id}}" src="<?= URL::to('/cuentos_images/'.$image->path)?>" alt="Css Template Preview" /></a></li>
+
+
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+
+                        </div>
+                        <div class="cuento_second_wrap">
+                            <div class="cuento_second_wrap_title"><p>TRANSCRIPCION</p>
+                                <p>{{ nl2br($winner5a->text) }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @else
+                    <div class="hidden_history" id="cuento{{$winner5a->id}}" >
+
+                        <div class="hidden_history_title"><h2 style="margin-top: 0;">{{$winner5a->title}}</h2><h4>-{{$winner5a->name}}, {{$winner5a->state}}</h4></div>
+
+                        <div class="hidden_history_content">
+                            <p>{{nl2br($winner5a->text)}}</p>
+                        </div>
+                    </div>
+                @endif
     <a href="#cuento{{$winner5a->id}}" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
+    <div class="ganador_box ganador_5">
         <div class="ganador_title">{{$winner5a->title}}</div>
         <div class="ganador_info">-{{$winner5a->name}}</div>
         @if($winner5a->age)
