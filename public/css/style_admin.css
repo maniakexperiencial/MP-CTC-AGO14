@@ -724,6 +724,17 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
     text-align: right;
     cursor: pointer;
 }
+.historia_likeview_wrap{
+    position: absolute;
+    bottom: 0px;
+}
+.historia_likeview_wrap img{
+    max-height: 16px;
+}
+.historia_likeview_wrap span{
+    font-size: 14px;
+    color: #cdc3cd;
+}
 /*-------------------VIDEOS------------*/
 .video_box{
     /*width: 31%;*/

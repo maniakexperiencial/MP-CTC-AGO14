@@ -59,7 +59,16 @@
                                     <img  src="{{URL::to('/img/icons/loveh.png')}}">
                                 </div>-->
 
-
+                                <div class="historia_likeview_wrap">
+                                    <img style="max-height: 16px" data-id="{{$historia->id}}" data-status="inactive" class="historia_like" src="{{URL::to('/img/likesh.png')}}">
+                                    <span class="number_likes">{{$historia->likes->count()}}</span>
+                                    <img style="max-height: 16px"  data-status="inactive" class="historia_view"
+                                        <?php
+                                        echo "src='".URL::to('/img/viewsh.png')."'";
+                                        ?>
+                                        >
+                                    <span class="number_views">{{$historia->views->count()}}</span>
+                                </div>
 
                             </div>
 

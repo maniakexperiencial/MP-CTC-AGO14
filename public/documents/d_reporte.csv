@@ -10,6 +10,8 @@ alvaro,Prueba,11,8-12,Jalisco,8.3299999237061,2,1
 " "," "," "," "," "," "
 "--- ","--- ","PADRES ","--- ","--- ","--- ","--- ","--- "
 Nombre,"Nombre de la Historia",Teléfono,Correo,Estado,Calificacion,Views,Likes
+Pruebas,"BORRAR HISTORIA",336584,pruebas_1_@hotmail.com,Aguascalientes,9.6700000762939,1,1
+Padre,"Historia Papa",336584,Spour1951@superrito.com,Aguascalientes,,0,0
 " "," "," "," "," "," "," "
 "--- ",---,"--- ","DOCTORES ","--- ","--- ","--- ","--- ","--- "
 Nombre,"Nombre de la Historia",Teléfono,Correo,Estado,Calificacion,Institucion,Views,Likes
