@@ -62,7 +62,7 @@
 
 </header>
 
-	<div class="loginbox" style="margin:2% auto 0 auto">
+	<div class="loginbox" style="margin:2% auto 0 auto;margin-top: 5%;">
     	<div class="loginboxinner">
 
             <div class="logo" style="margin-top: 10px">

@@ -8,11 +8,51 @@
 {{ HTML::script('http://code.jquery.com/jquery-latest.min.js') }}
 @stop
 
+
+
+
+
 @section('content')
 <div class="centercontent tables">
     <div class="pageheader notab">
         <h1 class="pagetitle">Cuentos</h1>
         <span class="pagedesc"></span>
+
+       <div class="cuentoCategories"">
+           <?php
+           $states = array_merge(array('3'=>'Estado'),State::lists('state','state'));
+           $selection=0;
+           ?>
+           @if($cuentos->count()!=0)
+           @foreach($cuentos as $cuento)
+           <?php $selection=$cuento->state ?>
+           @endforeach
+           @endif
+
+           {{ Form::open(['route' => 'juez_cuentos_filter']) }}
+
+           {{Form::select('state', $states, null,['class'=>'select_filter','id'=>'Selectbox'])}}
+           <select id="SelectCategory" name="category" class="select_filter">
+               <option value="" selected>Categoria</option>
+               <!--<option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
+               <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>-->
+               <option value="6-7">6-7</option>
+               <option value="8-12">8-12</option>
+
+
+           </select>
+           <input type="submit" class="btn_blue" value="Buscar">
+           {{Form::close()}}
+           <!--<select id="Selectbox">
+               <option value="" selected>Categoria</option>
+               <option value="{{URL::to('kids/cuentos/6')}}">6-7</option>
+               <option value="{{URL::to('kids/cuentos/8')}}">8-12</option>
+
+           </select>-->
+       </div>
+
+
+
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
         <!--CUENTOS-->
@@ -53,8 +93,18 @@
             <div class="cuento_by">{{ $cuento->name }}</div>
             <div class="cuento_age">{{ $cuento->age }} años, {{$cuento->state}}</div>
             <a href="#cuento<?= $cuento->id ?>" data-lightbox-type="inline" data-lightbox-gallery="gallery1"  >
-                <div class="cuento_image" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')">
+                <div class="cuento_image" data-id="<?= $cuento->id ?>" style="background-image:url('<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>')">
                     <img src="<?= URL::to('/cuentos_images/'.$cuento->images->first()->path)?>" alt="Css Template Preview" />
+                    <?php
+                    $user_auth=Auth::user();
+                    $cuentoRead=CuentoRead::where('user_id','=',$user_auth->id)->where('cuento_id','=',$cuento->id)->first();
+                    if($cuentoRead){
+                        echo "<div class=mark_read>Leido</div>";
+                    }else{
+
+                    }
+                    ?>
+
                 </div>
             </a>
             <div class="ui grid">
@@ -181,6 +231,53 @@
             $('.img_central'+doc_id).attr('src',src);
         });
 
+
+        //////////////CUENTO READ ////////////////////////
+
+
+        $('body').on('click', '.cuento_image', function() {
+            var urlaction="{{ URL::route('cuentoRead') }}";
+
+            var document_id=jQuery(this).attr('data-id');
+            var objeto=jQuery(this);
+            //alert(document_id);
+
+            //alert(type);
+            var parameters={cuento_id: document_id};
+            //alert(status1+document_id);
+            jQuery.ajax(
+                {
+                    url : urlaction,
+                    type: "POST",
+                    data : parameters,
+                    success:function(data, textStatus, jqXHR)
+                    {
+                        //data: return data from server
+                        //jQuery('.notab').append(data);
+                        /*alert(data);*/
+
+                        switch(data){
+                            case 'markIt':
+
+
+                                objeto.html('<div class=mark_read>Leido</div>');
+                                break;
+
+                            default:
+                                break;
+                        }
+
+
+
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown)
+                    {
+                        //if fails
+                        alert(errorThrown);
+                    }
+                });
+        });
 
     });
 </script>

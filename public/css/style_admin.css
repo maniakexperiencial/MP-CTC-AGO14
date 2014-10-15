@@ -560,6 +560,7 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
 }
 .cuento_image{
     width: 100%;
+    position: relative;
     background-color: white;
     /*height: 55%;*/
     height: 112px;
@@ -631,6 +632,21 @@ html:first-child+html .clearfix { zoom: 1; } /* IE7 */
 }
 .cuento_admin_options:first-child{
     border: none !important;
+}
+
+.cuentoCategories{
+    width:400px;
+}
+
+.mark_read{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:35px;
+    height: 20px;
+    padding:5px;
+    background-color: green;
+    color: white;
 }
 
 /*-------------------PAPAS HISTORIAS---------*/

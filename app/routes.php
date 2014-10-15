@@ -88,6 +88,7 @@ Route::group(array("before" => "auth"), function () {
     /*-----------------------------JUEZ---------------------------------*/
     Route::group(array("before" => "juez_filter"), function () {
         Route::get('dashboard_juez', array("as" => "dashboard_juez", "uses" => "AcJuezController@index"));
+        Route::post('dashboard_juez/cuentos', ['as' => 'juez_cuentos_filter', 'uses' => 'AcJuezController@cuentos_filter']);
         Route::get('dashboard_juez/historias/{category?}', array("as" => "historia_juez", "uses" => "AcJuezController@historia"));
         Route::get('dashboard_juez/preselect_juez', array("as" => "preselect_juez", "uses" => "AcJuezController@preselect"));
         Route::get('dashboard_juez/finalist_juez', array("as" => "finalist_juez", "uses" => "AcJuezController@finalist"));
@@ -103,6 +104,9 @@ Route::group(array("before" => "auth"), function () {
                 /*-----------------EDITAR EVALUAR------*/
         Route::get('dashboard_juez/evaluate/edit/{document_id}/{type}', array("as" => "evaluate_edit", "uses" => "AcJuezController@evaluate_chindex"));
         Route::post('dashboard_juez/evaluate/change/{preselect}', array("as" => "evaluate_change", "uses" => "AcJuezController@evaluate_change"));
+
+                /*-----------------------CUENTO READ-----*/
+        Route::post('dashboard_juez/cuento/read', array("as" => "cuentoRead", "uses" => "AcJuezController@cuentoRead"));
 
 
     });

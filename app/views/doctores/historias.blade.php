@@ -12,7 +12,7 @@
 
 @section('filter')
 <?php
-$states = array_merge(array('3'=>'selecciona'),State::lists('state','state'));
+$states = array_merge(array('3'=>'Estado'),State::lists('state','state'));
 $selection=0;
 ?>
 @if($historias->count()!=0)

@@ -24,6 +24,35 @@ class AcJuezController extends Controller
         return View::make('admin.account.Juez.cuentos',['cuentos'=>$cuentos]);
     }
 
+    public function cuentos_filter(){
+
+
+
+
+        if(Input::get('state')== '0'){
+
+            if(Input::get('category')==""){
+                $cuentos=Cuento::orderBy('id', 'DESC')->orderBy('id', 'DESC')->paginate(8);
+            }else{
+                $cuentos=Cuento::where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(8);
+            }
+
+        }else{
+
+            if(Input::get('category')==""){
+                $cuentos=Cuento::where('state','=',Input::get('state'))->orderBy('id', 'DESC')->paginate(8);
+            }else{
+                $cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(8);
+            }
+        }
+
+        /*$cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);*/
+        /* $cuentos=Cuento::where('state','=',Input::get('state'))->where('category','=',Input::get('category'))->orderBy('id', 'DESC')->paginate(6);*/
+        return View::make('admin.account.Juez.cuentos',['cuentos'=>$cuentos]);
+    }
+
+
+
     public function historia($category="no"){
 
         $user=User::all();
@@ -93,6 +122,20 @@ class AcJuezController extends Controller
             return 'eliminado';
         }
 
+    }
+
+    //////////////////////////CUENTO READ///////////////////////
+    public function cuentoRead(){
+        $user=Auth::user();
+        $find=CuentoRead::where('user_id','=',$user->id)->where('cuento_id','=',Input::get('cuento_id'))->first();
+        if($find){
+            return 'Already';
+        }else{
+            $cuentoRead=$user->cuentosRead()->save(new CuentoRead([
+                'cuento_id'=>Input::get('cuento_id')
+            ]));
+            return 'markIt';
+        }
     }
 
    public function evaluate(){

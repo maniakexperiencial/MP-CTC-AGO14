@@ -12,7 +12,7 @@
     <div class="pageheader notab">
         <h1 class="pagetitle">Cuentos</h1>
         <h3 class="pagesubtitle">Agregar nuevo cuento</h3>
-        <span class="pagedesc"></span>
+        <span class="pagedesc"><b>Nota:</b>Ordenar las Imágenes antes de subirlas</span>
     </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper">
         @if (Session::has('mensaje_request'))
