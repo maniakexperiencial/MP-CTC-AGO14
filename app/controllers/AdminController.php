@@ -223,7 +223,7 @@ class AdminController extends Controller
                 if($images->path=='imagen_nodisponible.jpg'){
 
                 }else{
-                    File::delete('public/cuentos_images/'.$images->path);
+                    File::delete(public_path().'/cuentos_images/'.$images->path);
                 }
                 //File::delete('public/cuentos_images/'.$images->path);
                 $images->delete();
@@ -254,7 +254,7 @@ class AdminController extends Controller
             if($images->path=='imagen_nodisponible.jpg'){
 
             }else{
-                File::delete('public/cuentos_images/'.$images->path);
+                File::delete(public_path().'/cuentos_images/'.$images->path);
             }
 
             //File::delete('public/cuentos_images/'.$images->path);
@@ -476,7 +476,7 @@ public function edit_video_index($idvideo){
                              if($images->path=='imagen_nodisponible.jpg'){
 
                              }else{
-                                 File::delete('public/cuentos_images/'.$images->path);
+                                 File::delete(public_path().'/cuentos_images/'.$images->path);
                              }
 
                              //File::delete('public/cuentos_images/'.$images->path);
