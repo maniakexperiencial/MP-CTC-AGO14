@@ -480,7 +480,8 @@ a.active{
     margin: 0px;
     padding: 0px;
     max-height: 90px;
-
+    overflow:hidden;
+    overflow-x: auto;
 }
 .thumb_images_wrap li{
     list-style: none;
@@ -489,6 +490,7 @@ a.active{
 }
 .thumb_images_wrap img{
     max-height: 90%;
+    max-height: 90px;
 }
 .hidden_cuento_title h2,h4,h5{
     margin: 5px;
