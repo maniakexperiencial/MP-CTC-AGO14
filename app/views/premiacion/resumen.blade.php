@@ -50,7 +50,7 @@ Resumen
 
 @section('content_center')
 <div class="center_text">
-<img src="{{ URL::to('/img/resumen.png') }}">
+<img src="{{ URL::to('/img/hoja.png') }}">
 </div>
 
 
