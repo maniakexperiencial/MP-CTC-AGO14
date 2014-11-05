@@ -65,12 +65,12 @@ Galeria
     </div>
     <div id="preview" >
     <div class="cover_flow_content" id="preview-coverflow" style="position:relative">
-        <img data-code="ASD123" data-number="0" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
-        <img data-code="ASD1" data-number="1" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
-        <img data-code="123" data-number="2" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
-        <img data-code="ZXC" data-number="3" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>
-        <img  data-code="QWE" data-number="4" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>
-        <img data-code="ASDF" data-number="5" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>
+<!--        <img data-code="ASD123" data-number="0" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>-->
+<!--        <img data-code="ASD1" data-number="1" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>-->
+<!--        <img data-code="123" data-number="2" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>-->
+<!--        <img data-code="ZXC" data-number="3" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento1.jpg') }}"/>-->
+<!--        <img  data-code="QWE" data-number="4" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento2.jpg') }}"/>-->
+<!--        <img data-code="ASDF" data-number="5" class="cover" src="{{ URL::to('/img/cuentos_examples/cuento3.jpg') }}"/>-->
 
 
     </div>
