@@ -104,7 +104,7 @@ Galeria
             select:		function(event, cover) {
                 var img = $(cover).children().andSelf().filter('img').last();
 
-                $('#photos-name').text(img.data('code') || 'unknown');
+                $('#photos-name').text(img.data('code') || '');
             },
             animateStep:	function(event, cover, offset, isVisible, isMiddle, sin, cos) {
                 if (isVisible) {
